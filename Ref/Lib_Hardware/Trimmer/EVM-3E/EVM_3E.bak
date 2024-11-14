@@ -1,0 +1,142 @@
+(kicad_symbol_lib (version 20220914) (generator kicad_symbol_editor)
+  (symbol "EVM-3E" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+    (property "Reference" "VR" (at 20.1422 6.604 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "EVM-3E" (at 20.1422 4.064 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "footprints:EVM-3E" (at 6.35 -15.24 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (property "Datasheet" "EVM-3ESX50B14" (at 6.35 -15.24 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (property "ki_keywords" "EVM-3E" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "EVM-3ESX50B14_PAN" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "EVM-3E_0_1"
+      (polyline
+        (pts
+          (xy 17.526 0)
+          (xy 18.034 1.27)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 18.034 1.27)
+          (xy 18.542 -1.27)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 18.542 -1.27)
+          (xy 19.05 1.27)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 19.05 1.27)
+          (xy 19.558 -1.27)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 19.558 -1.27)
+          (xy 20.066 1.27)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 20.066 1.27)
+          (xy 20.574 -1.27)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 20.32 -1.524)
+          (xy 19.558 -2.286)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 20.32 -1.524)
+          (xy 21.082 -2.286)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 20.574 -1.27)
+          (xy 21.082 1.27)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 21.082 1.27)
+          (xy 21.59 -1.27)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 21.59 -1.27)
+          (xy 22.098 1.27)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 22.098 1.27)
+          (xy 22.606 -1.27)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 22.606 -1.27)
+          (xy 23.114 0)
+        )
+        (stroke (width 0.127) (type default))
+        (fill (type none))
+      )
+    )
+    (symbol "EVM-3E_1_1"
+      (pin passive line (at 14.5288 0 0) (length 3)
+        (name "" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 20.32 -5.08 90) (length 3)
+        (name "" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 26.1366 0 180) (length 3)
+        (name "" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+)

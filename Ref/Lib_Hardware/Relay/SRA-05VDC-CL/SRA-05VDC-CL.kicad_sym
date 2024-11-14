@@ -1,0 +1,193 @@
+(kicad_symbol_lib (version 20220914) (generator kicad_symbol_editor)
+  (symbol "SRA-05VDC-CL" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "K" (at -7.62 8.89 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Value" "SRA-05VDC-CL" (at -7.62 -10.16 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Footprint" "SRA-05VDC-CL:RELAY_SRA-05VDC-CL" (at 1.27 -19.05 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Datasheet" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "URL" "https://www.thegioiic.com/sra-05vdc-cl-ro-le-5vdc-20a-spdt-5-chan" (at 1.27 -20.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "SRA-05VDC-CL_0_0"
+      (rectangle (start -7.62 -7.62) (end 7.62 7.62)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+      (polyline
+        (pts
+          (xy -7.62 -5.08)
+          (xy -2.54 -5.08)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -7.62 5.08)
+          (xy -2.54 5.08)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -3.81 -0.635)
+          (xy -3.81 0.635)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -3.81 0.635)
+          (xy -2.54 0.635)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 -0.635)
+          (xy -3.81 -0.635)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 -0.635)
+          (xy -2.54 -5.08)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 0.635)
+          (xy -1.27 0.635)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 5.08)
+          (xy -2.54 0.635)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.27 -0.635)
+          (xy -2.54 -0.635)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.27 0.635)
+          (xy -1.27 -0.635)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 -5.08)
+          (xy 2.54 -2.54)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 5.08)
+          (xy 2.54 2.54)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 5.08)
+          (xy 7.62 5.08)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.81 0)
+          (xy 1.27 1.905)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 7.62 -5.08)
+          (xy 2.54 -5.08)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 7.62 0)
+          (xy 3.81 0)
+        )
+        (stroke (width 0.254) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.905 -2.54)
+          (xy 3.175 -2.54)
+          (xy 2.54 -1.27)
+          (xy 1.905 -2.54)
+        )
+        (stroke (width 0.1524) (type default))
+        (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 3.175 2.54)
+          (xy 1.905 2.54)
+          (xy 2.54 1.27)
+          (xy 3.175 2.54)
+        )
+        (stroke (width 0.1524) (type default))
+        (fill (type outline))
+      )
+      (pin passive line (at -12.7 5.08 0) (length 5.08)
+        (name "~" (effects (font (size 1.016 1.016))))
+        (number "COIL1" (effects (font (size 1.016 1.016))))
+      )
+      (pin passive line (at -12.7 -5.08 0) (length 5.08)
+        (name "~" (effects (font (size 1.016 1.016))))
+        (number "COIL2" (effects (font (size 1.016 1.016))))
+      )
+      (pin passive line (at 12.7 0 180) (length 5.08)
+        (name "~" (effects (font (size 1.016 1.016))))
+        (number "COM" (effects (font (size 1.016 1.016))))
+      )
+      (pin passive line (at 12.7 5.08 180) (length 5.08)
+        (name "~" (effects (font (size 1.016 1.016))))
+        (number "NC" (effects (font (size 1.016 1.016))))
+      )
+      (pin passive line (at 12.7 -5.08 180) (length 5.08)
+        (name "~" (effects (font (size 1.016 1.016))))
+        (number "NO" (effects (font (size 1.016 1.016))))
+      )
+    )
+  )
+)
