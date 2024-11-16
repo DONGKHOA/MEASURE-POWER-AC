@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Measurement_Power_AC")(type "KiCad")(uri "D:/Github/MEASURE-POWER-AC/Hardware/Library/Source/Measurement_Power_AC.kicad_sym")(options "")(descr ""))
+)

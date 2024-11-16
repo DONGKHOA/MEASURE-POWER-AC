@@ -1,0 +1,180 @@
+(footprint "PC817X2NIPW"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.02 -3.98 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "14122ed3-d135-4f25-a2de-b036e72bdbc8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "PC817X2NIPW"
+		(at -0.13 3.49 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "63033cee-99a2-4fa7-abc9-16fd296542e5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0.02 -3.48 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c285d83-8bcc-4693-af04-17e2140fea7d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0.02 -3.48 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f3c8d17-b72f-4db4-983d-413a034012fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0.02 -3.48 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "311ef0ce-c6f4-4acc-b1c7-0f3c598656a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -3.28 -2.39)
+		(end 3.22 2.19)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "af2b5cb9-a0f8-4cdd-9a5c-90d3252e8da2")
+	)
+	(fp_circle
+		(center -3.9 -2.5)
+		(end -3.8 -2.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "77448b52-c17a-4263-91ed-5a160f65a58c")
+	)
+	(fp_rect
+		(start -5.62 -2.86)
+		(end 5.53 2.56)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "08ffc941-b095-405e-b5b3-10f348c60ace")
+	)
+	(pad "1" smd rect
+		(at -3.965 -1.37)
+		(size 2.75 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
+		(uuid "0eb1c50a-a2da-4dc1-98fa-b4b56f0b6530")
+	)
+	(pad "2" smd rect
+		(at -3.965 1.17)
+		(size 2.75 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
+		(uuid "46d9f63d-c70b-467f-bcf6-c9260de397bf")
+	)
+	(pad "3" smd rect
+		(at 3.905 1.17)
+		(size 2.75 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
+		(uuid "70288fbb-97a1-4c36-9974-a19512b9867c")
+	)
+	(pad "4" smd rect
+		(at 3.905 -1.37)
+		(size 2.75 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(thermal_bridge_angle 45)
+		(uuid "940a58c0-e81b-440a-9dde-35847605fac9")
+	)
+	(model "C:/Users/ACER/OneDrive/Máy tính/NCKH/CHARGE_BATTERY/Hardware/Library/3d_model/PC817X2NIP1B_SHP.step"
+		(offset
+			(xyz 0 0.15 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${CHARGEBATTERY}/PC817X2NIP1B_SHP.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "D:/OneDrive/Disk_2/CHARGE_BATTERY/Hardware/Library/3d_model/PC817X2NIP1B_SHP.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "D:/My Project/NCKH/CHARGE_BATTERY/Hardware/Library/3d_model/PC817X2NIP1B_SHP.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
