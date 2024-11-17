@@ -1,0 +1,15 @@
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:1600:26:LL_ADC_DMA_GetRegAddr	24	static
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:1877:26:LL_ADC_REG_IsTriggerSourceSWStart	16	static
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:2298:22:LL_ADC_REG_SetDMATransfer	16	static
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:3244:22:LL_ADC_Enable	16	static
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:3255:22:LL_ADC_Disable	16	static
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:3266:26:LL_ADC_IsEnabled	16	static
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:3286:22:LL_ADC_StartCalibration	16	static
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:3326:22:LL_ADC_REG_StartConversionSWStart	16	static
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:3345:22:LL_ADC_REG_StartConversionExtTrig	16	static
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:3603:22:LL_ADC_ClearFlag_EOS	16	static
+../BSP/ADC/adc.c:33:1:BSP_ADC_ConversionStop_Disable	16	static
+../BSP/ADC/adc.c:50:1:BSP_ADC_Enable	16	static
+../BSP/ADC/adc.c:76:1:BSP_ADC_Start_Calibration	16	static
+../BSP/ADC/adc.c:119:1:BSP_ADC_Start_DMA	32	static
+../BSP/ADC/adc.c:149:1:BSP_ADC_TimeOut	4	static

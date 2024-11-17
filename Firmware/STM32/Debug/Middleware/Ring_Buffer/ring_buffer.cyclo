@@ -1,0 +1,6 @@
+../Middleware/Ring_Buffer/ring_buffer.c:26:1:RING_BUFFER_Init	1
+../Middleware/Ring_Buffer/ring_buffer.c:42:1:RING_BUFFER_Reset	1
+../Middleware/Ring_Buffer/ring_buffer.c:60:1:RING_BUFFER_Is_Empty	1
+../Middleware/Ring_Buffer/ring_buffer.c:77:1:RING_BUFFER_Is_Full	1
+../Middleware/Ring_Buffer/ring_buffer.c:93:1:RING_BUFFER_Push_Data	2
+../Middleware/Ring_Buffer/ring_buffer.c:116:1:RING_BUFFER_Pull_Data	2
