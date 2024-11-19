@@ -60,6 +60,14 @@
 									<listOptionValue builtIn="false" value="../Middleware/Ring_Buffer"/>
 									<listOptionValue builtIn="false" value="../BSP/DMA"/>
 									<listOptionValue builtIn="false" value="../BSP/TIMER"/>
+									<listOptionValue builtIn="false" value="../APP/Common"/>
+									<listOptionValue builtIn="false" value="../Scheduler"/>
+									<listOptionValue builtIn="false" value="../APP/Calculator_PF"/>
+									<listOptionValue builtIn="false" value="../APP/Read_Peek_Voltage_Current"/>
+									<listOptionValue builtIn="false" value="../BSP/SYSTICK"/>
+									<listOptionValue builtIn="false" value="../APP/Data"/>
+									<listOptionValue builtIn="false" value="../APP/Data_Transmission"/>
+									<listOptionValue builtIn="false" value="../APP/CMDLine/Include"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1999989995" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -86,6 +94,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Scheduler"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middleware"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="APP"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="BSP"/>
@@ -170,6 +179,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Scheduler"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middleware"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="APP"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="BSP"/>

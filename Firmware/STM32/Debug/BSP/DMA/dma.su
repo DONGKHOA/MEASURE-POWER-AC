@@ -10,7 +10,6 @@
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:1591:22:LL_DMA_ClearFlag_HT1	16	static
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:1668:22:LL_DMA_ClearFlag_TE1	16	static
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:1761:22:LL_DMA_EnableIT_TC	16	static
-../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:1780:22:LL_DMA_EnableIT_HT	16	static
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:1799:22:LL_DMA_EnableIT_TE	16	static
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:1818:22:LL_DMA_DisableIT_TC	16	static
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:1837:22:LL_DMA_DisableIT_HT	16	static

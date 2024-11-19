@@ -5,15 +5,15 @@
  *      Author: dongkhoa
  */
 
-/*********************
+/******************************************************************************
  *      INCLUDES
- *********************/
+ *****************************************************************************/
 
 #include "dma.h"
 
-/*********************
+/******************************************************************************
  *   PUBLIC FUNCTION
- *********************/
+ *****************************************************************************/
 
 /**
  * The function BSP_DMA_Start_IT initializes and starts a DMA transfer with
@@ -50,7 +50,7 @@ BSP_DMA_Start_IT (DMA_TypeDef *p_DMA,
 
   LL_DMA_SetDataLength(p_DMA, Channel, DataLength);
 
-  LL_DMA_EnableIT_HT(p_DMA, Channel);
+//  LL_DMA_EnableIT_HT(p_DMA, Channel);
   LL_DMA_EnableIT_TC(p_DMA, Channel);
   LL_DMA_EnableIT_TE(p_DMA, Channel);
 
@@ -64,9 +64,9 @@ BSP_DMA_Start_IT (DMA_TypeDef *p_DMA,
  *
  * @param p_DMA The parameter `p_DMA` is a pointer to a structure of type
  * `DMA_TypeDef`, which is likely a data structure representing a Direct Memory
- * Access (DMA) controller in a microcontroller or embedded system.
+ * Access (DMA) controller in a micro-controller or embedded system.
  */
-void
+flagIRQ_dma_t
 BSP_DMA_IRQ_Channel1_Handler (DMA_TypeDef *p_DMA)
 {
   /* Half Transfer Complete Interrupt management ******************************/
@@ -78,6 +78,7 @@ BSP_DMA_IRQ_Channel1_Handler (DMA_TypeDef *p_DMA)
       LL_DMA_DisableIT_HT(p_DMA, LL_DMA_CHANNEL_1);
     }
     LL_DMA_ClearFlag_HT1(p_DMA);
+    return FLAG_HALF_TRANSFER_COMPLETE;
   }
   /* Transfer Complete Interrupt management ***********************************/
   else if (LL_DMA_IsActiveFlag_TC1(p_DMA))
@@ -88,6 +89,7 @@ BSP_DMA_IRQ_Channel1_Handler (DMA_TypeDef *p_DMA)
       LL_DMA_DisableIT_TC(p_DMA, LL_DMA_CHANNEL_1);
     }
     LL_DMA_ClearFlag_TC1(p_DMA);
+    return FLAG_TRANSFER_COMPLETE;
   }
   /* Transfer Error Interrupt management **************************************/
   else if (LL_DMA_IsActiveFlag_TE1(p_DMA))
@@ -98,5 +100,7 @@ BSP_DMA_IRQ_Channel1_Handler (DMA_TypeDef *p_DMA)
       LL_DMA_DisableIT_TE(p_DMA, LL_DMA_CHANNEL_1);
     }
     LL_DMA_ClearFlag_TE1(p_DMA);
+    return FLAG_TRANSFER_ERROR;
   }
+  return FLAG_NONE;
 }

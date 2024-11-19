@@ -18,8 +18,10 @@ Core/Src/stm32f1xx_it.o: ../Core/Src/stm32f1xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h \
- ../Core/Inc/stm32f1xx_it.h ../BSP/ADC/adc.h ../BSP/UART/uart.h \
- ../Middleware/Ring_Buffer/ring_buffer.h ../BSP/DMA/dma.h
+ ../Core/Inc/stm32f1xx_it.h \
+ ../APP/Read_Peek_Voltage_Current/app_read_data.h ../BSP/DMA/dma.h \
+ ../APP/Calculator_PF/app_calculator_PF.h ../BSP/ADC/adc.h \
+ ../BSP/UART/uart.h ../Middleware/Ring_Buffer/ring_buffer.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:
 ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
@@ -41,7 +43,9 @@ Core/Src/stm32f1xx_it.o: ../Core/Src/stm32f1xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h:
 ../Core/Inc/stm32f1xx_it.h:
+../APP/Read_Peek_Voltage_Current/app_read_data.h:
+../BSP/DMA/dma.h:
+../APP/Calculator_PF/app_calculator_PF.h:
 ../BSP/ADC/adc.h:
 ../BSP/UART/uart.h:
 ../Middleware/Ring_Buffer/ring_buffer.h:
-../BSP/DMA/dma.h:

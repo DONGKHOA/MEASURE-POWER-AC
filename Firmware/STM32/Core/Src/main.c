@@ -21,12 +21,15 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <stdio.h>
-#include <string.h>
+
 #include "adc.h"
-#include "dma.h"
-#include "uart.h"
-#include "timer_irq.h"
+#include "app_data.h"
+#include "scheduler.h"
+#include "app_command.h"
+#include "app_read_data.h"
+#include "app_calculator_PF.h"
+#include "app_data_transmission.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,9 +50,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint32_t adc_value[2];
-uart_cfg_t uart_cfg;
-char msg[15];
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -117,11 +118,28 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-  memset(msg, 0, sizeof(msg));
-  BSP_ADC_Start_Calibration(ADC1);
-  BSP_ADC_Start_DMA(ADC1, adc_value, 2);
 
-  BSP_UART_Config(&uart_cfg, USART1, USART1_IRQn);
+  // Application Initialize
+  APP_READ_DATA_Init();
+  APP_CALCULATOR_PF_Init();
+  APP_DATA_TRANSMISSION_Init();
+  APP_COMMAND_Init();
+
+  // Initialize Scheduler
+  SCH_Initialize();
+
+  // Application Create Task
+  APP_READ_DATA_CreateTask();
+  APP_CALCULATOR_PF_CreateTask();
+  APP_DATA_TRANSMISSION_CreateTask();
+  APP_COMMAND_CreateTask();
+
+  // Start Scheduler
+  SCH_StartScheduler();
+
+  // Start ADC - TIM3
+  BSP_ADC_Start_Calibration(ADC1);
+  BSP_ADC_Start_DMA(ADC1, (uint16_t *)s_data_system.u16_adc_value, 2);
   TIM3->CR1 |= TIM_CR1_CEN;
 
   /* USER CODE END 2 */
@@ -133,9 +151,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  sprintf(msg, "%ld, %ld\r\n", adc_value[0], adc_value[1]);
-	  BSP_UART_SendString(&uart_cfg, msg);
-	  LL_mDelay(1000);
+	  SCH_HandleScheduledTask();
   }
   /* USER CODE END 3 */
 }
@@ -317,7 +333,7 @@ static void MX_TIM3_Init(void)
   /* USER CODE END TIM3_Init 1 */
   TIM_InitStruct.Prescaler = 55999;
   TIM_InitStruct.CounterMode = LL_TIM_COUNTERMODE_UP;
-  TIM_InitStruct.Autoreload = 9;
+  TIM_InitStruct.Autoreload = 19;
   TIM_InitStruct.ClockDivision = LL_TIM_CLOCKDIVISION_DIV1;
   LL_TIM_Init(TIM3, &TIM_InitStruct);
   LL_TIM_DisableARRPreload(TIM3);
@@ -479,11 +495,21 @@ static void MX_GPIO_Init(void)
   LL_GPIO_ResetOutputPin(GPIOC, LL_GPIO_PIN_13|LL_GPIO_PIN_14|LL_GPIO_PIN_15);
 
   /**/
+  LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_7);
+
+  /**/
   GPIO_InitStruct.Pin = LL_GPIO_PIN_13|LL_GPIO_PIN_14|LL_GPIO_PIN_15;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   LL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /**/
+  GPIO_InitStruct.Pin = LL_GPIO_PIN_7;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /**/
   LL_GPIO_AF_SetEXTISource(LL_GPIO_AF_EXTI_PORTA, LL_GPIO_AF_EXTI_LINE5);
@@ -516,6 +542,10 @@ static void MX_GPIO_Init(void)
 
   /**/
   LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_6, LL_GPIO_MODE_INPUT);
+
+  /* EXTI interrupt init*/
+  NVIC_SetPriority(EXTI9_5_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),2, 0));
+  NVIC_EnableIRQ(EXTI9_5_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

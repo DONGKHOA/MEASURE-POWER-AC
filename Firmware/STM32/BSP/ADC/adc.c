@@ -5,23 +5,23 @@
  *      Author: dongkhoa
  */
 
-/*********************
+/******************************************************************************
  *      INCLUDES
- *********************/
+ *****************************************************************************/
 
 #include "adc.h"
 #include "stm32f1xx_ll_utils.h"
 #include "dma.h"
 
-/*********************
+/******************************************************************************
  *    PRIVATE DEFINES
- *********************/
+ *****************************************************************************/
 
 #define LIMIT_WAIT_ADC_OPERATION 1000UL // ms
 
-/**********************
+/******************************************************************************
  *  STATIC VARIABLES
- **********************/
+ *****************************************************************************/
 
 static volatile uint32_t u32_adc_timeout = 0;
 
@@ -116,7 +116,7 @@ BSP_ADC_Start_Calibration (ADC_TypeDef *p_ADC)
 
 // Using with >= 2 Channel in ADC
 void
-BSP_ADC_Start_DMA (ADC_TypeDef *p_ADC, uint32_t *pData, uint32_t Length)
+BSP_ADC_Start_DMA (ADC_TypeDef *p_ADC, uint16_t *pData, uint32_t Length)
 {
   // Enable the ADC peripheral
   BSP_ADC_Enable(p_ADC);

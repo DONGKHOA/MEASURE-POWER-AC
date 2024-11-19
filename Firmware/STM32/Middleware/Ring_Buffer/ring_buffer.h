@@ -8,9 +8,9 @@
 #ifndef UART_BSP_RING_BUFFER_H_
 #define UART_BSP_RING_BUFFER_H_
 
-/*********************
+/******************************************************************************
  *      INCLUDES
- *********************/
+ *****************************************************************************/
 
 #include "stm32f1xx.h"
 #include <stdbool.h>
@@ -24,7 +24,7 @@ extern "C"
    *    PUBLIC DEFINES
    *********************/
 
-#define RING_BUFFER_SIZE 256
+#define RING_BUFFER_SIZE 64
 
 /*********************
  *    PUBLIC TYPEDEFS
