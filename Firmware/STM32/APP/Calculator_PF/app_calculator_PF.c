@@ -10,6 +10,7 @@
  *****************************************************************************/
 
 #include "stm32f1xx_ll_exti.h"
+#include "stm32f1xx_ll_tim.h"
 #include "app_calculator_PF.h"
 #include "app_data.h"
 #include "ring_buffer.h"
@@ -23,7 +24,7 @@
   LL_TIM_SetCounter(x, 0); \
   LL_TIM_EnableCounter(x);
 
-#define FREQUENCY_TIMER  56.0 // Mhz
+#define FREQUENCY_TIMER 56.0 // Mhz
 
 /******************************************************************************
  *    PRIVATE TYPEDEFS
@@ -40,7 +41,7 @@ typedef struct _CALCULATOR_PF_t
   volatile ring_buffer_t *p_PF_buffer_irq;
   volatile ring_buffer_t *p_PF_buffer;
   volatile uint8_t        value_temp_irq[2];
-  volatile float *p_delta_T;
+  volatile float         *p_delta_T;
 } CALCULATOR_PF_t;
 
 /******************************************************************************
@@ -86,7 +87,7 @@ APP_CALCULATOR_PF_Init (void)
   // Link pointer to variable
   s_calculator_pf.p_PF_buffer     = &s_data_system.s_PF_buffer;
   s_calculator_pf.p_PF_buffer_irq = &s_data_system.s_PF_buffer_irq;
-  s_calculator_pf.p_delta_T = &s_data_system.f_delta_T_PF;
+  s_calculator_pf.p_delta_T       = &s_data_system.f_delta_T_PF;
 
   // Initialize buffer
   RING_BUFFER_Init((ring_buffer_t *)s_calculator_pf.p_PF_buffer);
@@ -147,6 +148,14 @@ APP_CALCULATOR_PF_EXTI_IRQHandler (void)
  *  PRIVATE FUNCTION
  *****************************************************************************/
 
+/**
+ * The function `APP_CALCULATOR_PF_TaskUpdate` processes data from a ring
+ * buffer, calculates a value, and transmits the result to another buffer.
+ *
+ * @return If the RING_BUFFER_Is_Empty function returns true, the function
+ * APP_CALCULATOR_PF_TaskUpdate will return without performing any further
+ * operations.
+ */
 static void
 APP_CALCULATOR_PF_TaskUpdate (void)
 {
@@ -155,20 +164,36 @@ APP_CALCULATOR_PF_TaskUpdate (void)
     return;
   }
 
-  uint16_t u16_value_temp;
-  uint8_t  u8_value_adc[2];
+  uint32_t *p_value_temp;
+  uint16_t  u16_value_temp;
+  uint8_t   u8_value[2];
 
-  // u8_value_adc[0] 8 bit high of delta_T
-  u8_value_adc[0] = RING_BUFFER_Pull_Data(
-      (ring_buffer_t *)s_calculator_pf.p_PF_buffer_irq);
+  // u8_value[0] 8 bit high of delta_T
+  u8_value[0]
+      = RING_BUFFER_Pull_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer_irq);
 
-  // u8_value_adc[1] 8 bit low of delta_T
-  u8_value_adc[1] = RING_BUFFER_Pull_Data(
-      (ring_buffer_t *)s_calculator_pf.p_PF_buffer_irq);
+  // u8_value[1] 8 bit low of delta_T
+  u8_value[1]
+      = RING_BUFFER_Pull_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer_irq);
 
-  u16_value_temp = (uint16_t)((u8_value_adc[0] << 8) | (u8_value_adc[1]));
+  u16_value_temp = (uint16_t)((u8_value[0] << 8) | (u8_value[1]));
 
-  *s_calculator_pf.p_delta_T = (float) u16_value_temp / FREQUENCY_TIMER;
+  *s_calculator_pf.p_delta_T = (float)u16_value_temp / FREQUENCY_TIMER;
 
   // Transmission Data to app_data_transmission
+  p_value_temp = (uint32_t *)s_calculator_pf.p_delta_T;
+
+  u8_value[0] = (uint8_t)(*p_value_temp >> 24);
+  u8_value[1] = (uint8_t)(*p_value_temp >> 16);
+  u8_value[2] = (uint8_t)(*p_value_temp >> 8);
+  u8_value[3] = (uint8_t)(*p_value_temp >> 0);
+
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer,
+                        u8_value[0]);
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer,
+                        u8_value[1]);
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer,
+                        u8_value[2]);
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer,
+                        u8_value[3]);
 }

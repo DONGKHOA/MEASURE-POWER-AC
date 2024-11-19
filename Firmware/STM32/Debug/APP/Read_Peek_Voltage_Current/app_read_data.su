@@ -2,6 +2,6 @@
 ../APP/Read_Peek_Voltage_Current/app_read_data.c:82:1:APP_READ_DATA_CreateTask	8	static
 ../APP/Read_Peek_Voltage_Current/app_read_data.c:92:1:APP_READ_DATA_Init	8	static
 ../APP/Read_Peek_Voltage_Current/app_read_data.c:110:1:APP_READ_DATA_HandleDMA_IRQ	16	static
-../APP/Read_Peek_Voltage_Current/app_read_data.c:142:1:APP_READ_DATA_TaskUpdate	16	static
-../APP/Read_Peek_Voltage_Current/app_read_data.c:201:1:APP_READ_DATA_ConvertVoltage	32	static
-../APP/Read_Peek_Voltage_Current/app_read_data.c:211:1:APP_READ_DATA_ConvertCurrent	32	static
+../APP/Read_Peek_Voltage_Current/app_read_data.c:146:1:APP_READ_DATA_TaskUpdate	24	static
+../APP/Read_Peek_Voltage_Current/app_read_data.c:243:1:APP_READ_DATA_ConvertVoltage	32	static
+../APP/Read_Peek_Voltage_Current/app_read_data.c:253:1:APP_READ_DATA_ConvertCurrent	32	static

@@ -66,7 +66,7 @@ static Control_TaskContextTypedef s_ControlTaskContext
     = { SCH_INVALID_TASK_HANDLE, // Will be updated by Scheduler
         {
             SCH_TASK_SYNC,           // taskType;
-            1,                       // taskPeriodInMS;
+            5,                       // taskPeriodInMS;
             APP_READ_DATA_TaskUpdate // taskFunction;
         } };
 
@@ -135,8 +135,12 @@ APP_READ_DATA_HandleDMA_IRQ (flagIRQ_dma_t status)
  *****************************************************************************/
 
 /**
- * The function `APP_READ_DATA_TaskUpdate` checks if a ring buffer is not
- * empty, and if not, transfers data from one buffer to another in chunks of 4.
+ * The function `APP_READ_DATA_TaskUpdate` reads data from a ring buffer,
+ * processes the data, converts voltage and current values, transmits the data
+ * to another buffer, and changes the current range based on a threshold value.
+ *
+ * @return If the ring buffer is empty, the function `APP_READ_DATA_TaskUpdate`
+ * will return without performing any further operations.
  */
 static void
 APP_READ_DATA_TaskUpdate (void)
@@ -145,34 +149,69 @@ APP_READ_DATA_TaskUpdate (void)
   {
     return;
   }
-  
-  uint16_t u16_value_temp;
-  uint8_t  u8_value_adc[4];
 
-  // u8_value_adc[0] 8 bit high of adc-channel 1
-  u8_value_adc[0] = RING_BUFFER_Pull_Data(
+  uint32_t *p_value_temp;
+  uint16_t  u16_value_temp;
+  uint8_t   u8_value[4];
+
+  // u8_value[0] 8 bit high of adc-channel 1
+  u8_value[0] = RING_BUFFER_Pull_Data(
       (ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq);
 
-  // u8_value_adc[1] 8 bit low of adc-channel 1
-  u8_value_adc[1] = RING_BUFFER_Pull_Data(
+  // u8_value[1] 8 bit low of adc-channel 1
+  u8_value[1] = RING_BUFFER_Pull_Data(
       (ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq);
 
-  // u8_value_adc[2] 8 bit high of adc-channel 2
-  u8_value_adc[2] = RING_BUFFER_Pull_Data(
+  // u8_value[2] 8 bit high of adc-channel 2
+  u8_value[2] = RING_BUFFER_Pull_Data(
       (ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq);
 
-  // u8_value_adc[3] 8 bit low of adc-channel 2
-  u8_value_adc[3] = RING_BUFFER_Pull_Data(
+  // u8_value[3] 8 bit low of adc-channel 2
+  u8_value[3] = RING_BUFFER_Pull_Data(
       (ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq);
 
-  u16_value_temp = (uint16_t)((u8_value_adc[0] << 8) | (u8_value_adc[1]));
+  u16_value_temp = (uint16_t)((u8_value[0] << 8) | (u8_value[1]));
   APP_READ_DATA_ConvertVoltage(u16_value_temp);
 
-  u16_value_temp = (uint16_t)((u8_value_adc[2] << 8) | (u8_value_adc[3]));
+  u16_value_temp = (uint16_t)((u8_value[2] << 8) | (u8_value[3]));
   APP_READ_DATA_ConvertCurrent(u16_value_temp);
 
   // Transmission Data to app_data_transmission
-  
+  p_value_temp = (uint32_t *)s_read_data.p_voltage;
+
+  u8_value[0] = (uint8_t)(*p_value_temp >> 24);
+  u8_value[1] = (uint8_t)(*p_value_temp >> 16);
+  u8_value[2] = (uint8_t)(*p_value_temp >> 8);
+  u8_value[3] = (uint8_t)(*p_value_temp >> 0);
+
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+                        u8_value[0]);
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+                        u8_value[1]);
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+                        u8_value[2]);
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+                        u8_value[3]);
+
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer, '\r');
+
+  p_value_temp = (uint32_t *)s_read_data.p_current;
+
+  u8_value[0] = (uint8_t)(*p_value_temp >> 24);
+  u8_value[1] = (uint8_t)(*p_value_temp >> 16);
+  u8_value[2] = (uint8_t)(*p_value_temp >> 8);
+  u8_value[3] = (uint8_t)(*p_value_temp >> 0);
+
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+                        u8_value[0]);
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+                        u8_value[1]);
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+                        u8_value[2]);
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+                        u8_value[3]);
+
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer, '\r');
 
   // CHANGE RANGE OF CURRENT
   // if current > 10A, change from range 0-10 (A) to 0-30 (A)
