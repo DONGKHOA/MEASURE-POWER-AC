@@ -1,0 +1,26 @@
+{
+    "editor.fontSize": 14,
+    "files.associations": {
+        "scheduler.h": "c",
+        "app_read_data.h": "c"
+    },
+    "cSpell.words": [
+        "AFIO",
+        "BSRR",
+        "CLKSOURCE",
+        "CLKSRC",
+        "Discont",
+        "EXTI",
+        "GPIOA",
+        "GPIOB",
+        "JTAG",
+        "NOJTAG",
+        "NVIC",
+        "PCLK",
+        "PERIPH",
+        "PLLSOURCE",
+        "Prescaler",
+        "SYSCLK",
+        "USART"
+    ]
+}
