@@ -2428,6 +2428,26 @@
 		)
 		(uuid "fcd62656-2753-4fed-917f-574bbabcc622")
 	)
+	(text "Thêm con tụ 100uF"
+		(exclude_from_sim no)
+		(at 147.066 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "20979467-ed9c-4abd-bf29-a00cfc123434")
+	)
+	(text "Thêm con tụ 100uF"
+		(exclude_from_sim no)
+		(at 149.86 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7fe45d7b-9134-4438-933b-67f104108afa")
+	)
 	(global_label "Voltage_Sensor"
 		(shape input)
 		(at 96.52 77.47 180)

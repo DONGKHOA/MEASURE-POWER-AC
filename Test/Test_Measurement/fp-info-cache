@@ -1,4 +1,4 @@
-24031783257635396
+24042174746221031
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64722,12 +64722,33 @@ Diode SMA (DO-214AC)
 2
 2
 Measure_Power_AC
+EA2-5NJ_NEC
+
+EA2-5NJ 
+0
+10
+10
+Measure_Power_AC
 FUSE_254_PC_LTF
 
 02540101Z 
 0
 2
 2
+Measure_Power_AC
+LED_D5.0mm
+LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
+LED diameter 5.0mm 2 pins
+0
+2
+2
+Measure_Power_AC
+PC817X2NIPW
+
+
+0
+4
+4
 Measure_Power_AC
 Res_0805
 
@@ -64764,6 +64785,13 @@ STM32F103C8T6_Bluepill
 40
 40
 Measure_Power_AC
+SW_B3F-1060_OMR
+
+B3F-1062 
+0
+4
+4
+Measure_Power_AC
 SW_SMD
 
 
@@ -64772,6 +64800,20 @@ SW_SMD
 2
 Measure_Power_AC
 TO-220-3
+
+
+0
+3
+3
+Measure_Power_AC
+Tan_Cap_A
+
+
+0
+2
+2
+Measure_Power_AC
+XKB_DC-005-5A-2.0
 
 
 0

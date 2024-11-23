@@ -1497,6 +1497,14 @@
 		(color 0 0 0 0)
 		(uuid "d0a38331-0de9-4faf-8ce0-c2f0274c57d6")
 	)
+	(no_connect
+		(at 129.54 82.55)
+		(uuid "7532c705-e0a5-4afb-ac91-8c2d3a78273b")
+	)
+	(no_connect
+		(at 127 82.55)
+		(uuid "d565bae0-179d-44c3-95ec-35e892f8a4ca")
+	)
 	(wire
 		(pts
 			(xy 118.11 139.7) (xy 118.11 138.43)
@@ -1946,6 +1954,16 @@
 			(type default)
 		)
 		(uuid "fd7877f1-719d-493f-a94f-10c67c46e62c")
+	)
+	(text "Hồi tiếp âm"
+		(exclude_from_sim no)
+		(at 158.242 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dcd3fb2b-cc02-4432-be7f-10f05fc1b803")
 	)
 	(global_label "N_Voltage"
 		(shape input)
