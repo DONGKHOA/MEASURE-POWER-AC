@@ -68,8 +68,8 @@
 	)
 	(attr through_hole)
 	(fp_line
-		(start -49 -2.5)
-		(end -30 -2.5)
+		(start -45 -5)
+		(end -30 -5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -78,8 +78,8 @@
 		(uuid "726e62ed-9bd1-49b9-a693-aeb77b3b498d")
 	)
 	(fp_line
-		(start -48.9 2.5)
-		(end -30 2.5)
+		(start -44.9 0)
+		(end -29.9 0)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -128,8 +128,8 @@
 		(uuid "75ec4cd9-3afa-44ef-b301-680171cde2db")
 	)
 	(fp_line
-		(start 30.05 -2.5)
-		(end 49.05 -2.5)
+		(start 30.05 -5)
+		(end 45 -5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -138,8 +138,8 @@
 		(uuid "93fe7125-2cec-49d2-a7fe-6649b552f23a")
 	)
 	(fp_line
-		(start 30.15 2.5)
-		(end 49.05 2.5)
+		(start 30.15 0)
+		(end 45 0)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -159,20 +159,16 @@
 			)
 		)
 	)
-	(pad "1" thru_hole circle
-		(at -49 0)
+	(pad "1" smd circle
+		(at -45 -2.5)
 		(size 5 5)
-		(drill 2.2)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
+		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "8ef84b17-fe2e-411f-b932-66e075f80ffe")
 	)
-	(pad "2" thru_hole circle
-		(at 49 0)
+	(pad "2" smd circle
+		(at 45 -2.5)
 		(size 5 5)
-		(drill 2.2)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
+		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "d17f1f21-806b-4410-88c4-1e93a81af4e2")
 	)
 	(model "D:/Github/MEASURE-POWER-AC/Hardware/Library/3D models/Resistor 100W.stp"

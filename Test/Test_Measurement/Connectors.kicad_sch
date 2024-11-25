@@ -472,23 +472,13 @@
 		(at 92.71 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "72d41e85-b81d-4d32-8129-3c7d4e188bbb")
+		(uuid "6251b482-ce7b-45ff-a1e8-135195364fa6")
 	)
 	(junction
 		(at 90.17 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf9054fd-63f3-4503-bde1-86d863e32884")
-	)
-	(wire
-		(pts
-			(xy 100.33 102.87) (xy 106.68 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0912c3c5-239e-4218-bdef-ecfc031d1654")
 	)
 	(wire
 		(pts
@@ -502,13 +492,13 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 105.41) (xy 106.68 105.41)
+			(xy 97.79 105.41) (xy 106.68 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "197c4d9b-fb6f-4ae9-ba76-3820b3b25902")
+		(uuid "180298d6-6424-4bf7-bbef-bc09106abdef")
 	)
 	(wire
 		(pts
@@ -522,13 +512,13 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 66.04) (xy 134.62 66.04)
+			(xy 119.38 68.58) (xy 134.62 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3895085c-efbc-4575-98ca-679be3d9b523")
+		(uuid "261ca1a1-4290-422d-a0cc-49a3aef3a2fa")
 	)
 	(wire
 		(pts
@@ -602,6 +592,26 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 66.04) (xy 134.62 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5c6b2a3-34be-4af3-a668-c4085ab82333")
+	)
+	(wire
+		(pts
+			(xy 97.79 107.95) (xy 105.41 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1b3991c-c697-44d0-b58e-79b0a3ca4a77")
+	)
+	(wire
+		(pts
 			(xy 121.92 76.2) (xy 116.84 76.2)
 		)
 		(stroke
@@ -612,13 +622,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 68.58) (xy 134.62 68.58)
+			(xy 97.79 102.87) (xy 106.68 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e552f98a-0823-4bdf-9312-ce9e539b8a00")
+		(uuid "ed6e3084-daed-4a9d-b86d-82a83b227d5d")
 	)
 	(wire
 		(pts
@@ -639,16 +649,6 @@
 			(type default)
 		)
 		(uuid "fae64bea-f185-4422-898e-ece5dfc04fa1")
-	)
-	(wire
-		(pts
-			(xy 100.33 107.95) (xy 105.41 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe1dd6a7-a978-48ad-9dba-ce01de465884")
 	)
 	(text "Voltage Measurement\n"
 		(exclude_from_sim no)
@@ -698,9 +698,9 @@
 		)
 		(uuid "979582db-1f4f-40ee-b76f-306bbe9ded7b")
 	)
-	(global_label "UART1_RX"
+	(global_label "UART3_RX"
 		(shape bidirectional)
-		(at 106.68 102.87 0)
+		(at 106.68 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -710,7 +710,7 @@
 		)
 		(uuid "1677121e-6775-4a9f-8f69-ae6afe6fd3fa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.0898 102.87 0)
+			(at 120.0898 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -742,9 +742,9 @@
 			)
 		)
 	)
-	(global_label "UART1_TX"
+	(global_label "UART3_TX"
 		(shape bidirectional)
-		(at 106.68 105.41 0)
+		(at 106.68 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -754,7 +754,7 @@
 		)
 		(uuid "373e59be-8b05-42b7-a8c6-c20f635b091d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.7874 105.41 0)
+			(at 119.7874 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -832,17 +832,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
-		(at 95.25 105.41 0)
-		(mirror y)
+		(at 92.71 105.41 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "15f0d6fe-2f0b-4050-a5a2-1ab8831a8de4")
 		(property "Reference" "J3"
-			(at 95.885 97.79 0)
+			(at 93.345 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -850,7 +848,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03_Socket"
-			(at 95.885 100.33 0)
+			(at 93.345 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -858,7 +856,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 95.25 105.41 0)
+			(at 92.71 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -867,7 +865,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 105.41 0)
+			(at 92.71 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -876,7 +874,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 95.25 105.41 0)
+			(at 92.71 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -897,6 +895,73 @@
 			(project ""
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/26bfcc53-9818-4a7f-ae4f-e41e2e94db76"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 139.7 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e5308c7-36fd-4de2-9b2d-3f449cbd5abd")
+		(property "Reference" "J4"
+			(at 139.065 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 139.065 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MC_1,5_2-G-5.08_1x02_P5.08mm_Horizontal"
+			(at 139.7 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 139.7 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d495d047-4f76-4ebc-9763-89acfc829461")
+		)
+		(pin "2"
+			(uuid "a4ac09d3-315d-4e9b-8d1f-e1263dcf4011")
+		)
+		(instances
+			(project "Test_Measurement"
+				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/26bfcc53-9818-4a7f-ae4f-e41e2e94db76"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -929,7 +994,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal"
+		(property "Footprint" "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MC_1,5_2-G-5.08_1x02_P5.08mm_Horizontal"
 			(at 80.01 66.04 0)
 			(effects
 				(font
@@ -966,73 +1031,6 @@
 			(project ""
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/26bfcc53-9818-4a7f-ae4f-e41e2e94db76"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 139.7 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ce886532-fba2-4c12-9cef-b6219db7e8b7")
-		(property "Reference" "J4"
-			(at 139.065 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 139.065 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal"
-			(at 139.7 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 139.7 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "04f1b04e-3076-42e7-b1c3-6792ce12c44e")
-		)
-		(pin "2"
-			(uuid "21b727c3-2ef7-4d46-b1e7-a718861d57ab")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/26bfcc53-9818-4a7f-ae4f-e41e2e94db76"
-					(reference "J4")
 					(unit 1)
 				)
 			)

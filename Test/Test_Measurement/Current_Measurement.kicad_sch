@@ -1961,16 +1961,22 @@
 		(uuid "1917bb9b-b49c-4f2b-a273-fa20e5dddba3")
 	)
 	(junction
+		(at 96.52 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40b48d35-585f-46be-aa1c-f34dd89a3d92")
+	)
+	(junction
 		(at 138.43 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "21c27cd3-a372-41ab-b423-311f208514ec")
+		(uuid "43c45a6e-e412-4612-a340-e595f488e5e3")
 	)
 	(junction
-		(at 100.33 81.28)
+		(at 138.43 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4c37356b-1dba-4ccd-a85f-2aef5ce2848f")
+		(uuid "4921e42a-8293-4376-8402-a31b66d66377")
 	)
 	(junction
 		(at 104.14 81.28)
@@ -1991,10 +1997,10 @@
 		(uuid "61da21b6-b60f-4a22-a02e-0f7044906e65")
 	)
 	(junction
-		(at 138.43 48.26)
+		(at 96.52 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "68db728c-c639-45e3-b3bd-89728923f95c")
+		(uuid "6d7d52e5-dfd3-4b54-97d0-ea39d95490bb")
 	)
 	(junction
 		(at 66.04 111.76)
@@ -2021,18 +2027,6 @@
 		(uuid "be6c2130-b84a-4fe3-a0da-6913308ca7a8")
 	)
 	(junction
-		(at 180.34 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cecda1f8-b16b-41aa-baee-8220c83d5efb")
-	)
-	(junction
-		(at 100.33 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d849f32d-9e90-4125-a45b-46f3f84b06b2")
-	)
-	(junction
 		(at 193.04 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2043,6 +2037,20 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1e1fcd5-404a-43d4-b975-3e9ea06aceb0")
+	)
+	(junction
+		(at 182.88 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fad49452-b7de-4611-bc19-424544271327")
+	)
+	(no_connect
+		(at 157.48 82.55)
+		(uuid "1fca7125-a9d7-4fb7-a0d5-890c7feeca7b")
+	)
+	(no_connect
+		(at 154.94 82.55)
+		(uuid "d15f1366-ee1c-4d2b-9bc4-2ddc27b28451")
 	)
 	(wire
 		(pts
@@ -2066,6 +2074,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 113.03) (xy 138.43 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0779595f-d577-4011-9cde-32999ac825a0")
+	)
+	(wire
+		(pts
 			(xy 104.14 78.74) (xy 104.14 81.28)
 		)
 		(stroke
@@ -2073,6 +2091,16 @@
 			(type default)
 		)
 		(uuid "09f1609a-4d85-4e34-bdf8-f777d10bf666")
+	)
+	(wire
+		(pts
+			(xy 129.54 50.8) (xy 129.54 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11d04782-ef0b-4011-a530-67f30ebb4547")
 	)
 	(wire
 		(pts
@@ -2096,6 +2124,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 81.28) (xy 96.52 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17a3443c-bb1c-41ca-abc1-580759eaf18f")
+	)
+	(wire
+		(pts
 			(xy 100.33 121.92) (xy 107.95 121.92)
 		)
 		(stroke
@@ -2113,16 +2151,6 @@
 			(type default)
 		)
 		(uuid "1ef7354c-99d3-4f77-b22b-2806213f5933")
-	)
-	(wire
-		(pts
-			(xy 57.15 72.39) (xy 67.31 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21df47d6-9a09-4566-8ab2-73a77e6d7d7b")
 	)
 	(wire
 		(pts
@@ -2156,6 +2184,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 48.26) (xy 138.43 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f5772f3-85e7-4d10-9c9b-ce93765d70fc")
+	)
+	(wire
+		(pts
 			(xy 138.43 72.39) (xy 147.32 72.39)
 		)
 		(stroke
@@ -2163,6 +2201,16 @@
 			(type default)
 		)
 		(uuid "31713218-7b98-4158-b35a-e87470a9e64e")
+	)
+	(wire
+		(pts
+			(xy 96.52 68.58) (xy 104.14 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3172ab0e-9b19-48b8-baba-1410a7a3dcb3")
 	)
 	(wire
 		(pts
@@ -2246,6 +2294,26 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 48.26) (xy 138.43 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5931dde3-2c48-44cf-966f-276807e81ef2")
+	)
+	(wire
+		(pts
+			(xy 57.15 69.85) (xy 67.31 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5abc89f9-7747-4380-bdc6-4f2b50ee28c2")
+	)
+	(wire
+		(pts
 			(xy 66.04 111.76) (xy 57.15 111.76)
 		)
 		(stroke
@@ -2286,6 +2354,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 68.58) (xy 96.52 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69b068dc-b4a8-4e7c-b932-d59ed54dc335")
+	)
+	(wire
+		(pts
 			(xy 66.04 121.92) (xy 66.04 124.46)
 		)
 		(stroke
@@ -2306,23 +2384,13 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 128.27) (xy 180.34 74.93)
+			(xy 182.88 132.08) (xy 182.88 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7462283f-3ef5-45b5-a4bc-14e7b6da922f")
-	)
-	(wire
-		(pts
-			(xy 180.34 74.93) (xy 193.04 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "773396c0-5c87-43b6-bd1a-d86eee90cc05")
+		(uuid "71a8b2c0-3a5e-4b50-adb2-90b6f5cd6f7d")
 	)
 	(wire
 		(pts
@@ -2366,6 +2434,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 81.28) (xy 104.14 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81c6fc4a-3e86-4173-b3ea-efe1900457c1")
+	)
+	(wire
+		(pts
 			(xy 86.36 69.85) (xy 86.36 68.58)
 		)
 		(stroke
@@ -2406,46 +2484,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 68.58) (xy 104.14 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f2bceab-b2bb-4899-a4ef-a40c993ba487")
-	)
-	(wire
-		(pts
-			(xy 100.33 78.74) (xy 100.33 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93e600bb-856a-4a21-bddc-9dc7952fb2f8")
-	)
-	(wire
-		(pts
-			(xy 100.33 81.28) (xy 104.14 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94e5bbf8-26dc-4b86-9bc3-820f959f85ec")
-	)
-	(wire
-		(pts
-			(xy 100.33 71.12) (xy 100.33 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "961f1389-d8da-44a0-828f-bd9deebafc7f")
-	)
-	(wire
-		(pts
 			(xy 113.03 72.39) (xy 113.03 68.58)
 		)
 		(stroke
@@ -2476,6 +2514,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 45.72) (xy 138.43 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0969a52-23ba-439d-bd6c-fd4a7d3aa38f")
+	)
+	(wire
+		(pts
 			(xy 193.04 86.36) (xy 193.04 87.63)
 		)
 		(stroke
@@ -2483,6 +2531,26 @@
 			(type default)
 		)
 		(uuid "a22defdb-02a2-401c-8be1-e2a51bdb99d9")
+	)
+	(wire
+		(pts
+			(xy 182.88 74.93) (xy 193.04 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a41f9bb6-b3e3-4e1a-b37c-29f619bcf406")
+	)
+	(wire
+		(pts
+			(xy 96.52 78.74) (xy 96.52 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8fba6d9-412e-41e9-ad78-527fe9a9a3b1")
 	)
 	(wire
 		(pts
@@ -2506,33 +2574,13 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 81.28) (xy 100.33 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b406f8cb-fcc4-4bf9-b3e8-618a65ecd14a")
-	)
-	(wire
-		(pts
-			(xy 162.56 74.93) (xy 180.34 74.93)
+			(xy 162.56 74.93) (xy 182.88 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b49940a8-50e5-4d6b-a1e1-c1e2fb7258f9")
-	)
-	(wire
-		(pts
-			(xy 138.43 113.03) (xy 138.43 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b554bcd4-8af0-4355-9cad-9a90978f4ba4")
 	)
 	(wire
 		(pts
@@ -2556,6 +2604,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 132.08) (xy 182.88 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c25043fd-1e3d-4e0d-b51e-3e1e25b7470d")
+	)
+	(wire
+		(pts
 			(xy 132.08 72.39) (xy 138.43 72.39)
 		)
 		(stroke
@@ -2563,6 +2621,16 @@
 			(type default)
 		)
 		(uuid "c4364b16-24f2-45db-9b9b-a85ed9419533")
+	)
+	(wire
+		(pts
+			(xy 86.36 68.58) (xy 96.52 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4c37212-cf3a-4d77-894f-4730161c5384")
 	)
 	(wire
 		(pts
@@ -2576,16 +2644,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 50.8) (xy 129.54 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d35c0d06-b8bb-4120-92b8-526793083d9c")
-	)
-	(wire
-		(pts
 			(xy 57.15 120.65) (xy 57.15 121.92)
 		)
 		(stroke
@@ -2593,16 +2651,6 @@
 			(type default)
 		)
 		(uuid "d8483db2-5f0e-4ad6-9987-4ca85adee7c0")
-	)
-	(wire
-		(pts
-			(xy 86.36 68.58) (xy 100.33 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d962d828-d40c-4f82-bab5-9ff69e51a01c")
 	)
 	(wire
 		(pts
@@ -2616,13 +2664,13 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 45.72) (xy 138.43 48.26)
+			(xy 57.15 72.39) (xy 67.31 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df301c43-52c4-4727-8b93-253b9cc9647b")
+		(uuid "dfb3ba3c-43cc-4b56-98eb-ae03a08f4732")
 	)
 	(wire
 		(pts
@@ -2653,26 +2701,6 @@
 			(type default)
 		)
 		(uuid "e53187ea-0fce-4498-8a83-2172e9150d07")
-	)
-	(wire
-		(pts
-			(xy 138.43 128.27) (xy 180.34 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e74f0413-a681-4dc7-8743-a18e18e7970b")
-	)
-	(wire
-		(pts
-			(xy 138.43 48.26) (xy 138.43 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e77c1c06-ba1d-4e2d-a839-83942e7447c4")
 	)
 	(wire
 		(pts
@@ -2716,16 +2744,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 48.26) (xy 138.43 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efec2baa-f5bc-4fe5-b4e4-1ec2f435bcba")
-	)
-	(wire
-		(pts
 			(xy 113.03 77.47) (xy 113.03 81.28)
 		)
 		(stroke
@@ -2734,15 +2752,15 @@
 		)
 		(uuid "f839e9bb-0215-45ef-aa4c-bed34ead61d2")
 	)
-	(wire
-		(pts
-			(xy 57.15 69.85) (xy 67.31 69.85)
+	(text "Hồi tiếp âm"
+		(exclude_from_sim no)
+		(at 204.724 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe93fa87-ca09-4393-acdd-0553b53e6310")
+		(uuid "69f39e74-16f2-4aa0-8bb6-5dc377dad996")
 	)
 	(global_label "P_Rshunt"
 		(shape input)
@@ -3062,104 +3080,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Measurement_Power_AC:RShunt_100mR")
-		(at 104.14 78.74 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0af72687-6239-4a01-b985-fc74735adfd4")
-		(property "Reference" "R3"
-			(at 106.68 73.6599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100mR/5%/100W"
-			(at 106.68 76.1999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:Aluminium_Resistor"
-			(at 111.76 79.502 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 112.014 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Res 100mOhm 5% 100W"
-			(at 111.252 84.074 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 111.506 78.486 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Điện Trở Vỏ Nhôm 0.1 Ohm 100W 5%"
-			(at 111.76 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/dien-tro-vo-nhom-0-1-ohm-100w-5-"
-			(at 110.49 70.358 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0effa050-05e2-4d33-b6c7-1329c9c513e7")
-		)
-		(pin "2"
-			(uuid "403327b2-e654-49f4-b6b1-6a387f482cbb")
-		)
-		(instances
-			(project ""
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/0b1ee0f5-520a-478a-9e6e-d438d7832e9e"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Measurement_Power_AC:Ceramic_Cap_SMD_1nF_50V")
 		(at 193.04 85.09 90)
 		(unit 1)
@@ -3275,7 +3195,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "680K/1%/1_8W"
+		(property "Value" "620K/1%/1_8W"
 			(at 140.97 54.6099 90)
 			(effects
 				(font
@@ -3414,102 +3334,6 @@
 			(project "Test_Measurement"
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/0b1ee0f5-520a-478a-9e6e-d438d7832e9e"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Measurement_Power_AC:RShunt_100mR")
-		(at 100.33 78.74 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2b32bf49-eecc-4512-b921-283478a0b3c8")
-		(property "Reference" "R2"
-			(at 97.79 73.6599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100mR/5%/100W"
-			(at 97.79 76.1999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:Aluminium_Resistor"
-			(at 92.71 79.502 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.456 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Res 100mOhm 5% 100W"
-			(at 93.218 84.074 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 92.964 78.486 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Điện Trở Vỏ Nhôm 0.1 Ohm 100W 5%"
-			(at 92.71 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/dien-tro-vo-nhom-0-1-ohm-100w-5-"
-			(at 93.98 70.358 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c5a14654-cb28-4d29-b667-112f307b0c42")
-		)
-		(pin "2"
-			(uuid "bae6be02-fd36-467f-88cf-6e552537b84d")
-		)
-		(instances
-			(project ""
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/0b1ee0f5-520a-478a-9e6e-d438d7832e9e"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4037,7 +3861,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "680K/1%/1_8W"
+		(property "Value" "620K/1%/1_8W"
 			(at 140.97 105.4099 90)
 			(effects
 				(font
@@ -4404,6 +4228,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 129.54 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73d9ed8f-6ebd-44a8-a798-6997236ef15b")
+		(property "Reference" "#PWR01"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 129.54 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e4a6405f-ec69-4c5a-9d5d-d3c02e044883")
+		)
+		(instances
+			(project "Test_Measurement"
+				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/0b1ee0f5-520a-478a-9e6e-d438d7832e9e"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+9V")
 		(at 152.4 66.04 0)
 		(unit 1)
@@ -4632,6 +4522,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Measurement_Power_AC:RShunt_100mR")
+		(at 104.14 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1063b61-3797-4b76-b639-8cda5b59d6cf")
+		(property "Reference" "R2"
+			(at 106.68 73.6599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100mR/5%/100W"
+			(at 106.68 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Measure_Power_AC:Aluminium_Resistor"
+			(at 96.52 79.502 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.266 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Res 100mOhm 5% 100W"
+			(at 97.028 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "Thegioiic"
+			(at 96.774 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply part number" "Điện Trở Vỏ Nhôm 0.1 Ohm 100W 5%"
+			(at 96.52 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply URL" "https://www.thegioiic.com/dien-tro-vo-nhom-0-1-ohm-100w-5-"
+			(at 97.79 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e5d323de-2a6a-4a33-95ad-127d1c9c7f09")
+		)
+		(pin "1"
+			(uuid "e0e11303-6c3f-4674-9c74-0c1e803de860")
+		)
+		(instances
+			(project ""
+				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/0b1ee0f5-520a-478a-9e6e-d438d7832e9e"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Measurement_Power_AC:Ceramic_Cap_SMD_10uF_16V")
 		(at 91.44 120.65 90)
 		(unit 1)
@@ -4729,72 +4716,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 129.54 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc1f490b-ac9c-4778-be18-896416d046eb")
-		(property "Reference" "#PWR011"
-			(at 129.54 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 129.54 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "44e0b75f-375f-447c-bd16-f5ca17f20b92")
-		)
-		(instances
-			(project ""
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/0b1ee0f5-520a-478a-9e6e-d438d7832e9e"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Measurement_Power_AC:Res_330k_0805_1%")
 		(at 158.75 107.95 90)
 		(unit 1)
@@ -4886,6 +4807,103 @@
 			(project "Test_Measurement"
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/0b1ee0f5-520a-478a-9e6e-d438d7832e9e"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Measurement_Power_AC:RShunt_100mR")
+		(at 96.52 71.12 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e38c703f-b1bc-429f-a1d6-eaaa6847049b")
+		(property "Reference" "R3"
+			(at 94.488 73.914 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100mR/5%/100W"
+			(at 94.234 76.454 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Measure_Power_AC:Aluminium_Resistor"
+			(at 88.9 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.646 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Res 100mOhm 5% 100W"
+			(at 89.408 65.786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "Thegioiic"
+			(at 89.154 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply part number" "Điện Trở Vỏ Nhôm 0.1 Ohm 100W 5%"
+			(at 88.9 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply URL" "https://www.thegioiic.com/dien-tro-vo-nhom-0-1-ohm-100w-5-"
+			(at 90.17 79.502 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5a2c8aea-3f43-4bcd-8c69-b3b525f6b59f")
+		)
+		(pin "1"
+			(uuid "cad82f9d-c218-4242-8a16-db61fd3c37b9")
+		)
+		(instances
+			(project ""
+				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/0b1ee0f5-520a-478a-9e6e-d438d7832e9e"
+					(reference "R3")
 					(unit 1)
 				)
 			)

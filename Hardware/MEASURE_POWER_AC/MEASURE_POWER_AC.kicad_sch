@@ -1,5 +1,431 @@
-(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0")
-  (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 86.36 53.34)
+		(size 28.575 27.94)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "05d0bcbd-9292-4250-a3df-595675932f2e")
+		(property "Sheetname" "STM32"
+			(at 86.36 52.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 86.36 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 121.92 120.65)
+		(size 26.67 21.59)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "13218023-4845-4f3e-ab78-5f7c26335007")
+		(property "Sheetname" "Display"
+			(at 121.92 119.9384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Display.kicad_sch"
+			(at 121.92 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 53.34)
+		(size 30.48 27.94)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "56224a57-1e2f-4560-9ecc-3e78ce1d06a2")
+		(property "Sheetname" "Voltage_Measurement"
+			(at 190.5 52.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Voltage_Measurement.kicad_sch"
+			(at 190.5 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 86.36 88.9)
+		(size 27.94 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6f26e52d-d0fd-4d89-8334-dbbaeb0431f2")
+		(property "Sheetname" "Peak_Detector"
+			(at 86.36 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Peak_Detector.kicad_sch"
+			(at 86.36 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.305 53.34)
+		(size 29.845 27.94)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "720e8f84-55a0-4a06-8848-2e9850f38396")
+		(property "Sheetname" "Current_Measurement"
+			(at 154.305 52.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Current_Measurement.kicad_sch"
+			(at 154.305 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 88.9)
+		(size 30.48 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "89f6d2d9-dbdb-44c3-92b1-b6c6afb905fd")
+		(property "Sheetname" "Power_Supply"
+			(at 190.5 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power_Supply.kicad_sch"
+			(at 190.5 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 86.36 120.65)
+		(size 27.94 21.59)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a4cf391c-7fd9-4110-acfb-2a27e3291b90")
+		(property "Sheetname" "Connectors"
+			(at 86.36 119.9384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connectors.kicad_sch"
+			(at 86.36 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 88.9)
+		(size 29.21 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b46239ff-1c84-4b32-adc2-5a4ec5f2e8d5")
+		(property "Sheetname" "RTC"
+			(at 154.94 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RTC.kicad_sch"
+			(at 154.94 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 53.34)
+		(size 27.94 27.94)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bcd9497f-926d-4c3b-93fe-77915aa3bd0a")
+		(property "Sheetname" "ESP32"
+			(at 120.65 52.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32.kicad_sch"
+			(at 120.65 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 120.65)
+		(size 30.48 21.59)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cb12099a-a228-4f8c-9874-67e6c7c5857b")
+		(property "Sheetname" "USB_To_TTL"
+			(at 154.94 119.9384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB_To_TTL.kicad_sch"
+			(at 154.94 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 88.9)
+		(size 27.94 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f4121652-0d7d-4322-89be-a71ed80462b4")
+		(property "Sheetname" "Zero_Crossing_Detection"
+			(at 120.65 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Zero_Crossing_Detection.kicad_sch"
+			(at 120.65 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

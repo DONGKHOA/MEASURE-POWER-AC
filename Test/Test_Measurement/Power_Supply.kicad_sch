@@ -224,43 +224,43 @@
 				)
 			)
 		)
-		(symbol "Measurement_Power_AC:Cap_Polarized_SMD_10uF_16V"
+		(symbol "Measurement_Power_AC:Cap_Tantalum_10uF_16V"
 			(pin_numbers hide)
 			(pin_names
-				(offset 0.254)
-			)
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "C"
-				(at 0.635 2.54 0)
+				(at 0 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left bottom)
 				)
 			)
 			(property "Value" "10uF/16V"
-				(at 0.635 -2.54 0)
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
-				(at 3.302 12.7 0)
+			(property "Footprint" "Measure_Power_AC:Tan_Cap_A"
+				(at -5.08 9.398 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
-				(at 0.762 12.446 0)
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -268,8 +268,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Polarized capacitor 10uF 16V, 20%"
-				(at -0.762 12.192 0)
+			(property "Description" "TAJA105K016RNJ"
+				(at -3.048 9.906 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -278,7 +278,7 @@
 				)
 			)
 			(property "Supply name" "Thegioiic"
-				(at 2.032 12.446 0)
+				(at -3.048 10.668 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -286,8 +286,8 @@
 					(hide yes)
 				)
 			)
-			(property "Supply part number" "Tụ Nhôm SMD 10uF 16V 4x5.4mm"
-				(at 1.27 12.446 0)
+			(property "Supply part number" "Tụ Tantalum 10uF 16V 1206 TAJA106K016RNJ"
+				(at -4.826 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -295,8 +295,8 @@
 					(hide yes)
 				)
 			)
-			(property "Supply URL" "https://www.thegioiic.com/tu-nhom-smd-10uf-16v-4x5-4mm"
-				(at 2.032 12.7 0)
+			(property "Supply URL" "https://www.thegioiic.com/tu-tantalum-10uf-16v-1206-taja106k016rnj"
+				(at 0.254 10.668 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -304,16 +304,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Cap_Polarized_SMD_10uF_16V_0_1"
+			(symbol "Cap_Tantalum_10uF_16V_0_1"
 				(polyline
 					(pts
 						(xy 1.016 -1.27) (xy 1.016 -0.762)
@@ -363,7 +354,7 @@
 					)
 				)
 			)
-			(symbol "Cap_Polarized_SMD_10uF_16V_1_1"
+			(symbol "Cap_Tantalum_10uF_16V_1_1"
 				(pin passive line
 					(at 0 0 0)
 					(length 2.032)
@@ -1158,38 +1149,31 @@
 				)
 			)
 		)
-		(symbol "Measurement_Power_AC:LD1117S33CTR_SOT223"
+		(symbol "Measurement_Power_AC:LED_5"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 1.524 9.906 0)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "LD1117S33CTR_SOT223"
-				(at 10.16 -1.778 0)
+			(property "Value" "LED_5"
+				(at 0 -4.064 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Measure_Power_AC:SOT-223"
-				(at -4.826 16.764 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf"
-				(at 3.81 17.272 0)
+			(property "Footprint" "Measure_Power_AC:LED_D5.0mm"
+				(at -3.81 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1197,8 +1181,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"
-				(at -4.826 17.272 0)
+			(property "Datasheet" "~"
+				(at -9.906 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0.254 4.826 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1207,7 +1200,7 @@
 				)
 			)
 			(property "Supply name" "Thegioiic"
-				(at 0 17.78 0)
+				(at -0.762 5.334 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1215,8 +1208,8 @@
 					(hide yes)
 				)
 			)
-			(property "Supply part number" "LD1117S33CTR IC Ổn Áp 3.3V 800mA SOT-223"
-				(at -6.35 17.018 0)
+			(property "Supply part number" "LED Xanh Dương 5mm Đục Chân Dài"
+				(at 0.508 4.826 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1224,8 +1217,8 @@
 					(hide yes)
 				)
 			)
-			(property "Supply URL" "https://www.thegioiic.com/ld1117s33ctr-ic-on-ap-3-3v-800ma-sot-223"
-				(at -8.89 16.764 0)
+			(property "Supply URL" "https://www.thegioiic.com/led-xanh-duong-5mm-duc-chan-dai"
+				(at -0.762 5.334 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1233,7 +1226,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "REGULATOR LDO 3.3V"
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1242,31 +1235,73 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "LED_5_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
-					(hide yes)
-				)
-			)
-			(symbol "LD1117S33CTR_SOT223_1_1"
-				(rectangle
-					(start 0 8.89)
-					(end 15.24 0)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-				(pin power_in line
-					(at 7.62 -3.81 90)
-					(length 3.81)
-					(name "GND"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_5_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1281,10 +1316,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 19.05 3.81 180)
-					(length 3.81)
-					(name "OUT"
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1292,42 +1327,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -3.81 6.35 0)
-					(length 3.81)
-					(name "INPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 19.05 6.35 180)
-					(length 3.81)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1337,38 +1336,30 @@
 				)
 			)
 		)
-		(symbol "Measurement_Power_AC:LM1117IMP-5.0/NOPB"
+		(symbol "Measurement_Power_AC:Res_1k_0805_1%"
+			(pin_numbers hide)
+			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 1.524 9.906 0)
+			(property "Reference" "R"
+				(at 3.556 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "LM1117IMP-5.0"
-				(at 10.16 -1.778 0)
+			(property "Value" "1K/1%/1_8W"
+				(at 4.064 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Measure_Power_AC:SOT-223"
-				(at -4.826 16.764 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf"
-				(at 3.81 17.272 0)
+			(property "Footprint" "Measure_Power_AC:Res_0805"
+				(at -0.762 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1376,8 +1367,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"
-				(at -4.826 17.272 0)
+			(property "Datasheet" ""
+				(at -11.43 7.874 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Res 1KOhm 0805 1%"
+				(at -5.334 7.112 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1386,7 +1386,7 @@
 				)
 			)
 			(property "Supply name" "Thegioiic"
-				(at 0 17.78 0)
+				(at 0.254 7.366 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1394,8 +1394,8 @@
 					(hide yes)
 				)
 			)
-			(property "Supply part number" "LM1117IMP-5.0/NOPB IC Ổn Áp 5V 800mA SOT-223"
-				(at -6.35 17.018 0)
+			(property "Supply part number" "Điện Trở 1 KOhm 0805 1%"
+				(at 1.27 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1403,8 +1403,8 @@
 					(hide yes)
 				)
 			)
-			(property "Supply URL" "https://www.thegioiic.com/lm1117imp-5-0-nopb-ic-on-ap-5v-800ma-sot-223"
-				(at -8.89 16.764 0)
+			(property "Supply URL" "https://www.thegioiic.com/dien-tro-1-kohm-0805-1-"
+				(at 8.382 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1412,7 +1412,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "REGULATOR LDO 3.3V"
+			(property "ki_keywords" "Res_0_0603_1%"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1421,31 +1421,73 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "Res_1k_0805_1%_0_1"
+				(polyline
+					(pts
+						(xy 1.524 0) (xy 1.27 0)
 					)
-					(hide yes)
-				)
-			)
-			(symbol "LM1117IMP-5.0/NOPB_1_1"
-				(rectangle
-					(start 0 8.89)
-					(end 15.24 0)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-				(pin power_in line
-					(at 7.62 -3.81 90)
-					(length 3.81)
-					(name "GND"
+				(polyline
+					(pts
+						(xy 6.096 0) (xy 6.35 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 0) (xy 1.905 1.016) (xy 2.286 0) (xy 2.667 -1.016) (xy 3.048 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 0) (xy 3.429 1.016) (xy 3.81 0) (xy 4.191 -1.016) (xy 4.572 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 0) (xy 4.953 1.016) (xy 5.334 0) (xy 5.715 -1.016) (xy 6.096 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Res_1k_0805_1%_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1460,10 +1502,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 19.05 3.81 180)
-					(length 3.81)
-					(name "OUT"
+				(pin passive line
+					(at 7.62 0 180)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1471,42 +1513,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -3.81 6.35 0)
-					(length 3.81)
-					(name "INPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 19.05 6.35 180)
-					(length 3.81)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1616,246 +1622,6 @@
 				)
 			)
 			(symbol "+12V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:+3.3V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2208,16 +1974,10 @@
 		(uuid "20252b7a-6643-4910-bb6a-57e13d59bde9")
 	)
 	(junction
-		(at 97.79 91.44)
+		(at 48.26 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "309584dd-8af8-4604-afa5-8296d1ee2360")
-	)
-	(junction
-		(at 123.19 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "34ddf172-44cd-405f-be90-6878c11c3a4f")
+		(uuid "26d3b828-4c34-40cc-914b-a7ad08068da3")
 	)
 	(junction
 		(at 119.38 63.5)
@@ -2250,58 +2010,10 @@
 		(uuid "5f4868a2-5e42-47f2-a2e0-da0340c8a41d")
 	)
 	(junction
-		(at 123.19 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6b9f6832-3e99-4b2c-9f47-4c9857d1b7b3")
-	)
-	(junction
-		(at 134.62 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "728272e3-bcbd-4bcf-9a59-9a18effa4385")
-	)
-	(junction
-		(at 119.38 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "72cf6f09-0717-4f4f-9062-ba4002188e63")
-	)
-	(junction
-		(at 119.38 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "77e8fe44-38fd-49fb-918b-32b61c4aec71")
-	)
-	(junction
-		(at 80.01 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7ba71838-bca3-4217-be18-18553358c0e8")
-	)
-	(junction
 		(at 218.44 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7fc1c950-3da3-441c-b556-ea87e29c92ef")
-	)
-	(junction
-		(at 97.79 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "88edc18a-5ca6-4bf8-b481-5ca6cbb5cd70")
-	)
-	(junction
-		(at 134.62 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aad93571-73c8-45f5-8821-bfa0f0c923e3")
-	)
-	(junction
-		(at 152.4 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "adad4503-09e4-49ca-8d46-05fca8b3d22b")
 	)
 	(junction
 		(at 135.89 49.53)
@@ -2310,58 +2022,10 @@
 		(uuid "b2e18f56-554e-4596-ad06-274887150675")
 	)
 	(junction
-		(at 80.01 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b36eeec0-0df3-471d-b034-019cbb95e2b7")
-	)
-	(junction
-		(at 97.79 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b65236d1-5066-4e98-8c3c-5a07b9be7028")
-	)
-	(junction
-		(at 152.4 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b7a0418e-4f44-458d-a651-770561937354")
-	)
-	(junction
-		(at 134.62 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c515ecaf-8a18-4184-b8db-6df26e327405")
-	)
-	(junction
-		(at 134.62 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c886b806-0709-4bcd-8fde-cfbb403026be")
-	)
-	(junction
 		(at 203.2 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb0741f2-1f81-467a-883f-c892f65b8b74")
-	)
-	(junction
-		(at 132.08 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d209b844-9612-42d7-8a1e-ae7bdac76bf0")
-	)
-	(junction
-		(at 132.08 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db489133-a48f-4d87-9a98-7aeaef082f7c")
-	)
-	(junction
-		(at 97.79 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eaba37ea-a584-417d-b15a-b1fd28f4c965")
 	)
 	(junction
 		(at 135.89 63.5)
@@ -2374,10 +2038,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1baf301-b686-4896-a70c-fb69da5d76fd")
-	)
-	(no_connect
-		(at 43.18 52.07)
-		(uuid "6a33655b-599c-4b5d-9608-ce79eef5605d")
 	)
 	(no_connect
 		(at 193.04 52.07)
@@ -2439,16 +2099,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 93.98) (xy 80.01 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a4d9363-dbbf-4048-94cb-75c15f8b4c2c")
-	)
-	(wire
-		(pts
 			(xy 97.79 59.69) (xy 97.79 63.5)
 		)
 		(stroke
@@ -2459,13 +2109,13 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 93.98) (xy 152.4 91.44)
+			(xy 48.26 52.07) (xy 48.26 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "114a5a55-f3cf-47e8-966d-fe464b39aae1")
+		(uuid "0cd3540b-32e0-49ee-be6c-78e5d62df998")
 	)
 	(wire
 		(pts
@@ -2499,26 +2149,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 143.51) (xy 123.19 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d19702c-1b44-4a7e-9cdf-5b7e7575df36")
-	)
-	(wire
-		(pts
-			(xy 97.79 91.44) (xy 107.95 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "215ccd6b-a999-4143-b280-284bb3dd0284")
-	)
-	(wire
-		(pts
 			(xy 135.89 63.5) (xy 129.54 63.5)
 		)
 		(stroke
@@ -2526,16 +2156,6 @@
 			(type default)
 		)
 		(uuid "25484ac7-f6a0-4b3f-b960-1a3620f59fb0")
-	)
-	(wire
-		(pts
-			(xy 152.4 101.6) (xy 152.4 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2852e3a3-49ee-4ce9-b95d-4443a3e3f7d6")
 	)
 	(wire
 		(pts
@@ -2559,6 +2179,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 86.36) (xy 44.45 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d159891-3282-4f68-86be-7b72b81def8f")
+	)
+	(wire
+		(pts
 			(xy 97.79 49.53) (xy 109.22 49.53)
 		)
 		(stroke
@@ -2576,16 +2206,6 @@
 			(type default)
 		)
 		(uuid "36e00886-c398-407d-9658-9b09c7ff220e")
-	)
-	(wire
-		(pts
-			(xy 152.4 132.08) (xy 152.4 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "391250e3-004c-499c-9c7e-29b799213dcb")
 	)
 	(wire
 		(pts
@@ -2609,66 +2229,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 91.44) (xy 134.62 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ff32b18-5bc3-469c-9a36-4cc0f460ce4e")
-	)
-	(wire
-		(pts
-			(xy 123.19 143.51) (xy 134.62 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41d27884-2655-4b29-aa12-4a13937a8768")
-	)
-	(wire
-		(pts
-			(xy 80.01 143.51) (xy 80.01 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43564445-bf57-460b-b818-cf2b5b942f48")
-	)
-	(wire
-		(pts
-			(xy 80.01 132.08) (xy 80.01 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43aeaa69-ae3b-4800-a2e8-edb75576ce9c")
-	)
-	(wire
-		(pts
-			(xy 132.08 129.54) (xy 134.62 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "447c7b7b-f488-4961-bd6c-187827a2a9cd")
-	)
-	(wire
-		(pts
-			(xy 97.79 129.54) (xy 107.95 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b804dc8-bb1a-41ce-82d9-7a117aca8fa1")
-	)
-	(wire
-		(pts
 			(xy 190.5 71.12) (xy 203.2 71.12)
 		)
 		(stroke
@@ -2679,36 +2239,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 132.08) (xy 132.08 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "558fad99-a206-491e-b645-0001622417b3")
-	)
-	(wire
-		(pts
-			(xy 80.01 105.41) (xy 80.01 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b4cb24f-f139-42a0-89b5-e222401360fb")
-	)
-	(wire
-		(pts
-			(xy 134.62 143.51) (xy 152.4 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ce0bea8-79f8-49c3-af9c-9350146c02b1")
-	)
-	(wire
-		(pts
 			(xy 43.18 49.53) (xy 58.42 49.53)
 		)
 		(stroke
@@ -2716,16 +2246,6 @@
 			(type default)
 		)
 		(uuid "5ebcd147-93c8-497f-9dfc-0dc20ffd04a5")
-	)
-	(wire
-		(pts
-			(xy 130.81 129.54) (xy 132.08 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6336c7db-425b-4842-aef8-66bf77b3359f")
 	)
 	(wire
 		(pts
@@ -2749,46 +2269,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 91.44) (xy 97.79 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68e37321-38a9-4802-9bdb-28c8c4d8addb")
-	)
-	(wire
-		(pts
-			(xy 97.79 105.41) (xy 80.01 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a30e160-ea1a-41a9-a23d-5841e5fbce0a")
-	)
-	(wire
-		(pts
-			(xy 134.62 101.6) (xy 134.62 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6aeccce4-3f09-41ce-8869-aacb1f87264f")
-	)
-	(wire
-		(pts
-			(xy 97.79 101.6) (xy 97.79 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7025f2d8-cbd6-44b9-b7ba-10cf135841d4")
-	)
-	(wire
-		(pts
 			(xy 191.77 54.61) (xy 191.77 50.8)
 		)
 		(stroke
@@ -2809,23 +2289,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 143.51) (xy 97.79 143.51)
+			(xy 48.26 54.61) (xy 58.42 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "74ab5b46-7247-435a-afa9-fe54c1f4ca55")
-	)
-	(wire
-		(pts
-			(xy 152.4 91.44) (xy 134.62 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79f208f0-b4b6-45b8-85d8-29c7a53ad804")
+		(uuid "74538742-3c3f-4b47-ab3c-b29ea81fe9d4")
 	)
 	(wire
 		(pts
@@ -2849,26 +2319,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 101.6) (xy 119.38 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85d883c2-db14-4412-abc7-dfbde4269873")
-	)
-	(wire
-		(pts
-			(xy 97.79 129.54) (xy 97.79 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8742d950-4644-4d1b-997c-a81e236864ad")
-	)
-	(wire
-		(pts
 			(xy 58.42 54.61) (xy 58.42 55.88)
 		)
 		(stroke
@@ -2876,16 +2326,6 @@
 			(type default)
 		)
 		(uuid "89aeac50-a2b1-48c8-bcb4-dbcfb46045aa")
-	)
-	(wire
-		(pts
-			(xy 152.4 127) (xy 152.4 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a7c090b-0c62-4bec-8a51-c52e8d3ee6c0")
 	)
 	(wire
 		(pts
@@ -2899,36 +2339,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 132.08) (xy 134.62 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8da141ea-82cb-411d-bc0c-d986e1a7699e")
-	)
-	(wire
-		(pts
-			(xy 152.4 129.54) (xy 134.62 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f9863b2-30f8-4b73-a92e-a5c784838144")
-	)
-	(wire
-		(pts
-			(xy 119.38 105.41) (xy 97.79 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "911deaf8-1bc2-484c-8648-df180400497d")
-	)
-	(wire
-		(pts
 			(xy 218.44 48.26) (xy 218.44 52.07)
 		)
 		(stroke
@@ -2939,26 +2349,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 105.41) (xy 123.19 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99ab5091-317b-4c79-b664-4cc6bf052d45")
-	)
-	(wire
-		(pts
-			(xy 132.08 93.98) (xy 132.08 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99af8224-a383-4519-a8f2-d7db77cfdac7")
-	)
-	(wire
-		(pts
 			(xy 190.5 59.69) (xy 190.5 71.12)
 		)
 		(stroke
@@ -2966,16 +2356,6 @@
 			(type default)
 		)
 		(uuid "9de95eb8-2501-40cc-b943-3a1b7e38427c")
-	)
-	(wire
-		(pts
-			(xy 152.4 139.7) (xy 152.4 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e68f8f1-c131-448b-bcf2-adea985ca933")
 	)
 	(wire
 		(pts
@@ -2999,53 +2379,13 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 93.98) (xy 134.62 91.44)
+			(xy 43.18 52.07) (xy 48.26 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a4e43d1d-cb52-423f-b406-5f2d89e0be3d")
-	)
-	(wire
-		(pts
-			(xy 97.79 139.7) (xy 97.79 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b21eb181-1fbf-4453-b66f-bc9ab8905334")
-	)
-	(wire
-		(pts
-			(xy 123.19 146.05) (xy 123.19 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b33393ed-9586-49f1-bf24-87eae6395f7f")
-	)
-	(wire
-		(pts
-			(xy 80.01 91.44) (xy 97.79 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b79c6c62-a302-414b-9081-3141084ae866")
-	)
-	(wire
-		(pts
-			(xy 123.19 107.95) (xy 123.19 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b81fdadf-43cc-4b08-bb7e-e1d9bb3dfd93")
+		(uuid "b77b080a-3112-48a2-ba3b-b1178d68e768")
 	)
 	(wire
 		(pts
@@ -3079,26 +2419,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 129.54) (xy 97.79 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be262b89-2edd-433d-8dd5-01debf685bbe")
-	)
-	(wire
-		(pts
-			(xy 132.08 132.08) (xy 132.08 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5a0e635-cac3-4943-bfbc-c9149e9d0df4")
-	)
-	(wire
-		(pts
 			(xy 179.07 52.07) (xy 179.07 50.8)
 		)
 		(stroke
@@ -3106,16 +2426,6 @@
 			(type default)
 		)
 		(uuid "c8548944-1c2c-4b3a-ad11-467f85bcfcd8")
-	)
-	(wire
-		(pts
-			(xy 134.62 139.7) (xy 134.62 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8c90566-25f8-472d-99cc-fce487993039")
 	)
 	(wire
 		(pts
@@ -3136,16 +2446,6 @@
 			(type default)
 		)
 		(uuid "d4af6177-cbf4-4991-be9d-167c80704231")
-	)
-	(wire
-		(pts
-			(xy 130.81 91.44) (xy 132.08 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5f0709f-b75c-4031-b4a1-16def06de7d6")
 	)
 	(wire
 		(pts
@@ -3199,53 +2499,23 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 105.41) (xy 134.62 105.41)
+			(xy 44.45 78.74) (xy 44.45 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e28ba9fe-e953-482c-9b4f-514ac8d4de1d")
+		(uuid "e1628759-c05e-4c05-aa8b-7a5488f61ef3")
 	)
 	(wire
 		(pts
-			(xy 80.01 88.9) (xy 80.01 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e64b32d4-1022-4b63-9ac6-f28668df73f2")
-	)
-	(wire
-		(pts
-			(xy 134.62 105.41) (xy 152.4 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e87f8f8d-c5fc-4a87-ad7f-eb5132764e8c")
-	)
-	(wire
-		(pts
-			(xy 43.18 54.61) (xy 58.42 54.61)
+			(xy 43.18 54.61) (xy 48.26 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e90bdedd-ca61-4232-9740-803bd815f5a5")
-	)
-	(wire
-		(pts
-			(xy 97.79 143.51) (xy 80.01 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed14d03a-7a53-4af7-90b4-d19a93dc583f")
 	)
 	(wire
 		(pts
@@ -3269,13 +2539,13 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 93.98) (xy 132.08 93.98)
+			(xy 44.45 63.5) (xy 44.45 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f61d5720-7fff-4b43-bae7-375a9d4f492c")
+		(uuid "f7a53736-0483-481a-a1e3-aaee218d8963")
 	)
 	(wire
 		(pts
@@ -3287,74 +2557,46 @@
 		)
 		(uuid "f7ce49a7-999c-46b5-a91d-79de88b67b6a")
 	)
-	(wire
-		(pts
-			(xy 152.4 88.9) (xy 152.4 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f91e341e-ce69-4f17-b726-7e61c4b7d014")
-	)
-	(wire
-		(pts
-			(xy 80.01 127) (xy 80.01 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9c3130e-9393-4fef-a4db-5e364486d78e")
-	)
-	(wire
-		(pts
-			(xy 119.38 139.7) (xy 119.38 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdd0d2aa-cd20-4f10-b566-75eecff76f70")
-	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 152.4 88.9 0)
+		(lib_id "Measurement_Power_AC:Cap_Tantalum_10uF_16V")
+		(at 218.44 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "049586b3-83f1-4d19-b084-d5409359acf0")
-		(property "Reference" "#PWR063"
-			(at 152.4 92.71 0)
+		(uuid "07282b16-0f01-4a95-bee3-9bee99a24ca3")
+		(property "Reference" "C43"
+			(at 220.98 63.9317 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify right)
 			)
 		)
-		(property "Value" "+5V"
-			(at 152.4 83.82 0)
+		(property "Value" "10uF/16V"
+			(at 220.98 66.4717 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 152.4 88.9 0)
+		(property "Footprint" "Measure_Power_AC:Tan_Cap_A"
+			(at 209.042 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 88.9 0)
+			(at 218.44 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3362,8 +2604,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 152.4 88.9 0)
+		(property "Description" "TAJA105K016RNJ"
+			(at 208.534 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "Thegioiic"
+			(at 207.772 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply part number" "Tụ Tantalum 10uF 16V 1206 TAJA106K016RNJ"
+			(at 208.28 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply URL" "https://www.thegioiic.com/tu-tantalum-10uf-16v-1206-taja106k016rnj"
+			(at 207.772 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3372,12 +2641,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b95c8286-8ab1-4ecc-85cf-6b395759044e")
+			(uuid "87e46f17-a672-4959-bdc2-4e85c8e55662")
+		)
+		(pin "2"
+			(uuid "22efa599-520b-4417-bad7-239d91b807ab")
 		)
 		(instances
-			(project ""
+			(project "Test_Measurement"
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "#PWR063")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -3550,297 +2822,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Measurement_Power_AC:Ceramic_Cap_SMD_100nF_16V")
-		(at 134.62 138.43 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3daedd75-eca9-459f-9797-8eae6e06ee35")
-		(property "Reference" "C37"
-			(at 138.43 134.6199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100nF/50V"
-			(at 138.43 137.1599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:Ceramic_Cap_0805"
-			(at 129.54 138.684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.vn/datasheet/2/40/KYOCERA_AutoMLCCKAM-3106308.pdf"
-			(at 129.54 138.176 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10%, 0805 (2012 Metric)"
-			(at 129.032 137.414 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 129.54 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Tụ Gốm 0805 100nF (0.1uF) 50V"
-			(at 129.032 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/tu-gom-0805-100nf-0-1uf-50v"
-			(at 129.54 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d700f13b-453b-4479-a439-37c95c372b31")
-		)
-		(pin "2"
-			(uuid "b296a0dd-4982-4517-a7fe-51f153cf9805")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Measurement_Power_AC:Ceramic_Cap_SMD_100nF_16V")
-		(at 97.79 100.33 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41acc9a6-a29f-48b5-81e6-8e5345871d14")
-		(property "Reference" "C34"
-			(at 101.6 96.5199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100nF/50V"
-			(at 101.6 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:Ceramic_Cap_0805"
-			(at 92.71 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.vn/datasheet/2/40/KYOCERA_AutoMLCCKAM-3106308.pdf"
-			(at 92.71 100.076 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10%, 0805 (2012 Metric)"
-			(at 92.202 99.314 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 92.71 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Tụ Gốm 0805 100nF (0.1uF) 50V"
-			(at 92.202 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/tu-gom-0805-100nf-0-1uf-50v"
-			(at 92.71 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "08c6d0bd-c87b-4dbb-9388-83393e20dede")
-		)
-		(pin "2"
-			(uuid "951b8448-f0e3-45ca-a9de-314c02f92ea6")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "C34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Measurement_Power_AC:Ceramic_Cap_SMD_10uF_16V")
-		(at 80.01 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "45dcc8ec-620b-41a0-b54b-37386cb56bec")
-		(property "Reference" "C31"
-			(at 83.82 96.5199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10uF/16V"
-			(at 83.82 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:Ceramic_Cap_0805"
-			(at 74.93 101.854 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.vn/datasheet/2/40/KYOCERA_AutoMLCCKAM-3106308.pdf"
-			(at 74.93 101.346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10%, 0805 (2012 Metric)"
-			(at 74.422 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 74.93 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Tụ Gốm 0805 10uF 16V"
-			(at 74.422 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/tu-gom-0805-10uf-16v"
-			(at 74.93 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a56d5ddf-ff5b-48c1-9d62-b1bb898eee2c")
-		)
-		(pin "2"
-			(uuid "ec163638-9d8c-4fef-8420-130ec297098d")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "C31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+9V")
 		(at 218.44 48.26 0)
 		(unit 1)
@@ -3901,138 +2882,6 @@
 			(project "Test_Measurement"
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
 					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 123.19 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4628e168-01d9-4289-917d-e1c75330c757")
-		(property "Reference" "#PWR062"
-			(at 123.19 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 123.19 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b1a190af-9137-49c5-b743-11c709652b02")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 152.4 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48823b9f-85aa-41da-8a71-de86efb3a621")
-		(property "Reference" "#PWR064"
-			(at 152.4 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 152.4 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 152.4 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c81b5212-80e8-41ff-be44-5ee5a3803a6d")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -4334,6 +3183,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Measurement_Power_AC:LED_5")
+		(at 44.45 82.55 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61d61611-5658-4dd7-880a-90faf1a32a6b")
+		(property "Reference" "D8"
+			(at 41.91 85.4076 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LED_5"
+			(at 41.91 82.8676 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Measure_Power_AC:LED_D5.0mm"
+			(at 39.37 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 92.456 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 39.624 82.296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "Thegioiic"
+			(at 39.116 83.312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply part number" "LED Xanh Dương 5mm Đục Chân Dài"
+			(at 39.624 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply URL" "https://www.thegioiic.com/led-xanh-duong-5mm-duc-chan-dai"
+			(at 39.116 83.312 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "df7ce528-53e7-43ee-95c1-a50cccb9d70d")
+		)
+		(pin "1"
+			(uuid "b9f73d9b-8ac4-49a3-98b0-f4b9a61834ba")
+		)
+		(instances
+			(project ""
+				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Measurement_Power_AC:ICL7662CBA")
 		(at 210.82 64.77 0)
 		(mirror y)
@@ -4447,114 +3393,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Measurement_Power_AC:Cap_Polarized_SMD_10uF_16V")
-		(at 218.44 67.31 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8461899a-4f67-4a25-bee2-824e1322b0af")
-		(property "Reference" "C43"
-			(at 220.98 63.9317 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10uF/16V"
-			(at 220.98 66.4717 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
-			(at 205.74 64.008 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.994 66.548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor 10uF 16V, 20%"
-			(at 206.248 68.072 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 205.994 65.278 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Tụ Nhôm SMD 10uF 16V 4x5.4mm"
-			(at 205.994 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/tu-nhom-smd-10uf-16v-4x5-4mm"
-			(at 205.74 65.278 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "13b78c3e-2aa1-4b1b-a209-f2586ce36600")
-		)
-		(pin "1"
-			(uuid "7a075d25-527c-43b3-8b2f-e5a16d5eee82")
-		)
-		(instances
-			(project ""
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "C43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
-		(at 80.01 88.9 0)
+		(at 44.45 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8891cc2b-d6d2-4449-a3b5-549f9479c3bc")
-		(property "Reference" "#PWR058"
-			(at 80.01 92.71 0)
+		(uuid "951be156-5980-4b62-9053-ce2f97c8c957")
+		(property "Reference" "#PWR073"
+			(at 44.45 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4563,7 +3412,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 80.01 83.82 0)
+			(at 44.45 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4571,7 +3420,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 88.9 0)
+			(at 44.45 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4580,7 +3429,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 88.9 0)
+			(at 44.45 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4589,7 +3438,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 80.01 88.9 0)
+			(at 44.45 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4598,47 +3447,57 @@
 			)
 		)
 		(pin "1"
-			(uuid "bb05872d-74ea-48a0-9769-8c32f81fcce4")
+			(uuid "d3fd4385-5925-4e4b-93f0-883729afe0ec")
 		)
 		(instances
 			(project "Test_Measurement"
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "#PWR058")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Measurement_Power_AC:Ceramic_Cap_SMD_10uF_16V")
-		(at 152.4 139.7 90)
+		(lib_id "Measurement_Power_AC:Cap_Tantalum_10uF_16V")
+		(at 179.07 52.07 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b082f2d9-3b77-4b9a-9c6e-5d70d57de625")
-		(property "Reference" "C40"
-			(at 156.21 134.6199 90)
+		(uuid "b2aabad3-b02e-45f1-8ea5-7ef250fc0a6b")
+		(property "Reference" "C42"
+			(at 181.61 52.9081 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "10uF/16V"
-			(at 156.21 137.1599 90)
+			(at 181.61 55.4481 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Measure_Power_AC:Ceramic_Cap_0805"
-			(at 147.32 139.954 0)
+		(property "Footprint" "Measure_Power_AC:Tan_Cap_A"
+			(at 188.468 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4646,17 +3505,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.vn/datasheet/2/40/KYOCERA_AutoMLCCKAM-3106308.pdf"
-			(at 147.32 139.446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10%, 0805 (2012 Metric)"
-			(at 146.812 138.684 0)
+		(property "Description" "TAJA105K016RNJ"
+			(at 188.976 49.022 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4665,7 +3515,7 @@
 			)
 		)
 		(property "Supply name" "Thegioiic"
-			(at 147.32 138.43 0)
+			(at 189.738 49.022 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4673,8 +3523,8 @@
 				(hide yes)
 			)
 		)
-		(property "Supply part number" "Tụ Gốm 0805 10uF 16V"
-			(at 146.812 138.43 0)
+		(property "Supply part number" "Tụ Tantalum 10uF 16V 1206 TAJA106K016RNJ"
+			(at 189.23 47.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4682,8 +3532,8 @@
 				(hide yes)
 			)
 		)
-		(property "Supply URL" "https://www.thegioiic.com/tu-gom-0805-10uf-16v"
-			(at 147.32 139.7 0)
+		(property "Supply URL" "https://www.thegioiic.com/tu-tantalum-10uf-16v-1206-taja106k016rnj"
+			(at 189.738 52.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4692,15 +3542,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c84fee74-4ea2-4466-865c-b648e7a1acda")
+			(uuid "d440211a-ba28-449e-bcca-02f0d76fde47")
 		)
 		(pin "2"
-			(uuid "6b1a6cb0-59fb-4d45-be82-c4ac5a7dfd9c")
+			(uuid "18701572-c582-4c06-9fe6-8514083f9bfc")
 		)
 		(instances
-			(project "Test_Measurement"
+			(project ""
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "C40")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -4804,35 +3654,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Measurement_Power_AC:Cap_Polarized_SMD_10uF_16V")
-		(at 179.07 52.07 270)
+		(lib_id "power:GND")
+		(at 44.45 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b8413b8f-5132-4f4c-b378-bf9eadc022bb")
-		(property "Reference" "C42"
-			(at 181.61 52.9081 90)
+		(uuid "bfb68c02-bb65-403b-aaed-8e60959fe62a")
+		(property "Reference" "#PWR074"
+			(at 44.45 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "10uF/16V"
-			(at 181.61 55.4481 90)
+		(property "Value" "GND"
+			(at 44.45 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
-			(at 191.77 55.372 0)
+		(property "Footprint" ""
+			(at 44.45 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4841,7 +3690,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 191.516 52.832 0)
+			(at 44.45 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4849,52 +3698,22 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor 10uF 16V, 20%"
-			(at 191.262 51.308 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 44.45 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 191.516 54.102 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Tụ Nhôm SMD 10uF 16V 4x5.4mm"
-			(at 191.516 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/tu-nhom-smd-10uf-16v-4x5-4mm"
-			(at 191.77 54.102 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a064c963-647a-49dc-90f7-e318395784f0")
 		)
 		(pin "1"
-			(uuid "47b375f1-f633-4af5-bb4c-88c8baa2e597")
+			(uuid "ec696cf5-758f-484d-b457-b04a5110bfa9")
 		)
 		(instances
 			(project "Test_Measurement"
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "C42")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -5095,103 +3914,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Measurement_Power_AC:Ceramic_Cap_SMD_10uF_16V")
-		(at 152.4 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d4f1581b-c735-4d10-b219-517d97db3bfa")
-		(property "Reference" "C39"
-			(at 156.21 96.5199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10uF/16V"
-			(at 156.21 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:Ceramic_Cap_0805"
-			(at 147.32 101.854 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.vn/datasheet/2/40/KYOCERA_AutoMLCCKAM-3106308.pdf"
-			(at 147.32 101.346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10%, 0805 (2012 Metric)"
-			(at 146.812 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 147.32 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Tụ Gốm 0805 10uF 16V"
-			(at 146.812 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/tu-gom-0805-10uf-16v"
-			(at 147.32 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dc8de924-8da9-44dd-b614-e998916c16f7")
-		)
-		(pin "2"
-			(uuid "50661d3a-443d-46d8-9cc4-25e901ec53a3")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "C39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:-9V")
 		(at 218.44 58.42 0)
 		(unit 1)
@@ -5252,266 +3974,6 @@
 			(project ""
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
 					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Measurement_Power_AC:Ceramic_Cap_SMD_100nF_16V")
-		(at 97.79 138.43 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d9d9c8af-8d20-4a0d-bcad-dc1a246e73ff")
-		(property "Reference" "C35"
-			(at 101.6 134.6199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100nF/50V"
-			(at 101.6 137.1599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:Ceramic_Cap_0805"
-			(at 92.71 138.684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.vn/datasheet/2/40/KYOCERA_AutoMLCCKAM-3106308.pdf"
-			(at 92.71 138.176 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10%, 0805 (2012 Metric)"
-			(at 92.202 137.414 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 92.71 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Tụ Gốm 0805 100nF (0.1uF) 50V"
-			(at 92.202 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/tu-gom-0805-100nf-0-1uf-50v"
-			(at 92.71 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0945f464-8f28-48c8-b514-75c0f34ad1c3")
-		)
-		(pin "2"
-			(uuid "2a609cc6-cd7e-4adf-807b-59239e8e3d29")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "C35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Measurement_Power_AC:Ceramic_Cap_SMD_100nF_16V")
-		(at 134.62 100.33 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7a6084f-0f2c-4c63-af3e-1a3652b379ec")
-		(property "Reference" "C36"
-			(at 138.43 96.5199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100nF/50V"
-			(at 138.43 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:Ceramic_Cap_0805"
-			(at 129.54 100.584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.vn/datasheet/2/40/KYOCERA_AutoMLCCKAM-3106308.pdf"
-			(at 129.54 100.076 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10%, 0805 (2012 Metric)"
-			(at 129.032 99.314 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 129.54 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Tụ Gốm 0805 100nF (0.1uF) 50V"
-			(at 129.032 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/tu-gom-0805-100nf-0-1uf-50v"
-			(at 129.54 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a953139-b07b-4191-a798-d91428c53ea7")
-		)
-		(pin "2"
-			(uuid "c7c0e9d6-4137-49cd-9a11-0478f0e6fc7c")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "C36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 123.19 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e844d400-673a-4d69-985b-767c247ff113")
-		(property "Reference" "#PWR061"
-			(at 123.19 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 123.19 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "115850d4-e4bc-471c-a7a6-397affea9390")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -5584,371 +4046,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Measurement_Power_AC:Ceramic_Cap_SMD_10uF_16V")
-		(at 80.01 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ee54e243-00d5-49e6-9a50-b706e75adb9d")
-		(property "Reference" "C32"
-			(at 83.82 134.6199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10uF/16V"
-			(at 83.82 137.1599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:Ceramic_Cap_0805"
-			(at 74.93 139.954 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.vn/datasheet/2/40/KYOCERA_AutoMLCCKAM-3106308.pdf"
-			(at 74.93 139.446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10%, 0805 (2012 Metric)"
-			(at 74.422 138.684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 74.93 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "Tụ Gốm 0805 10uF 16V"
-			(at 74.422 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/tu-gom-0805-10uf-16v"
-			(at 74.93 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdb9843f-ffe0-469c-a484-d563b3c4d8db")
-		)
-		(pin "2"
-			(uuid "729f938d-6bee-42f1-a2ba-92dc5433b3ea")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "C32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Measurement_Power_AC:LM1117IMP-5.0/NOPB")
-		(at 111.76 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f62e23af-3f78-4ba3-acb9-b7f220c08323")
-		(property "Reference" "U7"
-			(at 119.38 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM1117IMP-5.0"
-			(at 119.38 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:SOT-223"
-			(at 106.934 81.026 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf"
-			(at 115.57 80.518 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"
-			(at 106.934 80.518 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 111.76 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "LM1117IMP-5.0/NOPB IC Ổn Áp 5V 800mA SOT-223"
-			(at 105.41 80.772 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/lm1117imp-5-0-nopb-ic-on-ap-5v-800ma-sot-223"
-			(at 102.87 81.026 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "d5c6d0fb-a8f3-4ce8-af3f-639491c26b35")
-		)
-		(pin "1"
-			(uuid "7a14648d-c8f9-4d22-834d-3b7442a8d7ed")
-		)
-		(pin "4"
-			(uuid "7c7a58a5-7813-44d3-9e24-e607dd18abea")
-		)
-		(pin "2"
-			(uuid "7bd5445c-0ea8-480b-865d-f71da3436813")
-		)
-		(instances
-			(project ""
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "U7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 80.01 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f73e41de-d4ac-4b5e-a89c-13aa47243fc1")
-		(property "Reference" "#PWR059"
-			(at 80.01 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 80.01 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.01 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 80.01 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b659214-f1a1-46f9-82d2-6222d29cff66")
-		)
-		(instances
-			(project "Test_Measurement"
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Measurement_Power_AC:LD1117S33CTR_SOT223")
-		(at 111.76 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9354949-7626-4758-b57d-307a1f62e342")
-		(property "Reference" "U8"
-			(at 119.38 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LD1117S33CTR_SOT223"
-			(at 119.38 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:SOT-223"
-			(at 106.934 119.126 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf"
-			(at 115.57 118.618 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"
-			(at 106.934 118.618 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 111.76 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "LD1117S33CTR IC Ổn Áp 3.3V 800mA SOT-223"
-			(at 105.41 118.872 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "https://www.thegioiic.com/ld1117s33ctr-ic-on-ap-3-3v-800ma-sot-223"
-			(at 102.87 119.126 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "f52e747a-4a1a-4dbd-8780-00c265d73467")
-		)
-		(pin "1"
-			(uuid "389e0fe9-7443-496f-9c70-c409366a4435")
-		)
-		(pin "2"
-			(uuid "af256728-a4d2-4cc7-ad68-d0a23fc0d415")
-		)
-		(pin "4"
-			(uuid "f08c177a-fe19-4a52-9f4f-27fde0bc394f")
-		)
-		(instances
-			(project ""
-				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Barrel_Jack_Switch")
 		(at 35.56 52.07 0)
 		(unit 1)
@@ -5974,7 +4071,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal"
+		(property "Footprint" "Measure_Power_AC:XKB_DC-005-5A-2.0"
 			(at 36.83 53.086 0)
 			(effects
 				(font
@@ -6014,6 +4111,103 @@
 			(project ""
 				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Measurement_Power_AC:Res_1k_0805_1%")
+		(at 44.45 67.31 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd27c31b-2491-4a4b-80ab-e88efda7e675")
+		(property "Reference" "R24"
+			(at 41.91 72.3901 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1K/1%/1_8W"
+			(at 41.91 69.8501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Measure_Power_AC:Res_0805"
+			(at 52.07 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.324 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Res 1KOhm 0805 1%"
+			(at 51.562 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "Thegioiic"
+			(at 51.816 67.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply part number" "Điện Trở 1 KOhm 0805 1%"
+			(at 52.07 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply URL" "https://www.thegioiic.com/dien-tro-1-kohm-0805-1-"
+			(at 50.8 75.692 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5322ca0-5143-4329-8bae-cdd823ef469b")
+		)
+		(pin "2"
+			(uuid "7212ac06-2a3a-4507-861d-ce66bd347b6a")
+		)
+		(instances
+			(project ""
+				(path "/cd668239-4ad1-4a5c-94e5-ca757cb83213/403436e8-6499-4af9-92d4-49c00cb0d778"
+					(reference "R24")
 					(unit 1)
 				)
 			)

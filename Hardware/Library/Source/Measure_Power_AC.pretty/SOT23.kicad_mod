@@ -468,4 +468,15 @@
 			(xyz 0 0 0)
 		)
 	)
+	(model "D:/Github/MEASURE-POWER-AC/Hardware/Library/3D models/SOT23.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
