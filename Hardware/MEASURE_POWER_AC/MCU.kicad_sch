@@ -247,127 +247,6 @@
 				)
 			)
 		)
-		(symbol "Device:NetTie_2"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "NT"
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "NetTie_2"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Net tie, 2 pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "net tie short"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Net*Tie*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NetTie_2_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NetTie_2_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Measurement_Power_AC:Ceramic_Cap_SMD_0603_100nF_16V"
 			(pin_numbers hide)
 			(pin_names hide)
@@ -4060,102 +3939,6 @@
 				)
 			)
 		)
-		(symbol "power:GNDA"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GNDA"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GNDA_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GNDA_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
 		(at 168.91 81.28)
@@ -4200,6 +3983,12 @@
 		(uuid "3792a675-849a-4c24-8bab-11f6348c5f16")
 	)
 	(junction
+		(at 143.51 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b5f7121-551e-4e7b-b7dd-1f48a0c0cf2c")
+	)
+	(junction
 		(at 101.6 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4228,12 +4017,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "54116955-be45-4c65-9e04-794e0de47845")
-	)
-	(junction
-		(at 143.51 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65ad7fdb-6041-4296-9834-a7818e0b8124")
 	)
 	(junction
 		(at 118.11 151.13)
@@ -4635,7 +4418,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 151.13) (xy 143.51 152.4)
+			(xy 143.51 148.59) (xy 143.51 151.13)
 		)
 		(stroke
 			(width 0)
@@ -5095,16 +4878,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 151.13) (xy 143.51 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62c1c73b-5797-47cb-a6c9-ffbc6cf73b38")
-	)
-	(wire
-		(pts
 			(xy 26.67 148.59) (xy 26.67 151.13)
 		)
 		(stroke
@@ -5142,6 +4915,16 @@
 			(type default)
 		)
 		(uuid "688ff5b3-e2ce-48f2-bad2-f20ac4c405a8")
+	)
+	(wire
+		(pts
+			(xy 143.51 151.13) (xy 143.51 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69857e0d-1edc-4cff-92b1-7c2067994759")
 	)
 	(wire
 		(pts
@@ -5302,16 +5085,6 @@
 			(type default)
 		)
 		(uuid "8be0c148-94ce-4921-8560-3a9871469e45")
-	)
-	(wire
-		(pts
-			(xy 143.51 151.13) (xy 143.51 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8be76ab4-b04d-4621-958b-46931d168e76")
 	)
 	(wire
 		(pts
@@ -5595,7 +5368,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 151.13) (xy 129.54 151.13)
+			(xy 118.11 151.13) (xy 143.51 151.13)
 		)
 		(stroke
 			(width 0)
@@ -8887,72 +8660,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 143.51 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c5163b9-a4bb-4e14-bec8-3d5c25bbadc0")
-		(property "Reference" "#PWR010"
-			(at 143.51 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 143.51 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 143.51 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "65e2c88b-a706-4893-9228-11f6952c2bbc")
-		)
-		(instances
-			(project "MEASURE_POWER_AC"
-				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/05d0bcbd-9292-4250-a3df-595675932f2e"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 199.39 43.18 0)
 		(unit 1)
@@ -9302,73 +9009,6 @@
 			(project "MEASURE_POWER_AC"
 				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/05d0bcbd-9292-4250-a3df-595675932f2e"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 132.08 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "a1fe6fba-d9ae-422b-9653-7874ae5a1088")
-		(property "Reference" "NT1"
-			(at 132.08 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NetTie_2"
-			(at 132.08 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
-			(at 132.08 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 132.08 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 132.08 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "83334403-d3b6-4f94-8055-7721566b7ce1")
-		)
-		(pin "1"
-			(uuid "814e99f1-d61b-4289-ab8c-ffe609f76a1e")
-		)
-		(instances
-			(project ""
-				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/05d0bcbd-9292-4250-a3df-595675932f2e"
-					(reference "NT1")
 					(unit 1)
 				)
 			)
@@ -9800,72 +9440,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 193.04 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc53a732-16af-4f96-89d2-819fac2722c5")
-		(property "Reference" "#PWR014"
-			(at 193.04 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 193.04 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 193.04 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9c308035-3e5a-4143-a925-e3816732058d")
-		)
-		(instances
-			(project ""
-				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/05d0bcbd-9292-4250-a3df-595675932f2e"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Measurement_Power_AC:Res_10K_0603_1%")
 		(at 251.46 96.52 90)
 		(unit 1)
@@ -10054,6 +9628,72 @@
 			(project ""
 				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/05d0bcbd-9292-4250-a3df-595675932f2e"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 193.04 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c47cfff6-0363-46ac-a0e5-8ba58cb81275")
+		(property "Reference" "#PWR014"
+			(at 193.04 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 193.04 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59fbdd3f-4940-4874-9c83-88a7d90b24b4")
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/05d0bcbd-9292-4250-a3df-595675932f2e"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -10404,7 +10044,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "RESET"
 			(at 252.73 106.6799 90)
 			(effects
 				(font
@@ -11006,6 +10646,72 @@
 			(project "MEASURE_POWER_AC"
 				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/05d0bcbd-9292-4250-a3df-595675932f2e"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da5ae16d-07ff-4eee-901a-7e5ebe402e1d")
+		(property "Reference" "#PWR010"
+			(at 143.51 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1497a1f-1b14-4aee-a9c7-d2f30504105e")
+		)
+		(instances
+			(project "MEASURE_POWER_AC"
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/05d0bcbd-9292-4250-a3df-595675932f2e"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)

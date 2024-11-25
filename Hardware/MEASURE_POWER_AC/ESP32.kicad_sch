@@ -5214,7 +5214,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "FLASH"
 			(at 40.64 46.9899 90)
 			(effects
 				(font
@@ -6508,7 +6508,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Button_12mm"
+		(property "Value" "USER_2"
 			(at 265.43 55.8799 90)
 			(effects
 				(font
@@ -7326,7 +7326,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Button_12mm"
+		(property "Value" "USER_1"
 			(at 229.87 55.8799 90)
 			(effects
 				(font
@@ -7980,7 +7980,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "EN"
 			(at 40.64 100.3299 90)
 			(effects
 				(font
