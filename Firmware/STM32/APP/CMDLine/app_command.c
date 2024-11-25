@@ -5,7 +5,6 @@
  *      Author: dongkhoa
  */
 
-
 /******************************************************************************
  *      INCLUDES
  *****************************************************************************/
@@ -13,8 +12,9 @@
 #include "app_command.h"
 #include "app_cmdline.h"
 #include "app_data.h"
-
+#include "uart.h"
 #include "scheduler.h"
+#include <stdio.h>
 
 /*********************
  *    PRIVATE TYPEDEFS
@@ -62,6 +62,16 @@ static Command_TaskContextTypedef s_CommandTaskContext
 
 tCmdLineEntry g_psCmdTable[] = {
   { "help", APP_COMMAND_Help, " : Display list of commands, format: help" },
+
+  { "read_voltage",
+    APP_COMMAND_ReadVoltage,
+    " : Read Voltage, format: read_voltage" },
+
+  { "read_current",
+    APP_COMMAND_ReadCurrent,
+    " : Read Current, format: read_current" },
+
+  { "read_pf", APP_COMMAND_ReadPF, " : Read PF, format: read_pf" }
 };
 
 /*********************
@@ -132,6 +142,66 @@ APP_COMMAND_Help (int argc, char *argv[])
     // Advance to the next entry in the table.
     pEntry++;
   }
+
+  return (CMDLINE_OK);
+}
+
+int
+APP_COMMAND_ReadVoltage (int argc, char *argv[])
+{
+  if (argc < 1)
+  {
+    return CMDLINE_TOO_FEW_ARGS;
+  }
+  if (argc > 1)
+  {
+    return CMDLINE_TOO_MANY_ARGS;
+  }
+
+  char c_msg[30];
+  sprintf(c_msg, "Voltage: %.2f\n\r", s_data_system.f_voltage);
+
+  BSP_UART_SendString(uart_cfg_cml, c_msg);
+
+  return (CMDLINE_OK);
+}
+
+int
+APP_COMMAND_ReadCurrent (int argc, char *argv[])
+{
+  if (argc < 1)
+  {
+    return CMDLINE_TOO_FEW_ARGS;
+  }
+  if (argc > 1)
+  {
+    return CMDLINE_TOO_MANY_ARGS;
+  }
+
+  char c_msg[30];
+  sprintf(c_msg, "Current: %.2f\n\r", s_data_system.f_current);
+
+  BSP_UART_SendString(uart_cfg_cml, c_msg);
+
+  return (CMDLINE_OK);
+}
+
+int
+APP_COMMAND_ReadPF (int argc, char *argv[])
+{
+  if (argc < 1)
+  {
+    return CMDLINE_TOO_FEW_ARGS;
+  }
+  if (argc > 1)
+  {
+    return CMDLINE_TOO_MANY_ARGS;
+  }
+
+  char c_msg[30];
+  sprintf(c_msg, "POWER FACTOR: %.2f\n\r", s_data_system.f_delta_T_PF);
+
+  BSP_UART_SendString(uart_cfg_cml, c_msg);
 
   return (CMDLINE_OK);
 }

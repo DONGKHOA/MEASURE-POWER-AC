@@ -30,6 +30,9 @@ extern "C"
    * @brief List of command
    */
   int APP_COMMAND_Help(int argc, char *argv[]);
+  int APP_COMMAND_ReadVoltage(int argc, char *argv[]);
+  int APP_COMMAND_ReadCurrent(int argc, char *argv[]);
+  int APP_COMMAND_ReadPF(int argc, char *argv[]);
 
 #ifdef __cplusplus
 }

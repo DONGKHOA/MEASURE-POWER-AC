@@ -21,9 +21,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../APP/Data/app_data.h ../BSP/UART/uart.h \
  ../Middleware/Ring_Buffer/ring_buffer.h ../Scheduler/scheduler.h \
  ../APP/Common/basetypedef.h ../APP/CMDLine/Include/app_command.h \
+ ../APP/Led_7_Seg/app_led_7seg.h \
  ../APP/Read_Peek_Voltage_Current/app_read_data.h ../BSP/DMA/dma.h \
  ../APP/Calculator_PF/app_calculator_PF.h \
- ../APP/Data_Transmission/app_data_transmission.h
+ ../APP/Data_Trans_Rec/app_data_trans_rec.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:
 ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
@@ -51,7 +52,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Scheduler/scheduler.h:
 ../APP/Common/basetypedef.h:
 ../APP/CMDLine/Include/app_command.h:
+../APP/Led_7_Seg/app_led_7seg.h:
 ../APP/Read_Peek_Voltage_Current/app_read_data.h:
 ../BSP/DMA/dma.h:
 ../APP/Calculator_PF/app_calculator_PF.h:
-../APP/Data_Transmission/app_data_transmission.h:
+../APP/Data_Trans_Rec/app_data_trans_rec.h:

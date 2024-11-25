@@ -25,7 +25,8 @@ SUBDIRS := \
 APP/CMDLine \
 APP/Calculator_PF \
 APP/Data \
-APP/Data_Transmission \
+APP/Data_Trans_Rec \
+APP/Led_7_Seg \
 APP/Read_Peek_Voltage_Current \
 BSP/ADC \
 BSP/DMA \

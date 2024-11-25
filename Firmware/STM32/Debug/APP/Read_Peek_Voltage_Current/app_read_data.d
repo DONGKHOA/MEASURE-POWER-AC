@@ -12,7 +12,7 @@ APP/Read_Peek_Voltage_Current/app_read_data.o: \
  ../APP/Data/app_data.h ../BSP/UART/uart.h \
  ../Middleware/Ring_Buffer/ring_buffer.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h \
- ../BSP/GPIO/gpio.h \
+ ../Device/ACS712/acs712.h ../BSP/GPIO/gpio.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h \
  ../Scheduler/scheduler.h ../APP/Common/basetypedef.h
 ../APP/Read_Peek_Voltage_Current/app_read_data.h:
@@ -29,6 +29,7 @@ APP/Read_Peek_Voltage_Current/app_read_data.o: \
 ../BSP/UART/uart.h:
 ../Middleware/Ring_Buffer/ring_buffer.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h:
+../Device/ACS712/acs712.h:
 ../BSP/GPIO/gpio.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h:
 ../Scheduler/scheduler.h:

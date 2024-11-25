@@ -19,7 +19,8 @@ RM := rm -rf
 -include BSP/DMA/subdir.mk
 -include BSP/ADC/subdir.mk
 -include APP/Read_Peek_Voltage_Current/subdir.mk
--include APP/Data_Transmission/subdir.mk
+-include APP/Led_7_Seg/subdir.mk
+-include APP/Data_Trans_Rec/subdir.mk
 -include APP/Data/subdir.mk
 -include APP/Calculator_PF/subdir.mk
 -include APP/CMDLine/subdir.mk

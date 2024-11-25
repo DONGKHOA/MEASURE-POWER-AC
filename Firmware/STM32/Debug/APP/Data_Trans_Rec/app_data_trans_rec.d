@@ -1,6 +1,6 @@
-APP/Data_Transmission/app_data_transmission.o: \
- ../APP/Data_Transmission/app_data_transmission.c \
- ../APP/Data_Transmission/app_data_transmission.h \
+APP/Data_Trans_Rec/app_data_trans_rec.o: \
+ ../APP/Data_Trans_Rec/app_data_trans_rec.c \
+ ../APP/Data_Trans_Rec/app_data_trans_rec.h \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
  ../Drivers/CMSIS/Include/core_cm3.h \
@@ -11,7 +11,7 @@ APP/Data_Transmission/app_data_transmission.o: \
  ../APP/Data/app_data.h ../BSP/UART/uart.h \
  ../Middleware/Ring_Buffer/ring_buffer.h ../Scheduler/scheduler.h \
  ../APP/Common/basetypedef.h
-../APP/Data_Transmission/app_data_transmission.h:
+../APP/Data_Trans_Rec/app_data_trans_rec.h:
 ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:
 ../Drivers/CMSIS/Include/core_cm3.h:

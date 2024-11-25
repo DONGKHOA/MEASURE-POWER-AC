@@ -1,4 +1,7 @@
-../APP/CMDLine/app_command.c:82:1:APP_COMMAND_Init	8	static
-../APP/CMDLine/app_command.c:93:1:APP_COMMAND_CreateTask	8	static
-../APP/CMDLine/app_command.c:115:1:APP_COMMAND_Help	24	static
-../APP/CMDLine/app_command.c:145:1:APP_COMMAND_TaskUpdate	16	static
+../APP/CMDLine/app_command.c:92:1:APP_COMMAND_Init	8	static
+../APP/CMDLine/app_command.c:103:1:APP_COMMAND_CreateTask	8	static
+../APP/CMDLine/app_command.c:125:1:APP_COMMAND_Help	24	static
+../APP/CMDLine/app_command.c:150:1:APP_COMMAND_ReadVoltage	48	static
+../APP/CMDLine/app_command.c:170:1:APP_COMMAND_ReadCurrent	48	static
+../APP/CMDLine/app_command.c:190:1:APP_COMMAND_ReadPF	48	static
+../APP/CMDLine/app_command.c:215:1:APP_COMMAND_TaskUpdate	16	static
