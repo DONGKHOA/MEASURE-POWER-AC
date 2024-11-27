@@ -9,7 +9,7 @@
  *      INCLUDES
  *****************************************************************************/
 
-#include <app_data_trans_rec.h>
+#include "app_data_trans_rec.h"
 #include "app_data.h"
 #include "scheduler.h"
 #include "ring_buffer.h"
@@ -50,7 +50,6 @@ typedef struct _DATA_TRANS_REC_T
  *****************************************************************************/
 
 static void APP_DATA_TRANS_REC_TaskUpdate(void);
-static void APP_DATA_TRANS_REC_ProcessDataRec(void);
 
 /******************************************************************************
  *    PRIVATE DATA
@@ -61,7 +60,7 @@ static Control_TaskContextTypedef s_ControlTaskContext
     = { SCH_INVALID_TASK_HANDLE, // Will be updated by Scheduler
         {
             SCH_TASK_SYNC,                // taskType;
-            1,                            // taskPeriodInMS;
+            5,                            // taskPeriodInMS;
             APP_DATA_TRANS_REC_TaskUpdate // taskFunction;
         } };
 
@@ -110,12 +109,14 @@ APP_DATA_TRANS_REC_Init (void)
  *****************************************************************************/
 
 /**
- * @brief Packet transmission consists of:
- *        VOLTAGE + '\r' + CURRENT + '\r' + PF + '\r'.
+ * @brief Handles data transmission and reception for voltage, current, and
+ * power factor (PF).
  *
- * This function checks ring buffers for voltage, current, and power factor (PF)
- * data. It constructs a transmission packet and sends it via UART when data is
- * ready.
+ * This function performs two main tasks:
+ * 1. Constructs a transmission packet with VOLTAGE + '\r' + CURRENT + '\r' + PF
+ * + '\r', and sends it via UART when data is ready.
+ * 2. Receives data from UART, processes the received packet, and updates the
+ * system's power value.
  */
 static void
 APP_DATA_TRANS_REC_TaskUpdate (void)
@@ -187,15 +188,33 @@ APP_DATA_TRANS_REC_TaskUpdate (void)
     s_data_trans_rec.flag_update_vol_cur = FLAG_NOT_UPDATED;
   }
 
-  if (BSP_UART_IsAvailableDataReceive(s_data_trans_rec.p_uart_data_trans_rec))
+  /**
+   * @details
+   * - Check if UART has received new data.
+   * - Store received data in a buffer.
+   * - If a complete data packet (terminated by '\r') is received,
+   *   process the packet and update the power value in the system structure.
+   */
+  if (BSP_UART_IsAvailableDataReceive(
+          (uart_cfg_t *)s_data_trans_rec.p_uart_data_trans_rec))
   {
     s_data_trans_rec.u8_data_rec[s_data_trans_rec.u8_index_data_rec]
-        = BSP_UART_ReadChar(s_data_trans_rec.p_uart_data_trans_rec);
-    s_data_trans_rec.u8_index_data_rec++;
-  }
-}
+        = BSP_UART_ReadChar(
+            (uart_cfg_t *)s_data_trans_rec.p_uart_data_trans_rec);
 
-static void
-APP_DATA_TRANS_REC_ProcessDataRec (void)
-{
+    s_data_trans_rec.u8_index_data_rec++;
+
+    if (s_data_trans_rec.u8_data_rec[s_data_trans_rec.u8_index_data_rec - 1]
+        == '\r')
+    {
+      // Convert the received 4 bytes to a float power value
+      uint32_t *p_val;
+      p_val  = (uint32_t *)&s_data_system.f_power;
+      *p_val = (uint32_t)((s_data_trans_rec.u8_data_rec[0] << 24)
+                          | (s_data_trans_rec.u8_data_rec[1] << 16)
+                          | (s_data_trans_rec.u8_data_rec[2] << 8)
+                          | (s_data_trans_rec.u8_data_rec[3] << 0));
+      s_data_trans_rec.u8_index_data_rec = 0; // Reset index after processing
+    }
+  }
 }

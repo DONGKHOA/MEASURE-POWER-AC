@@ -20,7 +20,7 @@
 
 #define NUMBER_OF_LED 5
 
-#define PORT_LED_A  GPIOB
+#define PORT_LED_A  GPIOA
 #define PORT_LED_B  GPIOB
 #define PORT_LED_C  GPIOB
 #define PORT_LED_D  GPIOB
@@ -29,26 +29,26 @@
 #define PORT_LED_G  GPIOB
 #define PORT_LED_DP GPIOB
 
-#define PIN_LED_A  LL_GPIO_PIN_0
-#define PIN_LED_B  LL_GPIO_PIN_0
-#define PIN_LED_C  LL_GPIO_PIN_0
-#define PIN_LED_D  LL_GPIO_PIN_0
-#define PIN_LED_E  LL_GPIO_PIN_0
-#define PIN_LED_F  LL_GPIO_PIN_0
-#define PIN_LED_G  LL_GPIO_PIN_0
+#define PIN_LED_A  LL_GPIO_PIN_8
+#define PIN_LED_B  LL_GPIO_PIN_15
+#define PIN_LED_C  LL_GPIO_PIN_14
+#define PIN_LED_D  LL_GPIO_PIN_12
+#define PIN_LED_E  LL_GPIO_PIN_13
+#define PIN_LED_F  LL_GPIO_PIN_1
+#define PIN_LED_G  LL_GPIO_PIN_2
 #define PIN_LED_DP LL_GPIO_PIN_0
 
-#define PORT_CONTROL_0 GPIOB
-#define PORT_CONTROL_1 GPIOB
-#define PORT_CONTROL_2 GPIOB
-#define PORT_CONTROL_3 GPIOB
-#define PORT_CONTROL_4 GPIOB
+#define PORT_CONTROL_0 GPIOA
+#define PORT_CONTROL_1 GPIOA
+#define PORT_CONTROL_2 GPIOA
+#define PORT_CONTROL_3 GPIOA
+#define PORT_CONTROL_4 GPIOA
 
-#define PIN_CONTROL_0 LL_GPIO_PIN_0
-#define PIN_CONTROL_1 LL_GPIO_PIN_0
-#define PIN_CONTROL_2 LL_GPIO_PIN_0
-#define PIN_CONTROL_3 LL_GPIO_PIN_0
-#define PIN_CONTROL_4 LL_GPIO_PIN_0
+#define PIN_CONTROL_0 LL_GPIO_PIN_7
+#define PIN_CONTROL_1 LL_GPIO_PIN_6
+#define PIN_CONTROL_2 LL_GPIO_PIN_5
+#define PIN_CONTROL_3 LL_GPIO_PIN_4
+#define PIN_CONTROL_4 LL_GPIO_PIN_3
 
 /******************************************************************************
  *    PRIVATE TYPEDEFS
@@ -92,7 +92,7 @@ static Control_TaskContextTypedef s_ControlTaskContext
     = { SCH_INVALID_TASK_HANDLE, // Will be updated by Scheduler
         {
             SCH_TASK_SYNC,          // taskType;
-            5,                      // taskPeriodInMS;
+            20,                      // taskPeriodInMS;
             APP_LED_7SEG_TaskUpdate // taskFunction;
         } };
 
@@ -130,16 +130,16 @@ APP_LED_7_SEG_Init (void)
   s_LED_7SEG.u32_pin_led[7] = PIN_LED_DP;
 
   s_LED_7SEG.p_port_control[0] = PORT_CONTROL_0;
-  s_LED_7SEG.p_port_control[1] = PORT_CONTROL_0;
-  s_LED_7SEG.p_port_control[2] = PORT_CONTROL_0;
-  s_LED_7SEG.p_port_control[3] = PORT_CONTROL_0;
-  s_LED_7SEG.p_port_control[4] = PORT_CONTROL_0;
+  s_LED_7SEG.p_port_control[1] = PORT_CONTROL_1;
+  s_LED_7SEG.p_port_control[2] = PORT_CONTROL_2;
+  s_LED_7SEG.p_port_control[3] = PORT_CONTROL_3;
+  s_LED_7SEG.p_port_control[4] = PORT_CONTROL_4;
 
   s_LED_7SEG.u32_pin_control[0] = PIN_CONTROL_0;
-  s_LED_7SEG.u32_pin_control[1] = PIN_CONTROL_0;
-  s_LED_7SEG.u32_pin_control[2] = PIN_CONTROL_0;
-  s_LED_7SEG.u32_pin_control[3] = PIN_CONTROL_0;
-  s_LED_7SEG.u32_pin_control[4] = PIN_CONTROL_0;
+  s_LED_7SEG.u32_pin_control[1] = PIN_CONTROL_1;
+  s_LED_7SEG.u32_pin_control[2] = PIN_CONTROL_2;
+  s_LED_7SEG.u32_pin_control[3] = PIN_CONTROL_3;
+  s_LED_7SEG.u32_pin_control[4] = PIN_CONTROL_4;
 
   s_LED_7SEG.u8_position_led = 0;
   *s_LED_7SEG.p_power = 0;

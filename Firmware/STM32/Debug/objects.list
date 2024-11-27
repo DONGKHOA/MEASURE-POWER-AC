@@ -5,6 +5,7 @@
 "./APP/Data_Trans_Rec/app_data_trans_rec.o"
 "./APP/Led_7_Seg/app_led_7seg.o"
 "./APP/Read_Peek_Voltage_Current/app_read_data.o"
+"./APP/Status_Led/app_status_led.o"
 "./BSP/ADC/adc.o"
 "./BSP/DMA/dma.o"
 "./BSP/SYSTICK/systick.o"

@@ -10,6 +10,7 @@
         "app_wifi.h": "c",
         "app_data_esp32.h": "c",
         "smartconfig.h": "c"
+        "app_led_7seg.h": "c"
     },
     "cSpell.words": [
         "AFIO",

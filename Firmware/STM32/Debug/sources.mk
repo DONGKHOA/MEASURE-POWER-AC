@@ -28,6 +28,7 @@ APP/Data \
 APP/Data_Trans_Rec \
 APP/Led_7_Seg \
 APP/Read_Peek_Voltage_Current \
+APP/Status_Led \
 BSP/ADC \
 BSP/DMA \
 BSP/SYSTICK \
