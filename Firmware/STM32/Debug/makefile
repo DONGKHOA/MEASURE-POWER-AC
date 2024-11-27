@@ -18,6 +18,7 @@ RM := rm -rf
 -include BSP/SYSTICK/subdir.mk
 -include BSP/DMA/subdir.mk
 -include BSP/ADC/subdir.mk
+-include APP/Status_Led/subdir.mk
 -include APP/Read_Peek_Voltage_Current/subdir.mk
 -include APP/Led_7_Seg/subdir.mk
 -include APP/Data_Trans_Rec/subdir.mk

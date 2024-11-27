@@ -4,8 +4,8 @@
 ../Scheduler/scheduler.c:159:1:SCH_TASK_ResumeTask	2
 ../Scheduler/scheduler.c:187:1:SCH_TASK_StopTask	2
 ../Scheduler/scheduler.c:221:1:SCH_TASK_EnableTask	2
-../Scheduler/scheduler.c:250:1:SCH_TASK_CreateTask	1
-../Scheduler/scheduler.c:298:1:SCH_TIM_CreateTimer	1
+../Scheduler/scheduler.c:250:1:SCH_TASK_CreateTask	4
+../Scheduler/scheduler.c:298:1:SCH_TIM_CreateTimer	4
 ../Scheduler/scheduler.c:344:1:SCH_TIM_RestartTimer	2
 ../Scheduler/scheduler.c:374:1:SCH_TIM_StopTimer	2
 ../Scheduler/scheduler.c:400:1:SCH_RunSystemTickTimer	10

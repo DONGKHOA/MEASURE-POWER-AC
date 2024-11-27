@@ -5,23 +5,23 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../BSP/SYSTICK/systick.c 
+../APP/Status_Led/app_status_led.c 
 
 OBJS += \
-./BSP/SYSTICK/systick.o 
+./APP/Status_Led/app_status_led.o 
 
 C_DEPS += \
-./BSP/SYSTICK/systick.d 
+./APP/Status_Led/app_status_led.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-BSP/SYSTICK/%.o BSP/SYSTICK/%.su BSP/SYSTICK/%.cyclo: ../BSP/SYSTICK/%.c BSP/SYSTICK/subdir.mk
+APP/Status_Led/%.o APP/Status_Led/%.su APP/Status_Led/%.cyclo: ../APP/Status_Led/%.c APP/Status_Led/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE=8000000 -DHSE_STARTUP_TIMEOUT=100 -DLSE_STARTUP_TIMEOUT=5000 -DLSE_VALUE=32768 -DHSI_VALUE=8000000 -DLSI_VALUE=40000 -DVDD_VALUE=3300 -DPREFETCH_ENABLE=1 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../BSP/ADC -I../BSP/UART -I../BSP/GPIO -I../Middleware/Ring_Buffer -I../BSP/DMA -I../BSP/TIMER -I../APP/Common -I../Scheduler -I../APP/Calculator_PF -I../APP/Read_Peek_Voltage_Current -I../BSP/SYSTICK -I../APP/Data -I../APP/CMDLine/Include -I../Device/ACS712 -I../APP/Led_7_Seg -I../APP/Data_Trans_Rec -I../APP/Status_Led -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
 
-clean: clean-BSP-2f-SYSTICK
+clean: clean-APP-2f-Status_Led
 
-clean-BSP-2f-SYSTICK:
-	-$(RM) ./BSP/SYSTICK/systick.cyclo ./BSP/SYSTICK/systick.d ./BSP/SYSTICK/systick.o ./BSP/SYSTICK/systick.su
+clean-APP-2f-Status_Led:
+	-$(RM) ./APP/Status_Led/app_status_led.cyclo ./APP/Status_Led/app_status_led.d ./APP/Status_Led/app_status_led.o ./APP/Status_Led/app_status_led.su
 
-.PHONY: clean-BSP-2f-SYSTICK
+.PHONY: clean-APP-2f-Status_Led
 
