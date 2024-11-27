@@ -2,7 +2,14 @@
     "editor.fontSize": 14,
     "files.associations": {
         "scheduler.h": "c",
-        "app_read_data.h": "c"
+        "app_read_data.h": "c",
+        "mqtt_client_tcp.h": "c",
+        "gpio.h": "c",
+        "sdkconfig.h": "c",
+        "event.h": "c",
+        "app_wifi.h": "c",
+        "app_data_esp32.h": "c",
+        "smartconfig.h": "c"
     },
     "cSpell.words": [
         "AFIO",

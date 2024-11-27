@@ -12,6 +12,7 @@
 #include "app_read_data.h"
 #include "app_data.h"
 #include "stm32f1xx_ll_adc.h"
+#include "acs712.h"
 #include "gpio.h"
 #include "ring_buffer.h"
 #include "scheduler.h"
@@ -22,12 +23,6 @@
 
 #define ADC_VOLTAGE_CHANNEL 1
 #define ADC_CURRENT_CHANNEL 2
-
-#define ENABLE_RANGE_0_30A BSP_GPIO_SetState(GPIOA, LL_GPIO_PIN_7, 0)
-#define ENABLE_RANGE_0_10A BSP_GPIO_SetState(GPIOA, LL_GPIO_PIN_7, 1)
-
-#define CURRENT_RANGE_0_30A 1
-#define CURRENT_RANGE_0_10A 0
 
 /******************************************************************************
  *    PRIVATE TYPEDEFS
@@ -46,7 +41,6 @@ typedef struct _READ_DATA_t
   volatile float         *p_voltage;
   volatile float         *p_current;
   volatile uint8_t        value_temp_irq[4];
-  volatile uint8_t        u8_range_current : 1;
 } READ_DATA_t;
 
 /******************************************************************************
@@ -66,7 +60,7 @@ static Control_TaskContextTypedef s_ControlTaskContext
     = { SCH_INVALID_TASK_HANDLE, // Will be updated by Scheduler
         {
             SCH_TASK_SYNC,           // taskType;
-            5,                       // taskPeriodInMS;
+            5,                      // taskPeriodInMS;
             APP_READ_DATA_TaskUpdate // taskFunction;
         } };
 
@@ -96,10 +90,6 @@ APP_READ_DATA_Init (void)
   s_read_data.p_vol_cur_buffer_irq = &s_data_system.s_vol_cur_buffer_irq;
   s_read_data.p_voltage            = &s_data_system.f_voltage;
   s_read_data.p_current            = &s_data_system.f_current;
-
-  // Reset data filed of variable s_read_data
-  s_read_data.u8_range_current = CURRENT_RANGE_0_30A;
-  ENABLE_RANGE_0_30A;
 
   // Initialize buffer
   RING_BUFFER_Init((ring_buffer_t *)s_read_data.p_vol_cur_buffer);
@@ -212,23 +202,6 @@ APP_READ_DATA_TaskUpdate (void)
                         u8_value[3]);
 
   RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer, '\r');
-
-  // CHANGE RANGE OF CURRENT
-  // if current > 10A, change from range 0-10 (A) to 0-30 (A)
-  // if current < 10A, change from range 0-30 (A) to 0-10 (A)
-
-  if ((*s_read_data.p_current > 10)
-      && (s_read_data.u8_range_current == CURRENT_RANGE_0_10A))
-  {
-    s_read_data.u8_range_current = CURRENT_RANGE_0_30A;
-    ENABLE_RANGE_0_30A;
-  }
-  if ((*s_read_data.p_current < 10)
-      && (s_read_data.u8_range_current == CURRENT_RANGE_0_30A))
-  {
-    s_read_data.u8_range_current = CURRENT_RANGE_0_10A;
-    ENABLE_RANGE_0_10A;
-  }
 }
 
 /**
@@ -246,7 +219,7 @@ APP_READ_DATA_ConvertVoltage (uint16_t u16_adc_value_voltage)
   f_mVolt = __LL_ADC_CALC_DATA_TO_VOLTAGE(
       3300, u16_adc_value_voltage, LL_ADC_RESOLUTION_12B);
 
-  *s_read_data.p_voltage = f_mVolt * 10.0 / 82.0;
+  *s_read_data.p_voltage = f_mVolt * 11.0 / 100.0;
 }
 
 static void
@@ -256,12 +229,5 @@ APP_READ_DATA_ConvertCurrent (uint16_t u16_adc_value_current)
   f_mVolt = __LL_ADC_CALC_DATA_TO_VOLTAGE(
       3300, u16_adc_value_current, LL_ADC_RESOLUTION_12B);
 
-  if (s_read_data.u8_range_current == CURRENT_RANGE_0_30A)
-  {
-    *s_read_data.p_current = f_mVolt * 62.0 / 10000.0;
-  }
-  else if (s_read_data.u8_range_current == CURRENT_RANGE_0_10A)
-  {
-    *s_read_data.p_current = f_mVolt * 215.0 / 100000.0;
-  }
+  *s_read_data.p_current = ACS712_VoltageConverterCurrent(f_mVolt);
 }

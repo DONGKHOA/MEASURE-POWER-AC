@@ -26,9 +26,10 @@
 #include "app_data.h"
 #include "scheduler.h"
 #include "app_command.h"
+#include "app_led_7seg.h"
 #include "app_read_data.h"
 #include "app_calculator_PF.h"
-#include "app_data_transmission.h"
+#include "app_data_trans_rec.h"
 
 /* USER CODE END Includes */
 
@@ -122,8 +123,9 @@ int main(void)
   // Application Initialize
   APP_READ_DATA_Init();
   APP_CALCULATOR_PF_Init();
-  APP_DATA_TRANSMISSION_Init();
+  APP_DATA_TRANS_REC_Init();
   APP_COMMAND_Init();
+  APP_LED_7_SEG_Init();
 
   // Initialize Scheduler
   SCH_Initialize();
@@ -131,8 +133,9 @@ int main(void)
   // Application Create Task
   APP_READ_DATA_CreateTask();
   APP_CALCULATOR_PF_CreateTask();
-  APP_DATA_TRANSMISSION_CreateTask();
+  APP_DATA_TRANS_REC_CreateTask();
   APP_COMMAND_CreateTask();
+  APP_LED_7_SEG_CreateTask();
 
   // Start Scheduler
   SCH_StartScheduler();

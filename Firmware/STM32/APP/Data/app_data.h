@@ -31,11 +31,12 @@ extern "C"
     ring_buffer_t s_PF_buffer;
     ring_buffer_t s_vol_cur_buffer_irq;
     ring_buffer_t s_vol_cur_buffer;
-    uart_cfg_t    s_uart_data_trans;
+    uart_cfg_t    s_uart_data_trans_rec;
     uart_cfg_t    s_uart_cmd;
     float         f_voltage; // amplitude
     float         f_current; // amplitude
     float         f_delta_T_PF;
+    float         f_power;
     uint16_t      u16_adc_value[2];
   } DATA_READ_DataTypedef;
 
