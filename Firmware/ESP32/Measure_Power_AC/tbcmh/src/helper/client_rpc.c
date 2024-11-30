@@ -70,8 +70,17 @@ void _tbcmh_clientrpc_on_create(tbcmh_handle_t client)
     // This function is in semaphore/client->_lock!!!
     TBC_CHECK_PTR(client);
 
+    // Take semaphore
+    // if (xSemaphoreTakeRecursive(client->_lock, (TickType_t)0xFFFFF) != pdTRUE) {
+    //      // TBC_LOGE("Unable to take semaphore!");
+    //      return;
+    // }
+
     // list create
     memset(&client->clientrpc_list, 0x00, sizeof(client->clientrpc_list)); //client->clientrpc_list = LIST_HEAD_INITIALIZER(client->clientrpc_list);
+
+    // Give semaphore
+    // xSemaphoreGiveRecursive(client->_lock);
 }
 
 void _tbcmh_clientrpc_on_destroy(tbcmh_handle_t client)
@@ -79,7 +88,16 @@ void _tbcmh_clientrpc_on_destroy(tbcmh_handle_t client)
     // This function is in semaphore/client->_lock!!!
     TBC_CHECK_PTR(client);
 
+    // Take semaphore
+    // if (xSemaphoreTakeRecursive(client->_lock, (TickType_t)0xFFFFF) != pdTRUE) {
+    //      // TBC_LOGE("Unable to take semaphore!");
+    //      return;
+    // }
+
     memset(&client->clientrpc_list, 0x00, sizeof(client->clientrpc_list));
+
+    // Give semaphore
+    // xSemaphoreGiveRecursive(client->_lock);
 }
 
 void _tbcmh_clientrpc_on_connected(tbcmh_handle_t client)
@@ -93,9 +111,18 @@ void _tbcmh_clientrpc_on_disconnected(tbcmh_handle_t client)
     // This function is in semaphore/client->_lock!!!
     TBC_CHECK_PTR(client);
 
+    // Take semaphore
+    // if (xSemaphoreTakeRecursive(client->_lock, (TickType_t)0xFFFFF) != pdTRUE) {
+    //      // TBC_LOGE("Unable to take semaphore!");
+    //      return;
+    // }
+
     // remove all item in clientrpc_list
     _tbcmh_clientrpc_on_check_timeout(client, (uint64_t)time(NULL)+ TB_MQTT_TIMEOUT + 2);
     memset(&client->clientrpc_list, 0x00, sizeof(client->clientrpc_list));
+
+    // Give semaphore
+    // xSemaphoreGiveRecursive(client->_lock);
 }
 
 //add list
@@ -107,10 +134,25 @@ tbc_err_t tbcmh_oneway_clientrpc_request(tbcmh_handle_t client, const char *meth
      TBC_CHECK_PTR_WITH_RETURN_VALUE(method, ESP_FAIL);
 
      if (!tbcmh_is_connected(client)) {
+         // TBC_LOGW("It still not connnected to servers! %s()", __FUNCTION__);
          return ESP_FAIL;
      }
 
+     // Send msg to server
+     //cJSON *object = cJSON_CreateObject(); // create json object
+     //cJSON_AddStringToObject(object, TB_MQTT_KEY_RPC_METHOD, method);
+     //if (params) {
+     //     cJSON_AddItemReferenceToObject(object, TB_MQTT_KEY_RPC_PARAMS, params);
+     //} else  {
+     //     cJSON_AddNullToObject(object, TB_MQTT_KEY_RPC_PARAMS);
+     //}
+     //char *params_str = cJSON_PrintUnformatted(object); //cJSON_Print(object);
+     // Send msg to server
      uint32_t request_id = _tbcmh_get_request_id(client);
+     // if (request_id <= 0) {
+     //      // TBC_LOGE("failure to getting request id!");
+     //      return -1;
+     // }
      int msg_id;
      if (params) {
          char *params_str = cJSON_PrintUnformatted(params); //cJSON_Print(object);
@@ -123,7 +165,9 @@ tbc_err_t tbcmh_oneway_clientrpc_request(tbcmh_handle_t client, const char *meth
                           request_id,
                           1/*qos*/, 0/*retain*/);     
      }
+     //cJSON_Delete(object); // delete json object
      if (msg_id<0) {
+          // TBC_LOGE("Init tbcm_clientrpc_request failure! %s()", __FUNCTION__);
           return ESP_FAIL;
      }
 
@@ -143,10 +187,12 @@ tbc_err_t tbcmh_twoway_clientrpc_request(tbcmh_handle_t client, const char *meth
 
      // Take semaphore
      if (xSemaphoreTakeRecursive(client->_lock, (TickType_t)0xFFFFF) != pdTRUE) {
+          // TBC_LOGE("Unable to take semaphore! %s()", __FUNCTION__);
           return ESP_FAIL;
      }
 
      if (!tbcmh_is_connected(client)) {
+         // TBC_LOGW("It still not connnected to servers! %s()", __FUNCTION__);
          xSemaphoreGiveRecursive(client->_lock);
          return ESP_FAIL;
      }
@@ -154,10 +200,20 @@ tbc_err_t tbcmh_twoway_clientrpc_request(tbcmh_handle_t client, const char *meth
      // NOTE: It must subscribe response topic, then send request!
      // Subscript topic <===  empty->non-empty
      if (tbcmh_is_connected(client) && LIST_EMPTY(&client->clientrpc_list)) {
-          tbcm_subscribe(client->tbmqttclient,
+         tbcm_subscribe(client->tbmqttclient,
                             TB_MQTT_TOPIC_CLIENTRPC_RESPONSE_SUBSCRIBE, 0);
+         // TBC_LOGI("sent subscribe successful, msg_id=%d, topic=%s",
+                         //    msg_id, TB_MQTT_TOPIC_CLIENTRPC_RESPONSE_SUBSCRIBE);
      }
 
+     // Send msg to server
+     //cJSON *object = cJSON_CreateObject(); // create json object
+     //cJSON_AddStringToObject(object, TB_MQTT_KEY_RPC_METHOD, method);
+     //if (params)
+     //     cJSON_AddItemReferenceToObject(object, TB_MQTT_KEY_RPC_PARAMS, params);
+     //else 
+     //     cJSON_AddNullToObject(object, TB_MQTT_KEY_RPC_PARAMS);
+     //char *params_str = cJSON_PrintUnformatted(object); //cJSON_Print(object);
      // Send msg to server
      uint32_t request_id = _tbcmh_get_request_id(client);
      int msg_id;
@@ -177,6 +233,7 @@ tbc_err_t tbcmh_twoway_clientrpc_request(tbcmh_handle_t client, const char *meth
      }
      //cJSON_Delete(object); // delete json object
      if (msg_id<0) {
+          // TBC_LOGE("Init tbcm_clientrpc_request failure! %s()", __FUNCTION__);
           xSemaphoreGiveRecursive(client->_lock);
           return ESP_FAIL;
      }
@@ -184,6 +241,7 @@ tbc_err_t tbcmh_twoway_clientrpc_request(tbcmh_handle_t client, const char *meth
      // Create clientrpc
      clientrpc_t *clientrpc = _clientrpc_create(client, request_id, method, context, on_response, on_timeout);
      if (!clientrpc) {
+          // TBC_LOGE("Init clientrpc failure! %s()", __FUNCTION__);
           xSemaphoreGiveRecursive(client->_lock);
           return ESP_FAIL;
      }
@@ -215,6 +273,12 @@ void _tbcmh_clientrpc_on_data(tbcmh_handle_t client, uint32_t request_id, const 
      TBC_CHECK_PTR(client);
      TBC_CHECK_PTR(object);
 
+     // Take semaphore
+     // if (xSemaphoreTakeRecursive(client->_lock, (TickType_t)0xFFFFF) != pdTRUE) {
+     //      // TBC_LOGE("Unable to take semaphore! %s()", __FUNCTION__);
+     //      return;
+     // }
+
      bool isEmptyBefore = LIST_EMPTY(&client->clientrpc_list);
     
      // Search clientrpc
@@ -230,12 +294,15 @@ void _tbcmh_clientrpc_on_data(tbcmh_handle_t client, uint32_t request_id, const 
      if (tbcmh_is_connected(client) && !isEmptyBefore && LIST_EMPTY(&client->clientrpc_list)) {
         tbcm_unsubscribe(client->tbmqttclient,
                             TB_MQTT_TOPIC_CLIENTRPC_RESPONSE_SUBSCRIBE);
+        // TBC_LOGI("sent unsubscribe successful, msg_id=%d, topic=%s",
+                         //    msg_id, TB_MQTT_TOPIC_CLIENTRPC_RESPONSE_SUBSCRIBE);
      }
 
      // Give semaphore
      // xSemaphoreGiveRecursive(client->_lock);
 
      if (!clientrpc) {
+          // TBC_LOGW("Unable to find client-rpc:%lu! %s()", request_id, __FUNCTION__);
           return;
      }
 
@@ -253,6 +320,12 @@ void _tbcmh_clientrpc_on_data(tbcmh_handle_t client, uint32_t request_id, const 
 void _tbcmh_clientrpc_on_check_timeout(tbcmh_handle_t client, uint64_t timestamp)
 {
      TBC_CHECK_PTR(client);
+
+     // Take semaphore
+     // if (xSemaphoreTakeRecursive(client->_lock, (TickType_t)0xFFFFF) != pdTRUE) {
+     //      // TBC_LOGE("Unable to take semaphore! %s()", __FUNCTION__);
+     //      return;
+     // }
 
      bool isEmptyBefore = LIST_EMPTY(&client->clientrpc_list);
 
@@ -282,6 +355,8 @@ void _tbcmh_clientrpc_on_check_timeout(tbcmh_handle_t client, uint64_t timestamp
      if (tbcmh_is_connected(client) && !isEmptyBefore && LIST_EMPTY(&client->clientrpc_list)) {
         tbcm_unsubscribe(client->tbmqttclient,
                             TB_MQTT_TOPIC_CLIENTRPC_RESPONSE_SUBSCRIBE);
+        // TBC_LOGI("sent unsubscribe successful, msg_id=%d, topic=%s",
+                         //    msg_id, TB_MQTT_TOPIC_CLIENTRPC_RESPONSE_SUBSCRIBE);
      }
 
      // Give semaphore

@@ -210,7 +210,7 @@ int tbcmh_attributes_subscribe(tbcmh_handle_t client,
     // Subscript topic <===  empty->non-empty
     if (tbcmh_is_connected(client) && isEmptyBefore && !LIST_EMPTY(&client->attributessubscribe_list))
     {
-        int msg_id = tbcm_subscribe(client->tbmqttclient, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE, 0);
+        tbcm_subscribe(client->tbmqttclient, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE, 0);
         // TBC_LOGI("sent subscribe successful, msg_id=%d, topic=%s",
                //  msg_id, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE);
     }
@@ -270,7 +270,7 @@ int tbcmh_attributes_subscribe_of_array(tbcmh_handle_t client, //int qos /*=0*/,
     // Subscript topic <===  empty->non-empty
     if (tbcmh_is_connected(client) && isEmptyBefore && !LIST_EMPTY(&client->attributessubscribe_list))
     {
-        int msg_id = tbcm_subscribe(client->tbmqttclient, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE, 0);
+        tbcm_subscribe(client->tbmqttclient, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE, 0);
         // TBC_LOGI("sent subscribe successful, msg_id=%d, topic=%s",
                //  msg_id, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE);
     }
@@ -339,7 +339,7 @@ void _tbcmh_attributessubscribe_on_connected(tbcmh_handle_t client)
     TBC_CHECK_PTR(client);
 
     if (tbcmh_is_connected(client) && !LIST_EMPTY(&client->attributessubscribe_list)) {
-        int msg_id = tbcm_subscribe(client->tbmqttclient, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE, 0);
+        tbcm_subscribe(client->tbmqttclient, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE, 0);
         // TBC_LOGI("sent subscribe successful, msg_id=%d, topic=%s",
                //  msg_id, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE);
     }

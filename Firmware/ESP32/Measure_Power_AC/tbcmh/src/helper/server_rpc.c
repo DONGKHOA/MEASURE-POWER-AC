@@ -165,6 +165,8 @@ tbc_err_t tbcmh_serverrpc_subscribe(tbcmh_handle_t client,
      if (tbcmh_is_connected(client) && isEmptyBefore && !LIST_EMPTY(&client->serverrpc_list)) {
         tbcm_subscribe(client->tbmqttclient,
                         TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE, 0);
+        // TBC_LOGI("sent subscribe successful, msg_id=%d, topic=%s",
+                    //     msg_id, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE);
      }
 
      // Give semaphore
@@ -181,6 +183,7 @@ tbc_err_t tbcmh_serverrpc_unsubscribe(tbcmh_handle_t client, const char *method)
 
      // Take semaphore
      if (xSemaphoreTakeRecursive(client->_lock, (TickType_t)0xFFFFF) != pdTRUE) {
+          // TBC_LOGE("Unable to take semaphore! %s()", __FUNCTION__);
           return ESP_FAIL;
      }
 
@@ -201,12 +204,15 @@ tbc_err_t tbcmh_serverrpc_unsubscribe(tbcmh_handle_t client, const char *method)
      if (tbcmh_is_connected(client) && !isEmptyBefore && LIST_EMPTY(&client->serverrpc_list)) {
          tbcm_unsubscribe(client->tbmqttclient,
                             TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE);
+         // TBC_LOGI("sent unsubscribe successful, msg_id=%d, topic=%s",
+                         //    msg_id, TB_MQTT_TOPIC_SERVERRPC_REQUEST_SUBSCRIBE);
      }
 
      // Give semaphore
      xSemaphoreGiveRecursive(client->_lock);
 
      if (!serverrpc)  {
+          // TBC_LOGW("Unable to remove server-rpc:%s! %s()", method, __FUNCTION__);
           return ESP_FAIL;
      }
      return ESP_OK;

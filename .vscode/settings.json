@@ -29,6 +29,11 @@
         "PLLSOURCE",
         "Prescaler",
         "SYSCLK",
-        "USART"
+        "USART",
+        "tbcmh",
+        "mqtt",
+        "esay",
+        "rxtx",
+        "thingsboard"
     ]
 }

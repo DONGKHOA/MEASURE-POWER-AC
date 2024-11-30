@@ -9,4 +9,4 @@
  *   PUBLIC DATA
  *****************************************************************************/
 
-    DATA_READ_DataTypedef s_data_system;
+DATA_READ_DataTypedef s_data_system;

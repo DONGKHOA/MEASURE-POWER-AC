@@ -16,20 +16,13 @@
 
 #include <stdio.h>
 #include <string.h>
-//#include <time.h>
-
-//#include "freertos/FreeRTOS.h"
-//#include "sys/queue.h"
 #include "esp_err.h"
-//#include "mqtt_client.h"
 
 #include "tbc_mqtt_wapper.h"
 
 #include "tbc_utils.h"
 
 #include "tbc_mqtt_payload_buffer.h"
-
-const static char *TAG = "tbcm_payload_buffer";
 
 void tbcm_payload_buffer_init(tbcm_payload_buffer_t *buffer)
 {

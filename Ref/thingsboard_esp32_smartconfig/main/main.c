@@ -16,7 +16,7 @@
 
 #include "wifi.h"
 #include "gpio.h"
-#include "nvs_rw.h" 
+#include "nvs_rw.h"
 #include "uart_driver.h"
 #include "mqtt_client_tcp.h"
 #include "tbc_mqtt_helper.h"
@@ -29,11 +29,10 @@ uint32_t te_lux;
 // static TimerHandle_t mqtt_timer;
 static QueueHandle_t mqtt_queue;
 
-
-#define TXD_PIN                 (GPIO_NUM_18)
-#define RXD_PIN                 (GPIO_NUM_19)
-#define MIN_STACK_SIZE          1024
-#define TELEMETRY_LUX         	"lux"
+#define TXD_PIN (GPIO_NUM_18)
+#define RXD_PIN (GPIO_NUM_19)
+#define MIN_STACK_SIZE 1024
+#define TELEMETRY_LUX "power"
 
 // #define TIME_MQTT                  2000
 
@@ -42,11 +41,10 @@ static QueueHandle_t mqtt_queue;
 //     xQueueSend(mqtt_queue, &te_lux, 0);
 // }
 
-
-tbcmh_value_t* te_get_lux(void)
+tbcmh_value_t *te_get_lux(void)
 {
-     // ESP_LOGI(TAG, "Get temperature");
-    cJSON* lux = cJSON_CreateNumber(te_lux);
+    // ESP_LOGI(TAG, "Get temperature");
+    cJSON *lux = cJSON_CreateNumber(te_lux);
     return lux;
 }
 
@@ -55,14 +53,13 @@ void tb_telemetry_send(tbcmh_handle_t client)
 
     cJSON *object = cJSON_CreateObject();
     cJSON_AddItemToObject(object, TELEMETRY_LUX, te_get_lux());
-    tbcmh_telemetry_upload_ex(client, object, 1/*qos*/, 0/*retain*/);
+    tbcmh_telemetry_upload_ex(client, object, 1 /*qos*/, 0 /*retain*/);
     cJSON_Delete(object);
 }
 
+void tb_on_connected(tbcmh_handle_t client, void *context) {}
 
-void tb_on_connected(tbcmh_handle_t client, void *context){}
-
-void tb_on_disconnected(tbcmh_handle_t client, void *context){}
+void tb_on_disconnected(tbcmh_handle_t client, void *context) {}
 
 static void mqtt_main(void *arg)
 {
@@ -71,71 +68,40 @@ static void mqtt_main(void *arg)
 
     initialise_wifi();
 
-    const char *access_token = "hwpgkyx3ozahl2ysklay";
-    const char *uri = "mqtt://thingsboard.cloud";
+    const char *access_token = "CRP3LkcD9jjhyFbSvAl1";
+    const char *uri = "mqtt://demo.thingsboard.io";
 
     tbcmh_handle_t client = tbcmh_init();
 
     tbc_transport_config_esay_t config = {
-        .uri = uri,                     /*!< Complete ThingsBoard MQTT broker URI */
-        .access_token = access_token,   /*!< ThingsBoard Access Token */
-        .log_rxtx_package = true                /*!< print Rx/Tx MQTT package */
-     };
-    tbcmh_connect_using_url(client, &config, 
-                        NULL, tb_on_connected, tb_on_disconnected);
+        .uri = uri,                   /*!< Complete ThingsBoard MQTT broker URI */
+        .access_token = access_token, /*!< ThingsBoard Access Token */
+        .log_rxtx_package = true      /*!< print Rx/Tx MQTT package */
+    };
+    tbcmh_connect_using_url(client, &config,
+                            NULL, tb_on_connected, tb_on_disconnected);
     uint32_t lux;
-    while(1) 
+    while (1)
     {
-        if ( xQueueReceive(mqtt_queue, &lux, portMAX_DELAY))
+        if (xQueueReceive(mqtt_queue, &lux, portMAX_DELAY))
         {
-            if (tbcmh_has_events(client)) tbcmh_run(client);
-            if (tbcmh_is_connected(client)) tb_telemetry_send(client);   
+            if (tbcmh_has_events(client))
+                tbcmh_run(client);
+            if (tbcmh_is_connected(client))
+                tb_telemetry_send(client);
         }
     }
 }
 
 static void echo_task(void *arg)
 {
-    uint8_t buffer_temp[10 + 1];
-    static char buffer_uart_rx[10 + 1];
-    uint16_t pos_buffer_uart_rx = 0;
-    uint8_t enable_bit = 0;
-    uint16_t i;
-
-    memset((void *)buffer_uart_rx, '\0', sizeof(buffer_uart_rx));
-
+    te_lux = 10;
     while (1)
     {
-        uint16_t rxBytes = uart_read_bytes(UART_NUM_1, &buffer_temp,
-                                           10, 10 / portTICK_PERIOD_MS);
-        if (rxBytes > 0)
-        {
-            for (i = 0; i < rxBytes; i++)
-            {
-                buffer_uart_rx[pos_buffer_uart_rx] = buffer_temp[i];
-                if (buffer_uart_rx[pos_buffer_uart_rx] == '\n')
-                {
-                    enable_bit = 1;
-                    buffer_uart_rx[pos_buffer_uart_rx] = '\0';
-                    pos_buffer_uart_rx = 0;
-                    break;
-                }
-                pos_buffer_uart_rx++;
-            }
-
-            if (enable_bit == 0)
-            {
-                continue;
-            }
-
-            te_lux = atoi(buffer_uart_rx);
-            xQueueSend(mqtt_queue, &te_lux, 0);
-
-            enable_bit = 0;
-        }
-        vTaskDelay(50 / portTICK_PERIOD_MS);
+        te_lux += 10;
+        xQueueSend(mqtt_queue, &te_lux, 0);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
-    
 }
 
 void app_main(void)
@@ -156,6 +122,6 @@ void app_main(void)
     mqtt_queue = xQueueCreate(2, sizeof(uint32_t));
     // xTimerStart(mqtt_timer, 0);
     printf("init service in main\n");
-    xTaskCreate(echo_task, "uart_echo_task", 1024*10, NULL, 10, NULL);
-    xTaskCreate(mqtt_main, "mqtt_maintask", 1024*10, NULL, 11, NULL);
+    xTaskCreate(echo_task, "uart_echo_task", 1024 * 10, NULL, 10, NULL);
+    xTaskCreate(mqtt_main, "mqtt_maintask", 1024 * 10, NULL, 11, NULL);
 }

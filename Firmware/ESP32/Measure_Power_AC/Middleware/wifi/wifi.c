@@ -280,8 +280,6 @@ void WIFI_StaInit(void)
 
     esp_wifi_set_mode(WIFI_MODE_STA);
     esp_wifi_start();
-
-    esp_wifi_stop();
 }
 
 /**
@@ -389,7 +387,6 @@ int8_t WIFI_ScanNVS(uint8_t *ssid, uint8_t *pass)
     for (i = 1; i <= num_wifi; i++)
     {
         WIFI_ScanSSID(ssid_temp, i, 32);
-        puts((char *) ssid_temp);
         if (memcmp(ssid_temp, ssid, strlen((char *)ssid)) == 0)
         {
             WIFI_ScanPass(pass, i, 32);
