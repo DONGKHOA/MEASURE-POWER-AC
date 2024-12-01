@@ -73,8 +73,8 @@ APP_WIFI_Init (void)
   // Link pointer to variable
   s_wifi.p_ssid = (uint8_t *)&s_data_system.u8_ssid;
   s_wifi.p_pass = (uint8_t *)&s_data_system.u8_pass;
-  s_wifi.p_semphr_smart_wifi
-      = (SemaphoreHandle_t *)s_data_system.s_semphr_smart_wifi;
+  // s_wifi.p_semphr_smart_wifi
+  //     = (SemaphoreHandle_t *)s_data_system.s_semphr_smart_wifi;
 
   NVS_Init();
   WIFI_StaInit();

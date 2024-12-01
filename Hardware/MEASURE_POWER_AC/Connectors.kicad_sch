@@ -1850,7 +1850,7 @@
 	)
 	(text "~AC~"
 		(exclude_from_sim no)
-		(at 82.804 78.74 0)
+		(at 79.248 78.74 0)
 		(effects
 			(font
 				(size 2.54 2.54)

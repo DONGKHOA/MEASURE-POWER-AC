@@ -5879,7 +5879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply name " "tme"
+		(property "Supply name " ""
 			(at 160.528 154.94 0)
 			(effects
 				(font
@@ -5899,6 +5899,15 @@
 		)
 		(property "Supply URL" "http://www.tme.vn/Product.aspx?id=1999#page=pro_info"
 			(at 153.924 155.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "tme"
+			(at 149.86 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6289,7 +6298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply name " "tme"
+		(property "Supply name " ""
 			(at 112.268 86.36 0)
 			(effects
 				(font
@@ -6309,6 +6318,15 @@
 		)
 		(property "Supply URL" "http://www.tme.vn/Product.aspx?id=1999#page=pro_info"
 			(at 105.664 86.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "tme"
+			(at 101.6 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7904,7 +7922,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply name " "tme"
+		(property "Supply name " ""
 			(at 163.068 83.82 0)
 			(effects
 				(font
@@ -7924,6 +7942,15 @@
 		)
 		(property "Supply URL" "http://www.tme.vn/Product.aspx?id=1999#page=pro_info"
 			(at 156.464 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "tme"
+			(at 152.4 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9903,7 +9930,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply name " "tme"
+		(property "Supply name " ""
 			(at 109.728 157.48 0)
 			(effects
 				(font
@@ -9923,6 +9950,15 @@
 		)
 		(property "Supply URL" "http://www.tme.vn/Product.aspx?id=1999#page=pro_info"
 			(at 103.124 157.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "tme"
+			(at 99.06 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)

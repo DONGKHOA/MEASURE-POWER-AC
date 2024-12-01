@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "Measure_Power_AC",
-    "project_version":    "ff67116-dirty",
+    "project_version":    "4be4576-dirty",
     "project_path":       "D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build",

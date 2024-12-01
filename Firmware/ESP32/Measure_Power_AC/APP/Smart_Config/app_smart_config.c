@@ -48,8 +48,8 @@ APP_SmartConfig_Init (void)
   // Link pointer to variable
   s_smartconfig.p_ssid = (uint8_t *)&s_data_system.u8_ssid;
   s_smartconfig.p_pass = (uint8_t *)&s_data_system.u8_pass;
-  s_smartconfig.p_semphr_smart_wifi
-      = (SemaphoreHandle_t *)s_data_system.s_semphr_smart_wifi;
+  // s_smartconfig.p_semphr_smart_wifi
+  //     = (SemaphoreHandle_t *)s_data_system.s_semphr_smart_wifi;
 
   // Initialize smartconfig
   event_init(s_smartconfig.p_ssid, s_smartconfig.p_pass);

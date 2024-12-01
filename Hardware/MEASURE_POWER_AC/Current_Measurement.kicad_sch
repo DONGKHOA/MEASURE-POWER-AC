@@ -5988,7 +5988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply name " "tme"
+		(property "Supply name " ""
 			(at 155.448 116.84 0)
 			(effects
 				(font
@@ -6008,6 +6008,15 @@
 		)
 		(property "Supply URL" "http://www.tme.vn/Product.aspx?id=1999#page=pro_info"
 			(at 148.844 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "tme"
+			(at 144.78 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)

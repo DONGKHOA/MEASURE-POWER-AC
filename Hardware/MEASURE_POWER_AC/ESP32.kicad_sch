@@ -5268,8 +5268,17 @@
 				(hide yes)
 			)
 		)
-		(property "Suppy URL" "https://www.thegioiic.com/nut-nhan-3x4mm-cao-2-5mm-2-chan-smd"
+		(property "Suppy URL" ""
 			(at 33.02 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply URL" "https://www.thegioiic.com/nut-nhan-3x4mm-cao-2-5mm-2-chan-smd"
+			(at 39.37 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8034,8 +8043,17 @@
 				(hide yes)
 			)
 		)
-		(property "Suppy URL" "https://www.thegioiic.com/nut-nhan-3x4mm-cao-2-5mm-2-chan-smd"
+		(property "Suppy URL" ""
 			(at 33.02 100.076 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply URL" "https://www.thegioiic.com/nut-nhan-3x4mm-cao-2-5mm-2-chan-smd"
+			(at 39.37 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)

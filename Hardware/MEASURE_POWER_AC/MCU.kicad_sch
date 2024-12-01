@@ -10098,8 +10098,17 @@
 				(hide yes)
 			)
 		)
-		(property "Suppy URL" "https://www.thegioiic.com/nut-nhan-3x4mm-cao-2-5mm-2-chan-smd"
+		(property "Suppy URL" ""
 			(at 245.11 106.426 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply URL" "https://www.thegioiic.com/nut-nhan-3x4mm-cao-2-5mm-2-chan-smd"
+			(at 251.46 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10309,7 +10318,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply name " "Thegioiic"
+		(property "Supply name " ""
 			(at 96.52 110.49 0)
 			(effects
 				(font
@@ -10328,6 +10337,15 @@
 			)
 		)
 		(property "Supply URL" "https://www.thegioiic.com/stm32f103c8t6-32-bit-arm-cortex-m3-microcontroller-72mhz-64kb-flash-48-lqfp"
+			(at 96.52 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "Thegioiic"
 			(at 96.52 110.49 0)
 			(effects
 				(font
@@ -11161,7 +11179,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply name " "Thegioiic"
+		(property "Supply name " ""
 			(at 186.69 45.72 0)
 			(effects
 				(font
@@ -11180,6 +11198,15 @@
 			)
 		)
 		(property "Supply URL" "https://www.thegioiic.com/stm32f103c8t6-32-bit-arm-cortex-m3-microcontroller-72mhz-64kb-flash-48-lqfp"
+			(at 186.69 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "Thegioiic"
 			(at 186.69 45.72 0)
 			(effects
 				(font
