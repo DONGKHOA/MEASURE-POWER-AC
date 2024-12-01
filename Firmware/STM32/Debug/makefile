@@ -73,8 +73,8 @@ all: main-build
 main-build: MEASURE_POWER_AC.elf secondary-outputs
 
 # Tool invocations
-MEASURE_POWER_AC.elf MEASURE_POWER_AC.map: $(OBJS) $(USER_OBJS) D:\OneDrive\Disk_2\MEASURE-POWER-AC\Firmware\STM32\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "MEASURE_POWER_AC.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\OneDrive\Disk_2\MEASURE-POWER-AC\Firmware\STM32\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MEASURE_POWER_AC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+MEASURE_POWER_AC.elf MEASURE_POWER_AC.map: $(OBJS) $(USER_OBJS) D:\Github\MEASURE-POWER-AC\Firmware\STM32\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "MEASURE_POWER_AC.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Github\MEASURE-POWER-AC\Firmware\STM32\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MEASURE_POWER_AC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
