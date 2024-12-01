@@ -229,37 +229,37 @@ APP_Process_data_Calculate_Energy (void)
   // Update Average Power minute
   s_process_data.s_power_data
       .f_power_minute[s_process_data.s_index_data.u8_index_minute]
-      = s_process_data.s_power_data
+      += s_process_data.s_power_data
             .f_power_sec[s_process_data.s_index_data.u8_index_sec];
 
   // Update Average Power hour
   s_process_data.s_power_data
       .f_power_hour[s_process_data.s_index_data.u8_index_hour]
-      = s_process_data.s_power_data
+      += s_process_data.s_power_data
             .f_power_minute[s_process_data.s_index_data.u8_index_minute];
 
   // Update Average Power day
   s_process_data.s_power_data
       .f_power_day[s_process_data.s_index_data.u8_index_day]
-      = s_process_data.s_power_data
+      += s_process_data.s_power_data
             .f_power_hour[s_process_data.s_index_data.u8_index_hour];
 
   // Update Average Power week
   s_process_data.s_power_data
       .f_power_week[s_process_data.s_index_data.u8_index_week]
-      = s_process_data.s_power_data
+      += s_process_data.s_power_data
             .f_power_day[s_process_data.s_index_data.u8_index_day];
 
   // Update Average Power month
   s_process_data.s_power_data
       .f_power_month[s_process_data.s_index_data.u8_index_month]
-      = s_process_data.s_power_data
+      += s_process_data.s_power_data
             .f_power_day[s_process_data.s_index_data.u8_index_day];
 
   // Update Average Power year
   s_process_data.s_power_data
       .f_power_year[s_process_data.s_index_data.u16_index_year]
-      = s_process_data.s_power_data
+      += s_process_data.s_power_data
             .f_power_day[s_process_data.s_index_data.u8_index_day];
 
   APP_Process_data_Calculate_Power_Average_Sec();
