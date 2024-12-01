@@ -20,23 +20,23 @@
 
 #define NUMBER_OF_LED 5
 
-#define PORT_LED_A  GPIOA
-#define PORT_LED_B  GPIOB
-#define PORT_LED_C  GPIOB
-#define PORT_LED_D  GPIOB
-#define PORT_LED_E  GPIOB
-#define PORT_LED_F  GPIOB
-#define PORT_LED_G  GPIOB
-#define PORT_LED_DP GPIOB
+#define PORT_LED_A    GPIOB
+#define PORT_LED_B    GPIOB
+#define PORT_LED_C    GPIOB
+#define PORT_LED_D    GPIOB
+#define PORT_LED_E    GPIOB
+#define PORT_LED_F    GPIOB
+#define PORT_LED_G    GPIOA
+#define PORT_LED_DP   GPIOB
 
-#define PIN_LED_A  LL_GPIO_PIN_8
-#define PIN_LED_B  LL_GPIO_PIN_15
-#define PIN_LED_C  LL_GPIO_PIN_14
-#define PIN_LED_D  LL_GPIO_PIN_12
-#define PIN_LED_E  LL_GPIO_PIN_13
-#define PIN_LED_F  LL_GPIO_PIN_1
-#define PIN_LED_G  LL_GPIO_PIN_2
-#define PIN_LED_DP LL_GPIO_PIN_0
+#define PIN_LED_A   LL_GPIO_PIN_14
+#define PIN_LED_B   LL_GPIO_PIN_0
+#define PIN_LED_C   LL_GPIO_PIN_13
+#define PIN_LED_D   LL_GPIO_PIN_1
+#define PIN_LED_E   LL_GPIO_PIN_2
+#define PIN_LED_F   LL_GPIO_PIN_15
+#define PIN_LED_G   LL_GPIO_PIN_8
+#define PIN_LED_DP  LL_GPIO_PIN_12
 
 #define PORT_CONTROL_0 GPIOA
 #define PORT_CONTROL_1 GPIOA

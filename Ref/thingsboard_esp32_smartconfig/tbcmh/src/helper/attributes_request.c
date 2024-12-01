@@ -145,7 +145,7 @@ tbc_err_t tbcmh_attributes_request(tbcmh_handle_t client,
      // NOTE: It must subscribe response topic, then send request!
      // Subscript topic <===  empty->non-empty
      if (tbcmh_is_connected(client) && LIST_EMPTY(&client->attributesrequest_list)) {
-        int msg_id = tbcm_subscribe(client->tbmqttclient,
+        tbcm_subscribe(client->tbmqttclient,
                                 TB_MQTT_TOPIC_ATTRIBUTES_RESPONSE_SUBSCRIBE, 0);
         // TBC_LOGI("sent subscribe successful, msg_id=%d, topic=%s",
                               //   msg_id, TB_MQTT_TOPIC_ATTRIBUTES_RESPONSE_SUBSCRIBE);
@@ -247,7 +247,7 @@ tbc_err_t tbcmh_clientattributes_request(tbcmh_handle_t client,
     // NOTE: It must subscribe response topic, then send request!
     // Subscript topic <===  empty->non-empty
     if (tbcmh_is_connected(client) && LIST_EMPTY(&client->attributesrequest_list)) {
-       int msg_id = tbcm_subscribe(client->tbmqttclient,
+       tbcm_subscribe(client->tbmqttclient,
                                 TB_MQTT_TOPIC_ATTRIBUTES_RESPONSE_SUBSCRIBE, 0);
        // TBC_LOGI("sent subscribe successful, msg_id=%d, topic=%s",
                               //   msg_id, TB_MQTT_TOPIC_ATTRIBUTES_RESPONSE_SUBSCRIBE);
@@ -355,7 +355,7 @@ tbc_err_t tbcmh_sharedattributes_request(tbcmh_handle_t client,
      // NOTE: It must subscribe response topic, then send request!
      // Subscript topic <===  empty->non-empty
      if (tbcmh_is_connected(client) && LIST_EMPTY(&client->attributesrequest_list)) {
-        int msg_id = tbcm_subscribe(client->tbmqttclient,
+        tbcm_subscribe(client->tbmqttclient,
                                 TB_MQTT_TOPIC_ATTRIBUTES_RESPONSE_SUBSCRIBE, 0);
         // TBC_LOGI("sent subscribe successful, msg_id=%d, topic=%s",
                               //   msg_id, TB_MQTT_TOPIC_ATTRIBUTES_RESPONSE_SUBSCRIBE);

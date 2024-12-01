@@ -3,7 +3,6 @@
  *****************************************************************************/
 
 #include <stdio.h>
-#include <stdint.h>
 #include <string.h>
 
 #include "freertos/FreeRTOS.h"
@@ -13,22 +12,13 @@
 #include "esp_system.h"
 #include "esp_event.h"
 #include "esp_log.h"
-#include "esp_err.h"
-#include "esp_wifi.h"
-#include "rom/ets_sys.h"
 
-// #include "wifi.h"
-#include "gpio.h"
-// #include "nvs_rw.h"
-#include "uart.h"
-#include "tbc_mqtt_helper.h"
-#include "ds3231.h"
 #include "app_smart_config.h"
-#include "app_wifi.h"
+#include "app_things_board.h"
 #include "app_data_ESP32.h"
-#include "event.h"
-
-#define TELEMETRY_LUX "power"
+#include "app_data_rec.h"
+#include "app_data_trans.h"
+#include "app_process_data.h"
 
 /******************************************************************************
  *    PRIVATE DEFINES
@@ -37,16 +27,29 @@
 #define TXD_PIN (GPIO_NUM_17)
 #define RXD_PIN (GPIO_NUM_15)
 
-#define MIN_STACK_SIZE 1024
-
 /******************************************************************************
  *    PRIVATE DATA
  *****************************************************************************/
 
-
 /******************************************************************************
  *    PRIVATE PROTOTYPE FUNCTION
  *****************************************************************************/
+
+static inline void
+APP_MAIN_ResetDataSystem (void)
+{
+  s_data_system.f_power        = 0;
+  s_data_system.f_energy       = 0;
+  s_data_system.f_energy_min   = 0;
+  s_data_system.f_energy_hour  = 0;
+  s_data_system.f_energy_day   = 0;
+  s_data_system.f_energy_week  = 0;
+  s_data_system.f_energy_month = 0;
+  s_data_system.f_energy_year  = 0;
+
+  memset(s_data_system.u8_ssid, 0, sizeof(s_data_system.u8_ssid));
+  memset(s_data_system.u8_pass, 0, sizeof(s_data_system.u8_pass));
+}
 
 /******************************************************************************
  *       MAIN FUNCTION
@@ -55,14 +58,25 @@
 void
 app_main (void)
 {
-  s_data_system.s_semphr_smart_wifi = xQueueCreate(1, sizeof(uint8_t));
-  APP_WIFI_CreateTimer();
+  // Reset Data System
+  APP_MAIN_ResetDataSystem();
 
+  // Create Service
+  s_data_system.s_flag_mqtt_event  = xEventGroupCreate();
+  s_data_system.s_data_rec_queue   = xQueueCreate(10, sizeof(float));
+  s_data_system.s_data_trans_queue = xQueueCreate(10, sizeof(float));
+
+  // Init Application
   APP_SmartConfig_Init();
-  APP_WIFI_Init();
+  APP_Data_rec_Init();
+  APP_Process_data_Init();
+  APP_Things_board_Init();
 
-  APP_WIFI_CreateTask();
+  // Create Task
   APP_SmartConfig_CreateTask();
+  APP_Process_data_CreateTask();
+  APP_Data_rec_CreateTask();
+  APP_Things_board_CreateTask();
 }
 
 /******************************************************************************

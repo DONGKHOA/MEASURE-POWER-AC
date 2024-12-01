@@ -1,0 +1,116 @@
+J��ѹesp32: SPI Speed     �ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 27 2024 18:08:09[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28b20h (166688) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00038b48 vaddr=3ffb0000 size=03bfch ( 15356) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003c74c vaddr=40080000 size=038cch ( 14540) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b0004h (720900) map[0m
+[0;32mI (423) esp_image: segment 4: paddr=000f002c vaddr=400838cc size=140d8h ( 82136) load[0m
+[0;32mI (467) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (467) boot: Disabling RNG early entropy source...[0m
+[0;32mI (478) cpu_start: Multicore app[0m
+[0;32mI (487) cpu_start: Pro cpu start user code[0m
+[0;32mI (487) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (487) cpu_start: Application information:[0m
+[0;32mI (490) cpu_start: Project name:     thingsboard_esp32[0m
+[0;32mI (496) cpu_start: App version:      4be4576-dirty[0m
+[0;32mI (502) cpu_start: Compile time:     Nov 27 2024 18:07:19[0m
+[0;32mI (508) cpu_start: ELF file SHA256:  42763b480...[0m
+[0;32mI (513) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (518) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (523) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (528) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (533) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (540) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (546) heap_init: At 3FFB84E0 len 00027B20 (158 KiB): DRAM[0m
+[0;32mI (552) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (565) heap_init: At 400979A4 len 0000865C (33 KiB): IRAM[0m
+[0;32mI (573) spi_flash: detected chip: generic[0m
+[0;32mI (576) spi_flash: flash io: dio[0m
+[0;32mI (581) main_task: Started on CPU0[0m
+[0;32mI (591) main_task: Calling app_main()[0m
+Main task start
+init module in main
+init service in main
+[0;32mI (631) main_task: Returned from app_main()[0m
+I (641) wifi:wifi driver task: 3ffc64a8, prio:23, stack:6656, core=0
+I (661) wifi:wifi firmware version: 3e0076f
+I (661) wifi:wifi certification version: v7.0
+I (661) wifi:config NVS flash: enabled
+I (661) wifi:config nano formating: disabled
+I (661) wifi:Init data frame dynamic rx buffer num: 32
+I (671) wifi:Init static rx mgmt buffer num: 5
+I (671) wifi:Init management short buffer num: 32
+I (671) wifi:Init dynamic tx buffer num: 32
+I (681) wifi:Init static rx buffer size: 1600
+I (681) wifi:Init static rx buffer num: 10
+I (691) wifi:Init dynamic rx buffer num: 32
+[0;32mI (691) wifi_init: rx ba win: 6[0m
+[0;32mI (691) wifi_init: tcpip mbox: 32[0m
+[0;32mI (701) wifi_init: udp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp mbox: 6[0m
+[0;32mI (701) wifi_init: tcp tx win: 5760[0m
+[0;32mI (711) wifi_init: tcp rx win: 5760[0m
+[0;32mI (711) wifi_init: tcp mss: 1440[0m
+[0;32mI (721) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (721) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (731) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (821) wifi:mode : sta (0c:dc:7e:63:2e:14)
+I (821) wifi:enable tsf
+[0;31mE (831) esp-tls: couldn't get hostname for :thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (831) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (831) mqtt_client: Error transport connect[0m
+I (881) smartconfig: SC version: V3.0.1
+I (5711) wifi:ic_enable_sniffer
+I (5721) smartconfig: Start to find channel...
+[0;32mI (5721) smartconfig: Scan done[0m
+I (7491) smartconfig: TYPE: ESPTOUCH
+I (7491) smartconfig: T|AP MAC: 0c:01:4b:19:5c:12
+I (7491) smartconfig: Found channel on 9-1. Start to get ssid and password...
+[0;32mI (7491) smartconfig: Found channel[0m
+I (10281) smartconfig: T|pswd: thuyenxinchao
+I (10281) smartconfig: T|ssid: thuyencafe
+I (10281) wifi:ic_disable_sniffer
+[0;32mI (10291) smartconfig: Got SSID and password[0m
+[0;32mI (10291) smartconfig: SSID:thuyencafe[0m
+[0;32mI (10291) smartconfig: PASSWORD:thuyenxinchao[0m
+I (11511) wifi:new:<8,0>, old:<9,1>, ap:<255,255>, sta:<8,0>, prof:1
+I (11511) wifi:state: init -> auth (b0)
+I (11511) wifi:state: auth -> assoc (0)
+I (11521) wifi:state: assoc -> run (10)
+W (11521) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (11571) wifi:connected with thuyencafe, aid = 29, channel 8, BW20, bssid = 2c:70:4f:06:4b:80
+I (11571) wifi:security: WPA2-PSK, phy: bgn, rssi: -71
+I (11641) wifi:pm start, type: 1
+
+I (11641) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (11641) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (11651) wifi:<ba-add>idx:0 (ifx:0, 2c:70:4f:06:4b:80), tid:0, ssn:14, winSize:64
+[0;32mI (14641) esp_netif_handlers: sta ip: 192.168.1.37, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (14641) smartconfig: WiFi Connected to ap[0m
+I (16301) wifi:<ba-add>idx:1 (ifx:0, 2c:70:4f:06:4b:80), tid:3, ssn:1, winSize:64
+[0;32mI (17681) smartconfig: smartconfig over[0m

@@ -1,0 +1,77 @@
+[1/5] cmd.exe /C "cd /D D:\OneDrive\Disk_2\MEASURE-POWER-AC\Ref\thingsboard_esp32_smartconfig\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/OneDrive/Disk_2/MEASURE-POWER-AC/Ref/thingsboard_esp32_smartconfig/build/partition_table/partition-table.bin D:/OneDrive/Disk_2/MEASURE-POWER-AC/Ref/thingsboard_esp32_smartconfig/build/thingsboard_esp32.bin"
+thingsboard_esp32.bin binary size 0xf3dd0 bytes. Smallest app partition is 0x100000 bytes. 0xc230 bytes (5%) free.
+Warning: The smallest app partition is nearly full (5% free space left)!
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\OneDrive\Disk_2\MEASURE-POWER-AC\Ref\thingsboard_esp32_smartconfig\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/OneDrive/Disk_2/MEASURE-POWER-AC/Ref/thingsboard_esp32_smartconfig/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.2/components/esesptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 thingsboard_esp32.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WD (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 0c:dc:7e:63:2e:14
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00103fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16349...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16349 compressed) at 0x00001000 in 0.9 seconds (effective 243.8 kbit/s)...
+Hash of data verified.
+Compressed 998864 bytes to 627484...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e276... (5 %)
+Writing at 0x00027ef5... (7 %)
+Writing at 0x0002cd4c... (10 %)
+Writing at 0x000351be... (12 %)
+Writing at 0x0003f052... (15 %)
+Writing at 0x00044b9d... (17 %)
+Writing at 0x0004a995... (20 %)
+Writing at 0x00050787... (23 %)
+Writing at 0x0005667e... (25 %)
+Writing at 0x0005c3c3... (28 %)
+Writing at 0x00061ee4... (30 %)
+Writing at 0x00067e26... (33 %)
+Writing at 0x0006e3ba... (35 %)
+Writing at 0x000740b4... (38 %)
+Writing at 0x00079c38... (41 %)
+Writing at 0x0007ee85... (43 %)
+Writing at 0x000842d2... (46 %)
+Writing at 0x000897ca... (48 %)
+Writing at 0x0008eba2... (51 %)
+Writing at 0x000941bc... (53 %)
+Writing at 0x00099acc... (56 %)
+Writing at 0x0009f85c... (58 %)
+Writing at 0x000a51ba... (61 %)
+Writing at 0x000aad5c... (64 %)
+Writing at 0x000b06c9... (66 %)
+Writing at 0x000b635e... (69 %)
+Writing at 0x000bc168... (71 %)
+Writing at 0x000c1934... (74 %)
+Writing at 0x000c76ff... (76 %)
+Writing at 0x000cd1b8... (79 %)
+Writing at 0x000d298a... (82 %)
+Writing at 0x000d91a2... (84 %)
+Writing at 0x000e2e86... (87 %)
+Writing at 0x000eaf0c... (89 %)
+Writing at 0x000f0eea... (92 %)
+Writing at 0x000f68f8... (94 %)
+Writing at 0x000fcd45... (97 %)
+Writing at 0x00102014... (100 %)
+Wrote 998864 bytes (627484 compressed) at 0x00010000 in 14.6 seconds (effective 547.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 291.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+ptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/OneDrive/Disk_2/MEASURE-POWER-AC/Ref/thingsboard_esp32_smartconfig/build -P C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake"
