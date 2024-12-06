@@ -3263,7 +3263,7 @@
 			)
 		)
 	)
-	(global_label "Zero_Voltage"
+	(global_label "Zero_Current"
 		(shape output)
 		(at 236.22 83.82 0)
 		(fields_autoplaced yes)
@@ -3275,7 +3275,7 @@
 		)
 		(uuid "0ea064eb-d907-4eb6-a941-d6e37d19bd4e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 251.4212 83.82 0)
+			(at 251.3608 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3285,7 +3285,7 @@
 			)
 		)
 	)
-	(global_label "Zero_Current"
+	(global_label "Zero_Voltage"
 		(shape output)
 		(at 236.22 132.08 0)
 		(fields_autoplaced yes)
@@ -3297,7 +3297,7 @@
 		)
 		(uuid "2ec4a08c-4001-4fed-b3c4-49ff7a394aaa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 251.3608 132.08 0)
+			(at 251.4212 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
