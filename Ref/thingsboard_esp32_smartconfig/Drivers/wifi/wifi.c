@@ -48,8 +48,8 @@ static uint8_t volatile num_wifi = 0;
 static EventGroupHandle_t s_wifi_event_group;
 static char ssid_name[1024];
 
-static const int CONNECTED_BIT = BIT0;
-static const int ESPTOUCH_DONE_BIT = BIT1;
+#define CONNECTED_BIT BIT0
+#define const int ESPTOUCH_DONE_BIT BIT1
 static const char *TAG1 = "smartconfig";
 
 

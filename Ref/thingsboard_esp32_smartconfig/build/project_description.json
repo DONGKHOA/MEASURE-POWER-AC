@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "thingsboard_esp32",
-    "project_version":    "4be4576-dirty",
+    "project_version":    "e92003d-dirty",
     "project_path":       "D:/OneDrive/Disk_2/MEASURE-POWER-AC/Ref/thingsboard_esp32_smartconfig",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.2.2",
     "build_dir":          "D:/OneDrive/Disk_2/MEASURE-POWER-AC/Ref/thingsboard_esp32_smartconfig/build",

@@ -453,8 +453,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "Measure_Power_AC"
+    ],
+    "pinned_symbol_libs": [
+      "Measurement_Power_AC"
+    ]
   },
   "meta": {
     "filename": "MEASURE_POWER_AC.kicad_pro",
