@@ -32,7 +32,7 @@ static QueueHandle_t mqtt_queue;
 #define TXD_PIN (GPIO_NUM_18)
 #define RXD_PIN (GPIO_NUM_19)
 #define MIN_STACK_SIZE 1024
-#define TELEMETRY_LUX "power"
+#define TELEMETRY_LUX "energy"
 
 // #define TIME_MQTT                  2000
 
@@ -100,7 +100,7 @@ static void echo_task(void *arg)
     {
         te_lux += 10;
         xQueueSend(mqtt_queue, &te_lux, 0);
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        vTaskDelay(20 / portTICK_PERIOD_MS);
     }
 }
 
