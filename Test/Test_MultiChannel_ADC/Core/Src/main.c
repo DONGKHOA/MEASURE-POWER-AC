@@ -117,9 +117,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  sprintf(msg, "CH1 = %ld, CH2 = %ld\r\n", adc_value[0], adc_value[1]);
-	  HAL_UART_Transmit(&huart1, (uint8_t *)msg, sizeof(msg), 1000);
-	  HAL_Delay(1000);
+//	  sprintf(msg, "CH1 = %ld, CH2 = %ld\r\n", adc_value[0], adc_value[1]);
+//	  HAL_UART_Transmit(&huart1, (uint8_t *)msg, sizeof(msg), 1000);
+//	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
@@ -285,7 +285,7 @@ static void MX_USART1_UART_Init(void)
   /* USER CODE BEGIN USART1_Init 1 */
 
   /* USER CODE END USART1_Init 1 */
-  huart1.Instance = USART1;
+  huart1.Instance = USART3;
   huart1.Init.BaudRate = 115200;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
