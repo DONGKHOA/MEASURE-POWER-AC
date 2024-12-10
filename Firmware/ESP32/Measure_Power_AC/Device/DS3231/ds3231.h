@@ -1,24 +1,45 @@
 #ifndef DS3231_H
 #define DS3231_H
 
+/******************************************************************************
+ *      INCLUDES
+ *****************************************************************************/
+
 #include <stdint.h>
 #include "driver/gpio.h"
-#include "esp_log.h"
 
-typedef struct 
+#ifdef __cplusplus
+extern "C"
 {
-	uint8_t second;
-	uint8_t minute;
-	uint8_t hour;
-	uint8_t day;
-	uint8_t date;
-	uint8_t month;
-	uint8_t year;
-}__attribute__((packed))rtc_data_t;
+#endif
 
+  /****************************************************************************
+   *   PUBLIC TYPEDEFS
+   ***************************************************************************/
 
-void DS3231_Init(rtc_data_t *rtc_data, gpio_num_t scl_io, gpio_num_t sda_io);
-esp_err_t DS3231_Register_Read(rtc_data_t *rtc_data);
-esp_err_t DS3231_Register_Write(rtc_data_t *rtc_data);
+  typedef struct
+  {
+    uint8_t u8_second;
+    uint8_t u8_minute;
+    uint8_t u8_hour;
+    uint8_t u8_day;
+    uint8_t u8_date;
+    uint8_t u8_month;
+    uint8_t u8_year;
+  } __attribute__((packed)) ds3231_data_t;
+
+  /****************************************************************************
+   *   PUBLIC DATA
+   ***************************************************************************/
+
+  void      DS3231_Init(ds3231_data_t *p_ds3231_data,
+                        gpio_num_t     e_scl_io,
+                        gpio_num_t     e_sda_io);
+  esp_err_t DS3231_Register_Read(ds3231_data_t *p_ds3231_data);
+  esp_err_t DS3231_Register_Write(ds3231_data_t *p_ds3231_data);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* DS3231_H*/

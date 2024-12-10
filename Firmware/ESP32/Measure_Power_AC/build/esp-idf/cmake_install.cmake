@@ -419,6 +419,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/exti/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/gpio/cmake_install.cmake")
 endif()
 
@@ -434,17 +439,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/event/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/wifi/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/smartconfig/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -464,26 +459,36 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/Data_Rec/cmake_install.cmake")
+  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/app_button/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/Data_Trans/cmake_install.cmake")
+  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/app_data_Rec/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/Process_Data/cmake_install.cmake")
+  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/app_data_trans/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/Smart_Config/cmake_install.cmake")
+  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/app_process_data/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/things_board/cmake_install.cmake")
+  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/app_rtc/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/app_status_led/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/app_things_board/cmake_install.cmake")
 endif()
 
