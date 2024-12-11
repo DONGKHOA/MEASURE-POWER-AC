@@ -28,6 +28,7 @@
 #include "adc.h"
 #include "uart.h"
 #include "dma.h"
+#include "scheduler.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -190,6 +191,7 @@ void SysTick_Handler(void)
   /* USER CODE BEGIN SysTick_IRQn 0 */
   BSP_ADC_TimeOut();
   BSP_UART_TimeOut();
+  SCH_RunSystemTickTimer();
   /* USER CODE END SysTick_IRQn 0 */
 
   /* USER CODE BEGIN SysTick_IRQn 1 */

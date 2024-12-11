@@ -8,4 +8,4 @@
 ../APP/Calculator_PF/app_calculator_PF.c:75:1:APP_CALCULATOR_PF_CreateTask	8	static
 ../APP/Calculator_PF/app_calculator_PF.c:85:1:APP_CALCULATOR_PF_Init	8	static
 ../APP/Calculator_PF/app_calculator_PF.c:102:1:APP_CALCULATOR_PF_EXTI_IRQHandler	8	static
-../APP/Calculator_PF/app_calculator_PF.c:160:1:APP_CALCULATOR_PF_TaskUpdate	32	static
+../APP/Calculator_PF/app_calculator_PF.c:159:1:APP_CALCULATOR_PF_TaskUpdate	32	static

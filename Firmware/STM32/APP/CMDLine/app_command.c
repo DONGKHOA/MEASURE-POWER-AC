@@ -159,7 +159,7 @@ APP_COMMAND_ReadVoltage (int argc, char *argv[])
   }
 
   char c_msg[30];
-  sprintf(c_msg, "Voltage: %.2f\n\r", s_data_system.f_voltage);
+  sprintf(c_msg, "\n\rVoltage: %.2f\n\r", s_data_system.f_voltage);
 
   BSP_UART_SendString(uart_cfg_cml, c_msg);
 
@@ -179,7 +179,7 @@ APP_COMMAND_ReadCurrent (int argc, char *argv[])
   }
 
   char c_msg[30];
-  sprintf(c_msg, "Current: %.2f\n\r", s_data_system.f_current);
+  sprintf(c_msg, "\n\rCurrent: %.2f\n\r", s_data_system.f_current);
 
   BSP_UART_SendString(uart_cfg_cml, c_msg);
 
@@ -199,7 +199,7 @@ APP_COMMAND_ReadPF (int argc, char *argv[])
   }
 
   char c_msg[30];
-  sprintf(c_msg, "POWER FACTOR: %.2f\n\r", s_data_system.f_delta_T_PF);
+  sprintf(c_msg, "\n\rPOWER FACTOR: %.2f\n\r", s_data_system.f_delta_T_PF);
 
   BSP_UART_SendString(uart_cfg_cml, c_msg);
 
@@ -232,7 +232,6 @@ APP_COMMAND_TaskUpdate (void)
       {
         // Processing command form terminal.
         s_commandBuffer[s_commandBufferIndex] = 0;
-        s_commandBufferIndex++;
         retVal               = CmdLineProcess(s_commandBuffer);
         s_commandBufferIndex = 0;
 

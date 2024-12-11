@@ -124,13 +124,12 @@ APP_CALCULATOR_PF_EXTI_IRQHandler (void)
   if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_6) != RESET)
   {
     LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_6);
-    LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_5);
     if (LL_TIM_IsEnabledCounter(TIM2))
     {
       LL_TIM_DisableCounter(TIM2);
       s_calculator_pf.value_temp_irq[0]
-          = (uint8_t)(LL_TIM_GetCounter(TIM2) >> 8);
-      s_calculator_pf.value_temp_irq[1] = (uint8_t)LL_TIM_GetCounter(TIM2);
+          = (uint8_t)((LL_TIM_GetCounter(TIM2) - 160) >> 8);
+      s_calculator_pf.value_temp_irq[1] = (uint8_t)(LL_TIM_GetCounter(TIM2) - 160);
 
       RING_BUFFER_Push_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer_irq,
                             s_calculator_pf.value_temp_irq[0]);
