@@ -2025,85 +2025,42 @@
 				)
 			)
 		)
-		(symbol "Measurement_Power_AC:ICL7660CBAZ"
+		(symbol "Measurement_Power_AC:ICL7662CBA-T"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0.508 16.256 0)
+				(at -12.7 21.32 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Value" "ICL7660CBAZ"
-				(at 3.556 16.256 0)
+			(property "Value" "ICL7662CBA-T"
+				(at 0 16.256 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left bottom)
 				)
 			)
 			(property "Footprint" "Measure_Power_AC:SOIC-8"
-				(at -19.05 -21.844 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/icl7662-si7661.pdf"
-				(at 0.508 -21.59 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Voltage Input: 1.5V ~ 10V, Voltage Output: -Vin, 8-SOIC"
-				(at 0 -21.844 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supply name" "Thegioiic"
-				(at 1.27 -21.59 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supply part number" "ICL7660CBAZ"
-				(at 1.27 -21.59 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supply URL" "http://www.tme.vn/Product.aspx?id=848#page=pro_info"
-				(at -11.938 -21.844 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Linear Regulator 50mA 5V fixed"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2112,7 +2069,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x4.9mm*P1.27mm* TO?99*"
+			(property "Description" "Điện áp vào: 4.5V ~ 20V, Điện áp ra: -Vin, 8-SOIC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2121,7 +2078,32 @@
 					(hide yes)
 				)
 			)
-			(symbol "ICL7660CBAZ_0_1"
+			(property "Supply name" "ICL7662CBA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supply part number" "ICL7662CBA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supply URL" "https://www.thegioiic.com/icl7662cba"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ICL7662CBA-T_0_1"
 				(rectangle
 					(start 0 15.24)
 					(end 15.24 0)
@@ -2134,7 +2116,7 @@
 					)
 				)
 			)
-			(symbol "ICL7660CBAZ_1_1"
+			(symbol "ICL7662CBA-T_1_1"
 				(pin unspecified line
 					(at 17.78 12.7 180)
 					(length 2.54)
@@ -6044,22 +6026,12 @@
 		(uuid "f42b4ee7-78db-448c-9faa-6975f5c8b8a6")
 	)
 	(no_connect
-		(at 284.48 83.82)
-		(uuid "298912fa-ce49-4392-a9cd-3ead7af52155")
-	)
-	(no_connect
 		(at 284.48 76.2)
 		(uuid "56fdb9dd-2aa7-4ebc-bdf4-576e522352a2")
 	)
-	(wire
-		(pts
-			(xy 139.7 90.17) (xy 139.7 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00701de4-cb38-409f-93b6-0a7b95f31b02")
+	(no_connect
+		(at 284.48 86.36)
+		(uuid "a0625b7e-d357-4db2-8f59-8ada65adfe32")
 	)
 	(wire
 		(pts
@@ -6333,7 +6305,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 95.25) (xy 294.64 95.25)
+			(xy 281.94 95.25) (xy 294.64 95.25)
 		)
 		(stroke
 			(width 0)
@@ -6533,6 +6505,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 83.82) (xy 284.48 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b142031-7629-4691-bcb7-64b4899435d7")
+	)
+	(wire
+		(pts
 			(xy 54.61 121.92) (xy 54.61 124.46)
 		)
 		(stroke
@@ -6653,16 +6635,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 92.71) (xy 148.59 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46b0741c-e1bf-467e-b8d0-cb3f192558df")
-	)
-	(wire
-		(pts
 			(xy 379.73 87.63) (xy 387.35 87.63)
 		)
 		(stroke
@@ -6713,7 +6685,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 86.36) (xy 283.21 95.25)
+			(xy 281.94 83.82) (xy 281.94 95.25)
 		)
 		(stroke
 			(width 0)
@@ -7813,7 +7785,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 92.71) (xy 148.59 93.98)
+			(xy 147.32 90.17) (xy 147.32 92.71)
 		)
 		(stroke
 			(width 0)
@@ -8023,7 +7995,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 90.17) (xy 138.43 90.17)
+			(xy 138.43 90.17) (xy 147.32 90.17)
 		)
 		(stroke
 			(width 0)
@@ -8100,16 +8072,6 @@
 			(type default)
 		)
 		(uuid "f8838420-2966-4ceb-9d4f-3b1b6c58bb4e")
-	)
-	(wire
-		(pts
-			(xy 283.21 86.36) (xy 284.48 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "faf4732b-5a6c-4e23-b45d-905d731879d7")
 	)
 	(wire
 		(pts
@@ -8211,7 +8173,7 @@
 	)
 	(rectangle
 		(start 129.54 186.69)
-		(end 204.47 231.14)
+		(end 208.28 231.14)
 		(stroke
 			(width 0)
 			(type default)
@@ -8317,7 +8279,7 @@
 		)
 		(uuid "8132dbe8-13cc-42d4-ba52-09da6762227a")
 	)
-	(text "Charge Pump -9V - ICL7660CBAZ"
+	(text "Charge Pump -9V - ICL7662CBAZ"
 		(exclude_from_sim no)
 		(at 288.544 61.468 0)
 		(effects
@@ -9322,6 +9284,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Measurement_Power_AC:ICL7662CBA-T")
+		(at 302.26 88.9 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "217f2629-81bb-4582-b234-cd9671d88ea6")
+		(property "Reference" "U16"
+			(at 294.64 69.342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ICL7662CBA-T"
+			(at 294.894 71.882 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Measure_Power_AC:SOIC-8"
+			(at 302.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/icl7662-si7661.pdf"
+			(at 302.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Điện áp vào: 4.5V ~ 20V, Điện áp ra: -Vin, 8-SOIC"
+			(at 302.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply name" "ICL7662CBA"
+			(at 302.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply part number" "ICL7662CBA"
+			(at 294.64 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supply URL" "https://www.thegioiic.com/icl7662cba"
+			(at 294.64 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "170c4417-9092-4d4a-b913-7608546c2c1d")
+		)
+		(pin "5"
+			(uuid "db83cfbc-e048-41da-bb24-98df6c7a969e")
+		)
+		(pin "1"
+			(uuid "b343513a-b65c-41cb-87c0-2aba57f5bd4e")
+		)
+		(pin "7"
+			(uuid "adaea3f9-a530-4890-a15d-ea3f79f7669c")
+		)
+		(pin "8"
+			(uuid "d4a06eeb-4861-4666-8878-7efd736ca162")
+		)
+		(pin "6"
+			(uuid "f1cb914f-0070-4736-8478-902d9fbc09be")
+		)
+		(pin "4"
+			(uuid "fb322bc0-f6a7-44bb-ba91-4a279c844670")
+		)
+		(pin "2"
+			(uuid "6fb9b364-9732-40e0-86dc-00d0359941e4")
+		)
+		(instances
+			(project ""
+				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/89f6d2d9-dbdb-44c3-92b1-b6c6afb905fd"
+					(reference "U16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Measurement_Power_AC:Res_1K_0603_1%")
 		(at 372.11 76.2 0)
 		(unit 1)
@@ -9742,7 +9818,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 93.98 0)
+		(at 147.32 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9751,7 +9827,7 @@
 		(fields_autoplaced yes)
 		(uuid "319a735e-1c14-4bd8-a576-7f03d4a64491")
 		(property "Reference" "#PWR0134"
-			(at 148.59 100.33 0)
+			(at 147.32 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9760,7 +9836,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.59 99.06 0)
+			(at 147.32 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9768,7 +9844,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 93.98 0)
+			(at 147.32 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9777,7 +9853,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 93.98 0)
+			(at 147.32 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9786,7 +9862,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 93.98 0)
+			(at 147.32 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11749,119 +11825,6 @@
 			(project "MEASURE_POWER_AC"
 				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/89f6d2d9-dbdb-44c3-92b1-b6c6afb905fd"
 					(reference "#PWR0132")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Measurement_Power_AC:ICL7660CBAZ")
-		(at 302.26 88.9 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7656746a-4386-42f4-8bf3-972565f9b6fd")
-		(property "Reference" "U16"
-			(at 294.64 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ICL7660CBAZ"
-			(at 294.64 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Measure_Power_AC:SOIC-8"
-			(at 321.31 110.744 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/icl7662-si7661.pdf"
-			(at 301.752 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Voltage Input: 1.5V ~ 10V, Voltage Output: -Vin, 8-SOIC"
-			(at 302.26 110.744 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply name" "Thegioiic"
-			(at 300.99 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply part number" "ICL7660CBAZ"
-			(at 300.99 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supply URL" "http://www.tme.vn/Product.aspx?id=848#page=pro_info"
-			(at 314.198 110.744 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "e2684ff3-1f46-4491-8da0-389a3ac10e4d")
-		)
-		(pin "7"
-			(uuid "397aa99e-6e6b-492a-b5f4-3a117c1c4641")
-		)
-		(pin "5"
-			(uuid "31187369-1bd9-4378-8abf-ac7a5f93b800")
-		)
-		(pin "2"
-			(uuid "20fc6f89-c888-402a-aaba-78090a86fbf5")
-		)
-		(pin "1"
-			(uuid "bbe9ea0e-0ddf-4b8a-a3ce-e7133fd628a6")
-		)
-		(pin "4"
-			(uuid "64d8db96-6956-41c8-80ab-3d171776c7e2")
-		)
-		(pin "6"
-			(uuid "656d7e2d-b665-4f9a-94aa-93da3dd901c8")
-		)
-		(pin "8"
-			(uuid "2c9035be-931d-47cc-901c-b3b214caf86c")
-		)
-		(instances
-			(project ""
-				(path "/a4d4b55a-fae9-4c17-8d9b-0fae9d35e0cc/89f6d2d9-dbdb-44c3-92b1-b6c6afb905fd"
-					(reference "U16")
 					(unit 1)
 				)
 			)
