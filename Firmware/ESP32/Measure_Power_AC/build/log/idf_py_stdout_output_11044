@@ -1,0 +1,33 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Github\MEASURE-POWER-AC\Firmware\ESP32\Measure_Power_AC\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/8] Building C object esp-idf/app_status_led/CMakeFiles/__idf_app_status_led.dir/app_status_led.c.obj
+D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_status_led/app_status_led.c: In function 'APP_Status_led_CreateTask':
+D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_status_led/app_status_led.c:48:15: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+   48 |   xTaskCreate(APP_Status_led_Task, "Status_Led_task", 1024 * 1, NULL, 4, NULL);
+      |               ^~~~~~~~~~~~~~~~~~~
+      |               |
+      |               void (*)(void)
+In file included from C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/esp_additions/include/freertos/idf_additions.h:20,
+                 from C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_data/app_data_ESP32.h:9,
+                 from D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_status_led/app_status_led.c:6:
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:371:44: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(void)'
+  371 |     BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~
+D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_status_led/app_status_led.c: In function 'APP_Status_led_Task':
+D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_status_led/app_status_led.c:90:43: warning: statement will never be executed [-Wswitch-unreachable]
+   90 |       printf("State: %d\n", *s_status_data.p_state);
+      |                              ~~~~~~~~~~~~~^~~~~~~~
+[3/8] Linking C static library esp-idf\app_status_led\libapp_status_led.a
+[4/8] Linking C static library esp-idf\main\libmain.a
+[5/8] Generating ld/sections.ld
+[6/8] Linking CXX executable Measure_Power_AC.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/Measure_Power_AC.bin
+[8/8] cmd.exe /C "cd /D D:\Github\MEASURE-POWER-AC\Firmware\ESP32\Measure_Power_AC\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/partition_table/partition-table.bin D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/Measure_Power_AC.bin"
+Measure_Power_AC.bin binary size 0x39cd0 bytes. Smallest app partition is 0x100000 bytes. 0xc6330 bytes (77%) free.

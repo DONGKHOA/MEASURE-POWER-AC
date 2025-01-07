@@ -1,0 +1,997 @@
+OT)
+configsip: 0, SPIWC��+ښ�j%�(49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early en�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  3 2025 20:09:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a1e0h (172512) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=0003a208 vaddr=3ffb0000 size=03f98h ( 16280) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003e1a8 vaddr=40080000 size=01e70h (  7792) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b52cch (742092) map[0m
+[0;32mI (432) esp_image: segment 4: paddr=000f52f4 vaddr=40081e70 size=1754ch ( 95564) load[0m
+[0;32mI (483) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (483) boot: Disabling RNG early entropy source...[0m
+[0;32mI (495) cpu_start: Multicore app[0m
+[0;32mI (503) cpu_start: Pro cpu start user code[0m
+[0;32mI (503) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (503) app_init: Application information:[0m
+[0;32mI (506) app_init: Project name:     Measure_Power_AC[0m
+[0;32mI (512) app_init: App version:      6cc6703-dirty[0m
+[0;32mI (517) app_init: Compile time:     Jan  3 2025 21:43:06[0m
+[0;32mI (523) app_init: ELF file SHA256:  af4572c3d...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (534) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (539) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (543) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (549) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (556) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (562) heap_init: At 3FFB9B50 len 000264B0 (153 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (574) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 400993BC len 00006C44 (27 KiB): IRAM[0m
+[0;32mI (588) spi_flash: detected chip: generic[0m
+[0;32mI (591) spi_flash: flash io: dio[0m
+[0;33mW (596) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (607) main_task: Started on CPU0[0m
+[0;32mI (611) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (648) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (650) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (659) uart: queue free spaces: 10[0m
+I (668) wifi:wifi driver task: 3ffce780, prio:23, stack:6656, core=0
+I (671) wifi:wifi firmware version: ccaebfa
+I (673) wifi:wifi certification version: v7.0
+I (677) wifi:config NVS flash: disabled
+I (680) wifi:config nano formating: disabled
+I (684) wifi:Init data frame dynamic rx buffer num: 32
+I (689) wifi:Init static rx mgmt buffer num: 5
+I (693) wifi:Init management short buffer num: 32
+I (698) wifi:Init dynamic tx buffer num: 32
+I (702) wifi:Init static rx buffer size: 1600
+I (706) wifi:Init static rx buffer num: 15
+I (709) wifi:Init dynamic rx buffer num: 32
+[0;32mI (715) wifi_init: rx ba win: 6[0m
+Count: 1
+[0;32mI (717) wifi_init: accept mbox: 6[0m
+[0;32mI (722) wifi_init: tcpip mbox: 32[0m
+[0;32mI (726) wifi_init: udp mbox: 6[0m
+[0;32mI (730) wifi_init: tcp mbox: 6[0m
+[0;32mI (733) wifi_init: tcp tx win: 5760[0m
+[0;32mI (738) wifi_init: tcp rx win: 5760[0m
+[0;32mI (742) wifi_init: tcp mss: 1440[0m
+[0;32mI (746) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (750) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (756) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+Count: 2
+I (841) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (842) wifi:enable tsf
+E (844) wifi:NAN WiFi stop
+I (845) wifi:flush txq
+I (846) wifi:stop sw txq
+I (846) wifi:lmac stop hw txq
+I (849) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (850) wifi:enable tsf
+[0;32mI (715) main_task: Returned from app_main()[0m
+Count: 3
+Count: 4
+Count: 5
+Count: 6
+Count: 7
+Count: 8
+Count: 9
+Count: 10
+Count: 11
+Count: 12
+Count: 13
+Count: 14
+Count: 15
+Count: 16
+Count: 17
+Count: 18
+Count: 19
+Count: 20
+Count: 21
+Count: 22
+Count: 23
+Count: 24
+Count: 25
+Count: 26
+Count: 27
+Starting WiFi Scan Round 1
+Count: 28
+Count: 29
+Count: 30
+Count: 31
+Count: 32
+Count: 33
+Count: 34
+Count: 35
+Count: 36
+Count: 37
+Count: 38
+Count: 39
+Count: 40
+Count: 41
+Count: 42
+Count: 43
+Count: 44
+Count: 45
+Count: 46
+Count: 47
+Count: 48
+Count: 49
+Count: 50
+Count: 51
+Count: 52
+Starting WiFi Scan Round 2
+Count: 53
+Count: 54
+Count: 55
+Count: 56
+Count: 57
+Count: 58
+Count: 59
+Count: 60
+Count: 61
+Count: 62
+Count: 63
+Count: 64
+Count: 65
+Count: 66
+Count: 67
+Count: 68
+Count: 69
+Count: 70
+Count: 71
+Count: 72
+Count: 73
+Count: 74
+Count: 75
+Count: 76
+Count: 77
+Starting WiFi Scan Round 3
+[0;32mI (8362) scan: SSID 		Nhan House[0m
+[0;32mI (8363) scan: RSSI 		-52[0m
+[0;32mI (8363) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8364) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8371) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8376) scan: Channel 		8
+[0m
+[0;32mI (8380) scan: SSID 		Tiger[0m
+[0;32mI (8383) scan: RSSI 		-55[0m
+[0;32mI (8386) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8391) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8397) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8402) scan: Channel 		11
+[0m
+[0;32mI (8406) scan: SSID 		ABC[0m
+[0;32mI (8409) scan: RSSI 		-57[0m
+[0;32mI (8413) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8417) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+Count: 78
+[0;32mI (8423) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8430) scan: Channel 		6
+[0m
+[0;32mI (8433) scan: SSID 		ABCD[0m
+[0;32mI (8437) scan: RSSI 		-58[0m
+[0;32mI (8440) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8445) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8451) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8457) scan: Channel 		11
+[0m
+[0;32mI (8460) scan: SSID 		Ngoi Nha Nho[0m
+[0;32mI (8464) scan: RSSI 		-73[0m
+[0;32mI (8468) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8473) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8479) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8485) scan: Channel 		11
+[0m
+[0;32mI (8488) scan: SSID 		Tan Phuc[0m
+[0;32mI (8492) scan: RSSI 		-77[0m
+[0;32mI (8495) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8500) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8506) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8511) scan: Channel 		2
+[0m
+[0;32mI (8515) scan: SSID 		SEA[0m
+[0;32mI (8518) scan: RSSI 		-79[0m
+[0;32mI (8521) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+Count: 79
+[0;32mI (8526) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8533) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8538) scan: Channel 		4
+[0m
+[0;32mI (8542) scan: SSID 		Phuc Messi[0m
+[0;32mI (8546) scan: RSSI 		-79[0m
+[0;32mI (8549) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8554) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8560) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8565) scan: Channel 		6
+[0m
+[0;32mI (8569) scan: SSID 		Cua Minh[0m
+[0;32mI (8573) scan: RSSI 		-88[0m
+[0;32mI (8576) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8581) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8587) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8593) scan: Channel 		1
+[0m
+[0;32mI (8596) scan: SSID 		FPT[0m
+[0;32mI (8600) scan: RSSI 		-89[0m
+[0;32mI (8603) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8608) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8614) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8619) scan: Channel 		7
+[0m
+Check matching Ssid
+1
+opening NVS Read handle Done 
+Count: 80
+Check matching Ssid
+1
+opening NVS Read handle Done 
+opening NVS Read handle Done 
+2
+return 1
+Found Matching SSID and Password
+E (8643) wifi:NAN WiFi stop
+I (8644) wifi:flush txq
+I (8646) wifi:stop sw txq
+I (8648) wifi:lmac stop hw txq
+I (8655) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (8656) wifi:enable tsf
+[0;32mI (8657) scan: Wifi_init_station finished.[0m
+Count: 81
+Count: 82
+Count: 83
+Count: 84
+Count: 85
+Count: 86
+Count: 87
+Count: 88
+Count: 89
+Count: 90
+Count: 91
+Count: 92
+Count: 93
+Count: 94
+Count: 95
+I (10140) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (10142) wifi:state: init -> auth (0xb0)
+I (10159) wifi:state: auth -> assoc (0x0)
+I (10189) wifi:state: assoc -> run (0x10)
+I (10228) wifi:connected with Tiger, aid = 2, channel 11, BW20, bssid = 5c:18:dd:52:64:69
+I (10229) wifi:security: WPA2-PSK, phy: bgn, rssi: -55
+Count: 96
+I (10230) wifi:pm start, type: 1
+
+I (10234) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (10261) wifi:<ba-add>idx:0 (ifx:0, 5c:18:dd:52:64:69), tid:7, ssn:0, winSize:64
+I (10267) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+Count: 97
+Count: 98
+Count: 99
+Count: 100
+Count: 101
+Count: 102
+Count: 103
+Count: 104
+Count: 105
+Count: 106
+[0;32mI (11247) esp_netif_handlers: sta ip: 192.168.100.87, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (11248) scan: Connected to ap SSID:Tiger password:thanhTRI1972[0m
+Connect Wifi
+I (11263) wifi:<ba-add>idx:1 (ifx:0, 5c:18:dd:52:64:69), tid:6, ssn:2, winSize:64
+I (11316) wifi:<ba-del>idx:1, tid:6
+I (11320) wifi:<ba-add>idx:1 (ifx:0, 5c:18:dd:52:64:69), tid:0, ssn:0, winSize:64
+Count: 107
+Count: 108
+Count: 109
+Count: 110
+Count: 111
+Count: 112
+Count: 113
+Count: 114
+Count: 115
+Count: 116
+Send energy
+Count: 117
+Count: 118
+Count: 119
+Count: 120
+Count: 121
+Count: 122
+Count: 123
+Count: 124
+Count: 125
+Count: 126
+Send energy
+Count: 127
+Count: 128
+Count: 129
+Count: 130
+Count: 131
+Count: 132
+Count: 133
+Count: 134
+Count: 135
+Count: 136
+Send energy
+Count: 137
+Count: 138
+Count: 139
+Count: 140
+Count: 141
+Count: 142
+Count: 143
+Count: 144
+Count: 145
+Count: 146
+Send energy
+Count: 147
+Count: 148
+Count: 149
+Count: 150
+Count: 151
+Count: 152
+Count: 153
+Count: 154
+Count: 155
+Count: 156
+Count: 157
+Send energy
+Count: 158
+Count: 159
+Count: 160
+Count: 161
+Count: 162
+Count: 163
+Count: 164
+Count: 165
+Count: 166
+Count: 167
+Send energy
+Count: 168
+Count: 169
+Count: 170
+Count: 171
+Count: 172
+Count: 173
+Count: 174
+Count: 175
+Count: 176
+Count: 177
+Send energy
+Count: 178
+Count: 179
+Count: 180
+Count: 181
+Count: 182
+Count: 183
+Count: 184
+Count: 185
+Count: 186
+Count: 187
+Send energy
+Count: 188
+Count: 189
+Count: 190
+Count: 191
+Count: 192
+Count: 193
+Count: 194
+Count: 195
+Count: 196
+Count: 197
+Send energy
+Count: 198
+Count: 199
+Count: 200
+Count: 201
+Count: 202
+Count: 203
+Count: 204
+Count: 205
+Count: 206
+Count: 207
+Count: 208
+Send energy
+Count: 209
+Count: 210
+Count: 211
+Count: 212
+Count: 213
+Count: 214
+Count: 215
+Count: 216
+Count: 217
+Count: 218
+Send energy
+Count: 219
+Count: 220
+Count: 221
+Count: 222
+Count: 223
+Count: 224
+Count: 225
+Count: 226
+Count: 227
+Count: 228
+Send energy
+Count: 229
+Count: 230
+Count: 231
+Count: 232
+Count: 233
+Count: 234
+Count: 235
+Count: 236
+Count: 237
+Count: 238
+Send energy
+Count: 239
+Count: 240
+Count: 241
+Count: 242
+Count: 243
+Count: 244
+Count: 245
+Count: 246
+Count: 247
+Count: 248
+Send energy
+Count: 249
+Count: 250
+Count: 251
+Count: 252
+Count: 253
+Count: 254
+Count: 255
+Count: 256
+Count: 257
+Count: 258
+Send energy
+Count: 259
+Count: 260
+Count: 261
+Count: 262
+Count: 263
+Count: 264
+Count: 265
+Count: 266
+Count: 267
+Count: 268
+Count: 269
+Send energy
+Count: 270
+Count: 271
+Count: 272
+Count: 273
+Count: 274
+Count: 275
+Count: 276
+Count: 277
+Count: 278
+Count: 279
+Send energy
+Count: 280
+Count: 281
+Count: 282
+Count: 283
+Count: 284
+Count: 285
+Count: 286
+Count: 287
+Count: 288
+Count: 289
+Send energy
+Count: 290
+Count: 291
+Count: 292
+Count: 293
+Count: 294
+Count: 295
+Count: 296
+Count: 297
+Count: 298
+Count: 299
+Send energy
+Count: 300
+Count: 301
+Count: 302
+Count: 303
+Count: 304
+Count: 305
+Count: 306
+Count: 307
+Count: 308
+Count: 309
+Send energy
+Count: 310
+Count: 311
+Count: 312
+Count: 313
+Count: 314
+Count: 315
+Count: 316
+Count: 317
+Count: 318
+Count: 319
+Count: 320
+Send energy
+Count: 321
+Count: 322
+Count: 323
+Count: 324
+Count: 325
+Count: 326
+Count: 327
+Count: 328
+Count: 329
+Count: 330
+Send energy
+Count: 331
+Count: 332
+Count: 333
+Count: 334
+Count: 335
+Count: 336
+Count: 337
+Count: 338
+Count: 339
+Count: 340
+Send energy
+Count: 341
+Count: 342
+Count: 343
+Count: 344
+Count: 345
+Count: 346
+Count: 347
+Count: 348
+Count: 349
+Count: 350
+Send energy
+Count: 351
+Count: 352
+Count: 353
+Count: 354
+Count: 355
+Count: 356
+Count: 357
+Count: 358
+Count: 359
+Count: 360
+Send energy
+Count: 361
+Count: 362
+Count: 363
+Count: 364
+Count: 365
+Count: 366
+Count: 367
+Count: 368
+Count: 369
+Count: 370
+Count: 371
+Send energy
+Count: 372
+Count: 373
+Count: 374
+Count: 375
+Count: 376
+Count: 377
+Count: 378
+Count: 379
+Count: 380
+Count: 381
+Send energy
+Count: 382
+Count: 383
+Count: 384
+Count: 385
+Count: 386
+Count: 387
+Count: 388
+Count: 389
+Count: 390
+Count: 391
+Send energy
+Count: 392
+Count: 393
+Count: 394
+Count: 395
+Count: 396
+Count: 397
+Count: 398
+Count: 399
+Count: 400
+Count: 401
+Count: 402
+Send energy
+Count: 403
+Count: 404
+Count: 405
+Count: 406
+Count: 407
+Count: 408
+Count: 409
+Count: 410
+Count: 411
+Count: 412
+Send energy
+Count: 413
+Count: 414
+Count: 415
+Count: 416
+Count: 417
+Count: 418
+Count: 419
+Count: 420
+Count: 421
+Count: 422
+Send energy
+Count: 423
+Count: 424
+Count: 425
+Count: 426
+Count: 427
+Count: 428
+Count: 429
+Count: 430
+Count: 431
+Count: 432
+Send energy
+Count: 433
+Count: 434
+Count: 435
+Count: 436
+Count: 437
+Count: 438
+Count: 439
+Count: 440
+Count: 441
+Count: 442
+Count: 443
+Send energy
+Count: 444
+Count: 445
+Count: 446
+Count: 447
+Count: 448
+Count: 449
+Count: 450
+Count: 451
+Count: 452
+Count: 453
+Send energy
+Count: 454
+Count: 455
+Count: 456
+Count: 457
+Count: 458
+Count: 459
+Count: 460
+Count: 461
+Count: 462
+Count: 463
+Send energy
+Count: 464
+Count: 465
+Count: 466
+Count: 467
+Count: 468
+Count: 469
+Count: 470
+Count: 471
+Count: 472
+Count: 473
+Send energy
+Count: 474
+Count: 475
+Count: 476
+Count: 477
+Count: 478
+Count: 479
+Count: 480
+Count: 481
+Count: 482
+Count: 483
+Send energy
+Count: 484
+Count: 485
+Count: 486
+Count: 487
+Count: 488
+Count: 489
+Count: 490
+Count: 491
+Count: 492
+Count: 493
+Send energy
+Count: 494
+Count: 495
+Count: 496
+Count: 497
+Count: 498
+Count: 499
+Count: 500
+Count: 501
+Count: 502
+Count: 503
+Count: 504
+Send energy
+Count: 505
+Count: 506
+Count: 507
+Count: 508
+Count: 509
+Count: 510
+Count: 511
+Count: 512
+Count: 513
+Count: 514
+Send energy
+Count: 515
+Count: 516
+Count: 517
+Count: 518
+Count: 519
+Count: 520
+Count: 521
+Count: 522
+Count: 523
+Count: 524
+Send energy
+Count: 525
+Count: 526
+Count: 527
+Count: 528
+Count: 529
+Count: 530
+Count: 531
+Count: 532
+Count: 533
+Count: 534
+Send energy
+Count: 535
+Count: 536
+Count: 537
+Count: 538
+Count: 539
+Count: 540
+Count: 541
+Count: 542
+Count: 543
+Count: 544
+Send energy
+Count: 545
+Count: 546
+Count: 547
+Count: 548
+Count: 549
+Count: 550
+Count: 551
+Count: 552
+Count: 553
+Count: 554
+Count: 555
+Send energy
+Count: 556
+Count: 557
+Count: 558
+Count: 559
+Count: 560
+Count: 561
+Count: 562
+Count: 563
+Count: 564
+Count: 565
+Send energy
+Count: 566
+Count: 567
+Count: 568
+Count: 569
+Count: 570
+Count: 571
+Count: 572
+Count: 573
+Count: 574
+Count: 575
+Send energy
+Count: 576
+Count: 577
+Count: 578
+Count: 579
+Count: 580
+Count: 581
+Count: 582
+Count: 583
+Count: 584
+Count: 585
+Send energy
+Count: 586
+Count: 587
+Count: 588
+Count: 589
+Count: 590
+Count: 591
+Count: 592
+Count: 593
+Count: 594
+Count: 595
+Send energy
+Count: 596
+Count: 597
+Count: 598
+Count: 599
+Count: 600
+Count: 601
+Count: 602
+Count: 603
+Count: 604
+Count: 605
+Count: 606
+Send energy
+Count: 607
+Count: 608
+Count: 609
+Count: 610
+Count: 611
+Count: 612
+Count: 613
+Count: 614
+Count: 615
+Count: 616
+Send energy
+Count: 617
+Count: 618
+Count: 619
+Count: 620
+Count: 621
+Count: 622
+Count: 623
+Count: 624
+Count: 625
+Count: 626
+Send energy
+Count: 627
+Count: 628
+Count: 629
+Count: 630
+Count: 631
+Count: 632
+Count: 633
+Count: 634
+Count: 635
+Count: 636
+Send energy
+Count: 637
+Count: 638
+Count: 639
+Count: 640
+Count: 641
+Count: 642
+Count: 643
+Count: 644
+Count: 645
+Count: 646
+Send energy
+Count: 647
+Count: 648
+Count: 649
+Count: 650
+Count: 651
+Count: 652
+Count: 653
+Count: 654
+Count: 655
+Count: 656
+Count: 657
+Send energy
+Count: 658
+Count: 659
+Count: 660
+Count: 661
+Count: 662
+Count: 663
+Count: 664
+Count: 665
+Count: 666
+Count: 667
+Send energy
+Count: 668
+Count: 669
+Count: 670
+Count: 671
+Count: 672
+Count: 673
+Count: 674
+Count: 675
+Count: 676
+Count: 677
+Send energy
+Count: 678
+Count: 679
+Count: 680
+Count: 681
+Count: 682
+Count: 683
+Count: 684
+Count: 685
+Count: 686
+Count: 687
+Send energy
+Count: 688
+Count: 689
+Count: 690
+Count: 691
+Count: 692
+Count: 693
+Count: 694
+Count: 695
+Count: 696
+Count: 697
+Send energy
+Count: 698
+Count: 699
+Count: 700
+Count: 701
+Count: 702
+Count: 703
+Count: 704
+Count: 705
+Count: 706
+Count: 707
+Send energy
+Count: 708
+Count: 709
+Count: 710
+Count: 711
+Count: 712
+Count: 713
+Count: 714
+Count: 715
+Count: 716
+Count: 717
+Count: 718
+Send energy
+Count: 719
+Count: 720
+Count: 721
+Count: 722
+Count: 723
+Count: 724
+Count: 725
+Count: 726
+Count: 727
+Count: 728
+Send energy
+Count: 729
+Count: 730
+Count: 731
+Count: 732
+Count: 733
+Count: 734
+Count: 735

@@ -1,0 +1,110 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40181562: base_node_add_handler at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:226
+[0m
+[0;33m0x400edd08: wifi_default_action_sta_disconnected at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:105
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4018155f: base_node_add_handler at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:225
+0x401816ee: loop_node_add_handler at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:314
+0x40181d0b: esp_event_handler_register_with_internal at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:741
+0x40181d32: esp_event_handler_register_with at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:752
+0x4018131d: esp_event_handler_register at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/default_event_loop.c:24
+0x400ede52: set_default_wifi_handlers at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:205
+0x400edf43: esp_wifi_set_default_wifi_sta_handlers at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:256
+0x400edfa0: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390
+0x400dbcd8: WIFI_StaInit at D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/Middleware/wifi/wifi.c:385
+0x400db4b3: APP_Things_board_task at D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_things_board/app_things_board.c:112
+0x4008b815: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008d18e: xTaskIncrementTick at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/tasks.c:3274
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x4008d18b: xTaskIncrementTick at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/tasks.c:3274
+0x4008bfe3: xPortSysTickHandler at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/port_systick.c:224
+0x4008bcdd: _frxt_timer_int at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:344
+0x400834da: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/xtensa_vectors.S:1240
+0x400d66d0: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d6ea7: uart_write at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c:223
+0x400d991d: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.3.1/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d9255: console_write at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_vfs_console/vfs_console.c:67
+0x400d991d: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.3.1/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x4016838d: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x401752a3: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x40174c49: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1766 (discriminator 1)
+0x401688cd: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x40183c3d: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x400919b1: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x4010f47f: wifi_log at ??:?
+0x4012d433: pp_create_task at ??:?
+0x4012a2b3: ic_create_wifi_task at ??:?
+0x4010d474: wifi_init_in_caller_task at ??:?
+0x4010d62d: esp_wifi_init_internal at ??:?
+0x400edb56: esp_wifi_init at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_init.c:403
+0x400dbd64: WIFI_StaInit at D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/Middleware/wifi/wifi.c:389
+0x400db4b3: APP_Things_board_task at D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_things_board/app_things_board.c:112
+0x4008b815: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40181562: base_node_add_handler at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:226
+[0m
+[0;33m0x400edd08: wifi_default_action_sta_disconnected at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:105
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4018155f: base_node_add_handler at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:225
+0x401816ee: loop_node_add_handler at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:314
+0x40181d0b: esp_event_handler_register_with_internal at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:741
+0x40181d32: esp_event_handler_register_with at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:752
+0x4018131d: esp_event_handler_register at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/default_event_loop.c:24
+0x400ede52: set_default_wifi_handlers at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:205
+0x400edf43: esp_wifi_set_default_wifi_sta_handlers at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:256
+0x400edfa0: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390
+0x400dbcd8: WIFI_StaInit at D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/Middleware/wifi/wifi.c:385
+0x400db4b3: APP_Things_board_task at D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_things_board/app_things_board.c:112
+0x4008b815: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40181562: base_node_add_handler at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:226
+[0m
+[0;33m0x400edd08: wifi_default_action_sta_disconnected at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:105
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4018155f: base_node_add_handler at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:225
+0x401816ee: loop_node_add_handler at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:314
+0x40181d0b: esp_event_handler_register_with_internal at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:741
+0x40181d32: esp_event_handler_register_with at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/esp_event.c:752
+0x4018131d: esp_event_handler_register at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/default_event_loop.c:24
+0x400ede52: set_default_wifi_handlers at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:205
+0x400edf43: esp_wifi_set_default_wifi_sta_handlers at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:256
+0x400edfa0: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390
+0x400dbcd8: WIFI_StaInit at D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/Middleware/wifi/wifi.c:385
+0x400db4b3: APP_Things_board_task at D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_things_board/app_things_board.c:112
+0x4008b815: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

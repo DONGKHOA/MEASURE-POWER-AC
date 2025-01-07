@@ -88,20 +88,7 @@ static void APP_Process_data_task(void *arg);
 
 static inline void APP_Process_data_Calculate_Power(void);
 static inline void APP_Process_data_Calculate_Power_Average_Sec(void);
-static inline void APP_Process_data_Calculate_Power_Average_Min(void);
-static inline void APP_Process_data_Calculate_Power_Average_Hour(void);
-static inline void APP_Process_data_Calculate_Power_Average_Day(void);
-static inline void APP_Process_data_Calculate_Power_Average_Week(void);
-static inline void APP_Process_data_Calculate_Power_Average_Month(void);
-static inline void APP_Process_data_Calculate_Power_Average_Year(void);
-
 static inline void APP_Process_data_Calculate_Energy_Sec(void);
-static inline void APP_Process_data_Calculate_Energy_Min(void);
-static inline void APP_Process_data_Calculate_Energy_Hour(void);
-static inline void APP_Process_data_Calculate_Energy_Day(void);
-static inline void APP_Process_data_Calculate_Energy_Week(void);
-static inline void APP_Process_data_Calculate_Energy_Month(void);
-static inline void APP_Process_data_Calculate_Energy_Year(void);
 
 static void APP_Process_data_Calculate_Energy(void);
 
@@ -206,6 +193,9 @@ APP_Process_data_task (void *arg)
         APP_Process_data_Calculate_Power();
 
         // Send power to data trans
+        xQueueSend(
+            *s_process_data.p_data_trans_queue, s_process_data.p_power, 0);
+        // printf("Power: %f\n", *s_process_data.p_power);
 
         // Calculate energy
         APP_Process_data_Calculate_Energy();
@@ -221,6 +211,16 @@ APP_Process_data_task (void *arg)
 static void
 APP_Process_data_Calculate_Energy (void)
 {
+
+  EventBits_t uxBits = xEventGroupWaitBits(
+      *s_process_data.p_flag_time_event,
+      BIT_FLAG_TIME_SEC | BIT_FLAG_TIME_MIN | BIT_FLAG_TIME_HOUR
+          | BIT_FLAG_TIME_DAY | BIT_FLAG_TIME_WEEK | BIT_FLAG_TIME_MONTH
+          | BIT_FLAG_TIME_YEAR,
+      pdTRUE,  // Erase bit after processed
+      pdFALSE, // Wait for all bit
+      0);     // No time out
+
   s_process_data.s_power_data
       .f_power_sec[s_process_data.s_index_data.u8_index_sec]
       = *s_process_data.p_power;
@@ -231,126 +231,57 @@ APP_Process_data_Calculate_Energy (void)
     return;
   }
 
-  // Update Average Power minute
-  s_process_data.s_power_data
-      .f_power_minute[s_process_data.s_index_data.u8_index_minute]
-      += s_process_data.s_power_data
-             .f_power_sec[s_process_data.s_index_data.u8_index_sec];
-
-  // Update Average Power hour
-  s_process_data.s_power_data
-      .f_power_hour[s_process_data.s_index_data.u8_index_hour]
-      += s_process_data.s_power_data
-             .f_power_minute[s_process_data.s_index_data.u8_index_minute];
-
-  // Update Average Power day
-  s_process_data.s_power_data
-      .f_power_day[s_process_data.s_index_data.u8_index_day]
-      += s_process_data.s_power_data
-             .f_power_hour[s_process_data.s_index_data.u8_index_hour];
-
-  // Update Average Power week
-  s_process_data.s_power_data
-      .f_power_week[s_process_data.s_index_data.u8_index_week]
-      += s_process_data.s_power_data
-             .f_power_day[s_process_data.s_index_data.u8_index_day];
-
-  // Update Average Power month
-  s_process_data.s_power_data
-      .f_power_month[s_process_data.s_index_data.u8_index_month]
-      += s_process_data.s_power_data
-             .f_power_day[s_process_data.s_index_data.u8_index_day];
-
-  // Update Average Power year
-  s_process_data.s_power_data
-      .f_power_year[s_process_data.s_index_data.u16_index_year]
-      += s_process_data.s_power_data
-             .f_power_day[s_process_data.s_index_data.u8_index_day];
-
-  APP_Process_data_Calculate_Power_Average_Sec();
-  APP_Process_data_Calculate_Power_Average_Min();
-  APP_Process_data_Calculate_Power_Average_Hour();
-  APP_Process_data_Calculate_Power_Average_Day();
-  APP_Process_data_Calculate_Power_Average_Week();
-  APP_Process_data_Calculate_Power_Average_Month();
-  APP_Process_data_Calculate_Power_Average_Year();
-
-  APP_Process_data_Calculate_Energy_Sec();
-  APP_Process_data_Calculate_Energy_Min();
-  APP_Process_data_Calculate_Energy_Hour();
-  APP_Process_data_Calculate_Energy_Day();
-  APP_Process_data_Calculate_Energy_Week();
-  APP_Process_data_Calculate_Energy_Month();
-  APP_Process_data_Calculate_Energy_Year();
-
-  if (s_process_data.s_index_data.u8_index_sec == 49)
+  if (uxBits & BIT_FLAG_TIME_YEAR)
   {
-    s_process_data.s_index_data.u8_index_minute++;
+    *s_process_data.s_energy_data.p_energy_year = 0;
+  }
+
+  if (uxBits & BIT_FLAG_TIME_MONTH)
+  {
+    *s_process_data.s_energy_data.p_energy_month = 0;
+  }
+
+  if (uxBits & BIT_FLAG_TIME_DAY)
+  {
+    *s_process_data.s_energy_data.p_energy_day = 0;
+  }
+
+  if (uxBits & BIT_FLAG_TIME_HOUR)
+  {
+    *s_process_data.s_energy_data.p_energy_hour = 0;
+  }
+
+  if (uxBits & BIT_FLAG_TIME_MIN)
+  {
+    *s_process_data.s_energy_data.p_energy_min = 0;
+  }
+
+  if (uxBits & BIT_FLAG_TIME_SEC)
+  {
+    APP_Process_data_Calculate_Power_Average_Sec();
+    APP_Process_data_Calculate_Energy_Sec();
+
+    *s_process_data.s_energy_data.p_energy_min
+        += *s_process_data.s_energy_data.p_energy;
+    *s_process_data.s_energy_data.p_energy_hour
+        += *s_process_data.s_energy_data.p_energy;
+    *s_process_data.s_energy_data.p_energy_day
+        += *s_process_data.s_energy_data.p_energy;
+    *s_process_data.s_energy_data.p_energy_month
+        += *s_process_data.s_energy_data.p_energy;
+    *s_process_data.s_energy_data.p_energy_year
+        += *s_process_data.s_energy_data.p_energy;
+
     s_process_data.s_index_data.u8_index_sec = 0;
     memset(s_process_data.s_power_data.f_power_sec,
            0.0,
            sizeof(s_process_data.s_power_data.f_power_sec));
   }
 
-  if (s_process_data.s_index_data.u8_index_minute == 59)
-  {
-    s_process_data.s_index_data.u8_index_hour++;
-    s_process_data.s_index_data.u8_index_minute = 0;
-    memset(s_process_data.s_power_data.f_power_minute,
-           0.0,
-           sizeof(s_process_data.s_power_data.f_power_minute));
-
-    xEventGroupSetBits(*s_process_data.p_flag_mqtt_event,
-                       (BIT_SEND_ENERGY_MONTH) | (BIT_SEND_ENERGY_YEAR));
-  }
-
-  if (s_process_data.s_index_data.u8_index_hour == 59)
-  {
-    s_process_data.s_index_data.u8_index_day++;
-    s_process_data.s_index_data.u8_index_hour = 0;
-    memset(s_process_data.s_power_data.f_power_hour,
-           0.0,
-           sizeof(s_process_data.s_power_data.f_power_hour));
-  }
-
-  if (s_process_data.s_index_data.u8_index_day == 24)
-  {
-    s_process_data.s_index_data.u8_index_week++;
-    s_process_data.s_index_data.u8_index_day = 0;
-    memset(s_process_data.s_power_data.f_power_day,
-           0.0,
-           sizeof(s_process_data.s_power_data.f_power_day));
-  }
-
-  if (s_process_data.s_index_data.u8_index_week == 7)
-  {
-    s_process_data.s_index_data.u8_index_month++;
-    s_process_data.s_index_data.u8_index_week = 0;
-    memset(s_process_data.s_power_data.f_power_minute,
-           0.0,
-           sizeof(s_process_data.s_power_data.f_power_week));
-  }
-
-  if (s_process_data.s_index_data.u8_index_month == 31)
-  {
-    s_process_data.s_index_data.u16_index_year++;
-    s_process_data.s_index_data.u8_index_month = 0;
-    memset(s_process_data.s_power_data.f_power_month,
-           0.0,
-           sizeof(s_process_data.s_power_data.f_power_month));
-  }
-
-  if (s_process_data.s_index_data.u16_index_year == 365)
-  {
-    s_process_data.s_index_data.u16_index_year = 0;
-    memset(s_process_data.s_power_data.f_power_year,
-           0.0,
-           sizeof(s_process_data.s_power_data.f_power_year));
-  }
-
-  xEventGroupSetBits(*s_process_data.p_flag_mqtt_event,
-                     (BIT_SEND_ENERGY) | (BIT_SEND_ENERGY_HOUR)
-                         | (BIT_SEND_ENERGY_DAY) | (BIT_SEND_ENERGY_WEEK));
+    EventBits_t bits = xEventGroupSetBits(
+        *s_process_data.p_flag_mqtt_event,
+        (BIT_SEND_ENERGY) | (BIT_SEND_ENERGY_HOUR) | (BIT_SEND_ENERGY_DAY)
+            | (BIT_SEND_ENERGY_MONTH) | (BIT_SEND_ENERGY_YEAR));
 }
 
 static inline void
@@ -358,59 +289,7 @@ APP_Process_data_Calculate_Energy_Sec (void)
 {
   *s_process_data.s_energy_data.p_energy
       = s_process_data.s_power_data.f_power_sec[INDEX_LAST_DATA_STORE_POWER_SEC]
-        / 3600;
-}
-
-static inline void
-APP_Process_data_Calculate_Energy_Min (void)
-{
-  *s_process_data.s_energy_data.p_energy_min
-      = s_process_data.s_power_data
-            .f_power_minute[INDEX_LAST_DATA_STORE_POWER_MIN]
-        / 60;
-}
-
-static inline void
-APP_Process_data_Calculate_Energy_Hour (void)
-{
-  *s_process_data.s_energy_data.p_energy_hour
-      = s_process_data.s_power_data
-            .f_power_hour[INDEX_LAST_DATA_STORE_POWER_HOUR];
-}
-
-static inline void
-APP_Process_data_Calculate_Energy_Day (void)
-{
-  *s_process_data.s_energy_data.p_energy_day
-      = s_process_data.s_power_data.f_power_sec[INDEX_LAST_DATA_STORE_POWER_DAY]
-        * 24;
-}
-
-static inline void
-APP_Process_data_Calculate_Energy_Week (void)
-{
-  *s_process_data.s_energy_data.p_energy_week
-      = s_process_data.s_power_data
-            .f_power_sec[INDEX_LAST_DATA_STORE_POWER_WEEK]
-        * 168;
-}
-
-static inline void
-APP_Process_data_Calculate_Energy_Month (void)
-{
-  *s_process_data.s_energy_data.p_energy_month
-      = s_process_data.s_power_data
-            .f_power_sec[INDEX_LAST_DATA_STORE_POWER_MONTH]
-        * 744;
-}
-
-static inline void
-APP_Process_data_Calculate_Energy_Year (void)
-{
-  *s_process_data.s_energy_data.p_energy_year
-      = s_process_data.s_power_data
-            .f_power_sec[INDEX_LAST_DATA_STORE_POWER_YEAR]
-        * 8760;
+        / (3600 * 1000);
 }
 
 static inline void
@@ -425,89 +304,17 @@ static inline void
 APP_Process_data_Calculate_Power_Average_Sec (void)
 {
   f_sum = 0;
+
+  if (s_process_data.s_index_data.u8_index_sec == 0)
+  {
+    return;
+  }
+
   for (uint8_t i = 0; i < INDEX_LAST_DATA_STORE_POWER_SEC; i++)
   {
     f_sum += s_process_data.s_power_data.f_power_sec[i];
   }
 
   s_process_data.s_power_data.f_power_sec[INDEX_LAST_DATA_STORE_POWER_SEC]
-      = f_sum / (INDEX_LAST_DATA_STORE_POWER_SEC);
-}
-
-static inline void
-APP_Process_data_Calculate_Power_Average_Min (void)
-{
-  f_sum = 0;
-  for (uint8_t i = 0; i < INDEX_LAST_DATA_STORE_POWER_MIN; i++)
-  {
-    f_sum += s_process_data.s_power_data.f_power_minute[i];
-  }
-
-  s_process_data.s_power_data.f_power_minute[INDEX_LAST_DATA_STORE_POWER_MIN]
-      = f_sum / (INDEX_LAST_DATA_STORE_POWER_MIN);
-}
-
-static inline void
-APP_Process_data_Calculate_Power_Average_Hour (void)
-{
-  f_sum = 0;
-  for (uint8_t i = 0; i < INDEX_LAST_DATA_STORE_POWER_HOUR; i++)
-  {
-    f_sum += s_process_data.s_power_data.f_power_hour[i];
-  }
-
-  s_process_data.s_power_data.f_power_hour[INDEX_LAST_DATA_STORE_POWER_HOUR]
-      = f_sum / (INDEX_LAST_DATA_STORE_POWER_HOUR);
-}
-
-static inline void
-APP_Process_data_Calculate_Power_Average_Day (void)
-{
-  f_sum = 0;
-  for (uint8_t i = 0; i < INDEX_LAST_DATA_STORE_POWER_DAY; i++)
-  {
-    f_sum += s_process_data.s_power_data.f_power_day[i];
-  }
-
-  s_process_data.s_power_data.f_power_day[INDEX_LAST_DATA_STORE_POWER_DAY]
-      = f_sum / (INDEX_LAST_DATA_STORE_POWER_DAY);
-}
-
-static inline void
-APP_Process_data_Calculate_Power_Average_Week (void)
-{
-  f_sum = 0;
-  for (uint8_t i = 0; i < INDEX_LAST_DATA_STORE_POWER_WEEK; i++)
-  {
-    f_sum += s_process_data.s_power_data.f_power_week[i];
-  }
-
-  s_process_data.s_power_data.f_power_week[INDEX_LAST_DATA_STORE_POWER_WEEK]
-      = f_sum / (INDEX_LAST_DATA_STORE_POWER_WEEK);
-}
-
-static inline void
-APP_Process_data_Calculate_Power_Average_Month (void)
-{
-  f_sum = 0;
-  for (uint8_t i = 0; i < INDEX_LAST_DATA_STORE_POWER_MONTH; i++)
-  {
-    f_sum += s_process_data.s_power_data.f_power_month[i];
-  }
-
-  s_process_data.s_power_data.f_power_month[INDEX_LAST_DATA_STORE_POWER_MONTH]
-      = f_sum / (INDEX_LAST_DATA_STORE_POWER_MONTH);
-}
-
-static inline void
-APP_Process_data_Calculate_Power_Average_Year (void)
-{
-  f_sum = 0;
-  for (uint16_t i = 0; i < INDEX_LAST_DATA_STORE_POWER_YEAR; i++)
-  {
-    f_sum += s_process_data.s_power_data.f_power_year[i];
-  }
-
-  s_process_data.s_power_data.f_power_year[INDEX_LAST_DATA_STORE_POWER_YEAR]
-      = f_sum / (INDEX_LAST_DATA_STORE_POWER_YEAR);
+      = f_sum / INDEX_LAST_DATA_STORE_POWER_SEC;
 }

@@ -1,0 +1,290 @@
+ 2019 12:21:46
+
+rst:0����j!�m[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59)�[0;32mI (13) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time Jan  3 2025 20:09:16[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.0[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a1b0h (172464) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0003a1d8 vaddr=3ffb0000 size=03f98h ( 16280) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0003e178 vaddr=40080000 size=01ea0h (  7840) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b5090h (741520) map[0m
+[0;32mI (413) esp_image: segment 4: paddr=000f50b8 vaddr=40081ea0 size=1751ch ( 95516) load[0m
+[0;32mI (464) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (464) boot: Disabling RNG early entropy source...[0m
+[0;32mI (476) cpu_start: Multicore app[0m
+[0;32mI (484) cpu_start: Pro cpu start user code[0m
+[0;32mI (484) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (484) app_init: Application information:[0m
+[0;32mI (487) app_init: Project name:     Measure_Power_AC[0m
+[0;32mI (493) app_init: App version:      6cc6703-dirty[0m
+[0;32mI (498) app_init: Compile time:     Jan  3 2025 21:43:06[0m
+[0;32mI (504) app_init: ELF file SHA256:  a60b18794...[0m
+[0;32mI (509) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (515) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (519) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (524) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (530) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (537) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (543) heap_init: At 3FFB9B60 len 000264A0 (153 KiB): DRAM[0m
+[0;32mI (549) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (555) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (562) heap_init: At 400993BC len 00006C44 (27 KiB): IRAM[0m
+[0;32mI (569) spi_flash: detected chip: generic[0m
+[0;32mI (572) spi_flash: flash io: dio[0m
+[0;33mW (576) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (588) main_task: Started on CPU0[0m
+[0;32mI (592) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (629) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (631) uart: queue free spaces: 10[0m
+[0;32mI (638) main_task: Returned from app_main()[0m
+I (641) wifi:wifi driver task: 3ffdc3a4, prio:23, stack:6656, core=0
+I (648) wifi:wifi firmware version: ccaebfa
+I (649) wifi:wifi certification version: v7.0
+I (653) wifi:config NVS flash: disabled
+I (657) wifi:config nano formating: disabled
+I (661) wifi:Init data frame dynamic rx buffer num: 32
+I (666) wifi:Init static rx mgmt buffer num: 5
+I (670) wifi:Init management short buffer num: 32
+I (674) wifi:Init dynamic tx buffer num: 32
+I (678) wifi:Init static rx buffer size: 1600
+I (683) wifi:Init static rx buffer num: 15
+I (686) wifi:Init dynamic rx buffer num: 32
+[0;32mI (691) wifi_init: rx ba win: 6[0m
+[0;32mI (694) wifi_init: accept mbox: 6[0m
+[0;32mI (698) wifi_init: tcpip mbox: 32[0m
+[0;32mI (702) wifi_init: udp mbox: 6[0m
+[0;32mI (705) wifi_init: tcp mbox: 6[0m
+[0;32mI (709) wifi_init: tcp tx win: 5760[0m
+[0;32mI (713) wifi_init: tcp rx win: 5760[0m
+[0;32mI (718) wifi_init: tcp mss: 1440[0m
+[0;32mI (721) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (726) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (732) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (815) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (817) wifi:enable tsf
+E (819) wifi:NAN WiFi stop
+I (820) wifi:flush txq
+I (820) wifi:stop sw txq
+I (820) wifi:lmac stop hw txq
+I (824) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (825) wifi:enable tsf
+Starting WiFi Scan Round 1
+Starting WiFi Scan Round 2
+Starting WiFi Scan Round 3
+[0;32mI (8338) scan: SSID 		Tiger[0m
+[0;32mI (8338) scan: RSSI 		-56[0m
+[0;32mI (8338) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8339) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8345) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8350) scan: Channel 		11
+[0m
+[0;32mI (8354) scan: SSID 		Nhan House[0m
+[0;32mI (8358) scan: RSSI 		-60[0m
+[0;32mI (8361) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8366) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8372) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8378) scan: Channel 		2
+[0m
+[0;32mI (8381) scan: SSID 		ABCD[0m
+[0;32mI (8385) scan: RSSI 		-60[0m
+[0;32mI (8388) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8393) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8399) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8405) scan: Channel 		11
+[0m
+[0;32mI (8408) scan: SSID 		ABC[0m
+[0;32mI (8412) scan: RSSI 		-61[0m
+[0;32mI (8415) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8420) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8426) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8431) scan: Channel 		6
+[0m
+[0;32mI (8435) scan: SSID 		Ngoi Nha Nho[0m
+[0;32mI (8439) scan: RSSI 		-76[0m
+[0;32mI (8442) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8447) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8453) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8459) scan: Channel 		11
+[0m
+[0;32mI (8463) scan: SSID 		SEA[0m
+[0;32mI (8466) scan: RSSI 		-80[0m
+[0;32mI (8469) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8474) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8480) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8485) scan: Channel 		4
+[0m
+[0;32mI (8489) scan: SSID 		MAI[0m
+[0;32mI (8492) scan: RSSI 		-81[0m
+[0;32mI (8495) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8501) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8506) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8512) scan: Channel 		1
+[0m
+[0;32mI (8515) scan: SSID 		Phuc Messi[0m
+[0;32mI (8519) scan: RSSI 		-81[0m
+[0;32mI (8523) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8527) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8533) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8539) scan: Channel 		6
+[0m
+[0;32mI (8542) scan: SSID 		PUKAS[0m
+[0;32mI (8546) scan: RSSI 		-84[0m
+[0;32mI (8549) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8554) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8560) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8565) scan: Channel 		11
+[0m
+[0;32mI (8569) scan: SSID 		Tan Phuc[0m
+[0;32mI (8573) scan: RSSI 		-87[0m
+[0;32mI (8576) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8581) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8587) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8592) scan: Channel 		2
+[0m
+Check matching Ssid
+1
+opening NVS Read handle Done 
+opening NVS Read handle Done 
+2
+return 1
+MatchingWIFIScan
+E (8608) wifi:NAN WiFi stop
+I (8609) wifi:flush txq
+I (8611) wifi:stop sw txq
+I (8613) wifi:lmac stop hw txq
+I (8620) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (8621) wifi:enable tsf
+[0;32mI (8623) scan: Wifi_init_station finished.[0m
+I (10105) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (10107) wifi:state: init -> auth (0xb0)
+I (10114) wifi:state: auth -> init (0x8a0)
+I (10115) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (10122) scan: retry to connect to the AP[0m
+[0;31mE (10123) scan: connect to the AP fail[0m
+[0;32mI (12539) scan: retry to connect to the AP[0m
+[0;31mE (12540) scan: connect to the AP fail[0m
+I (12549) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (12550) wifi:state: init -> auth (0xb0)
+I (12558) wifi:state: auth -> assoc (0x0)
+I (12591) wifi:state: assoc -> run (0x10)
+I (12635) wifi:connected with Tiger, aid = 2, channel 11, BW20, bssid = 5c:18:dd:52:64:69
+I (12636) wifi:security: WPA2-PSK, phy: bgn, rssi: -57
+I (12638) wifi:pm start, type: 1
+
+I (12641) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (12661) wifi:<ba-add>idx:0 (ifx:0, 5c:18:dd:52:64:69), tid:7, ssn:0, winSize:64
+I (12736) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (13653) esp_netif_handlers: sta ip: 192.168.100.87, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (13654) scan: Connected to ap SSID:Tiger password:thanhTRI1972[0m
+Connect OK_WIFICONECT
+I (13670) wifi:<ba-add>idx:1 (ifx:0, 5c:18:dd:52:64:69), tid:6, ssn:2, winSize:64
+I (13682) wifi:<ba-del>idx:1, tid:6
+I (13687) wifi:<ba-add>idx:1 (ifx:0, 5c:18:dd:52:64:69), tid:0, ssn:0, winSize:64
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy
+Send energy

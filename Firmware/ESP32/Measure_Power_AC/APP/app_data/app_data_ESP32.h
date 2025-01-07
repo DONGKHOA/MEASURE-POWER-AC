@@ -31,13 +31,35 @@ extern "C"
 #define BIT_FLAG_TIME_MIN   (1 << 1)
 #define BIT_FLAG_TIME_HOUR  (1 << 2)
 #define BIT_FLAG_TIME_DAY   (1 << 3)
-#define BIT_FLAG_TIME_WEEK  (1 << 4)
-#define BIT_FLAG_TIME_MONTH (1 << 5)
-#define BIT_FLAG_TIME_YEAR  (1 << 6)
+#define BIT_FLAG_TIME_DATE  (1 << 4)
+#define BIT_FLAG_TIME_WEEK  (1 << 5)
+#define BIT_FLAG_TIME_MONTH (1 << 6)
+#define BIT_FLAG_TIME_YEAR  (1 << 7)
+
+#define BIT_PRESSING_BUTTON (1 << 0)
+#define BIT_RELEASE_BUTTON  (1 << 1)
+
+#define WIFI_CONNECTED_BIT (1 << 0)
+#define WIFI_FAIL_BIT      (1 << 1)
+
+#define WIFI_SMART_CONFIG_CONNECTED_BIT      (1 << 2)
+#define WIFI_SMART_CONFIG_FAIL_BIT           (1 << 3)
+#define WIFI_SMART_CONFIG_LOST_CONNECTED_BIT (1 << 4)
+#define ESPTOUCH_DONE_BIT                    (1 << 5)
 
   /****************************************************************************
    *   PUBLIC TYPEDEFS
    ***************************************************************************/
+
+  typedef enum
+  {
+    STATE_SCAN_WIFI = 0,
+    STATE_WIFI_CONNECTED,
+    STATE_SMART_CONFIG,
+    STATE_THINGSBOARD_SUCCESS,
+    STATE_THINGSBOARD_UNSUCCESSFUL,
+    STATE_RESET_FULL_DATA,
+  } STATE_t;
 
   typedef struct
   {
@@ -56,6 +78,8 @@ extern "C"
     uint8_t            u8_pass[32];
     EventGroupHandle_t s_flag_mqtt_event;
     EventGroupHandle_t s_flag_time_event;
+    EventGroupHandle_t s_flag_button_event;
+    EventGroupHandle_t s_flag_wifi_event;
     QueueHandle_t      s_data_rec_queue;   // float
     QueueHandle_t      s_data_trans_queue; // float
     float              f_power;
@@ -67,10 +91,11 @@ extern "C"
     float              f_energy_month;
     float              f_energy_year;
     flag_enable_t      s_flag_enable;
+    STATE_t            s_state;
 
-      float          f_current;
-  float          f_voltage;
-  float          f_power_factor;
+    float f_current;
+    float f_voltage;
+    float f_power_factor;
   } DATA_READ_DataTypedef;
 
   /****************************************************************************

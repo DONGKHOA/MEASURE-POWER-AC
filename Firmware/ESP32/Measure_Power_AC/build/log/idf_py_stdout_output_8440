@@ -1,0 +1,95 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Github\MEASURE-POWER-AC\Firmware\ESP32\Measure_Power_AC\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/8] Building C object esp-idf/app_things_board/CMakeFiles/__idf_app_things_board.dir/app_things_board.c.obj
+D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_things_board/app_things_board.c:272:1: warning: 'tb_telemetry_send_energy_week' defined but not used [-Wunused-function]
+  272 | tb_telemetry_send_energy_week (tbcmh_handle_t client)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_things_board/app_things_board.c:73:16: warning: 'is_initilized' defined but not used [-Wunused-variable]
+   73 | static uint8_t is_initilized = 0;
+      |                ^~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\app_things_board\libapp_things_board.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable Measure_Power_AC.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/Measure_Power_AC.bin
+[7/8] cmd.exe /C "cd /D D:\Github\MEASURE-POWER-AC\Firmware\ESP32\Measure_Power_AC\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/partition_table/partition-table.bin D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/Measure_Power_AC.bin"
+Measure_Power_AC.bin binary size 0xfbfc0 bytes. Smallest app partition is 0x100000 bytes. 0x4040 bytes (2%) free.
+Warning: The smallest app partition is nearly full (2% free space left)!
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDFesptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 Measure_Power_AC.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev5
+Serial port COM4
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b8:d6:1a:6a:3d:0c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0010bfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16360...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16360 compressed) at 0x00001000 in 0.9 seconds (effective 232.1 kbit/s)...
+Hash of data verified.
+Compressed 1032128 bytes to 647554...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001eae4... (5 %)
+Writing at 0x00028e4e... (7 %)
+Writing at 0x0002dc77... (10 %)
+Writing at 0x00035447... (12 %)
+Writing at 0x000400d1... (15 %)
+Writing at 0x00045b9d... (17 %)
+Writing at 0x0004bb19... (20 %)
+Writing at 0x000517f2... (22 %)
+Writing at 0x000578c7... (25 %)
+Writing at 0x0005d7c0... (27 %)
+Writing at 0x000631b9... (30 %)
+Writing at 0x0006908a... (32 %)
+Writing at 0x0006f81b... (35 %)
+Writing at 0x0007548d... (37 %)
+Writing at 0x0007b1ea... (40 %)
+Writing at 0x000808da... (42 %)
+Writing at 0x00085bd1... (45 %)
+Writing at 0x0008b0e5... (47 %)
+Writing at 0x00090374... (50 %)
+Writing at 0x00095a72... (52 %)
+Writing at 0x0009b130... (55 %)
+Writing at 0x000a0c85... (57 %)
+Writing at 0x000a6863... (60 %)
+Writing at 0x000ac134... (62 %)
+Writing at 0x000b1b9f... (65 %)
+Writing at 0x000b784c... (67 %)
+Writing at 0x000bd474... (70 %)
+Writing at 0x000c2e97... (72 %)
+Writing at 0x000c891c... (75 %)
+Writing at 0x000ce708... (77 %)
+Writing at 0x000d41e4... (80 %)
+Writing at 0x000d978e... (82 %)
+Writing at 0x000e0ad5... (85 %)
+Writing at 0x000ebf8f... (87 %)
+Writing at 0x000f1d94... (90 %)
+Writing at 0x000f7def... (92 %)
+Writing at 0x000fd7ee... (95 %)
+Writing at 0x00103c5d... (97 %)
+Writing at 0x00108f93... (100 %)
+Wrote 1032128 bytes (647554 compressed) at 0x00010000 in 16.6 seconds (effective 497.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 199.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build -P C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake"

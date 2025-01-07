@@ -1,0 +1,13 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400dabeb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/task_wdt/task_wdt.c:434
+0x400dafb0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/task_wdt/task_wdt.c:507
+0x40083285: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/xtensa_vectors.S:1240
+0x400d8527: APP_Status_led_Task at D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_status_led/app_status_led.c:88
+0x40088311: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

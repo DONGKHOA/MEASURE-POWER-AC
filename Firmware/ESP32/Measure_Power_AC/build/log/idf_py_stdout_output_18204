@@ -1,0 +1,1542 @@
+ip: 0, SPIWC��+ښ�j%�(49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early en�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  3 2025 20:09:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a148h (172360) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=0003a170 vaddr=3ffb0000 size=03f98h ( 16280) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003e110 vaddr=40080000 size=01f08h (  7944) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b5180h (741760) map[0m
+[0;32mI (432) esp_image: segment 4: paddr=000f51a8 vaddr=40081f08 size=17494h ( 95380) load[0m
+[0;32mI (482) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (483) boot: Disabling RNG early entropy source...[0m
+[0;32mI (495) cpu_start: Multicore app[0m
+[0;32mI (503) cpu_start: Pro cpu start user code[0m
+[0;32mI (503) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (503) app_init: Application information:[0m
+[0;32mI (506) app_init: Project name:     Measure_Power_AC[0m
+[0;32mI (512) app_init: App version:      6cc6703-dirty[0m
+[0;32mI (517) app_init: Compile time:     Jan  3 2025 23:33:51[0m
+[0;32mI (523) app_init: ELF file SHA256:  f7c09e19b...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (533) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (538) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (543) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (548) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (555) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (561) heap_init: At 3FFB9B58 len 000264A8 (153 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (574) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (580) heap_init: At 4009939C len 00006C64 (27 KiB): IRAM[0m
+[0;32mI (588) spi_flash: detected chip: generic[0m
+[0;32mI (591) spi_flash: flash io: dio[0m
+[0;33mW (595) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (607) main_task: Started on CPU0[0m
+[0;32mI (611) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (649) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (650) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (659) uart: queue free spaces: 10[0m
+State: 0
+Count: 100
+State: 0
+I (670) wifi:wifi driver task: 3ffcc7b4, prio:23, stack:6656, core=1
+[0;32mI (672) main_task: Returned from app_main()[0m
+I (674) wifi:wifi firmware version: ccaebfa
+I (680) wifi:wifi certification version: v7.0
+I (684) wifi:config NVS flash: disabled
+I (688) wifi:config nano formating: disabled
+I (692) wifi:Init data frame dynamic rx buffer num: 32
+I (697) wifi:Init static rx mgmt buffer num: 5
+I (701) wifi:Init management short buffer num: 32
+I (705) wifi:Init dynamic tx buffer num: 32
+I (709) wifi:Init static rx buffer size: 1600
+I (714) wifi:Init static rx buffer num: 15
+I (717) wifi:Init dynamic rx buffer num: 32
+[0;32mI (722) wifi_init: rx ba win: 6[0m
+[0;32mI (725) wifi_init: accept mbox: 6[0m
+[0;32mI (729) wifi_init: tcpip mbox: 32[0m
+[0;32mI (733) wifi_init: udp mbox: 6[0m
+[0;32mI (737) wifi_init: tcp mbox: 6[0m
+[0;32mI (740) wifi_init: tcp tx win: 5760[0m
+[0;32mI (744) wifi_init: tcp rx win: 5760[0m
+[0;32mI (749) wifi_init: tcp mss: 1440[0m
+[0;32mI (753) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (757) wifi_init: WiFi RX IRAM OP enabled[0m
+State: 0
+[0;32mI (763) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+State: 0
+Count: 300
+State: 0
+Count: 200
+I (847) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (848) wifi:enable tsf
+E (851) wifi:NAN WiFi stop
+I (852) wifi:flush txq
+I (852) wifi:stop sw txq
+I (853) wifi:lmac stop hw txq
+I (856) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (856) wifi:enable tsf
+State: 0
+Count: 400
+State: 0
+Count: 500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 600
+State: 0
+Count: 700
+State: 0
+State: 0
+Count: 800
+State: 0
+Count: 900
+State: 0
+State: 0
+Count: 1000
+LED Status: ON
+State: 0
+Count: 1100
+State: 0
+State: 0
+Count: 1200
+State: 0
+Count: 1300
+State: 0
+State: 0
+Count: 1400
+State: 0
+Count: 1500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 1600
+State: 0
+Count: 1700
+State: 0
+State: 0
+Count: 1800
+State: 0
+Count: 1900
+State: 0
+State: 0
+Count: 2000
+LED Status: OFF
+State: 0
+Count: 2100
+State: 0
+State: 0
+Count: 2200
+State: 0
+Count: 2300
+State: 0
+State: 0
+Count: 2400
+State: 0
+Count: 2500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 2600
+State: 0
+Count: 2700
+State: 0
+State: 0
+Count: 2800
+State: 0
+Count: 2900
+State: 0
+State: 0
+Count: 3000
+LED Status: ON
+State: 0
+Count: 3100
+State: 0
+State: 0
+Count: 3200
+State: 0
+Count: 3300
+State: 0
+State: 0
+Count: 3400
+State: 0
+Count: 3500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 3600
+State: 0
+Count: 3700
+State: 0
+State: 0
+Count: 3800
+State: 0
+Count: 3900
+State: 0
+State: 0
+Count: 4000
+LED Status: OFF
+State: 0
+Count: 4100
+State: 0
+State: 0
+Count: 4200
+State: 0
+Count: 4300
+State: 0
+State: 0
+Count: 4400
+State: 0
+Count: 4500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 4600
+State: 0
+Count: 4700
+State: 0
+State: 0
+Count: 4800
+State: 0
+Count: 4900
+State: 0
+State: 0
+Count: 5000
+LED Status: ON
+State: 0
+Count: 5100
+State: 0
+State: 0
+Count: 5200
+State: 0
+Count: 5300
+State: 0
+State: 0
+Count: 5400
+Starting WiFi Scan Round 1
+State: 0
+Count: 5500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 5600
+State: 0
+Count: 5700
+State: 0
+State: 0
+Count: 5800
+State: 0
+Count: 5900
+State: 0
+State: 0
+Count: 6000
+LED Status: OFF
+State: 0
+Count: 6100
+State: 0
+State: 0
+Count: 6200
+State: 0
+Count: 6300
+State: 0
+State: 0
+Count: 6400
+State: 0
+Count: 6500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 6600
+State: 0
+Count: 6700
+State: 0
+State: 0
+Count: 6800
+State: 0
+Count: 6900
+State: 0
+State: 0
+Count: 7000
+LED Status: ON
+State: 0
+Count: 7100
+State: 0
+State: 0
+Count: 7200
+State: 0
+Count: 7300
+State: 0
+State: 0
+Count: 7400
+State: 0
+Count: 7500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 7600
+State: 0
+Count: 7700
+State: 0
+State: 0
+Count: 7800
+State: 0
+Count: 7900
+State: 0
+State: 0
+Count: 8000
+LED Status: OFF
+State: 0
+Count: 8100
+State: 0
+State: 0
+Count: 8200
+State: 0
+Count: 8300
+State: 0
+State: 0
+Count: 8400
+State: 0
+Count: 8500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 8600
+State: 0
+Count: 8700
+State: 0
+State: 0
+Count: 8800
+State: 0
+Count: 8900
+State: 0
+State: 0
+Count: 9000
+LED Status: ON
+State: 0
+Count: 9100
+State: 0
+State: 0
+Count: 9200
+State: 0
+Count: 9300
+State: 0
+State: 0
+Count: 9400
+State: 0
+Count: 9500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 9600
+State: 0
+Count: 9700
+State: 0
+State: 0
+Count: 9800
+State: 0
+Count: 9900
+State: 0
+State: 0
+Count: 10000
+LED Status: OFF
+State: 0
+Count: 10100
+State: 0
+State: 0
+Count: 10200
+State: 0
+Count: 10300
+State: 0
+State: 0
+Count: 10400
+Starting WiFi Scan Round 2
+State: 0
+Count: 10500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 10600
+State: 0
+Count: 10700
+State: 0
+State: 0
+Count: 10800
+State: 0
+Count: 10900
+State: 0
+State: 0
+Count: 11000
+LED Status: ON
+State: 0
+Count: 11100
+State: 0
+State: 0
+Count: 11200
+State: 0
+Count: 11300
+State: 0
+State: 0
+Count: 11400
+State: 0
+Count: 11500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 11600
+State: 0
+Count: 11700
+State: 0
+State: 0
+Count: 11800
+State: 0
+Count: 11900
+State: 0
+State: 0
+Count: 12000
+LED Status: OFF
+State: 0
+Count: 12100
+State: 0
+State: 0
+Count: 12200
+State: 0
+Count: 12300
+State: 0
+State: 0
+Count: 12400
+State: 0
+Count: 12500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 12600
+State: 0
+Count: 12700
+State: 0
+State: 0
+Count: 12800
+State: 0
+Count: 12900
+State: 0
+State: 0
+Count: 13000
+LED Status: ON
+State: 0
+Count: 13100
+State: 0
+State: 0
+Count: 13200
+State: 0
+Count: 13300
+State: 0
+State: 0
+Count: 13400
+State: 0
+Count: 13500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 13600
+State: 0
+Count: 13700
+State: 0
+State: 0
+Count: 13800
+State: 0
+Count: 13900
+State: 0
+State: 0
+Count: 14000
+LED Status: OFF
+State: 0
+Count: 14100
+State: 0
+State: 0
+Count: 14200
+State: 0
+Count: 14300
+State: 0
+State: 0
+Count: 14400
+State: 0
+Count: 14500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 14600
+State: 0
+Count: 14700
+State: 0
+State: 0
+Count: 14800
+State: 0
+Count: 14900
+State: 0
+State: 0
+Count: 15000
+LED Status: ON
+State: 0
+Count: 15100
+State: 0
+State: 0
+Count: 15200
+State: 0
+Count: 15300
+State: 0
+State: 0
+Count: 15400
+Starting WiFi Scan Round 3
+[0;32mI (8367) scan: SSID 		PIF_CLUB[0m
+[0;32mI (8367) scan: RSSI 		-54[0m
+[0;32mI (8367) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8369) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8375) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+Count: 15500
+[0;32mI (8381) scan: Channel 		8
+[0m
+LED Status: OFF
+[0;32mI (8386) scan: SSID 		PIF_Client[0m
+State: 0
+[0;32mI (8391) scan: RSSI 		-55[0m
+LED Status: ON
+[0;32mI (8396) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8402) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8408) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8413) scan: Channel 		8
+[0m
+[0;32mI (8417) scan: SSID 		HCMUT04[0m
+[0;32mI (8421) scan: RSSI 		-62[0m
+[0;32mI (8424) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8429) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8435) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8440) scan: Channel 		8
+[0m
+[0;32mI (8444) scan: SSID 		HCMUT02[0m
+[0;32mI (8447) scan: RSSI 		-80[0m
+[0;32mI (8451) scan: Authmode 	WIFI_AUTH_OPEN[0m
+[0;32mI (8455) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+State: 0
+[0;32mI (8461) scan: Group Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+Count: 15600
+[0;32mI (8467) scan: Channel 		6
+[0m
+[0;32mI (8472) scan: SSID 		HCMUT01[0m
+[0;32mI (8476) scan: RSSI 		-80[0m
+[0;32mI (8479) scan: Authmode 	WIFI_AUTH_ENTERPRISE[0m
+[0;32mI (8484) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8490) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8495) scan: Channel 		6
+[0m
+State: 0
+[0;32mI (8499) scan: SSID 		Four-Faith[0m
+Count: 15700
+[0;32mI (8504) scan: RSSI 		-84[0m
+State: 0
+[0;32mI (8508) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8514) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8520) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8525) scan: Channel 		13
+[0m
+[0;32mI (8529) scan: SSID 		APTEK-2.4G[0m
+[0;32mI (8533) scan: RSSI 		-93[0m
+[0;32mI (8536) scan: Authmode 	WIFI_AUTH_OPEN[0m
+[0;32mI (8540) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8546) scan: Group Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8552) scan: Channel 		1
+[0m
+[0;32mI (8555) scan: SSID 		BMTD_LECS[0m
+State: 0
+[0;32mI (8559) scan: RSSI 		-94[0m
+[0;32mI (8563) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+Count: 15800
+[0;32mI (8568) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8575) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8580) scan: Channel 		6
+[0m
+[0;32mI (8584) scan: SSID 		Tenda_503060[0m
+[0;32mI (8588) scan: RSSI 		-90[0m
+[0;32mI (8591) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8597) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8602) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8608) scan: Channel 		2
+[0m
+State: 0
+[0;32mI (8611) scan: SSID 		KindyCity-KT[0m
+Count: 15900
+[0;32mI (8616) scan: RSSI 		-92[0m
+State: 0
+[0;32mI (8621) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8627) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8633) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8638) scan: Channel 		9
+[0m
+Check matching Ssid
+1
+opening NVS Read handle Done 
+opening NVS Read handle Done 
+2
+return 1
+Found Matching SSID and Password
+E (8655) wifi:NAN WiFi stop
+I (8657) wifi:flush txq
+State: 0
+I (8658) wifi:Count: 16000
+stop sw txq
+LED Status: OFF
+I (8663) wifi:lmac stop hw txq
+I (8671) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (8672) wifi:enable tsf
+[0;32mI (8674) scan: Wifi_init_station finished.[0m
+State: 0
+Count: 16100
+State: 0
+State: 0
+Count: 16200
+State: 0
+Count: 16300
+State: 0
+State: 0
+Count: 16400
+State: 0
+Count: 16500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 16600
+State: 0
+Count: 16700
+State: 0
+State: 0
+Count: 16800
+State: 0
+Count: 16900
+State: 0
+State: 0
+Count: 17000
+LED Status: ON
+State: 0
+Count: 17100
+State: 0
+State: 0
+Count: 17200
+State: 0
+Count: 17300
+State: 0
+State: 0
+Count: 17400
+State: 0
+Count: 17500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 17600
+State: 0
+Count: 17700
+State: 0
+State: 0
+Count: 17800
+State: 0
+Count: 17900
+State: 0
+State: 0
+Count: 18000
+LED Status: OFF
+State: 0
+Count: 18100
+State: 0
+State: 0
+Count: 18200
+I (9783) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0
+I (9785) wifi:state: init -> auth (0xb0)
+I (9788) wifi:state: auth -> assoc (0x0)
+I (9795) wifi:state: assoc -> run (0x10)
+I (9797) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)
+I (9800) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:0(recipient)
+I (9805) wifi:[ADDBA]RX DELBA, reason:39, delete tid:6, initiator:1(originator)
+State: 0
+Count: 18300
+State: 0
+State: 0
+Count: 18400
+I (9900) wifi:connected with PIF_CLUB, aid = 3, channel 8, BW20, bssid = 74:26:ff:ff:a8:4e
+I (9901) wifi:security: WPA2-PSK, phy: bgn, rssi: -64
+I (9903) wifi:pm start, type: 1
+
+I (9906) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+State: 0
+Count: 18500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 18600
+I (9969) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+State: 0
+Count: 18700
+State: 0
+State: 0
+Count: 18800
+State: 0
+Count: 18900
+State: 0
+State: 0
+Count: 19000
+LED Status: ON
+State: 0
+Count: 19100
+State: 0
+State: 0
+Count: 19200
+State: 0
+Count: 19300
+State: 0
+State: 0
+Count: 19400
+State: 0
+Count: 19500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 19600
+State: 0
+Count: 19700
+State: 0
+State: 0
+Count: 19800
+State: 0
+Count: 19900
+State: 0
+State: 0
+Count: 20000
+LED Status: OFF
+State: 0
+Count: 20100
+State: 0
+State: 0
+Count: 20200
+State: 0
+Count: 20300
+State: 0
+State: 0
+Count: 20400
+State: 0
+Count: 20500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 20600
+State: 0
+Count: 20700
+State: 0
+State: 0
+Count: 20800
+State: 0
+Count: 20900
+State: 0
+State: 0
+Count: 21000
+LED Status: ON
+State: 0
+Count: 21100
+State: 0
+State: 0
+Count: 21200
+State: 0
+Count: 21300
+State: 0
+State: 0
+Count: 21400
+State: 0
+Count: 21500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 21600
+State: 0
+Count: 21700
+State: 0
+State: 0
+Count: 21800
+State: 0
+Count: 21900
+State: 0
+State: 0
+Count: 22000
+LED Status: OFF
+State: 0
+Count: 22100
+State: 0
+State: 0
+Count: 22200
+State: 0
+Count: 22300
+State: 0
+State: 0
+Count: 22400
+State: 0
+Count: 22500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 22600
+State: 0
+Count: 22700
+State: 0
+State: 0
+Count: 22800
+State: 0
+Count: 22900
+State: 0
+State: 0
+Count: 23000
+LED Status: ON
+State: 0
+Count: 23100
+State: 0
+State: 0
+Count: 23200
+State: 0
+Count: 23300
+State: 0
+State: 0
+Count: 23400
+State: 0
+Count: 23500
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+Count: 23600
+State: 0
+Count: 23700
+State: 0
+State: 0
+Count: 23800
+State: 0
+Count: 23900
+State: 0
+I (12642) wifi:<ba-add>idx:0 (ifx:0, 74:26:ff:ff:a8:4e), tid:0, ssn:0, winSize:64
+State: 0
+Count: 24000
+LED Status: OFF
+State: 0
+Count: 24100
+State: 0
+State: 0
+Count: 24200
+State: 0
+Count: 24300
+State: 0
+State: 0
+Count: 24400
+I (12875) wifi:<ba-add>idx:1 (ifx:0, 74:26:ff:ff:a8:4e), tid:6, ssn:2, winSize:64
+State: 0
+Count: 24500
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+Count: 24600
+State: 0
+Count: 24700
+State: 0
+State: 0
+Count: 24800
+State: 0
+Count: 24900
+State: 0
+State: 0
+Count: 25000
+LED Status: ON
+State: 0
+Count: 25100
+State: 0
+State: 0
+Count: 25200
+State: 0
+Count: 25300
+State: 0
+State: 0
+Count: 25400
+[0;32mI (13417) esp_netif_handlers: sta ip: 192.168.10.15, mask: 255.255.255.0, gw: 192.168.10.1[0m
+[0;32mI (13418) scan: Connected to ap SSID:PIF_CLUB password:chinsochin[0m
+Connect Wifi
+State: 0
+Count: 25500
+State: 1
+State: 1
+Count: 25600
+State: 1
+Count: 25700
+State: 1
+State: 1
+Count: 25800
+State: 1
+Count: 25900
+State: 1
+State: 1
+Count: 26000
+LED Status: OFF
+State: 1
+Count: 26100
+State: 1
+State: 1
+Count: 26200
+State: 1
+Count: 26300
+State: 1
+State: 1
+Count: 26400
+State: 1
+Count: 26500
+State: 1
+State: 1
+Count: 26600
+State: 1
+Count: 26700
+State: 1
+State: 1
+Count: 26800
+State: 1
+Count: 26900
+State: 1
+State: 1
+Count: 27000
+LED Status: ON
+State: 1
+Count: 27100
+State: 1
+State: 1
+Count: 27200
+State: 1
+Count: 27300
+State: 1
+State: 1
+Count: 27400
+State: 1
+Count: 27500
+State: 1
+State: 3
+Count: 27600
+State: 3
+Count: 27700
+State: 3
+State: 3
+Count: 27800
+State: 3
+Count: 27900
+State: 3
+State: 3
+Count: 28000
+State: 3
+Count: 28100
+State: 3
+State: 3
+Count: 28200
+State: 3
+Count: 28300
+State: 3
+State: 3
+Count: 28400
+State: 3
+Count: 28500
+State: 3
+State: 3
+Count: 28600
+State: 3
+Count: 28700
+State: 3
+State: 3
+Count: 28800
+State: 3
+Count: 28900
+State: 3
+State: 3
+Count: 29000
+State: 3
+Count: 29100
+State: 3
+State: 3
+Count: 29200
+State: 3
+Count: 29300
+State: 3
+State: 3
+Count: 29400
+State: 3
+Count: 29500
+State: 3
+State: 3
+Count: 29600
+State: 3
+Count: 29700
+State: 3
+State: 3
+Count: 29800
+State: 3
+Count: 29900
+State: 3
+State: 3
+Count: 30000
+LED Status: OFF
+State: 3
+Count: 30100
+State: 3
+State: 3
+Count: 30200
+State: 3
+Count: 30300
+State: 3
+State: 3
+Count: 30400
+State: 3
+Count: 30500
+State: 3
+State: 3
+Count: 30600
+State: 3
+Count: 30700
+State: 3
+State: 3
+Count: 30800
+State: 3
+Count: 30900
+State: 3
+State: 3
+Count: 31000
+State: 3
+Count: 31100
+State: 3
+State: 3
+Count: 31200
+State: 3
+Count: 31300
+State: 3
+State: 3
+Count: 31400
+State: 3
+Count: 31500
+State: 3
+State: 3
+Count: 31600
+State: 3
+Count: 31700
+State: 3
+State: 3
+Count: 31800
+State: 3
+Count: 31900
+State: 3
+State: 3
+Count: 32000
+State: 3
+Count: 32100
+State: 3
+State: 3
+Count: 32200
+State: 3
+Count: 32300
+State: 3
+State: 3
+Count: 32400
+State: 3
+Count: 32500
+State: 3
+State: 3
+Count: 32600
+State: 3
+Count: 32700
+State: 3
+State: 3
+Count: 32800
+State: 3
+Count: 32900
+State: 3
+State: 3
+Count: 33000
+LED Status: ON
+State: 3
+Count: 33100
+State: 3
+State: 3
+Count: 33200
+State: 3
+Count: 33300
+State: 3
+State: 3
+Count: 33400
+State: 3
+Count: 33500
+State: 3
+State: 3
+Count: 33600
+State: 3
+Count: 33700
+State: 3
+State: 3
+Count: 33800
+State: 3
+Count: 33900
+State: 3
+State: 3
+Count: 34000
+State: 3
+Count: 34100
+State: 3
+State: 3
+Count: 34200
+State: 3
+Count: 34300
+State: 3
+State: 3
+Count: 34400
+State: 3
+Count: 34500
+State: 3
+State: 3
+Count: 34600
+State: 3
+Count: 34700
+State: 3
+State: 3
+Count: 34800
+State: 3
+Count: 34900
+State: 3
+State: 3
+Count: 35000
+State: 3
+Count: 35100
+State: 3
+State: 3
+Count: 35200
+State: 3
+Count: 35300
+State: 3
+State: 3
+Count: 35400
+State: 3
+Count: 35500
+State: 3
+State: 3
+Count: 35600
+State: 3
+Count: 35700
+State: 3
+State: 3
+Count: 35800
+State: 3
+Count: 35900
+State: 3
+State: 3
+Count: 36000
+LED Status: OFF
+State: 3
+Count: 36100
+State: 3
+State: 3
+Count: 36200
+State: 3
+Count: 36300
+State: 3
+State: 3
+Count: 36400
+State: 3
+Count: 36500
+State: 3
+State: 3
+Count: 36600
+State: 3
+Count: 36700
+State: 3
+State: 3
+Count: 36800
+State: 3
+Count: 36900
+State: 3
+State: 3
+Count: 37000
+State: 3
+Count: 37100
+State: 3
+State: 3
+Count: 37200
+State: 3
+Count: 37300
+State: 3
+State: 3
+Count: 37400
+State: 3
+Count: 37500
+State: 3
+State: 3
+Count: 37600
+State: 3
+Count: 37700
+State: 3
+State: 3
+Count: 37800
+State: 3
+Count: 37900
+State: 3
+State: 3
+Count: 38000
+State: 3
+Count: 38100
+State: 3
+State: 3
+Count: 38200
+State: 3
+Count: 38300
+State: 3
+State: 3
+Count: 38400
+State: 3
+Count: 38500
+State: 3
+State: 3
+Count: 38600
+State: 3
+Count: 38700
+State: 3
+State: 3
+Count: 38800
+State: 3
+Count: 38900
+State: 3
+State: 3
+Count: 39000
+LED Status: ON
+State: 3
+Count: 39100
+State: 3
+State: 3
+Count: 39200
+State: 3
+Count: 39300
+State: 3
+State: 3
+Count: 39400
+State: 3
+Count: 39500
+State: 3
+State: 3
+Count: 39600
+State: 3
+Count: 39700
+State: 3
+State: 3
+Count: 39800
+State: 3
+Count: 39900
+State: 3
+State: 3
+Count: 40000
+State: 3
+Count: 40100
+State: 3
+State: 3
+Count: 40200
+State: 3
+Count: 40300
+State: 3
+State: 3
+Count: 40400
+State: 3
+Count: 40500
+State: 3
+State: 3
+Count: 40600
+State: 3
+Count: 40700
+State: 3
+State: 3
+Count: 40800
+State: 3
+Count: 40900
+State: 3
+State: 3
+Count: 41000
+State: 3
+Count: 41100
+State: 3
+State: 3
+Count: 41200
+State: 3
+Count: 41300
+State: 3
+State: 3
+Count: 41400
+State: 3
+Count: 41500
+State: 3
+State: 3
+Count: 41600
+State: 3
+Count: 41700
+State: 3
+State: 3
+Count: 41800
+State: 3
+Count: 41900
+State: 3
+State: 3
+Count: 42000
+LED Status: OFF
+State: 3
+Count: 42100
+State: 3
+State: 3
+Count: 42200
+State: 3
+Count: 42300
+State: 3
+State: 3
+Count: 42400
+State: 3
+Count: 42500
+State: 3
+State: 3
+Count: 42600
+State: 3
+Count: 42700
+State: 3
+State: 3
+Count: 42800
+State: 3
+Count: 42900
+State: 3
+State: 3
+Count: 43000
+State: 3
+Count: 43100
+State: 3
+State: 3
+Count: 43200
+State: 3
+Count: 43300
+State: 3
+State: 3
+Count: 43400
+State: 3
+Count: 43500
+State: 3
+State: 3
+Count: 43600
+State: 3
+Count: 43700
+State: 3
+State: 3
+Count: 43800
+State: 3
+Count: 43900
+State: 3
+State: 3
+Count: 44000
+State: 3
+Count: 44100
+State: 3
+State: 3
+Count: 44200
+State: 3
+Count: 44300
+State: 3
+State: 3
+Count: 44400
+State: 3
+Count: 44500
+State: 3
+State: 3
+Count: 44600
+State: 3
+Count: 44700
+State: 3
+State: 3
+Count: 44800
+State: 3
+Count: 44900
+State: 3
+State: 3
+Count: 45000
+LED Status: ON
+State: 3
+Count: 45100
+State: 3
+State: 3
+Count: 45200
+State: 3
+Count: 45300
+State: 3
+State: 3
+Count: 45400
+State: 3
+Count: 45500
+State: 3
+State: 3
+Count: 45600
+State: 3
+Count: 45700
+State: 3
+State: 3
+Count: 45800
+State: 3
+Count: 45900
+State: 3
+State: 3
+Count: 46000
+State: 3
+Count: 46100
+State: 3
+State: 3
+Count: 46200
+State: 3
+Count: 46300
+State: 3
+State: 3
+Count: 46400
+State: 3
+Count: 46500
+State: 3
+State: 3
+Count: 46600
+State: 3
+Count: 46700
+State: 3
+State: 3
+Count: 46800
+State: 3
+Count: 46900
+State: 3
+State: 3
+Count: 47000
+State: 3
+Count: 47100
+State: 3
+State: 3
+Count: 47200
+State: 3
+Count: 47300
+State: 3
+State: 3
+Count: 47400
+State: 3
+Count: 47500
+State: 3
+State: 3
+Count: 47600
+State: 3
+Count: 47700
+State: 3
+State: 3
+Count: 47800
+State: 3
+Count: 47900
+State: 3
+State: 3
+Count: 48000
+LED Status: OFF
+State: 3
+Count: 48100
+State: 3
+State: 3
+Count: 48200
+State: 3
+Count: 48300
+State: 3
+State: 3
+Count: 48400
+State: 3
+Count: 48500
+State: 3
+State: 3
+Count: 48600
+State: 3
+Count: 48700
+State: 3
+State: 3
+Count: 48800
+State: 3
+Count: 48900
+State: 3
+State: 3
+Count: 49000
+State: 3
+Count: 49100
+State: 3
+State: 3
+Count: 49200
+State: 3
+Count: 49300
+State: 3
+State: 3
+Count: 49400
+State: 3
+Count: 49500
+State: 3
+State: 3
+Count: 49600
+State: 3
+Count: 49700
+State: 3
+State: 3
+Count: 49800
+State: 3
+Count: 49900
+State: 3
+State: 3
+Count: 50000
+State: 3
+Count: 50100
+State: 3
+State: 3
+Count: 50200
+State: 3
+Count: 50300
+State: 3
+State: 3
+Count: 50400

@@ -19,6 +19,16 @@
 #define DS3231_ADDRESS       (0x68)
 #define SECOND_VALUE_ADDRESS 0x00
 
+#define DS3231_SECONDS 0x00
+#define DS3231_MINUTES 0x01
+#define DS3231_HOURS   0x02
+#define DS3231_DAY     0x03
+#define DS3231_DATE    0x04
+#define DS3231_MONTH   0x05
+#define DS3231_YEAR    0x06
+#define DS3231_CONTROL 0x0E
+#define DS3231_STATUS  0x0F
+
 /******************************************************************************
  *  PRIVATE PROTOTYPE FUNCTION
  *****************************************************************************/
@@ -32,19 +42,56 @@ static esp_err_t i2c_master_init(gpio_num_t e_scl_io, gpio_num_t e_sda_io);
  *****************************************************************************/
 
 void
-DS3231_Init (ds3231_data_t *p_ds3231_data, gpio_num_t e_scl_io, gpio_num_t e_sda_io)
+DS3231_Init (ds3231_data_t *p_ds3231_data,
+             gpio_num_t     e_scl_io,
+             gpio_num_t     e_sda_io)
 {
-  ds3231_data_t realtime = { .u8_hour   = 9,
-                             .u8_minute = 55,
-                             .u8_second = 0,
-                             .u8_day    = 1,
-                             .u8_date   = 31,
-                             .u8_month  = 7,
-                             .u8_year   = 23 };
 
   i2c_master_init(e_scl_io, e_sda_io);
 
-  DS3231_Register_Write(&realtime);
+  uint8_t status_reg;
+  uint8_t reg_addr = DS3231_STATUS;
+  int8_t  ret      = i2c_master_write_read_device(I2C_MASTER_NUM,
+                                            DS3231_ADDRESS,
+                                            &reg_addr,
+                                            1,
+                                            &status_reg,
+                                            1,
+                                            I2C_MASTER_TIMEOUT_MS
+                                                / portTICK_PERIOD_MS);
+
+  if (status_reg & (1 << 7))
+  { // Kiểm tra bit OSF (bit 7)
+    printf("Oscillator stopped. Initializing RTC...\n");
+    // Reset bit OSF
+    status_reg &= ~(1 << 7);
+
+    *p_ds3231_data = (ds3231_data_t) { .u8_hour   = 9,
+                                       .u8_minute = 54,
+                                       .u8_second = 0,
+                                       .u8_day    = 6,
+                                       .u8_date   = 3,
+                                       .u8_month  = 1,
+                                       .u8_year   = 25 };
+
+    DS3231_Register_Write(p_ds3231_data);
+
+    // Xóa bit OSF
+    status_reg &= ~(1 << 7);
+    reg_addr = DS3231_STATUS;
+    i2c_master_write_to_device(I2C_MASTER_NUM,
+                               DS3231_ADDRESS,
+                               (uint8_t[]) { reg_addr, status_reg },
+                               2,
+                               I2C_MASTER_TIMEOUT_MS / portTICK_PERIOD_MS);
+  }
+  else
+  {
+    printf("RTC is running. Reading current data...\n");
+
+    // Đọc thời gian hiện tại từ DS3231
+    DS3231_Register_Read(p_ds3231_data);
+  }
 }
 
 esp_err_t
@@ -62,7 +109,8 @@ DS3231_Register_Read (ds3231_data_t *p_ds3231_data)
 
   for (uint8_t i = 0; i < sizeof(ds3231_data_t); i++)
   {
-    *((uint8_t *)p_ds3231_data + i) = BCD_To_DEC(*((uint8_t *)p_ds3231_data + i));
+    *((uint8_t *)p_ds3231_data + i)
+        = BCD_To_DEC(*((uint8_t *)p_ds3231_data + i));
   }
   return ret;
 }

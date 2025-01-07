@@ -1,0 +1,4283 @@
+0x13 (SPI_F당esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  3 2025 20:09:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a178h (172408) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=0003a1a0 vaddr=3ffb0000 size=03f98h ( 16280) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003e140 vaddr=40080000 size=01ed8h (  7896) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b503ch (741436) map[0m
+[0;32mI (432) esp_image: segment 4: paddr=000f5064 vaddr=40081ed8 size=174c4h ( 95428) load[0m
+[0;32mI (482) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (482) boot: Disabling RNG early entropy source...[0m
+[0;32mI (494) cpu_start: Multicore app[0m
+[0;32mI (503) cpu_start: Pro cpu start user code[0m
+[0;32mI (503) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (503) app_init: Application information:[0m
+[0;32mI (506) app_init: Project name:     Measure_Power_AC[0m
+[0;32mI (511) app_init: App version:      6cc6703-dirty[0m
+[0;32mI (517) app_init: Compile time:     Jan  3 2025 23:33:51[0m
+[0;32mI (523) app_init: ELF file SHA256:  6cf80be79...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (533) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (538) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (543) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (548) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (555) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (561) heap_init: At 3FFB9B58 len 000264A8 (153 KiB): DRAM[0m
+[0;32mI (567) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (574) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (580) heap_init: At 4009939C len 00006C64 (27 KiB): IRAM[0m
+[0;32mI (588) spi_flash: detected chip: generic[0m
+[0;32mI (591) spi_flash: flash io: dio[0m
+[0;33mW (595) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (607) main_task: Started on CPU0[0m
+[0;32mI (611) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (648) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (649) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (658) uart: queue free spaces: 10[0m
+State: 0
+LED Status: ON
+I (669) wifi:wifi driver task: 3ffcc7b4, prio:23, stack:6656, core=1
+[0;32mI (671) main_task: Returned from app_main()[0m
+I (672) wifi:wifi firmware version: ccaebfa
+State: 0
+I (679) wifi:wifi certification version: v7.0LED Status: OFF
+
+I (686) wifi:config NVS flash: disabled
+I (689) wifi:config nano formating: disabled
+I (693) wifi:Init data frame dynamic rx buffer num: 32
+State: 0
+I (698) wifi:LED Status: ON
+Init static rx mgmt buffer num: 5
+I (704) wifi:Init management short buffer num: 32
+I (709) wifi:Init dynamic tx buffer num: 32
+State: 0
+I (713) wifi:LED Status: OFF
+Init static rx buffer size: 1600
+I (719) wifi:Init static rx buffer num: 15
+I (723) wifi:Init dynamic rx buffer num: 32
+State: 0
+LED Status: ON
+[0;32mI (728) wifi_init: rx ba win: 6[0m
+[0;32mI (733) wifi_init: accept mbox: 6[0m
+[0;32mI (737) wifi_init: tcpip mbox: 32[0m
+State: 0
+[0;32mI (741) wifi_init: udp mbox: 6[0m
+LED Status: OFF
+[0;32mI (745) wifi_init: tcp mbox: 6[0m
+[0;32mI (751) wifi_init: tcp tx win: 5760[0m
+[0;32mI (755) wifi_init: tcp rx win: 5760[0m
+State: 0
+[0;32mI (759) wifi_init: tcp mss: 1440[0m
+[0;32mI (764) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (768) wifi_init: WiFi RX IRAM OP enabled[0m
+State: 0
+[0;32mI (774) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+I (860) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (862) wifi:enable tsf
+State: 0
+E (865) wifi:NAN WiFi stop
+I (866) wifi:flush txq
+I (866) wifi:stop sw txq
+I (866) wifi:lmac stop hw txq
+I (869) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (871) wifi:enable tsf
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+Starting WiFi Scan Round 1
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+Starting WiFi Scan Round 2
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+Starting WiFi Scan Round 3
+[0;32mI (8381) scan: SSID 		PIF_CLUB[0m
+[0;32mI (8381) scan: RSSI 		-62[0m
+[0;32mI (8381) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8383) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8389) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8395) scan: Channel 		8
+[0m
+[0;32mI (8399) scan: SSID 		HCMUT04[0m
+State: 0
+[0;32mI (8402) scan: RSSI 		-63[0m
+[0;32mI (8407) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8412) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8417) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8424) scan: Channel 		8
+[0m
+[0;32mI (8427) scan: SSID 		PIF_Client[0m
+State: 0
+[0;32mI (8431) scan: RSSI 		-63[0m
+[0;32mI (8435) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8441) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8446) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8453) scan: Channel 		8
+[0m
+[0;32mI (8456) scan: SSID 		HCMUT01[0m
+State: 0
+[0;32mI (8460) scan: RSSI 		-79[0m
+[0;32mI (8464) scan: Authmode 	WIFI_AUTH_ENTERPRISE[0m
+[0;32mI (8469) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8475) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8481) scan: Channel 		6
+[0m
+[0;32mI (8485) scan: SSID 		HCMUT02[0m
+State: 0
+[0;32mI (8488) scan: RSSI 		-80[0m
+[0;32mI (8493) scan: Authmode 	WIFI_AUTH_OPEN[0m
+[0;32mI (8497) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+State: 0
+[0;32mI (8503) scan: Group Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8509) scan: Channel 		6
+[0m
+[0;32mI (8513) scan: SSID 		Four-Faith[0m
+State: 0
+[0;32mI (8517) scan: RSSI 		-81[0m
+[0;32mI (8521) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8526) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8531) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8538) scan: Channel 		13
+[0m
+[0;32mI (8541) scan: SSID 		Tenda_503060[0m
+State: 0
+[0;32mI (8545) scan: RSSI 		-91[0m
+[0;32mI (8550) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8555) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8561) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8567) scan: Channel 		3
+[0m
+[0;32mI (8570) scan: SSID 		DIAMOND COFEE &TEA[0m
+State: 0
+[0;32mI (8575) scan: RSSI 		-93[0m
+[0;32mI (8579) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8584) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8590) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8596) scan: Channel 		4
+[0m
+[0;32mI (8600) scan: SSID 		KindyCity-KT[0m
+State: 0
+[0;32mI (8604) scan: RSSI 		-94[0m
+[0;32mI (8608) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8613) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8619) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8626) scan: Channel 		9
+[0m
+[0;32mI (8629) scan: SSID 		Ngan[0m
+State: 0
+[0;32mI (8632) scan: RSSI 		-91[0m
+[0;32mI (8637) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8642) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8648) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8654) scan: Channel 		4
+[0m
+State: 0
+Check matching Ssid
+LED Status: ON
+1
+opening NVS Read handle Done 
+opening NVS Read handle Done 
+2
+return 1
+Found Matching SSID and Password
+State: 0
+LED Status: OFF
+E (8674) wifi:NAN WiFi stop
+I (8677) wifi:flush txq
+I (8679) wifi:stop sw txq
+I (8681) wifi:lmac stop hw txq
+State: 0
+LED Status: ON
+I (8688) wifi:mode : sta (b8:d6:1a:6a:3d:0c)
+I (8690) wifi:enable tsf
+[0;32mI (8693) scan: Wifi_init_station finished.[0m
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+I (9803) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0
+I (9804) wifi:state: init -> auth (0xb0)
+State: 0
+I (9810) wifi:state: auth -> assoc (0x0)
+I (9815) wifi:state: assoc -> run (0x10)
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+I (9919) wifi:connected with PIF_CLUB, aid = 3, channel 8, BW20, bssid = 74:26:ff:ff:a8:4e
+State: 0
+I (9920) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (9922) wifi:pm start, type: 1
+
+I (9925) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+I (9992) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+I (12049) wifi:<ba-add>idx:0 (ifx:0, 74:26:ff:ff:a8:4e), tid:0, ssn:0, winSize:64
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+LED Status: OFF
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+[0;32mI (12936) esp_netif_handlers: sta ip: 192.168.10.15, mask: 255.255.255.0, gw: 192.168.10.1[0m
+[0;32mI (12937) scan: Connected to ap SSID:PIF_CLUB password:chinsochin[0m
+Connect Wifi
+State: 1
+State: 1
+I (12963) wifi:<ba-add>idx:1 (ifx:0, 74:26:ff:ff:a8:4e), tid:6, ssn:3, winSize:64
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+LED Status: OFF
+State: 1
+LED Status: ON
+State: 1
+LED Status: OFF
+State: 1
+LED Status: ON
+State: 1
+LED Status: OFF
+State: 1
+LED Status: ON
+State: 1
+LED Status: OFF
+State: 1
+LED Status: ON
+State: 1
+LED Status: OFF
+State: 1
+LED Status: ON
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 1
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 13900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 14900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 15900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 16900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 17900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 18900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 19900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 20900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 21900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 22900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 23900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24000
+LED Status: OFF
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24000
+LED Status: ON
+Toggle LED
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24600
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24700
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24800
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 24900
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25000
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25100
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25200
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25300
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25400
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25500
+State: 3
+Count in STATE_THINGSBOARD_SUCCESS: 25500
+State: 3

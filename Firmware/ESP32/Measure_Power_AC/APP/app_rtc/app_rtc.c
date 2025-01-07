@@ -41,7 +41,7 @@ static void APP_Rtc_task(void *arg);
 void
 APP_Rtc_CreateTask (void)
 {
-  xTaskCreate(APP_Rtc_task, "data_rtc", 1024 * 2, NULL, 7, NULL);
+  xTaskCreate(APP_Rtc_task, "data_rtc", 1024 * 4, NULL, 7, NULL);
 }
 
 void
@@ -77,37 +77,37 @@ APP_Rtc_task (void *arg)
     if (s_data_rtc_apt.s_ds3231_predata.u8_minute
         != s_data_rtc_apt.s_ds3231_data.u8_minute)
     {
-        xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_MIN);
+      xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_MIN);
     }
 
     if (s_data_rtc_apt.s_ds3231_predata.u8_hour
         != s_data_rtc_apt.s_ds3231_data.u8_hour)
     {
-        xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_SEC);
+      xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_HOUR);
     }
 
     if (s_data_rtc_apt.s_ds3231_predata.u8_day
         != s_data_rtc_apt.s_ds3231_data.u8_day)
     {
-        xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_SEC);
+      xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_DAY);
     }
 
-    if (s_data_rtc_apt.s_ds3231_predata.u8_date
-        != s_data_rtc_apt.s_ds3231_data.u8_date)
-    {
-        xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_SEC);
-    }
+    // if (s_data_rtc_apt.s_ds3231_predata.u8_date
+    //     != s_data_rtc_apt.s_ds3231_data.u8_date)
+    // {
+    //   xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_DATE);
+    // }
 
     if (s_data_rtc_apt.s_ds3231_predata.u8_month
         != s_data_rtc_apt.s_ds3231_data.u8_month)
     {
-        xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_SEC);
+      xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_MONTH);
     }
 
     if (s_data_rtc_apt.s_ds3231_predata.u8_year
         != s_data_rtc_apt.s_ds3231_data.u8_year)
     {
-        xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_SEC);
+      xEventGroupSetBits(*s_data_rtc_apt.p_flag_time_event, BIT_FLAG_TIME_YEAR);
     }
 
     s_data_rtc_apt.s_ds3231_predata = s_data_rtc_apt.s_ds3231_data;
