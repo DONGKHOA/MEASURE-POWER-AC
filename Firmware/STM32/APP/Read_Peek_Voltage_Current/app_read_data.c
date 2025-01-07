@@ -178,12 +178,10 @@ APP_READ_DATA_TaskUpdate (void)
                         u8_value[0]);
   RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
                         u8_value[1]);
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,  
                         u8_value[2]);
   RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
                         u8_value[3]);
-
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer, '\r');
 
   p_value_temp = (uint32_t *)s_read_data.p_current;
 
@@ -200,8 +198,6 @@ APP_READ_DATA_TaskUpdate (void)
                         u8_value[2]);
   RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
                         u8_value[3]);
-
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer, '\r');
 }
 
 /**
@@ -228,6 +224,8 @@ APP_READ_DATA_ConvertCurrent (uint16_t u16_adc_value_current)
   float f_mVolt;
   f_mVolt = __LL_ADC_CALC_DATA_TO_VOLTAGE(
       3300, u16_adc_value_current, LL_ADC_RESOLUTION_12B);
+
+  f_mVolt = f_mVolt / 1.6;
 
   *s_read_data.p_current = ACS712_VoltageConverterCurrent(f_mVolt);
 }
