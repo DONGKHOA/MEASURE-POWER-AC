@@ -186,7 +186,7 @@ APP_Process_data_task (void *arg)
 {
   float   f_temp_value = 0;
   uint8_t u8_count     = 0;
-
+  
   while (1)
   {
     if (xQueueReceive(

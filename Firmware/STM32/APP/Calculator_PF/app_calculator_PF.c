@@ -24,7 +24,7 @@
   LL_TIM_SetCounter(x, 0); \
   LL_TIM_EnableCounter(x);
 
-#define FREQUENCY_TIMER 56.0 // Mhz
+#define FREQUENCY_TIMER (56.0 / 9.0) // Mhz
 
 /******************************************************************************
  *    PRIVATE TYPEDEFS
@@ -108,8 +108,8 @@ APP_CALCULATOR_PF_EXTI_IRQHandler (void)
     {
       LL_TIM_DisableCounter(TIM2);
       s_calculator_pf.value_temp_irq[0]
-          = (uint8_t)(LL_TIM_GetCounter(TIM2) >> 8);
-      s_calculator_pf.value_temp_irq[1] = (uint8_t)LL_TIM_GetCounter(TIM2);
+          = (uint8_t)(LL_TIM_GetCounter(TIM2 - 18) >> 8);
+      s_calculator_pf.value_temp_irq[1] = (uint8_t)(LL_TIM_GetCounter(TIM2) - 18);
 
       RING_BUFFER_Push_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer_irq,
                             s_calculator_pf.value_temp_irq[0]);
@@ -128,8 +128,8 @@ APP_CALCULATOR_PF_EXTI_IRQHandler (void)
     {
       LL_TIM_DisableCounter(TIM2);
       s_calculator_pf.value_temp_irq[0]
-          = (uint8_t)((LL_TIM_GetCounter(TIM2) - 160) >> 8);
-      s_calculator_pf.value_temp_irq[1] = (uint8_t)(LL_TIM_GetCounter(TIM2) - 160);
+          = (uint8_t)((LL_TIM_GetCounter(TIM2) - 18) >> 8);
+      s_calculator_pf.value_temp_irq[1] = (uint8_t)(LL_TIM_GetCounter(TIM2) - 18);
 
       RING_BUFFER_Push_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer_irq,
                             s_calculator_pf.value_temp_irq[0]);
