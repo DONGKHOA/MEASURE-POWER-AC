@@ -66,9 +66,9 @@ void uartDriverInit(uart_port_t uart_port, gpio_num_t tx_pin, gpio_num_t rx_pin,
         .flow_ctrl = flow_control,
     };
     //Create a queue to handle UART event from ISR
-    uart_queue = xQueueCreate(10, sizeof(uart_event_t));
+    // uart_queue = xQueueCreate(10, sizeof(uart_event_t));
     // using buffer in rx data
-    uart_driver_install(uart_port, RX_BUF_SIZE * 2, 1024, 10, &uart_queue, NULL);
+    uart_driver_install(uart_port, RX_BUF_SIZE * 2, 0, 0, NULL, 0);
     uart_param_config(uart_port, &uart_config);
     uart_set_pin(uart_port, tx_pin, rx_pin, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
 }

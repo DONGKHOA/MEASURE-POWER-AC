@@ -1,0 +1,24 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM4 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081524: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4008bcda: vPortYieldFromInt at C:/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:647
+0x4008bb97: _frxt_int_exit at C:/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+[0m
+[0;33m--- 0x40082f46: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1233
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x4008bcd7: vPortYieldFromInt at C:/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:646
+0x4008bb94: _frxt_int_exit at C:/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:244
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081524: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

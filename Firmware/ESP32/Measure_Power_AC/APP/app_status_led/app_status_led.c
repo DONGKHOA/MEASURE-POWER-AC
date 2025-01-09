@@ -11,7 +11,7 @@
  *    PUBLIC DEFINES
  *****************************************************************************/
 
-#define LED_PIN GPIO_NUM_2
+#define LED_PIN GPIO_NUM_12
 
 /******************************************************************************
  *    PRIVATE TYPEDEFS
@@ -37,7 +37,7 @@ static void APP_Status_led_Task(void *pvParameters);
 static void toggle_led(void);
 static void led_on(void);
 static void led_off(void);
-void        timer_callback(TimerHandle_t xTimer);
+static void APP_Timer_Callback(TimerHandle_t xTimer);
 
 /******************************************************************************
  *   PUBLIC FUNCTION
@@ -85,7 +85,7 @@ APP_Status_led_Task (void *pvParameters)
   {
     if (s_status_data.p_state != NULL)
     {
-      printf("State: %d\n", *s_status_data.p_state);
+      // printf("State: %d\n", *s_status_data.p_state);
 
       switch (*s_status_data.p_state)
       {
@@ -146,7 +146,7 @@ toggle_led (void)
   static bool led_status = false;
   led_status             = !led_status;
   gpio_set_level(LED_PIN, led_status);
-  printf("LED Status: %s\n", led_status ? "ON" : "OFF");
+  // printf("LED Status: %s\n", led_status ? "ON" : "OFF");
 }
 
 static void

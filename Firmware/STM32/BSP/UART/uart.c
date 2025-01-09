@@ -11,6 +11,7 @@
 
 #include "uart.h"
 #include "stm32f1xx_ll_usart.h"
+#include "stm32f1xx_hal_uart.h"
 
 /******************************************************************************
  *      PRIVATE DEFINES
@@ -28,6 +29,8 @@
  * @brief Timeout value for waiting for the buffer to empty.
  */
 static volatile uint32_t u32_uart_timeout = 0;
+
+extern UART_HandleTypeDef huart1;
 
 /*********************
  *   PUBLIC FUNCTION

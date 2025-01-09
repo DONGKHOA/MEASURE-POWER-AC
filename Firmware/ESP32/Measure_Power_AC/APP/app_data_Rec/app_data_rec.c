@@ -13,6 +13,11 @@
 /******************************************************************************
  *    PRIVATE TYPEDEFS
  *****************************************************************************/
+typedef enum state_rec_data
+{
+  STATE_HEADING = 0,
+  STATE_DATA,
+} state_rec_data_t;
 
 typedef struct process_data
 {
@@ -41,15 +46,16 @@ static void APP_Data_rec_task(void *arg);
 static process_rec_data_t s_process_rec_data;
 
 extern QueueHandle_t uart_queue; // UART Queue
+state_rec_data_t     e_state_data = STATE_HEADING;
 
-  /******************************************************************************
-   *   PUBLIC FUNCTION
-   *****************************************************************************/
+/******************************************************************************
+ *   PUBLIC FUNCTION
+ *****************************************************************************/
 
 void
 APP_Data_rec_CreateTask (void)
 {
-  xTaskCreate(APP_Data_rec_task, "data_rec", 1024 * 10, NULL, 9, NULL);
+  xTaskCreate(APP_Data_rec_task, "data_rec", 1024 * 10, NULL, 11, NULL);
 }
 
 void
@@ -65,89 +71,79 @@ APP_Data_rec_Init (void)
 static void
 APP_Data_rec_task (void *arg)
 {
-  uart_event_t event;
+  uint8_t count = 0;
+  uint8_t array[4];
+  int     i     = 0;
+  int     Bytes = 0;
   while (1)
   {
-    if (xQueueReceive(uart_queue, &event, portMAX_DELAY))
+    switch (e_state_data)
     {
-      switch (event.type)
-      {
-        case UART_DATA:
-          int Bytes = uart_read_bytes(
-              UART_NUM_2,
-              &s_process_rec_data
-                   .u8_data_rec[s_process_rec_data.u8_index_data_rec],
-              event.size,
-              pdMS_TO_TICKS(10));
+      case STATE_HEADING:
 
-          s_process_rec_data.u8_index_data_rec += Bytes;
+        Bytes = uart_read_bytes(
+            UART_NUM_2, &s_process_rec_data.u8_data_rec, 1, pdMS_TO_TICKS(1));
 
-          if (Bytes > 0)
+        if (Bytes > 0)
+        {
+          if (s_process_rec_data.u8_data_rec[0] == 0xaa)
           {
-            for (int i = 0; i < s_process_rec_data.u8_index_data_rec; i++)
+            count++;
+          }
+          else
+          {
+            if (count > 0)
             {
-              if (s_process_rec_data.u8_data_rec[i] == '\r')
-              {
-                if (i >= 4)
-                {
-                  // Convert data from string to float
-                  uint32_t *p_val;
-                  p_val = (uint32_t *)&s_process_rec_data.received_data;
-                  *p_val
-                      = (uint32_t)((s_process_rec_data.u8_data_rec[0] << 24)
-                                   | (s_process_rec_data.u8_data_rec[1] << 16)
-                                   | (s_process_rec_data.u8_data_rec[2] << 8)
-                                   | (s_process_rec_data.u8_data_rec[3] << 0));
-
-                  // printf("Received data: %f\n",
-                  //        s_process_rec_data.received_data);
-
-                  xQueueSend(*s_process_rec_data.p_data_rec_queue,
-                             &s_process_rec_data.received_data,
-                             0);
-                }
-
-                // Move remaining data to the beginning of the buffer
-                int remaining_bytes
-                    = s_process_rec_data.u8_index_data_rec - (i + 1);
-                for (int j = 0; j < remaining_bytes; j++)
-                {
-                  s_process_rec_data.u8_data_rec[j]
-                      = s_process_rec_data.u8_data_rec[i + 1 + j];
-                }
-
-                // Update index
-                s_process_rec_data.u8_index_data_rec = remaining_bytes;
-                i                                    = 0; // Reset i
-              }
+              count--;
             }
           }
-          break;
 
-        case UART_FIFO_OVF: // FIFO Overflow
-          printf("UART FIFO Overflow\n");
-          uart_flush_input(UART_NUM_2); // Delete data in FIFO
-          xQueueReset(uart_queue);      // Reset queue
-          break;
+          if (count == 5)
+          {
+            count        = 0;
+            e_state_data = STATE_DATA;
+          }
+          Bytes = 0;
+        }
+        break;
 
-        case UART_BUFFER_FULL:
-          printf("Ring Buffer Full\n");
-          uart_flush_input(UART_NUM_2);
-          xQueueReset(uart_queue);
-          break;
+      case STATE_DATA:
+        Bytes = uart_read_bytes(
+            UART_NUM_2, &s_process_rec_data.u8_data_rec, 1, pdMS_TO_TICKS(1));
+        if (Bytes > 0)
+        {
 
-        case UART_PARITY_ERR:
-          printf("UART Parity Error\n");
-          break;
+          if (s_process_rec_data.u8_data_rec[0] == 0xdd)
+          {
 
-        case UART_FRAME_ERR:
-          printf("UART Frame Error\n");
-          break;
+            count++;
+            i = 0;
+            // Convert data from string to float
+            uint32_t *p_val;
+            p_val  = (uint32_t *)&s_process_rec_data.received_data;
+            *p_val = (uint32_t)((array[0] << 24) | (array[1] << 16)
+                                | (array[2] << 8) | (array[3] << 0));
 
-        default:
-          printf("Unknown UART event type: %d\n", event.type);
-          break;
-      }
+            xQueueSend(*s_process_rec_data.p_data_rec_queue,
+                       &s_process_rec_data.received_data,
+                       0);
+            goto abc;
+          }
+          array[i] = s_process_rec_data.u8_data_rec[0];
+          i++;
+        abc:
+          if (count == 3)
+          {
+            count        = 0;
+            e_state_data = STATE_HEADING;
+          }
+          Bytes = 0;
+        }
+
+        break;
+
+      default:
+        break;
     }
   }
 }

@@ -1,0 +1,194 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0x�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan  8 2025 15:17:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29bech (170988) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00039c14 vaddr=3ffb0000 size=03cb8h ( 15544) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0003d8d4 vaddr=40080000 size=02744h ( 10052) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b6b30h (748336) map[0m
+[0;32mI (453) esp_image: segment 4: paddr=000f6b58 vaddr=40082744 size=15ce8h ( 89320) load[0m
+[0;32mI (502) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (502) boot: Disabling RNG early entropy source...[0m
+[0;32mI (514) cpu_start: Multicore app[0m
+[0;32mI (515) cpu_start: Pro cpu up.[0m
+[0;32mI (515) cpu_start: Starting app cpu, entry point is 0x40081528[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (532) cpu_start: Pro cpu start user code[0m
+[0;32mI (532) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (532) cpu_start: Application information:[0m
+[0;32mI (537) cpu_start: Project name:     Measure_Power_AC[0m
+[0;32mI (543) cpu_start: App version:      4dfe763-dirty[0m
+[0;32mI (548) cpu_start: Compile time:     Jan  8 2025 15:17:32[0m
+[0;32mI (554) cpu_start: ELF file SHA256:  990ec091...[0m
+[0;32mI (559) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (565) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (570) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (574) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (579) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (586) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFB96C0 len 00026940 (154 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (611) heap_init: At 4009842C len 00007BD4 (30 KiB): IRAM[0m
+[0;32mI (619) spi_flash: detected chip: generic[0m
+[0;32mI (622) spi_flash: flash io: dio[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (631) app_start: Starting scheduler on CPU1[0m
+[0;32mI (631) main_task: Started on CPU0[0m
+[0;32mI (641) main_task: Calling app_main()[0m
+[0;32mI (657) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (659) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (670) main_task: Returned from app_main()[0m
+[0;32mI (671) wifi:wifi driver task: 3ffda434, prio:23, stack:6656, core=1[0m
+[0;32mI (679) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (680) wifi:wifi certification version: v7.0[0m
+[0;32mI (684) wifi:config NVS flash: disabled[0m
+[0;32mI (688) wifi:config nano formating: disabled[0m
+[0;32mI (692) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (697) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (701) wifi:Init management short buffer num: 32[0m
+[0;32mI (706) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (710) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (714) wifi:Init static rx buffer num: 15[0m
+[0;32mI (717) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (722) wifi_init: rx ba win: 6[0m
+[0;32mI (725) wifi_init: tcpip mbox: 32[0m
+[0;32mI (729) wifi_init: udp mbox: 6[0m
+[0;32mI (733) wifi_init: tcp mbox: 6[0m
+[0;32mI (736) wifi_init: tcp tx win: 5760[0m
+[0;32mI (741) wifi_init: tcp rx win: 5760[0m
+[0;32mI (745) wifi_init: tcp mss: 1440[0m
+[0;32mI (749) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (753) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (759) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (839) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (854) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (855) wifi:enable tsf[0m
+[1;31mE (858) wifi:NAN WiFi stop[0m
+[0;32mI (858) wifi:flush txq[0m
+[0;32mI (859) wifi:stop sw txq[0m
+[0;32mI (859) wifi:lmac stop hw txq[0m
+[0;32mI (862) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (863) wifi:enable tsf[0m
+Starting WiFi Scan Round 1
+Starting WiFi Scan Round 2
+Starting WiFi Scan Round 3
+[0;32mI (8374) scan: SSID 		PIF_CLUB[0m
+[0;32mI (8374) scan: RSSI 		-36[0m
+[0;32mI (8374) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8376) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8382) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8387) scan: Channel 		10
+[0m
+[0;32mI (8391) scan: SSID 		PIF_Client[0m
+[0;32mI (8395) scan: RSSI 		-36[0m
+[0;32mI (8398) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8403) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8409) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8415) scan: Channel 		10
+[0m
+[0;32mI (8418) scan: SSID 		HCMUT04[0m
+[0;32mI (8422) scan: RSSI 		-69[0m
+[0;32mI (8425) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8430) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8436) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8442) scan: Channel 		10
+[0m
+[0;32mI (8445) scan: SSID 		HCMUT02[0m
+[0;32mI (8449) scan: RSSI 		-75[0m
+[0;32mI (8452) scan: Authmode 	WIFI_AUTH_OPEN[0m
+[0;32mI (8457) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8462) scan: Group Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8468) scan: Channel 		6
+[0m
+[0;32mI (8471) scan: SSID 		Four-Faith[0m
+[0;32mI (8475) scan: RSSI 		-76[0m
+[0;32mI (8479) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8484) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8489) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8495) scan: Channel 		13
+[0m
+[0;32mI (8498) scan: SSID 		HCMUT01[0m
+[0;32mI (8502) scan: RSSI 		-77[0m
+[0;32mI (8505) scan: Authmode 	WIFI_AUTH_ENTERPRISE[0m
+[0;32mI (8510) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8516) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8522) scan: Channel 		6
+[0m
+[0;32mI (8525) scan: SSID 		Tenda_503060[0m
+[0;32mI (8529) scan: RSSI 		-82[0m
+[0;32mI (8532) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8538) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8543) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8549) scan: Channel 		3
+[0m
+[0;32mI (8552) scan: SSID 		Cam21[0m
+[0;32mI (8556) scan: RSSI 		-86[0m
+[0;32mI (8559) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8564) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8570) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8575) scan: Channel 		3
+[0m
+[0;32mI (8579) scan: SSID 		cbv[0m
+[0;32mI (8582) scan: RSSI 		-88[0m
+[0;32mI (8585) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8591) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8596) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8602) scan: Channel 		8
+[0m
+[0;32mI (8605) scan: SSID 		BMDT_Hidden[0m
+[0;32mI (8609) scan: RSSI 		-87[0m
+[0;32mI (8613) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8618) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8624) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8630) scan: Channel 		8
+[0m
+Check matching Ssid
+1
+opening NVS Read handle Done 
+opening NVS Read handle Done 
+2
+return 1
+Found Matching SSID and Password
+[1;31mE (8647) wifi:NAN WiFi stop[0m
+[0;32mI (8648) wifi:flush txq[0m
+[0;32mI (8650) wifi:stop sw txq[0m
+[0;32mI (8652) wifi:lmac stop hw txq[0m
+[0;32mI (8659) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (8660) wifi:enable tsf[0m
+[0;32mI (8662) scan: Wifi_init_station finished.[0m
+[0;32mI (9922) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (9924) wifi:state: init -> auth (b0)[0m
+[0;32mI (9929) wifi:state: auth -> assoc (0)[0m
+[0;32mI (9934) wifi:state: assoc -> run (10)[0m
+[0;32mI (10039) wifi:connected with PIF_CLUB, aid = 2, channel 10, BW20, bssid = 74:26:ff:ff:a8:4e[0m
+[0;32mI (10040) wifi:security: WPA2-PSK, phy: bgn, rssi: -37[0m
+[0;32mI (10042) wifi:pm start, type: 1[0m
+
+[0;32mI (10045) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (10062) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (12224) wifi:<ba-add>idx:0 (ifx:0, 74:26:ff:ff:a8:4e), tid:0, ssn:0, winSize:64[0m

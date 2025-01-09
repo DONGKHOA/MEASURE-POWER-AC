@@ -497,7 +497,6 @@ WIFI_ScanNVS (uint8_t *ssid, uint8_t *pass)
   uint8_t volatile num_scan = 0;
 
   num_scan = WIFI_GetNumSSID();
-  printf("%d\r\n", num_scan);
   if (num_scan == 0)
   {
     return -1;
@@ -509,7 +508,6 @@ WIFI_ScanNVS (uint8_t *ssid, uint8_t *pass)
     if (memcmp(ssid_temp, ssid, strlen((char *)ssid)) == 0)
     {
       WIFI_ScanPass(pass, i, 32);
-      printf("2\r\n");
       return i;
     }
   }
@@ -701,8 +699,8 @@ WIFI_Connect (uint8_t *ssid, uint8_t *password)
 void
 WIFI_SmartConfig (void)
 {
-  *s_things_board_data.p_state = STATE_SMART_CONFIG;
-  
+  // *s_wifi_data.p_flag_wifi_event = STATE_SMART_CONFIG;
+
   if (is_initialized == 0)
   {
     // Initialize smartconfig event handler
@@ -769,14 +767,11 @@ matchingWIFIScan (char *data, uint8_t *ssid, uint8_t *pass)
   // check matching ssid in NVS
   for (uint8_t i = 0; i < arg_position; i++)
   {
-    printf("Check matching Ssid\n");
     if (WIFI_ScanNVS((uint8_t *)arg_list[i], pass) != -1)
     {
       memcpy(ssid, arg_list[i], strlen((char *)arg_list[i]) + 1);
-      printf("return 1\r\n");
       return 1;
     }
   }
-  printf("return -1\r\n");
   return -1;
 }

@@ -5,7 +5,7 @@
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h:1076:26:LL_TIM_IsEnabledCounter	2
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h:1305:22:LL_TIM_SetCounter	1
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h:1316:26:LL_TIM_GetCounter	1
-../APP/Calculator_PF/app_calculator_PF.c:75:1:APP_CALCULATOR_PF_CreateTask	1
-../APP/Calculator_PF/app_calculator_PF.c:85:1:APP_CALCULATOR_PF_Init	1
-../APP/Calculator_PF/app_calculator_PF.c:102:1:APP_CALCULATOR_PF_EXTI_IRQHandler	5
-../APP/Calculator_PF/app_calculator_PF.c:159:1:APP_CALCULATOR_PF_TaskUpdate	2
+../APP/Calculator_PF/app_calculator_PF.c:76:1:APP_CALCULATOR_PF_CreateTask	1
+../APP/Calculator_PF/app_calculator_PF.c:86:1:APP_CALCULATOR_PF_Init	1
+../APP/Calculator_PF/app_calculator_PF.c:103:1:APP_CALCULATOR_PF_EXTI_IRQHandler	7
+../APP/Calculator_PF/app_calculator_PF.c:184:1:APP_CALCULATOR_PF_TaskUpdate	2

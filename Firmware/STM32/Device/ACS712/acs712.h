@@ -35,7 +35,7 @@ extern "C"
   static inline float ACS712_VoltageConverterCurrent(float f_mVoltage)
   {
 #if  ACS712_0_30A
-	  return (f_mVoltage - 30) / 64.37;
+	  return (f_mVoltage) / 64.37;
 #endif
 #if  ACS712_0_20A
 	  return f_mVoltage / 100.0;

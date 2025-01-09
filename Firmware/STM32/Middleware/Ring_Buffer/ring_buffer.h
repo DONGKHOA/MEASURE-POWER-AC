@@ -24,7 +24,7 @@ extern "C"
    *    PUBLIC DEFINES
    *********************/
 
-#define RING_BUFFER_SIZE 128
+#define RING_BUFFER_SIZE 256
 
 /*********************
  *    PUBLIC TYPEDEFS

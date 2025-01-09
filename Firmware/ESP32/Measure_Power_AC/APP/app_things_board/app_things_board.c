@@ -82,7 +82,7 @@ static uint8_t pass[32];
 void
 APP_Things_board_CreateTask (void)
 {
-  xTaskCreate(APP_Things_board_task, "things_board", 1024 * 20, NULL, 11, NULL);
+  xTaskCreate(APP_Things_board_task, "things_board", 1024 * 20, NULL, 10, NULL);
 }
 
 void
@@ -205,7 +205,7 @@ APP_Things_board_task (void *arg)
     // {
     //   WIFI_SmartConfig();
     // }
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
+    vTaskDelay(10000 / portTICK_PERIOD_MS);
   }
 }
 
@@ -368,13 +368,19 @@ startWifiScan (void)
     {
       WIFI_ClearNVS((uint8_t *)ssid);
 
+      *s_things_board_data.p_state = STATE_SMART_CONFIG;
+
       WIFI_SmartConfig();
 
       *s_things_board_data.p_state = STATE_WIFI_CONNECTED;
+
+      printf("Connect Wifi through smart config\r\n");
     }
   }
   else
   {
+    *s_things_board_data.p_state = STATE_SMART_CONFIG;
+
     // Execute smart config and store ssid and pass to nvs
     WIFI_SmartConfig();
 

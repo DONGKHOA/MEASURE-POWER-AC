@@ -4,7 +4,7 @@
 
 #include "ds3231.h"
 #include "driver/i2c.h"
-#include "driver/i2c_master.h"
+// #include "driver/i2c.h"
 
 /******************************************************************************
  *    PRIVATE DEFINES
@@ -51,14 +51,13 @@ DS3231_Init (ds3231_data_t *p_ds3231_data,
 
   uint8_t status_reg;
   uint8_t reg_addr = DS3231_STATUS;
-  int8_t  ret      = i2c_master_write_read_device(I2C_MASTER_NUM,
-                                            DS3231_ADDRESS,
-                                            &reg_addr,
-                                            1,
-                                            &status_reg,
-                                            1,
-                                            I2C_MASTER_TIMEOUT_MS
-                                                / portTICK_PERIOD_MS);
+  i2c_master_write_read_device(I2C_MASTER_NUM,
+                               DS3231_ADDRESS,
+                               &reg_addr,
+                               1,
+                               &status_reg,
+                               1,
+                               I2C_MASTER_TIMEOUT_MS / portTICK_PERIOD_MS);
 
   if (status_reg & (1 << 7))
   { // Kiểm tra bit OSF (bit 7)
@@ -66,11 +65,11 @@ DS3231_Init (ds3231_data_t *p_ds3231_data,
     // Reset bit OSF
     status_reg &= ~(1 << 7);
 
-    *p_ds3231_data = (ds3231_data_t) { .u8_hour   = 9,
-                                       .u8_minute = 54,
+    *p_ds3231_data = (ds3231_data_t) { .u8_hour   = 17,
+                                       .u8_minute = 27,
                                        .u8_second = 0,
-                                       .u8_day    = 6,
-                                       .u8_date   = 3,
+                                       .u8_day    = 8,
+                                       .u8_date   = 4,
                                        .u8_month  = 1,
                                        .u8_year   = 25 };
 

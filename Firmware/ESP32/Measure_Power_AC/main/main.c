@@ -24,11 +24,8 @@
 /******************************************************************************
  *    PRIVATE DEFINES
  *****************************************************************************/
-#define TXD_PIN (GPIO_NUM_4)
+#define TXD_PIN (GPIO_NUM_17)
 #define RXD_PIN (GPIO_NUM_15)
-
-uint8_t ssid_test[]     = "ThangHo_1";
-uint8_t password_test[] = "testsmartconfig";
 
 /******************************************************************************
  *    PRIVATE DATA
@@ -83,9 +80,9 @@ app_main (void)
   // Init Application
   APP_Rtc_Init();
   APP_Things_board_Init();
-  APP_Data_Trans_Init();
   APP_Data_rec_Init();
   APP_Process_data_Init();
+  APP_Data_Trans_Init();
   APP_Button_Init();
   APP_Status_led_Init();
   uartDriverInit(UART_NUM_2,
@@ -100,11 +97,11 @@ app_main (void)
   // Create Task
   APP_Status_led_CreateTask();
   APP_Rtc_CreateTask();
-  // APP_Data_Trans_CreateTask();
-  APP_Things_board_CreateTask();
   APP_Data_rec_CreateTask();
   APP_Process_data_CreateTask();
   APP_Button_CreateTask();
+  APP_Data_Trans_CreateTask();
+  APP_Things_board_CreateTask();
 }
 
 /******************************************************************************

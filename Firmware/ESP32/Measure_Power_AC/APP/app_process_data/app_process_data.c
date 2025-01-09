@@ -6,6 +6,7 @@
 #include "app_process_data.h"
 #include <stdint.h>
 #include "string.h"
+#include <math.h>
 
 /******************************************************************************
  *    PRIVATE TYPEDEFS
@@ -173,7 +174,8 @@ APP_Process_data_task (void *arg)
 {
   float   f_temp_value = 0;
   uint8_t u8_count     = 0;
-  
+  uint8_t count        = 0;
+
   while (1)
   {
     if (xQueueReceive(
@@ -191,11 +193,17 @@ APP_Process_data_task (void *arg)
       {
         s_process_data.f_power_factor = f_temp_value;
         APP_Process_data_Calculate_Power();
+        count++;
+        if (count >= 10)
+        {
+          // Send power to data trans
+          xQueueSend(
+              *s_process_data.p_data_trans_queue, s_process_data.p_power, 0);
+          count = 0;
+        }
 
-        // Send power to data trans
-        xQueueSend(
-            *s_process_data.p_data_trans_queue, s_process_data.p_power, 0);
-        // printf("Power: %f\n", *s_process_data.p_power);
+        // printf("Vol: %f\n", s_process_data.f_voltage);
+        // printf("Cur: %f\n", s_process_data.f_current);
 
         // Calculate energy
         APP_Process_data_Calculate_Energy();
@@ -219,7 +227,7 @@ APP_Process_data_Calculate_Energy (void)
           | BIT_FLAG_TIME_YEAR,
       pdTRUE,  // Erase bit after processed
       pdFALSE, // Wait for all bit
-      0);     // No time out
+      0);      // No time out
 
   s_process_data.s_power_data
       .f_power_sec[s_process_data.s_index_data.u8_index_sec]
@@ -278,10 +286,10 @@ APP_Process_data_Calculate_Energy (void)
            sizeof(s_process_data.s_power_data.f_power_sec));
   }
 
-    EventBits_t bits = xEventGroupSetBits(
-        *s_process_data.p_flag_mqtt_event,
-        (BIT_SEND_ENERGY) | (BIT_SEND_ENERGY_HOUR) | (BIT_SEND_ENERGY_DAY)
-            | (BIT_SEND_ENERGY_MONTH) | (BIT_SEND_ENERGY_YEAR));
+  xEventGroupSetBits(*s_process_data.p_flag_mqtt_event,
+                     (BIT_SEND_ENERGY) | (BIT_SEND_ENERGY_HOUR)
+                         | (BIT_SEND_ENERGY_DAY) | (BIT_SEND_ENERGY_MONTH)
+                         | (BIT_SEND_ENERGY_YEAR));
 }
 
 static inline void
@@ -296,7 +304,7 @@ static inline void
 APP_Process_data_Calculate_Power (void)
 {
   *s_process_data.p_power = (s_process_data.f_voltage * s_process_data.f_current
-                             * s_process_data.f_power_factor)
+                             * cos(100 * 3.14 * s_process_data.f_power_factor))
                             / 2;
 }
 

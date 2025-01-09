@@ -1,0 +1,200 @@
+6
+
+rst:0x�당esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source.�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan  8 2025 01:05:09[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2865ch (165468) map[0m
+[0;32mI (166) esp_image: segment 1: paddr=00038684 vaddr=3ffb0000 size=03c88h ( 15496) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c314 vaddr=40080000 size=03d04h ( 15620) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=ad648h (710216) map[0m
+[0;32mI (437) esp_image: segment 4: paddr=000ed670 vaddr=40083d04 size=14728h ( 83752) load[0m
+[0;32mI (484) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (484) boot: Disabling RNG early entropy source...[0m
+[0;32mI (496) cpu_start: Multicore app[0m
+[0;32mI (497) cpu_start: Pro cpu up.[0m
+[0;32mI (497) cpu_start: Starting app cpu, entry point is 0x40081528[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (514) cpu_start: Pro cpu start user code[0m
+[0;32mI (514) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (514) cpu_start: Application information:[0m
+[0;32mI (519) cpu_start: Project name:     Measure_Power_AC[0m
+[0;32mI (525) cpu_start: App version:      4dfe763-dirty[0m
+[0;32mI (530) cpu_start: Compile time:     Jan  8 2025 01:04:57[0m
+[0;32mI (536) cpu_start: ELF file SHA256:  343bb1fb...[0m
+[0;32mI (541) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (547) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (551) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (556) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (561) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (568) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (574) heap_init: At 3FFB9470 len 00026B90 (154 KiB): DRAM[0m
+[0;32mI (581) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (587) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (593) heap_init: At 4009842C len 00007BD4 (30 KiB): IRAM[0m
+[0;32mI (601) spi_flash: detected chip: generic[0m
+[0;32mI (604) spi_flash: flash io: dio[0m
+[0;32mI (609) app_start: Starting scheduler on CPU0[0m
+[0;32mI (613) app_start: Starting scheduler on CPU1[0m
+[0;32mI (613) main_task: Started on CPU0[0m
+[0;32mI (623) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (661) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (662) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (675) main_task: Returned from app_main()[0m
+[0;32mI (677) wifi:wifi driver task: 3ffbafac, prio:23, stack:6656, core=1[0m
+[0;32mI (684) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (686) wifi:wifi certification version: v7.0[0m
+[0;32mI (690) wifi:config NVS flash: disabled[0m
+[0;32mI (693) wifi:config nano formating: disabled[0m
+[0;32mI (698) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (703) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (706) wifi:Init management short buffer num: 32[0m
+[0;32mI (711) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (715) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (719) wifi:Init static rx buffer num: 15[0m
+[0;32mI (723) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (728) wifi_init: rx ba win: 6[0m
+[0;32mI (730) wifi_init: tcpip mbox: 32[0m
+[0;32mI (734) wifi_init: udp mbox: 6[0m
+[0;32mI (738) wifi_init: tcp mbox: 6[0m
+[0;32mI (742) wifi_init: tcp tx win: 5760[0m
+[0;32mI (746) wifi_init: tcp rx win: 5760[0m
+[0;32mI (750) wifi_init: tcp mss: 1440[0m
+[0;32mI (754) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (759) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (764) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (847) wifi:mode : sta (b8:d6:1a:6a:3d:0c)[0m
+[0;32mI (848) wifi:enable tsf[0m
+[1;31mE (851) wifi:NAN WiFi stop[0m
+[0;32mI (852) wifi:flush txq[0m
+[0;32mI (852) wifi:stop sw txq[0m
+[0;32mI (853) wifi:lmac stop hw txq[0m
+[0;32mI (856) wifi:mode : sta (b8:d6:1a:6a:3d:0c)[0m
+[0;32mI (857) wifi:enable tsf[0m
+Starting WiFi Scan Round 1
+Starting WiFi Scan Round 2
+Starting WiFi Scan Round 3
+[0;32mI (8367) scan: SSID 		Tiger[0m
+[0;32mI (8367) scan: RSSI 		-48[0m
+[0;32mI (8367) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8369) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8374) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8380) scan: Channel 		11
+[0m
+[0;32mI (8383) scan: SSID 		Nhan House[0m
+[0;32mI (8387) scan: RSSI 		-58[0m
+[0;32mI (8391) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8396) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8402) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8407) scan: Channel 		5
+[0m
+[0;32mI (8411) scan: SSID 		ABCD[0m
+[0;32mI (8414) scan: RSSI 		-59[0m
+[0;32mI (8418) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8423) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8429) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8435) scan: Channel 		11
+[0m
+[0;32mI (8438) scan: SSID 		ABC[0m
+[0;32mI (8442) scan: RSSI 		-61[0m
+[0;32mI (8445) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8450) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8455) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8461) scan: Channel 		1
+[0m
+[0;32mI (8464) scan: SSID 		MAI[0m
+[0;32mI (8468) scan: RSSI 		-71[0m
+[0;32mI (8471) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8476) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8482) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8487) scan: Channel 		1
+[0m
+[0;32mI (8491) scan: SSID 		Tuong Ly[0m
+[0;32mI (8495) scan: RSSI 		-72[0m
+[0;32mI (8498) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8503) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8509) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8514) scan: Channel 		1
+[0m
+[0;32mI (8518) scan: SSID 		Ngoi Nha Nho[0m
+[0;32mI (8522) scan: RSSI 		-74[0m
+[0;32mI (8525) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8531) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8537) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8542) scan: Channel 		11
+[0m
+[0;32mI (8546) scan: SSID 		Tan Phuc[0m
+[0;32mI (8550) scan: RSSI 		-76[0m
+[0;32mI (8553) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8558) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8563) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8569) scan: Channel 		2
+[0m
+[0;32mI (8573) scan: SSID 		Chan Hao[0m
+[0;32mI (8576) scan: RSSI 		-81[0m
+[0;32mI (8580) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8585) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8590) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8596) scan: Channel 		11
+[0m
+[0;32mI (8600) scan: SSID 		Gang[0m
+[0;32mI (8603) scan: RSSI 		-87[0m
+[0;32mI (8606) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8611) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_TKIP_CCMP[0m
+[0;32mI (8618) scan: Group Cipher 	WIFI_CIPHER_TYPE_TKIP[0m
+[0;32mI (8623) scan: Channel 		2
+[0m
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+return -1
+Connect Wifi through smart config
+[0;31mE (8659) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (8665) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (8672) mqtt_client: Error transport connect[0m

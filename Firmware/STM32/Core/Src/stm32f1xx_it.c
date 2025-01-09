@@ -62,7 +62,7 @@ static flagIRQ_dma_t status;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-
+extern UART_HandleTypeDef huart1;
 /* USER CODE BEGIN EV */
 /* USER CODE END EV */
 
@@ -193,7 +193,7 @@ void SysTick_Handler(void)
   BSP_UART_TimeOut();
   SCH_RunSystemTickTimer();
   /* USER CODE END SysTick_IRQn 0 */
-
+  HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
 
   /* USER CODE END SysTick_IRQn 1 */
@@ -258,6 +258,7 @@ void USART1_IRQHandler(void)
   /* USER CODE BEGIN USART1_IRQn 0 */
 	BSP_UART_ISR((uart_cfg_t *)&s_data_system.s_uart_data_trans_rec);
   /* USER CODE END USART1_IRQn 0 */
+  HAL_UART_IRQHandler(&huart1);
   /* USER CODE BEGIN USART1_IRQn 1 */
 
   /* USER CODE END USART1_IRQn 1 */

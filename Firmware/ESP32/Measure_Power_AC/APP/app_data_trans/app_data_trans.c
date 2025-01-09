@@ -48,7 +48,7 @@ static process_trans_data_t s_process_trans_data;
 void
 APP_Data_Trans_CreateTask (void)
 {
-  xTaskCreate(APP_Data_trans_task, "data_trans", 1024 * 10, NULL, 8, NULL);
+  xTaskCreate(APP_Data_trans_task, "data_trans", 1024 * 10, NULL, 11, NULL);
 }
 
 void
@@ -64,7 +64,7 @@ APP_Data_Trans_Init (void)
 static void
 APP_Data_trans_task (void *arg)
 {
-  
+
   while (1)
   {
     /**
@@ -73,7 +73,7 @@ APP_Data_trans_task (void *arg)
      * - Read and store 4 bytes of power data and append '\r' to
      *   u8_data_transmission array.
      */
-    uint32_t value_to_send; // Giá trị nhận từ queue
+    float value_to_send; // Giá trị nhận từ queue
 
     // Chờ dữ liệu từ hàng đợi với timeout 10ms
     if (xQueueReceive(*s_process_trans_data.p_data_trans_queue,
@@ -89,10 +89,12 @@ APP_Data_trans_task (void *arg)
       s_process_trans_data.u8_data_transmission[2] = (uint8_t)((*p_val >> 8));
       s_process_trans_data.u8_data_transmission[3] = (uint8_t)((*p_val >> 0));
       s_process_trans_data.u8_data_transmission[4] = '\r';
-      s_process_trans_data.flag_update_power       = FLAG_UPDATED;
+      // s_process_trans_data.flag_update_power       = FLAG_UPDATED;
 
-      uint8_t len = strlen(s_process_trans_data.u8_data_transmission);
-      uart_write_bytes(UART_NUM_2, (char *)s_process_trans_data.u8_data_transmission, len);
+      // printf("%f\r\n", value_to_send);
+      // uint8_t len = strlen(s_process_trans_data.u8_data_transmission);
+      uart_write_bytes(
+          UART_NUM_2, (char *)s_process_trans_data.u8_data_transmission, 5);
     }
   }
 }

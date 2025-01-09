@@ -12,6 +12,7 @@
 #include "app_data.h"
 #include "app_led_7seg.h"
 #include "gpio.h"
+#include "stm32f1xx_ll_gpio.h"
 #include "scheduler.h"
 
 /******************************************************************************
@@ -84,15 +85,17 @@ static uint32_t APP_LED_7_SEG_Pow(uint8_t u8_x, uint8_t u8_y);
  *****************************************************************************/
 
 // Data of table don't consist of dp
+//static uint8_t u8_data_mask_led[10]
+//    = { 0xC0, 0XF9, 0XA4, 0XB0, 0X99, 0X92, 0X82, 0X8F, 0X80, 0X90 };
 static uint8_t u8_data_mask_led[10]
-    = { 0xC0, 0XF9, 0XA4, 0XB0, 0X99, 0X92, 0X82, 0X8F, 0X80, 0X90 };
+    = { 0x3F, 0X06, 0X5B, 0X40, 0X66, 0X6D, 0X7D, 0X07, 0X7F, 0X6F };
 
 static LED_7SEG_t                 s_LED_7SEG;
 static Control_TaskContextTypedef s_ControlTaskContext
     = { SCH_INVALID_TASK_HANDLE, // Will be updated by Scheduler
         {
             SCH_TASK_SYNC,          // taskType;
-            20,                      // taskPeriodInMS;
+            10,                      // taskPeriodInMS;
             APP_LED_7SEG_TaskUpdate // taskFunction;
         } };
 
@@ -142,7 +145,16 @@ APP_LED_7_SEG_Init (void)
   s_LED_7SEG.u32_pin_control[4] = PIN_CONTROL_4;
 
   s_LED_7SEG.u8_position_led = 0;
-  *s_LED_7SEG.p_power = 0;
+  *s_LED_7SEG.p_power = 100;
+
+  LL_GPIO_SetOutputPin(PORT_LED_A, PIN_LED_A);
+  LL_GPIO_SetOutputPin(PORT_LED_B, PIN_LED_B);
+  LL_GPIO_SetOutputPin(PORT_LED_C, PIN_LED_C);
+  LL_GPIO_SetOutputPin(PORT_LED_D, PIN_LED_D);
+  LL_GPIO_SetOutputPin(PORT_LED_E, PIN_LED_E);
+  LL_GPIO_SetOutputPin(PORT_LED_F, PIN_LED_F);
+  LL_GPIO_SetOutputPin(PORT_LED_G, PIN_LED_G);
+  LL_GPIO_SetOutputPin(PORT_LED_DP, PIN_LED_DP);
 }
 
 /**
@@ -309,12 +321,12 @@ APP_LED_7SEG_ScanLed (void)
     {
       BSP_GPIO_SetState((GPIO_TypeDef *)s_LED_7SEG.p_port_control[i],
                         s_LED_7SEG.u32_pin_control[i],
-                        1);
+                        0);
       continue;
     }
     BSP_GPIO_SetState((GPIO_TypeDef *)s_LED_7SEG.p_port_control[i],
                       s_LED_7SEG.u32_pin_control[i],
-                      0);
+                      1);
   }
 }
 

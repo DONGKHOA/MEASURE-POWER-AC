@@ -4,15 +4,14 @@ D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMak
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/gen_project_binary.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/app.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/erase_flash.dir
-D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/uf2.dir
-D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/uf2-app.dir
-D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/merge-bin.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/monitor.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/_project_elf_src.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/bootloader.elf.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/size.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/size-files.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/size-components.dir
+D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/uf2-app.dir
+D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/uf2.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/edit_cache.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/CMakeFiles/rebuild_cache.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/CMakeFiles/edit_cache.dir
@@ -34,9 +33,7 @@ D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/spi_flash/CMakeFiles/edit_cache.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/spi_flash/CMakeFiles/rebuild_cache.dir
-D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir
-D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_bootloader_format/CMakeFiles/edit_cache.dir
-D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_bootloader_format/CMakeFiles/rebuild_cache.dir
+D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_app_format/CMakeFiles/edit_cache.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_app_format/CMakeFiles/rebuild_cache.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir
@@ -60,8 +57,6 @@ D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/rebuild_cache.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_hw_support/port/esp32/CMakeFiles/edit_cache.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_hw_support/port/esp32/CMakeFiles/rebuild_cache.dir
-D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/edit_cache.dir
-D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/rebuild_cache.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_common/CMakeFiles/edit_cache.dir
 D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader/esp-idf/esp_common/CMakeFiles/rebuild_cache.dir

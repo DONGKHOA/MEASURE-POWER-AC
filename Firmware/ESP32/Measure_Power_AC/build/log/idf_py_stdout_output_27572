@@ -1,0 +1,1131 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0x�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan  8 2025 15:17:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29cdch (171228) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00039d04 vaddr=3ffb0000 size=03cb8h ( 15544) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0003d9c4 vaddr=40080000 size=02654h (  9812) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b6f28h (749352) map[0m
+[0;32mI (453) esp_image: segment 4: paddr=000f6f50 vaddr=40082654 size=15dd8h ( 89560) load[0m
+[0;32mI (503) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (503) boot: Disabling RNG early entropy source...[0m
+[0;32mI (514) cpu_start: Multicore app[0m
+[0;32mI (515) cpu_start: Pro cpu up.[0m
+[0;32mI (515) cpu_start: Starting app cpu, entry point is 0x40081528[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (533) cpu_start: Pro cpu start user code[0m
+[0;32mI (533) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (533) cpu_start: Application information:[0m
+[0;32mI (537) cpu_start: Project name:     Measure_Power_AC[0m
+[0;32mI (543) cpu_start: App version:      4dfe763-dirty[0m
+[0;32mI (549) cpu_start: Compile time:     Jan  8 2025 15:17:32[0m
+[0;32mI (555) cpu_start: ELF file SHA256:  0d095046...[0m
+[0;32mI (560) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (565) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (570) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (575) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (580) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (587) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFB96C0 len 00026940 (154 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (612) heap_init: At 4009842C len 00007BD4 (30 KiB): IRAM[0m
+[0;32mI (620) spi_flash: detected chip: generic[0m
+[0;32mI (623) spi_flash: flash io: dio[0m
+[0;32mI (628) app_start: Starting scheduler on CPU0[0m
+[0;32mI (632) app_start: Starting scheduler on CPU1[0m
+[0;32mI (632) main_task: Started on CPU0[0m
+[0;32mI (642) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (656) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (658) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (672) main_task: Returned from app_main()[0m
+[0;32mI (673) wifi:wifi driver task: 3ffdbf70, prio:23, stack:6656, core=1[0m
+[0;32mI (680) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (682) wifi:wifi certification version: v7.0[0m
+[0;32mI (686) wifi:config NVS flash: disabled[0m
+Vol: 224.619995
+[0;32mI (690) wifi:config nano formating: disabled[0m
+Cur: 0.000000
+[0;32mI (696) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (702) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (706) wifi:Init management short buffer num: 32[0m
+Vol: 224.619995
+[0;32mI (710) wifi:Init dynamic tx buffer num: 32Cur: 0.000000[0m
+
+[0;32mI (717) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (721) wifi:Init static rx buffer num: 15[0m
+[0;32mI (725) wifi:Init dynamic rx buffer num: 32[0m
+Vol: 223.960007
+[0;32mI (730) wifi_init: rx ba win: 6[0m
+[0;32mI (734) wifi_init: tcpip mbox: 32[0m
+[0;32mI (738) wifi_init: udp mbox: 6[0m
+[0;32mI (742) wifi_init: tcp mbox: 6[0m
+[0;32mI (745) wifi_init: tcp tx win: 5760[0m
+[0;32mI (749) wifi_init: tcp rx win: 5760[0m
+[0;32mI (754) wifi_init: tcp mss: 1440[0m
+[0;32mI (757) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (762) wifi_init: WiFi RX IRAM OP enabled[0m
+Cur: 0.000000
+[0;32mI (768) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+Vol: 223.300003
+Cur: 0.000000
+Vol: 224.179993
+Cur: 0.000000
+Vol: 223.630005
+Cur: 0.000000
+Vol: 224.839996
+Cur: 0.000000
+Vol: 224.839996
+Cur: 0.000000
+Vol: 224.399994
+Cur: 0.008176
+[0;33mW (850) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (865) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (866) wifi:enable tsf[0m
+[1;31mE (869) wifi:NAN WiFi stop[0m
+0.000000
+[0;32mI (870) wifi:flush txq[0m
+Vol: 224.070007
+[0;32mI (870) wifi:Cur: 0.000000[0m
+stop sw txq
+[0;32mI (871) wifi:lmac stop hw txq[0m
+[0;32mI (876) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (878) wifi:enable tsf[0m
+Vol: 223.630005
+Cur: 0.000000
+Vol: 223.850006
+Cur: 0.000000
+Vol: 223.740005
+Cur: 0.000000
+Vol: 223.960007
+Cur: 0.000000
+Vol: 223.630005
+Cur: 0.000000
+Vol: 223.850006
+Cur: 0.000000
+Vol: 223.740005
+Cur: 0.000000
+Vol: 224.729996
+Cur: 0.000000
+Vol: 224.619995
+Cur: 0.000000
+0.000000
+Vol: 224.619995
+Cur: 0.000000
+Vol: 224.839996
+Cur: 0.008176
+Vol: 224.179993
+Cur: 0.000000
+Vol: 223.190002
+Cur: 0.000000
+Vol: 223.080002
+Cur: 0.000000
+Vol: 223.300003
+Cur: 0.000000
+Vol: 222.970001
+Cur: 0.000000
+Vol: 222.750000
+Cur: 0.000000
+Vol: 222.529999
+Cur: 0.000000
+Vol: 221.759995
+Cur: 0.000000
+0.000000
+Vol: 221.649994
+Cur: 0.000000
+Vol: 220.990005
+Cur: 0.000000
+Vol: 220.770004
+Cur: 0.000000
+Vol: 221.869995
+Cur: 0.000000
+Vol: 220.990005
+Cur: 0.008176
+Vol: 220.550003
+Cur: 0.000000
+Vol: 220.000000
+Cur: 0.000000
+Vol: 218.020004
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 215.710007
+Cur: 0.000000
+0.000000
+Vol: 213.619995
+Cur: 0.000000
+Vol: 213.179993
+Cur: 0.000000
+Vol: 213.509995
+Cur: 0.000000
+Vol: 213.619995
+Cur: 0.000000
+Vol: 213.399994
+Cur: 0.000000
+Vol: 214.720001
+Cur: 0.000000
+Vol: 213.619995
+Cur: 0.000000
+Vol: 214.940002
+Cur: 0.000000
+Vol: 213.619995
+Cur: 0.000000
+Vol: 213.289993
+Cur: 0.000000
+0.000000
+Vol: 213.729996
+Cur: 0.000000
+Vol: 213.729996
+Cur: 0.000000
+Vol: 213.729996
+Cur: 0.000000
+Vol: 214.940002
+Cur: 0.000000
+Vol: 214.830002
+Cur: 0.000000
+Vol: 215.270004
+Cur: 0.000000
+Vol: 214.610001
+Cur: 0.000000
+Vol: 214.720001
+Cur: 0.000000
+Vol: 215.270004
+Cur: 0.008176
+Vol: 214.059998
+Cur: 0.000000
+0.000000
+Vol: 213.839996
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+Vol: 215.160004
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+Vol: 215.270004
+Cur: 0.000000
+Vol: 214.389999
+Cur: 0.000000
+Vol: 214.059998
+Cur: 0.000000
+Vol: 214.279999
+Cur: 0.008176
+Vol: 215.380005
+Cur: 0.000000
+0.000000
+Vol: 215.160004
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.008176
+Vol: 215.490005
+Cur: 0.000000
+Vol: 214.279999
+Cur: 0.000000
+Vol: 215.380005
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+Vol: 214.720001
+Cur: 0.000000
+Vol: 215.710007
+Cur: 0.000000
+Vol: 215.710007
+Cur: 0.000000
+Vol: 215.380005
+Cur: 0.000000
+0.000000
+Vol: 214.720001
+Cur: 0.000000
+Vol: 214.500000
+Cur: 0.000000
+Vol: 214.500000
+Cur: 0.000000
+Vol: 214.940002
+Cur: 0.000000
+Vol: 214.500000
+Cur: 0.000000
+Vol: 214.830002
+Cur: 0.000000
+Vol: 214.610001
+Cur: 0.000000
+Vol: 214.720001
+Cur: 0.000000
+Vol: 214.830002
+Cur: 0.000000
+Vol: 214.500000
+Cur: 0.000000
+0.000000
+Vol: 214.940002
+Cur: 0.000000
+Vol: 215.929993
+Cur: 0.008176
+Vol: 215.600006
+Cur: 0.000000
+Vol: 214.830002
+Cur: 0.000000
+Vol: 214.720001
+Cur: 0.008176
+Vol: 214.500000
+Cur: 0.000000
+Vol: 214.279999
+Cur: 0.000000
+Vol: 214.500000
+Cur: 0.008176
+Vol: 214.940002
+Cur: 0.000000
+Vol: 214.610001
+Cur: 0.000000
+0.878719
+Vol: 214.940002
+Cur: 0.008176
+Vol: 216.149994
+Cur: 0.000000
+Vol: 216.149994
+Cur: 0.000000
+Vol: 214.940002
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+Vol: 214.940002
+Cur: 0.000000
+Vol: 215.380005
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+0.000000
+Vol: 215.050003
+Cur: 0.000000
+Vol: 215.380005
+Cur: 0.000000
+Vol: 215.380005
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+Vol: 215.160004
+Cur: 0.000000
+Vol: 215.380005
+Cur: 0.000000
+Vol: 216.259995
+Cur: 0.008176
+Vol: 215.490005
+Cur: 0.008176
+Vol: 215.380005
+Cur: 0.000000
+Vol: 215.380005
+Cur: 0.000000
+0.000000
+Vol: 215.490005
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+Vol: 215.160004
+Cur: 0.000000
+Vol: 215.270004
+Cur: 0.000000
+Vol: 215.160004
+Cur: 0.000000
+Vol: 215.380005
+Cur: 0.008176
+Vol: 215.270004
+Cur: 0.000000
+Vol: 215.490005
+Cur: 0.000000
+Vol: 215.490005
+Cur: 0.000000
+Vol: 215.050003
+Cur: 0.000000
+0.000000
+Vol: 215.490005
+Cur: 0.000000
+Vol: 215.929993
+Cur: 0.000000
+Vol: 215.490005
+Cur: 0.000000
+Vol: 216.149994
+Cur: 0.000000
+Vol: 215.820007
+Cur: 0.000000
+Vol: 215.820007
+Cur: 0.008176
+Starting WiFi Scan Round 1
+Vol: 215.820007
+Cur: 0.000000
+Vol: 215.929993
+Cur: 0.000000
+Vol: 215.710007
+Cur: 0.000000
+Vol: 215.820007
+Cur: 0.000000
+0.882767
+Vol: 215.929993
+Cur: 0.008176
+Vol: 215.820007
+Cur: 0.008176
+Vol: 215.929993
+Cur: 0.000000
+Vol: 216.699997
+Cur: 0.000000
+Vol: 215.929993
+Cur: 0.000000
+Vol: 215.929993
+Cur: 0.000000
+Vol: 217.029999
+Cur: 0.000000
+Vol: 216.589996
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 216.369995
+Cur: 0.008176
+0.000000
+Vol: 215.929993
+Cur: 0.000000
+Vol: 216.149994
+Cur: 0.000000
+Vol: 216.809998
+Cur: 0.000000
+Vol: 217.139999
+Cur: 0.000000
+Vol: 216.149994
+Cur: 0.000000
+Vol: 216.259995
+Cur: 0.000000
+Vol: 216.369995
+Cur: 0.000000
+Vol: 215.820007
+Cur: 0.000000
+Vol: 217.580002
+Cur: 0.008176
+Vol: 216.479996
+Cur: 0.000000
+0.000000
+Vol: 216.369995
+Cur: 0.000000
+Vol: 216.699997
+Cur: 0.008176
+Vol: 216.589996
+Cur: 0.000000
+Vol: 216.369995
+Cur: 0.000000
+Vol: 217.800003
+Cur: 0.008176
+Vol: 216.589996
+Cur: 0.000000
+Vol: 216.369995
+Cur: 0.000000
+Vol: 216.589996
+Cur: 0.000000
+Vol: 216.479996
+Cur: 0.000000
+Vol: 216.479996
+Cur: 0.000000
+1.772728
+Vol: 216.809998
+Cur: 0.016353
+Vol: 216.039993
+Cur: 0.000000
+Vol: 216.809998
+Cur: 0.008176
+Vol: 216.699997
+Cur: 0.000000
+Vol: 216.809998
+Cur: 0.000000
+Vol: 216.699997
+Cur: 0.000000
+Vol: 216.369995
+Cur: 0.000000
+Vol: 217.690002
+Cur: 0.008176
+Vol: 217.800003
+Cur: 0.000000
+Vol: 217.360001
+Cur: 0.008176
+0.000000
+Vol: 217.910004
+Cur: 0.000000
+Vol: 218.240005
+Cur: 0.000000
+Vol: 218.130005
+Cur: 0.000000
+Vol: 218.020004
+Cur: 0.000000
+Vol: 217.800003
+Cur: 0.008176
+Vol: 218.460007
+Cur: 0.000000
+Vol: 217.029999
+Cur: 0.000000
+Vol: 217.139999
+Cur: 0.000000
+Vol: 218.130005
+Cur: 0.000000
+Vol: 216.919998
+Cur: 0.000000
+0.000000
+Vol: 217.029999
+Cur: 0.000000
+Vol: 218.240005
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.360001
+Cur: 0.008176
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.008176
+Vol: 217.250000
+Cur: 0.008176
+0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.029999
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.008176
+Vol: 217.470001
+Cur: 0.000000
+Vol: 216.809998
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.008176
+Vol: 217.250000
+Cur: 0.000000
+0.000000
+Vol: 217.360001
+Cur: 0.000000
+Vol: 217.690002
+Cur: 0.000000
+Vol: 217.800003
+Cur: 0.000000
+Vol: 217.360001
+Cur: 0.000000
+Vol: 217.470001
+Cur: 0.000000
+Vol: 217.360001
+Cur: 0.000000
+Vol: 218.460007
+Cur: 0.000000
+Vol: 218.789993
+Cur: 0.000000
+Vol: 218.789993
+Cur: 0.000000
+Vol: 217.800003
+Cur: 0.008176
+0.000000
+Vol: 217.800003
+Cur: 0.000000
+Vol: 219.119995
+Cur: 0.000000
+Vol: 219.119995
+Cur: 0.000000
+Vol: 218.679993
+Cur: 0.000000
+Vol: 217.800003
+Cur: 0.016353
+Vol: 217.470001
+Cur: 0.000000
+Vol: 217.910004
+Cur: 0.000000
+Vol: 217.910004
+Cur: 0.000000
+Vol: 218.460007
+Cur: 0.000000
+Vol: 217.690002
+Cur: 0.000000
+0.000000
+Vol: 217.800003
+Cur: 0.000000
+Vol: 217.910004
+Cur: 0.008176
+Vol: 217.910004
+Cur: 0.000000
+Vol: 218.020004
+Cur: 0.000000
+Vol: 218.240005
+Cur: 0.000000
+Vol: 218.240005
+Cur: 0.000000
+Vol: 217.800003
+Cur: 0.000000
+Vol: 218.460007
+Cur: 0.016353
+Vol: 218.240005
+Cur: 0.000000
+Vol: 218.240005
+Cur: 0.000000
+0.894909
+Vol: 218.899994
+Cur: 0.008176
+Vol: 218.460007
+Cur: 0.000000
+Vol: 218.240005
+Cur: 0.000000
+Vol: 219.009995
+Cur: 0.008176
+Vol: 218.679993
+Cur: 0.000000
+Vol: 218.460007
+Cur: 0.000000
+Vol: 218.679993
+Cur: 0.000000
+Vol: 219.449997
+Cur: 0.000000
+Vol: 218.570007
+Cur: 0.008176
+Vol: 218.460007
+Cur: 0.000000
+0.893110
+Vol: 218.460007
+Cur: 0.008176
+Vol: 218.460007
+Cur: 0.000000
+Vol: 218.789993
+Cur: 0.000000
+Vol: 218.130005
+Cur: 0.008176
+Vol: 218.460007
+Cur: 0.008176
+Vol: 217.029999
+Cur: 0.000000
+Vol: 216.809998
+Cur: 0.000000
+Vol: 216.809998
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.008176
+0.000000
+Vol: 216.919998
+Cur: 0.000000
+Starting WiFi Scan Round 2
+Vol: 217.139999
+Cur: 0.000000
+Vol: 217.250000
+Cur: 0.000000
+Vol: 217.800003
+Cur: 0.000000
+Vol: 217.360001
+Cur: 0.000000
+Vol: 217.360001
+Cur: 0.000000
+Vol: 217.360001
+Cur: 0.000000
+Vol: 217.580002
+Cur: 0.008176
+Vol: 217.800003
+Cur: 0.000000
+Vol: 217.470001
+Cur: 0.000000
+0.889512
+Vol: 217.580002
+Cur: 0.008176
+Vol: 218.020004
+Cur: 0.000000
+Vol: 218.679993
+Cur: 0.000000
+Vol: 217.580002
+Cur: 0.000000
+Vol: 217.910004
+Cur: 0.000000
+Vol: 217.910004
+Cur: 0.000000
+Vol: 218.020004
+Cur: 0.008176
+Vol: 219.229996
+Cur: 0.000000
+Vol: 218.460007
+Cur: 0.000000
+Vol: 218.899994
+Cur: 0.000000
+0.000000
+Vol: 219.009995
+Cur: 0.000000
+Vol: 218.789993
+Cur: 0.000000
+Vol: 219.009995
+Cur: 0.000000
+Vol: 219.009995
+Cur: 0.000000
+Vol: 219.009995
+Cur: 0.000000
+Vol: 218.789993
+Cur: 0.000000
+Vol: 219.009995
+Cur: 0.000000
+Vol: 219.119995
+Cur: 0.000000
+Vol: 219.119995
+Cur: 0.000000
+Vol: 219.119995
+Cur: 0.000000
+0.000000
+Vol: 219.119995
+Cur: 0.000000
+Vol: 219.009995
+Cur: 0.000000
+Vol: 219.119995
+Cur: 0.008176
+Vol: 218.899994
+Cur: 0.000000
+Vol: 219.339996
+Cur: 0.000000
+Vol: 219.339996
+Cur: 0.000000
+Vol: 219.119995
+Cur: 0.000000
+Vol: 220.330002
+Cur: 0.000000
+Vol: 219.559998
+Cur: 0.000000
+Vol: 220.550003
+Cur: 0.000000
+0.000000
+Vol: 219.559998
+Cur: 0.000000
+Vol: 219.339996
+Cur: 0.000000
+Vol: 219.449997
+Cur: 0.000000
+Vol: 219.229996
+Cur: 0.000000
+Vol: 219.559998
+Cur: 0.000000
+Vol: 220.110001
+Cur: 0.000000
+Vol: 219.559998
+Cur: 0.000000
+Vol: 219.669998
+Cur: 0.000000
+Vol: 219.889999
+Cur: 0.008176
+Vol: 220.000000
+Cur: 0.000000
+0.000000
+Vol: 219.669998
+Cur: 0.000000
+Vol: 221.100006
+Cur: 0.008176
+Vol: 220.990005
+Cur: 0.000000
+Vol: 219.779999
+Cur: 0.000000
+Vol: 220.000000
+Cur: 0.008176
+Vol: 220.000000
+Cur: 0.000000
+Vol: 219.889999
+Cur: 0.008176
+Vol: 219.779999
+Cur: 0.000000
+Vol: 221.429993
+Cur: 0.000000
+Vol: 219.669998
+Cur: 0.000000
+0.000000
+Vol: 220.000000
+Cur: 0.000000
+Vol: 220.110001
+Cur: 0.000000
+Vol: 220.990005
+Cur: 0.000000
+Vol: 219.889999
+Cur: 0.008176
+Vol: 220.330002
+Cur: 0.000000
+Vol: 219.559998
+Cur: 0.008176
+Vol: 221.210007
+Cur: 0.000000
+Vol: 220.000000
+Cur: 0.000000
+Vol: 220.110001
+Cur: 0.000000
+Vol: 220.000000
+Cur: 0.008176
+0.000000
+Vol: 220.000000
+Cur: 0.000000
+Vol: 219.449997
+Cur: 0.000000
+Vol: 220.110001
+Cur: 0.000000
+Vol: 219.669998
+Cur: 0.000000
+Vol: 221.320007
+Cur: 0.000000
+Vol: 220.440002
+Cur: 0.000000
+Vol: 220.000000
+Cur: 0.000000
+Vol: 220.110001
+Cur: 0.008176
+Vol: 220.330002
+Cur: 0.000000
+Vol: 220.440002
+Cur: 0.000000
+0.000000
+Vol: 220.000000
+Cur: 0.000000
+Vol: 221.539993
+Cur: 0.008176
+Vol: 220.550003
+Cur: 0.000000
+Vol: 220.660004
+Cur: 0.000000
+Vol: 220.550003
+Cur: 0.000000
+Vol: 220.660004
+Cur: 0.000000
+Vol: 220.660004
+Cur: 0.000000
+Vol: 221.429993
+Cur: 0.000000
+Vol: 220.660004
+Cur: 0.016353
+Vol: 220.550003
+Cur: 0.000000
+0.000000
+Vol: 220.550003
+Cur: 0.000000
+Vol: 220.550003
+Cur: 0.000000
+Vol: 220.440002
+Cur: 0.000000
+Vol: 221.649994
+Cur: 0.000000
+Vol: 220.550003
+Cur: 0.000000
+Vol: 220.770004
+Cur: 0.000000
+Vol: 220.550003
+Cur: 0.000000
+Vol: 220.440002
+Cur: 0.000000
+Vol: 220.550003
+Cur: 0.000000
+Vol: 220.440002
+Cur: 0.000000
+0.000000
+Vol: 220.440002
+Cur: 0.000000
+Vol: 220.440002
+Cur: 0.000000
+Vol: 220.880005
+Cur: 0.000000
+Vol: 221.429993
+Cur: 0.000000
+Vol: 222.199997
+Cur: 0.000000
+Vol: 221.759995
+Cur: 0.000000
+Vol: 222.089996
+Cur: 0.000000
+Vol: 220.990005
+Cur: 0.000000
+Vol: 220.880005
+Cur: 0.000000
+Vol: 220.880005
+Cur: 0.000000
+0.000000
+Vol: 220.660004
+Cur: 0.000000
+Vol: 220.770004
+Cur: 0.000000
+Vol: 220.880005
+Cur: 0.000000
+Vol: 221.100006
+Cur: 0.000000
+Vol: 220.990005
+Cur: 0.000000
+Vol: 221.320007
+Cur: 0.000000
+Vol: 222.309998
+Cur: 0.008176
+Vol: 222.309998
+Cur: 0.008176
+Vol: 221.869995
+Cur: 0.000000
+Vol: 221.429993
+Cur: 0.000000
+0.000000
+Vol: 221.210007
+Cur: 0.000000
+Vol: 220.990005
+Cur: 0.000000
+Vol: 222.419998
+Cur: 0.000000
+Vol: 222.309998
+Cur: 0.008176
+Vol: 222.419998
+Cur: 0.000000
+Vol: 222.529999
+Cur: 0.000000
+Starting WiFi Scan Round 3
+[0;32mI (8388) scan: SSID 		PIF_CLUB[0m
+[0;32mI (8388) scan: RSSI 		-38[0m
+[0;32mI (8388) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8390) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8396) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8401) scan: Channel 		10
+[0m
+Vol: 221.429993
+[0;32mI (8405) scan: SSID 		PIF_Client[0m
+[0;32mI (8410) scan: RSSI 		-38[0m
+[0;32mI (8414) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8419) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8425) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8430) scan: Channel 		10
+[0m
+[0;32mI (8434) scan: SSID 		HCMUT04[0m
+[0;32mI (8437) scan: RSSI 		-56[0m
+[0;32mI (8441) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8446) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+Cur: 0.000000
+[0;32mI (8452) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8458) scan: Channel 		10
+[0m
+Vol: 220.110001
+[0;32mI (8462) scan: SSID 		Four-Faith[0m
+[0;32mI (8467) scan: RSSI 		-65[0m
+[0;32mI (8471) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8476) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8481) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+Cur: 0.000000
+[0;32mI (8487) scan: Channel 		13
+[0m
+[0;32mI (8492) scan: SSID 		HCMUT02[0m
+Vol: 221.100006
+[0;32mI (8495) scan: RSSI 		-69[0m
+[0;32mI (8500) scan: Authmode 	WIFI_AUTH_OPEN[0m
+Cur: 0.008176
+[0;32mI (8505) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8512) scan: Group Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+Vol: 221.320007
+[0;32mI (8517) scan: Channel 		6
+[0m
+[0;32mI (8522) scan: SSID 		HCMUT01[0m
+Cur: 0.008176
+[0;32mI (8526) scan: RSSI 		-82[0m
+[0;32mI (8530) scan: Authmode 	WIFI_AUTH_ENTERPRISE[0m
+[0;32mI (8536) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+0.000000
+[0;32mI (8542) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8548) scan: Channel 		1
+[0m
+[0;32mI (8551) scan: SSID 		BMDT_Teacher[0m
+[0;32mI (8555) scan: RSSI 		-85[0m
+Vol: 221.210007
+[0;32mI (8559) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8565) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8571) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+Cur: 0.000000
+[0;32mI (8576) scan: Channel 		1
+[0m
+Vol: 221.210007
+[0;32mI (8581) scan: SSID 		P108B1_5G[0m
+[0;32mI (8586) scan: RSSI 		-86[0m
+[0;32mI (8590) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+Cur: 0.000000
+[0;32mI (8594) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8602) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+Vol: 219.449997
+[0;32mI (8607) scan: Channel 		4
+[0m
+[0;32mI (8612) scan: SSID 		C15-C20-B3345[0m
+Cur: 0.000000
+[0;32mI (8616) scan: RSSI 		-86[0m
+[0;32mI (8621) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+Vol: 219.229996
+[0;32mI (8626) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8633) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+Cur: 0.000000
+[0;32mI (8638) scan: Channel 		6
+[0m
+[0;32mI (8643) scan: SSID 		Hidden[0m
+Vol: 219.339996
+[0;32mI (8647) scan: RSSI 		-88[0m
+[0;32mI (8651) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8657) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+Cur: 0.000000
+[0;32mI (8662) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+Vol: 219.449997
+[0;32mI (8669) scan: Channel 		5
+[0m
+Cur: 0.008176
+Check matching Ssid
+1
+opening NVS Read handle Done 
+opening NVS Read handle Done 
+Vol: 219.339996
+2
+return 1
+Found Matching SSID and Password
+Cur: 0.000000
+[1;31mE (8690) wifi:Vol: 219.449997[0m
+NAN WiFi stop
+Cur: 0.000000
+[0;32mI (8695) wifi:Vol: 219.339996[0m
+flush txqCur: 0.000000
+
+Vol: 219.339996
+[0;32mI (8701) wifi:Cur: 0.000000[0m
+stop sw txq
+0.000000
+[0;32mI (8706) wifi:lmac stop hw txq[0m
+Vol: 219.889999
+Cur: 0.000000
+Vol: 219.669998
+[0;32mI (8714) wifi:Cur: 0.000000[0m
+mode : sta (08:a6:f7:1d:a1:60)Vol: 219.119995
+
+Cur: 0.000000
+[0;32mI (8721) wifi:enable tsf[0m
+[0;32mI (8725) scan: Wifi_init_station finished.[0m
+Vol: 219.449997
+Cur: 0.000000
+Vol: 219.339996
+Cur: 0.000000
+Vol: 219.229996
+Cur: 0.000000
+Vol: 219.669998
+Cur: 0.008176
+Vol: 219.669998
+Cur: 0.000000
+Vol: 219.229996
+Cur: 0.000000
+Vol: 219.559998
+Cur: 0.008176
+0.000000
+Vol: 221.979996
+Cur: 0.000000
+Vol: 220.440002
+Cur: 0.008176
+Vol: 221.979996
+Cur: 0.008176
+Vol: 221.539993
+Cur: 0.000000
+Vol: 221.210007
+Cur: 0.000000
+Vol: 221.210007
+Cur: 0.000000
+Vol: 221.869995
+Cur: 0.000000
+Vol: 221.869995
+Cur: 0.000000
+Vol: 222.199997
+Cur: 0.000000
+Vol: 220.990005
+Cur: 0.008176
+0.903903
+Vol: 221.100006
+Cur: 0.008176
+Vol: 220.880005
+Cur: 0.000000
+Vol: 220.330002
+Cur: 0.000000
+Vol: 220.220001
+Cur: 0.000000
+Vol: 222.529999
+Cur: 0.000000
+Vol: 221.979996
+Cur: 0.000000
+Vol: 222.309998
+Cur: 0.000000
+Vol: 222.529999
+Cur: 0.000000
+Vol: 222.309998
+Cur: 0.000000
+Vol: 222.419998
+Cur: 0.000000
+0.000000
+Vol: 222.529999
+Cur: 0.000000
+Vol: 222.419998
+Cur: 0.000000
+Vol: 222.199997
+Cur: 0.000000
+Vol: 222.419998
+Cur: 0.000000
+Vol: 222.309998
+Cur: 0.000000
+Vol: 222.639999
+Cur: 0.000000
+Vol: 221.429993
+Cur: 0.000000
+Vol: 220.990005
+Cur: 0.000000
+Vol: 220.880005
+Cur: 0.000000
+Vol: 220.220001
+Cur: 0.000000
+0.000000
+Vol: 220.440002
+Cur: 0.000000
+Vol: 222.199997
+Cur: 0.000000
+Vol: 222.639999
+Cur: 0.000000
+Vol: 222.860001
+Cur: 0.008176
+Vol: 222.750000
+Cur: 0.000000
+Vol: 222.750000
+Cur: 0.008176
+Vol: 223.190002
+Cur: 0.000000
+Vol: 223.080002
+Cur: 0.000000
+Vol: 223.190002
+Cur: 0.000000
+Vol: 223.190002
+Cur: 0.000000
+0.000000
+Vol: 223.190002
+Cur: 0.000000
+Vol: 223.960007
+Cur: 0.000000
