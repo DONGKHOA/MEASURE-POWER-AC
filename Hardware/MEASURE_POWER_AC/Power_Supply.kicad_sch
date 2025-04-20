@@ -1,13 +1,17 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "da166c2d-a949-41e7-a0f4-eb2e62834070")
 	(paper "A3")
 	(lib_symbols
 		(symbol "Measurement_Power_AC:Candy_Cap_hole_100nF_275VAC"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -117,7 +121,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.1148 -1.905) (xy 4.1148 1.905)
+						(xy 4.1148 0) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.2032)
@@ -129,7 +133,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.1148 0) (xy 5.08 0)
+						(xy 4.1148 -1.905) (xy 4.1148 1.905)
 					)
 					(stroke
 						(width 0.2032)
@@ -176,9 +180,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Cap_Polarized_SMD_1000uF_16V"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -304,9 +311,9 @@
 					)
 				)
 				(arc
-					(start 3.302 1.524)
+					(start 3.302 -1.524)
 					(mid 2.9134 0)
-					(end 3.302 -1.524)
+					(end 3.302 1.524)
 					(stroke
 						(width 0.3048)
 						(type default)
@@ -354,11 +361,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Cap_Tantalum_10uF_16V"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -473,9 +485,9 @@
 					)
 				)
 				(arc
-					(start 3.302 1.524)
+					(start 3.302 -1.524)
 					(mid 2.9134 0)
-					(end 3.302 -1.524)
+					(end 3.302 1.524)
 					(stroke
 						(width 0.3048)
 						(type default)
@@ -523,11 +535,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Cap_Tantalum_1uF_16V"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -642,9 +659,9 @@
 					)
 				)
 				(arc
-					(start 3.302 1.524)
+					(start 3.302 -1.524)
 					(mid 2.9134 0)
-					(end 3.302 -1.524)
+					(end 3.302 1.524)
 					(stroke
 						(width 0.3048)
 						(type default)
@@ -692,10 +709,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Ceramic_Cap_SMD_100nF_16V"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -796,7 +818,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.8448 -1.905) (xy 2.8448 1.905)
+						(xy 2.8448 0) (xy 3.81 0)
 					)
 					(stroke
 						(width 0.2032)
@@ -808,7 +830,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.8448 0) (xy 3.81 0)
+						(xy 2.8448 -1.905) (xy 2.8448 1.905)
 					)
 					(stroke
 						(width 0.2032)
@@ -855,10 +877,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Ceramic_Cap_SMD_10nF_50V"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -968,7 +995,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.1148 -1.905) (xy 4.1148 1.905)
+						(xy 4.1148 0) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.2032)
@@ -980,7 +1007,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.1148 0) (xy 5.08 0)
+						(xy 4.1148 -1.905) (xy 4.1148 1.905)
 					)
 					(stroke
 						(width 0.2032)
@@ -1027,10 +1054,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Ceramic_Cap_SMD_39pF_50V"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1131,7 +1163,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.8448 -1.905) (xy 2.8448 1.905)
+						(xy 2.8448 0) (xy 3.81 0)
 					)
 					(stroke
 						(width 0.2032)
@@ -1143,7 +1175,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.8448 0) (xy 3.81 0)
+						(xy 2.8448 -1.905) (xy 2.8448 1.905)
 					)
 					(stroke
 						(width 0.2032)
@@ -1190,10 +1222,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Ceramic_Cap_SMD_4.7nF_50V"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1294,7 +1331,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.1148 -1.905) (xy 4.1148 1.905)
+						(xy 4.1148 0) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.2032)
@@ -1306,7 +1343,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.1148 0) (xy 5.08 0)
+						(xy 4.1148 -1.905) (xy 4.1148 1.905)
 					)
 					(stroke
 						(width 0.2032)
@@ -1353,10 +1390,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Ceramic_Cap_SMD_4.7uF_50V"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1466,7 +1508,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.1148 -1.905) (xy 4.1148 1.905)
+						(xy 4.1148 0) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.2032)
@@ -1478,7 +1520,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.1148 0) (xy 5.08 0)
+						(xy 4.1148 -1.905) (xy 4.1148 1.905)
 					)
 					(stroke
 						(width 0.2032)
@@ -1525,10 +1567,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Ceramic_Cap_SMD_47uF_6.3V"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1629,7 +1676,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.1148 -1.905) (xy 4.1148 1.905)
+						(xy 4.1148 0) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.2032)
@@ -1641,7 +1688,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.1148 0) (xy 5.08 0)
+						(xy 4.1148 -1.905) (xy 4.1148 1.905)
 					)
 					(stroke
 						(width 0.2032)
@@ -1688,6 +1735,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:HLK-5M12"
 			(exclude_from_sim no)
@@ -1793,30 +1841,6 @@
 						(type background)
 					)
 				)
-				(arc
-					(start -5.334 0.635)
-					(mid -4.699 0.2495)
-					(end -4.064 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.794 0.635)
-					(mid -3.429 1.0072)
-					(end -4.064 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -5.334 -0.635) (xy -2.794 -0.635)
@@ -1829,10 +1853,22 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -3.175)
+				(arc
+					(start -4.064 0.635)
+					(mid -4.699 0.2495)
+					(end -5.334 0.635)
+					(stroke
+						(width 0)
+						(type default)
 					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -4.064 0.635)
+					(mid -3.429 1.0072)
+					(end -2.794 0.635)
 					(stroke
 						(width 0)
 						(type default)
@@ -1843,31 +1879,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 0.635)
+						(xy 0 3.81) (xy 0 3.175)
 					)
 					(stroke
 						(width 0)
@@ -1891,7 +1903,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.81) (xy 0 3.175)
+						(xy 0 1.27) (xy 0 0.635)
 					)
 					(stroke
 						(width 0)
@@ -1903,7 +1915,31 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 -0.635) (xy 5.334 -0.635)
+						(xy 0 0) (xy 0 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -3.175)
 					)
 					(stroke
 						(width 0)
@@ -1916,6 +1952,18 @@
 				(polyline
 					(pts
 						(xy 2.794 0.635) (xy 3.302 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.635) (xy 5.334 -0.635)
 					)
 					(stroke
 						(width 0)
@@ -1988,24 +2036,6 @@
 					)
 				)
 				(pin power_out line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "-Vout"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
 					(at 10.16 2.54 180)
 					(length 2.54)
 					(name "+Vout"
@@ -2023,7 +2053,26 @@
 						)
 					)
 				)
+				(pin power_out line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "-Vout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:ICL7662CBA-T"
 			(pin_names
@@ -2117,6 +2166,60 @@
 				)
 			)
 			(symbol "ICL7662CBA-T_1_1"
+				(pin power_in line
+					(at -2.54 12.7 0)
+					(length 2.54)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -2.54 5.08 0)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 7.62 -2.54 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin unspecified line
 					(at 17.78 12.7 180)
 					(length 2.54)
@@ -2154,24 +2257,6 @@
 					)
 				)
 				(pin unspecified line
-					(at 7.62 -2.54 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
 					(at 17.78 7.62 180)
 					(length 2.54)
 					(name "CAP-"
@@ -2182,24 +2267,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at -2.54 5.08 0)
-					(length 2.54)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2243,30 +2310,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -2.54 12.7 0)
-					(length 2.54)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Inductor_10uH_2.3A"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2362,20 +2416,8 @@
 			)
 			(symbol "Inductor_10uH_2.3A_1_1"
 				(arc
-					(start 5.08 0)
+					(start 2.54 0)
 					(mid 3.81 1.2644)
-					(end 2.54 0)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 7.62 0)
-					(mid 6.35 1.2644)
 					(end 5.08 0)
 					(stroke
 						(width 0.2032)
@@ -2386,8 +2428,8 @@
 					)
 				)
 				(arc
-					(start 10.16 0)
-					(mid 8.89 1.2644)
+					(start 5.08 0)
+					(mid 6.35 1.2644)
 					(end 7.62 0)
 					(stroke
 						(width 0.2032)
@@ -2398,8 +2440,8 @@
 					)
 				)
 				(arc
-					(start 12.7 0)
-					(mid 11.43 1.2644)
+					(start 7.62 0)
+					(mid 8.89 1.2644)
 					(end 10.16 0)
 					(stroke
 						(width 0.2032)
@@ -2409,22 +2451,16 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
-					(at 15.24 0 180)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(arc
+					(start 10.16 0)
+					(mid 11.43 1.2644)
+					(end 12.7 0)
+					(stroke
+						(width 0.2032)
+						(type default)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(fill
+						(type none)
 					)
 				)
 				(pin unspecified line
@@ -2445,12 +2481,30 @@
 						)
 					)
 				)
+				(pin unspecified line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(symbol "Inductor_10uH_2.3A_1_2"
 				(arc
-					(start -1.27 5.08)
-					(mid -2.5344 3.81)
-					(end -1.27 2.54)
+					(start -1.27 10.16)
+					(mid -2.5344 11.43)
+					(end -1.27 12.7)
 					(stroke
 						(width 0.2032)
 						(type default)
@@ -2461,8 +2515,8 @@
 				)
 				(arc
 					(start -1.27 7.62)
-					(mid -2.5344 6.35)
-					(end -1.27 5.08)
+					(mid -2.5344 8.89)
+					(end -1.27 10.16)
 					(stroke
 						(width 0.2032)
 						(type default)
@@ -2472,8 +2526,8 @@
 					)
 				)
 				(arc
-					(start -1.27 10.16)
-					(mid -2.5344 8.89)
+					(start -1.27 5.08)
+					(mid -2.5344 6.35)
 					(end -1.27 7.62)
 					(stroke
 						(width 0.2032)
@@ -2484,9 +2538,9 @@
 					)
 				)
 				(arc
-					(start -1.27 12.7)
-					(mid -2.5344 11.43)
-					(end -1.27 10.16)
+					(start -1.27 2.54)
+					(mid -2.5344 3.81)
+					(end -1.27 5.08)
 					(stroke
 						(width 0.2032)
 						(type default)
@@ -2497,31 +2551,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.08) (xy -1.27 5.08)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 7.62) (xy -1.27 7.62)
+						(xy 0 12.7) (xy -1.27 12.7)
 					)
 					(stroke
 						(width 0.2032)
@@ -2545,7 +2575,31 @@
 				)
 				(polyline
 					(pts
-						(xy 0 12.7) (xy -1.27 12.7)
+						(xy 0 7.62) (xy -1.27 7.62)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy -1.27 5.08)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -1.27 2.54)
 					)
 					(stroke
 						(width 0.2032)
@@ -2592,6 +2646,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:L78L05_SOT89"
 			(pin_names
@@ -2704,17 +2759,17 @@
 				)
 			)
 			(symbol "L78L05_SOT89_1_1"
-				(pin power_out line
-					(at 7.62 0 180)
+				(pin power_in line
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "OUT"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2740,17 +2795,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -7.62 0 0)
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "IN"
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2759,6 +2814,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:L78L09_SOT89"
 			(pin_names
@@ -2871,17 +2927,17 @@
 				)
 			)
 			(symbol "L78L09_SOT89_1_1"
-				(pin power_out line
-					(at 7.62 0 180)
+				(pin power_in line
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "OUT"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2907,17 +2963,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -7.62 0 0)
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "IN"
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2926,11 +2982,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:LED_0805"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3025,10 +3086,22 @@
 			(symbol "LED_0805_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -3049,7 +3122,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -3061,22 +3134,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -3122,6 +3183,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:LM1086RS-3.3"
 			(exclude_from_sim no)
@@ -3220,6 +3282,24 @@
 					)
 				)
 				(pin power_in line
+					(at -3.81 6.35 0)
+					(length 3.81)
+					(name "INPUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 7.62 -3.81 90)
 					(length 3.81)
 					(name "GND"
@@ -3255,29 +3335,16 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -3.81 6.35 0)
-					(length 3.81)
-					(name "INPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Res_100k_0603_1%"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3375,18 +3442,6 @@
 				)
 				(polyline
 					(pts
-						(xy 6.096 0) (xy 6.35 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 1.524 0) (xy 1.905 1.016) (xy 2.286 0) (xy 2.667 -1.016) (xy 3.048 0)
 					)
 					(stroke
@@ -3412,6 +3467,18 @@
 				(polyline
 					(pts
 						(xy 4.572 0) (xy 4.953 1.016) (xy 5.334 0) (xy 5.715 -1.016) (xy 6.096 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 0) (xy 6.35 0)
 					)
 					(stroke
 						(width 0)
@@ -3460,10 +3527,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Res_10K_0603_1%"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3561,18 +3633,6 @@
 				)
 				(polyline
 					(pts
-						(xy 6.096 0) (xy 6.35 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 1.524 0) (xy 1.905 1.016) (xy 2.286 0) (xy 2.667 -1.016) (xy 3.048 0)
 					)
 					(stroke
@@ -3598,6 +3658,18 @@
 				(polyline
 					(pts
 						(xy 4.572 0) (xy 4.953 1.016) (xy 5.334 0) (xy 5.715 -1.016) (xy 6.096 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 0) (xy 6.35 0)
 					)
 					(stroke
 						(width 0)
@@ -3646,10 +3718,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Res_1K_0603_1%"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3747,18 +3824,6 @@
 				)
 				(polyline
 					(pts
-						(xy 6.096 0) (xy 6.35 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 1.524 0) (xy 1.905 1.016) (xy 2.286 0) (xy 2.667 -1.016) (xy 3.048 0)
 					)
 					(stroke
@@ -3784,6 +3849,18 @@
 				(polyline
 					(pts
 						(xy 4.572 0) (xy 4.953 1.016) (xy 5.334 0) (xy 5.715 -1.016) (xy 6.096 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 0) (xy 6.35 0)
 					)
 					(stroke
 						(width 0)
@@ -3832,10 +3909,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Res_2.49K_0603_1%"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3933,18 +4015,6 @@
 				)
 				(polyline
 					(pts
-						(xy 6.096 0) (xy 6.35 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 1.524 0) (xy 1.905 1.016) (xy 2.286 0) (xy 2.667 -1.016) (xy 3.048 0)
 					)
 					(stroke
@@ -3970,6 +4040,18 @@
 				(polyline
 					(pts
 						(xy 4.572 0) (xy 4.953 1.016) (xy 5.334 0) (xy 5.715 -1.016) (xy 6.096 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 0) (xy 6.35 0)
 					)
 					(stroke
 						(width 0)
@@ -4018,10 +4100,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Res_20K_0603_1%"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4119,18 +4206,6 @@
 				)
 				(polyline
 					(pts
-						(xy 6.096 0) (xy 6.35 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 1.524 0) (xy 1.905 1.016) (xy 2.286 0) (xy 2.667 -1.016) (xy 3.048 0)
 					)
 					(stroke
@@ -4156,6 +4231,18 @@
 				(polyline
 					(pts
 						(xy 4.572 0) (xy 4.953 1.016) (xy 5.334 0) (xy 5.715 -1.016) (xy 6.096 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 0) (xy 6.35 0)
 					)
 					(stroke
 						(width 0)
@@ -4204,10 +4291,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Res_30K_0603_1%"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4305,18 +4397,6 @@
 				)
 				(polyline
 					(pts
-						(xy 6.096 0) (xy 6.35 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 1.524 0) (xy 1.905 1.016) (xy 2.286 0) (xy 2.667 -1.016) (xy 3.048 0)
 					)
 					(stroke
@@ -4342,6 +4422,18 @@
 				(polyline
 					(pts
 						(xy 4.572 0) (xy 4.953 1.016) (xy 5.334 0) (xy 5.715 -1.016) (xy 6.096 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 0) (xy 6.35 0)
 					)
 					(stroke
 						(width 0)
@@ -4390,10 +4482,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:Res_49.9K_0603_1%"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4491,18 +4588,6 @@
 				)
 				(polyline
 					(pts
-						(xy 6.096 0) (xy 6.35 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 1.524 0) (xy 1.905 1.016) (xy 2.286 0) (xy 2.667 -1.016) (xy 3.048 0)
 					)
 					(stroke
@@ -4528,6 +4613,18 @@
 				(polyline
 					(pts
 						(xy 4.572 0) (xy 4.953 1.016) (xy 5.334 0) (xy 5.715 -1.016) (xy 6.096 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 0) (xy 6.35 0)
 					)
 					(stroke
 						(width 0)
@@ -4576,10 +4673,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:SS54"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4668,18 +4770,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 1.27) (xy 0 -1.27)
 					)
 					(stroke
@@ -4692,7 +4782,31 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -1.27) (xy 1.905 -1.905)
+						(xy 0 -1.27) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy 3.175 1.905)
 					)
 					(stroke
 						(width 0)
@@ -4728,19 +4842,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy 2.54 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy 3.175 1.905)
+						(xy 2.54 -1.27) (xy 1.905 -1.905)
 					)
 					(stroke
 						(width 0)
@@ -4789,6 +4891,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Measurement_Power_AC:TPS54231DR"
 			(exclude_from_sim no)
@@ -4828,7 +4931,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" " 4.5V to 28V Input, 2A, Synchronous Step-Down Converter with Eco-mode(tm)"
+			(property "Description" "4.5V to 28V Input, 2A, Synchronous Step-Down Converter with Eco-mode(tm)"
 				(at 9.652 -21.082 0)
 				(effects
 					(font
@@ -4894,24 +4997,6 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 22.86 12.7 180)
-					(length 2.54)
-					(name "BOOT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at -2.54 12.7 0)
 					(length 2.54)
@@ -4923,78 +5008,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -2.54 5.08 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 7.62 -2.54 90)
-					(length 2.54)
-					(name "SS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 22.86 2.54 180)
-					(length 2.54)
-					(name "VSENSE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -2.54 2.54 0)
-					(length 2.54)
-					(name "COMP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5021,6 +5034,78 @@
 					)
 				)
 				(pin output line
+					(at -2.54 5.08 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "COMP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 -2.54 90)
+					(length 2.54)
+					(name "SS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 22.86 12.7 180)
+					(length 2.54)
+					(name "BOOT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
 					(at 22.86 7.62 180)
 					(length 2.54)
 					(name "PH"
@@ -5038,13 +5123,36 @@
 						)
 					)
 				)
+				(pin input line
+					(at 22.86 2.54 180)
+					(length 2.54)
+					(name "VSENSE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5116,7 +5224,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -5128,7 +5236,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -5159,12 +5267,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5236,7 +5349,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -5248,7 +5361,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -5279,12 +5392,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5356,7 +5474,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -5368,7 +5486,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -5399,12 +5517,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+9V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5476,7 +5599,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -5488,7 +5611,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -5519,12 +5642,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:-9V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5627,12 +5755,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5723,7 +5856,176 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 50.8 106.68)
+		(end 255.27 184.15)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 611898f2-d29c-46be-b4e3-12475d87d823)
+	)
+	(rectangle
+		(start 50.8 186.69)
+		(end 125.73 231.14)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7ae6012e-9d01-488d-844a-78f0a241c6ab)
+	)
+	(rectangle
+		(start 264.16 58.42)
+		(end 321.31 104.14)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8b4a8b62-711b-4352-993b-8cdd1fa92a60)
+	)
+	(rectangle
+		(start 50.8 58.42)
+		(end 176.53 104.14)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9ddf38e4-fd0d-4e08-86e8-63638b04b006)
+	)
+	(rectangle
+		(start 129.54 186.69)
+		(end 208.28 231.14)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a0723d1e-d03c-4f9d-bbd5-7ac4433531e6)
+	)
+	(rectangle
+		(start 179.07 58.42)
+		(end 262.89 104.14)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c98f7547-7160-4789-bd10-04db936c9a40)
+	)
+	(rectangle
+		(start 257.81 106.68)
+		(end 321.31 149.86)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid eaee1b4d-e2f7-4c42-98c1-b53644a2de8e)
+	)
+	(text "220VAC To 12VDC/450mA"
+		(exclude_from_sim no)
+		(at 69.596 61.722 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+			)
+		)
+		(uuid "1601350f-68db-4156-9cc5-b4bf0ca17f31")
+	)
+	(text "Switching Regulator - TPS54231DR\n"
+		(exclude_from_sim no)
+		(at 76.2 109.982 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+			)
+		)
+		(uuid "2a6219c5-430f-4b92-9c83-9a4fbc0a00c4")
+	)
+	(text "Linear Regulator 3V3 - AMS1117"
+		(exclude_from_sim no)
+		(at 153.162 190.246 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+			)
+		)
+		(uuid "33e8515f-a9bc-402a-b3c2-1ad72eb4f327")
+	)
+	(text "Linear Regulator 5V - L78L05"
+		(exclude_from_sim no)
+		(at 200.914 61.468 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+			)
+		)
+		(uuid "46cb4fc1-a285-49e9-9701-0a06f26aac90")
+	)
+	(text "Linear Regulator 9V - L78L09\n"
+		(exclude_from_sim no)
+		(at 72.898 189.992 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+			)
+		)
+		(uuid "585f36bf-823d-4f56-a211-e95d53883401")
+	)
+	(text "Energy Storage"
+		(exclude_from_sim no)
+		(at 270.51 109.474 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+			)
+		)
+		(uuid "8132dbe8-13cc-42d4-ba52-09da6762227a")
+	)
+	(text "Charge Pump -9V - ICL7662CBAZ"
+		(exclude_from_sim no)
+		(at 288.544 61.468 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+			)
+		)
+		(uuid "bfd24089-5036-44d3-8e20-c73766fcf7b6")
 	)
 	(junction
 		(at 86.36 219.71)
@@ -8122,174 +8424,6 @@
 			(type default)
 		)
 		(uuid "fe021113-a421-47c9-b5cc-a42abb3c2adf")
-	)
-	(rectangle
-		(start 50.8 106.68)
-		(end 255.27 184.15)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 611898f2-d29c-46be-b4e3-12475d87d823)
-	)
-	(rectangle
-		(start 50.8 186.69)
-		(end 125.73 231.14)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 7ae6012e-9d01-488d-844a-78f0a241c6ab)
-	)
-	(rectangle
-		(start 264.16 58.42)
-		(end 321.31 104.14)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 8b4a8b62-711b-4352-993b-8cdd1fa92a60)
-	)
-	(rectangle
-		(start 50.8 58.42)
-		(end 176.53 104.14)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 9ddf38e4-fd0d-4e08-86e8-63638b04b006)
-	)
-	(rectangle
-		(start 129.54 186.69)
-		(end 208.28 231.14)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid a0723d1e-d03c-4f9d-bbd5-7ac4433531e6)
-	)
-	(rectangle
-		(start 179.07 58.42)
-		(end 262.89 104.14)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid c98f7547-7160-4789-bd10-04db936c9a40)
-	)
-	(rectangle
-		(start 257.81 106.68)
-		(end 321.31 149.86)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid eaee1b4d-e2f7-4c42-98c1-b53644a2de8e)
-	)
-	(text "220VAC To 12VDC/450mA"
-		(exclude_from_sim no)
-		(at 69.596 61.722 0)
-		(effects
-			(font
-				(size 1.778 1.778)
-				(thickness 0.3556)
-				(bold yes)
-			)
-		)
-		(uuid "1601350f-68db-4156-9cc5-b4bf0ca17f31")
-	)
-	(text "Switching Regulator - TPS54231DR\n"
-		(exclude_from_sim no)
-		(at 76.2 109.982 0)
-		(effects
-			(font
-				(size 1.778 1.778)
-				(thickness 0.3556)
-				(bold yes)
-			)
-		)
-		(uuid "2a6219c5-430f-4b92-9c83-9a4fbc0a00c4")
-	)
-	(text "Linear Regulator 3V3 - AMS1117"
-		(exclude_from_sim no)
-		(at 153.162 190.246 0)
-		(effects
-			(font
-				(size 1.778 1.778)
-				(thickness 0.3556)
-				(bold yes)
-			)
-		)
-		(uuid "33e8515f-a9bc-402a-b3c2-1ad72eb4f327")
-	)
-	(text "Linear Regulator 5V - L78L05"
-		(exclude_from_sim no)
-		(at 200.914 61.468 0)
-		(effects
-			(font
-				(size 1.778 1.778)
-				(thickness 0.3556)
-				(bold yes)
-			)
-		)
-		(uuid "46cb4fc1-a285-49e9-9701-0a06f26aac90")
-	)
-	(text "Linear Regulator 9V - L78L09\n"
-		(exclude_from_sim no)
-		(at 72.898 189.992 0)
-		(effects
-			(font
-				(size 1.778 1.778)
-				(thickness 0.3556)
-				(bold yes)
-			)
-		)
-		(uuid "585f36bf-823d-4f56-a211-e95d53883401")
-	)
-	(text "Energy Storage"
-		(exclude_from_sim no)
-		(at 270.51 109.474 0)
-		(effects
-			(font
-				(size 1.778 1.778)
-				(thickness 0.3556)
-				(bold yes)
-			)
-		)
-		(uuid "8132dbe8-13cc-42d4-ba52-09da6762227a")
-	)
-	(text "Charge Pump -9V - ICL7662CBAZ"
-		(exclude_from_sim no)
-		(at 288.544 61.468 0)
-		(effects
-			(font
-				(size 1.778 1.778)
-				(thickness 0.3556)
-				(bold yes)
-			)
-		)
-		(uuid "bfd24089-5036-44d3-8e20-c73766fcf7b6")
 	)
 	(global_label "P_Voltage"
 		(shape input)

@@ -237,4 +237,15 @@
 			(xyz 0 0 0)
 		)
 	)
+	(model "../${KIPRJMOD}/Hardware/Library/3D models/7Seg_1Digit_0.56.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
