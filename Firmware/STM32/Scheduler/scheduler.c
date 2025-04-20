@@ -53,8 +53,8 @@ typedef struct SCH_TimerContextTypedef
  *    PRIVATE DEFINE
  *********************/
 
-#define MAX_TASK   5
-#define MAX_TIMERS 2
+#define MAX_TASK   6
+#define MAX_TIMERS 3
 
 /*********************
  *    PRIVATE MACRO

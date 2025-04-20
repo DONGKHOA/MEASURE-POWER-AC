@@ -9,6 +9,13 @@
 #include "sdkconfig.h"
 
 #include "uart.h"
+#include "freertos/queue.h"
+
+/******************************************************************************
+ *    GLOBAL DATA
+ *****************************************************************************/
+
+QueueHandle_t uart_queue;
 
 /**********************
  *   GLOBAL FUNCTIONS
@@ -51,15 +58,15 @@ void uartDriverInit(uart_port_t uart_port, gpio_num_t tx_pin, gpio_num_t rx_pin,
                     uart_hw_flowcontrol_t flow_control,
                     uart_stop_bits_t stop_bit)
 {
-    const uart_config_t uart_config = {
+    uart_config_t uart_config = {
         .baud_rate = baudrate,
         .data_bits = data_bit,
         .parity = parity_bit,
         .stop_bits = stop_bit,
         .flow_ctrl = flow_control,
-        .source_clk = UART_SCLK_DEFAULT,
     };
-
+    //Create a queue to handle UART event from ISR
+    // uart_queue = xQueueCreate(10, sizeof(uart_event_t));
     // using buffer in rx data
     uart_driver_install(uart_port, RX_BUF_SIZE * 2, 0, 0, NULL, 0);
     uart_param_config(uart_port, &uart_config);
@@ -76,8 +83,27 @@ void uartDriverInit(uart_port_t uart_port, gpio_num_t tx_pin, gpio_num_t rx_pin,
  * (string) that contains the data to be sent via UART (Universal Asynchronous Receiver-Transmitter)
  * communication.
  */
-void uartSendData(uart_port_t uart_port, char* data)
+// void uartSendData(uart_port_t uart_port, char* data)
+// {
+//     const int len = strlen(data);
+//     uart_write_bytes(uart_port, data, len);
+// }
+
+void uartSendData(uart_port_t uart_port, const uint8_t *data, size_t len)
 {
-    const int len = strlen(data);
-    uart_write_bytes(uart_port, data, len);
+    if (data == NULL || len == 0)
+    {
+        printf("No data to send.\n");
+        return;
+    }
+
+    int bytes_sent = uart_write_bytes(uart_port, (const char *)data, len);
+    if (bytes_sent != len)
+    {
+        printf("Failed to send all bytes. Sent %d/%zu bytes.\n", bytes_sent, len);
+    }
+    else
+    {
+        printf("Data sent successfully: %zu bytes.\n", len);
+    }
 }

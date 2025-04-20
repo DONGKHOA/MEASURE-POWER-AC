@@ -17,6 +17,8 @@
 #include "ring_buffer.h"
 #include "scheduler.h"
 
+#include "math.h"
+
 /******************************************************************************
  *    PRIVATE DEFINES
  *****************************************************************************/
@@ -40,7 +42,6 @@ typedef struct _READ_DATA_t
   volatile ring_buffer_t *p_vol_cur_buffer;
   volatile float         *p_voltage;
   volatile float         *p_current;
-  volatile uint8_t        value_temp_irq[4];
 } READ_DATA_t;
 
 /******************************************************************************
@@ -54,13 +55,19 @@ static void APP_READ_DATA_ConvertCurrent(uint16_t u16_adc_value_current);
 /******************************************************************************
  *    PRIVATE DATA
  *****************************************************************************/
+float _err_measure = 2;
+float _err_estimate = 2;
+float _q = 0.001;
+float _current_estimate = 0;
+float _last_estimate = 0;
+float _kalman_gain = 0;
 
 static READ_DATA_t                s_read_data;
 static Control_TaskContextTypedef s_ControlTaskContext
     = { SCH_INVALID_TASK_HANDLE, // Will be updated by Scheduler
         {
             SCH_TASK_SYNC,           // taskType;
-            5,                      // taskPeriodInMS;
+            1,                      // taskPeriodInMS;
             APP_READ_DATA_TaskUpdate // taskFunction;
         } };
 
@@ -101,28 +108,22 @@ APP_READ_DATA_HandleDMA_IRQ (flagIRQ_dma_t status)
 {
   if (status == FLAG_TRANSFER_COMPLETE)
   {
-    s_read_data.value_temp_irq[0]
-        = (uint8_t)(s_data_system.u16_adc_value[0] >> 8);
-    s_read_data.value_temp_irq[1] = (uint8_t)(s_data_system.u16_adc_value[0]);
-
-    s_read_data.value_temp_irq[2]
-        = (uint8_t)(s_data_system.u16_adc_value[1] >> 8);
-    s_read_data.value_temp_irq[3] = (uint8_t)(s_data_system.u16_adc_value[0]);
-
-    RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq,
-                          s_read_data.value_temp_irq[0]);
-    RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq,
-                          s_read_data.value_temp_irq[1]);
-    RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq,
-                          s_read_data.value_temp_irq[2]);
-    RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq,
-                          s_read_data.value_temp_irq[3]);
+    RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq, 1);
   }
 }
 
 /******************************************************************************
  *  PRIVATE FUNCTION
  *****************************************************************************/
+
+float Kalman_GetValue(float mea) {
+  _kalman_gain = _err_estimate / (_err_estimate + _err_measure);
+  _current_estimate = _last_estimate + _kalman_gain * (mea - _last_estimate);
+  _err_estimate = (1.0f - _kalman_gain) * _err_estimate + fabsf(_last_estimate - _current_estimate) * _q;
+  _last_estimate = _current_estimate;
+
+  return _current_estimate;
+}
 
 /**
  * The function `APP_READ_DATA_TaskUpdate` reads data from a ring buffer,
@@ -135,69 +136,54 @@ APP_READ_DATA_HandleDMA_IRQ (flagIRQ_dma_t status)
 static void
 APP_READ_DATA_TaskUpdate (void)
 {
-  if (RING_BUFFER_Is_Empty((ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq))
-  {
-    return;
-  }
-
   uint32_t *p_value_temp;
   uint16_t  u16_value_temp;
   uint8_t   u8_value[4];
+  uint16_t test;
+  if (!RING_BUFFER_Is_Empty((ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq))
+  {
+	  u8_value[0] = RING_BUFFER_Pull_Data(
+		      (ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq);
+	  u16_value_temp = (uint16_t)(s_data_system.u16_adc_value[0]);
+	  APP_READ_DATA_ConvertVoltage(u16_value_temp);
 
-  // u8_value[0] 8 bit high of adc-channel 1
-  u8_value[0] = RING_BUFFER_Pull_Data(
-      (ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq);
+	  u16_value_temp = (uint16_t)(s_data_system.u16_adc_value[1]);
+	  test = (uint16_t)Kalman_GetValue((float)u16_value_temp);
+	  APP_READ_DATA_ConvertCurrent(test);
 
-  // u8_value[1] 8 bit low of adc-channel 1
-  u8_value[1] = RING_BUFFER_Pull_Data(
-      (ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq);
+	  // Transmission Data to app_data_transmission
+	  p_value_temp = (uint32_t *)s_read_data.p_voltage;
 
-  // u8_value[2] 8 bit high of adc-channel 2
-  u8_value[2] = RING_BUFFER_Pull_Data(
-      (ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq);
+	  u8_value[0] = (uint8_t)(*p_value_temp >> 24);
+	  u8_value[1] = (uint8_t)(*p_value_temp >> 16);
+	  u8_value[2] = (uint8_t)(*p_value_temp >> 8);
+	  u8_value[3] = (uint8_t)(*p_value_temp >> 0);
 
-  // u8_value[3] 8 bit low of adc-channel 2
-  u8_value[3] = RING_BUFFER_Pull_Data(
-      (ring_buffer_t *)s_read_data.p_vol_cur_buffer_irq);
+	  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+	                        u8_value[0]);
+	  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+	                        u8_value[1]);
+	  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+	                        u8_value[2]);
+	  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+	                        u8_value[3]);
 
-  u16_value_temp = (uint16_t)((u8_value[0] << 8) | (u8_value[1]));
-  APP_READ_DATA_ConvertVoltage(u16_value_temp);
+	  p_value_temp = (uint32_t *)s_read_data.p_current;
 
-  u16_value_temp = (uint16_t)((u8_value[2] << 8) | (u8_value[3]));
-  APP_READ_DATA_ConvertCurrent(u16_value_temp);
+	  u8_value[0] = (uint8_t)(*p_value_temp >> 24);
+	  u8_value[1] = (uint8_t)(*p_value_temp >> 16);
+	  u8_value[2] = (uint8_t)(*p_value_temp >> 8);
+	  u8_value[3] = (uint8_t)(*p_value_temp >> 0);
 
-  // Transmission Data to app_data_transmission
-  p_value_temp = (uint32_t *)s_read_data.p_voltage;
-
-  u8_value[0] = (uint8_t)(*p_value_temp >> 24);
-  u8_value[1] = (uint8_t)(*p_value_temp >> 16);
-  u8_value[2] = (uint8_t)(*p_value_temp >> 8);
-  u8_value[3] = (uint8_t)(*p_value_temp >> 0);
-
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
-                        u8_value[0]);
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
-                        u8_value[1]);
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,  
-                        u8_value[2]);
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
-                        u8_value[3]);
-
-  p_value_temp = (uint32_t *)s_read_data.p_current;
-
-  u8_value[0] = (uint8_t)(*p_value_temp >> 24);
-  u8_value[1] = (uint8_t)(*p_value_temp >> 16);
-  u8_value[2] = (uint8_t)(*p_value_temp >> 8);
-  u8_value[3] = (uint8_t)(*p_value_temp >> 0);
-
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
-                        u8_value[0]);
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
-                        u8_value[1]);
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
-                        u8_value[2]);
-  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
-                        u8_value[3]);
+	  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+	                        u8_value[0]);
+	  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+	                        u8_value[1]);
+	  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+	                        u8_value[2]);
+	  RING_BUFFER_Push_Data((ring_buffer_t *)s_read_data.p_vol_cur_buffer,
+	                        u8_value[3]);
+  }
 }
 
 /**

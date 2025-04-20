@@ -1,0 +1,497 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan  8 2025 15:17:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29b94h (170900) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00039bbc vaddr=3ffb0000 size=03cb8h ( 15544) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0003d87c vaddr=40080000 size=0279ch ( 10140) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b68f8h (747768) map[0m
+[0;32mI (453) esp_image: segment 4: paddr=000f6920 vaddr=4008279c size=15c70h ( 89200) load[0m
+[0;32mI (502) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (502) boot: Disabling RNG early entropy source...[0m
+[0;32mI (514) cpu_start: Multicore app[0m
+[0;32mI (515) cpu_start: Pro cpu up.[0m
+[0;32mI (515) cpu_start: Starting app cpu, entry point is 0x40081524[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (532) cpu_start: Pro cpu start user code[0m
+[0;32mI (532) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (532) cpu_start: Application information:[0m
+[0;32mI (537) cpu_start: Project name:     Measure_Power_AC[0m
+[0;32mI (542) cpu_start: App version:      4dfe763-dirty[0m
+[0;32mI (548) cpu_start: Compile time:     Jan  8 2025 15:17:32[0m
+[0;32mI (554) cpu_start: ELF file SHA256:  7ad1cc46...[0m
+[0;32mI (559) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (565) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (569) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (574) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (579) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (586) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFB96C0 len 00026940 (154 KiB): DRAM[0m
+[0;32mI (598) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (611) heap_init: At 4009840C len 00007BF4 (30 KiB): IRAM[0m
+[0;32mI (619) spi_flash: detected chip: generic[0m
+[0;32mI (622) spi_flash: flash io: dio[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (631) app_start: Starting scheduler on CPU1[0m
+[0;32mI (631) main_task: Started on CPU0[0m
+[0;32mI (641) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (730) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (731) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (744) main_task: Returned from app_main()[0m
+[0;32mI (745) wifi:wifi driver task: 3ffda9bc, prio:23, stack:6656, core=1[0m
+[0;32mI (753) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (755) wifi:wifi certification version: v7.0[0m
+[0;32mI (759) wifi:config NVS flash: disabled[0m
+[0;32mI (762) wifi:config nano formating: disabled[0m
+[0;32mI (766) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (771) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (775) wifi:Init management short buffer num: 32[0m
+[0;32mI (780) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (784) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (788) wifi:Init static rx buffer num: 15[0m
+[0;32mI (791) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (796) wifi_init: rx ba win: 6[0m
+[0;32mI (799) wifi_init: tcpip mbox: 32[0m
+[0;32mI (803) wifi_init: udp mbox: 6[0m
+[0;32mI (807) wifi_init: tcp mbox: 6[0m
+[0;32mI (811) wifi_init: tcp tx win: 5760[0m
+[0;32mI (815) wifi_init: tcp rx win: 5760[0m
+[0;32mI (819) wifi_init: tcp mss: 1440[0m
+[0;32mI (823) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (827) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (833) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (905) wifi:mode : sta (b8:d6:1a:68:bb:b8)[0m
+[0;32mI (906) wifi:enable tsf[0m
+[1;31mE (909) wifi:NAN WiFi stop[0m
+[0;32mI (910) wifi:flush txq[0m
+[0;32mI (910) wifi:stop sw txq[0m
+[0;32mI (910) wifi:lmac stop hw txq[0m
+[0;32mI (913) wifi:mode : sta (b8:d6:1a:68:bb:b8)[0m
+[0;32mI (914) wifi:enable tsf[0m
+Starting WiFi Scan Round 1
+Starting WiFi Scan Round 2
+Starting WiFi Scan Round 3
+[0;32mI (8424) scan: SSID 		PIF_CLUB[0m
+[0;32mI (8424) scan: RSSI 		-51[0m
+[0;32mI (8424) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8426) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8432) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8437) scan: Channel 		10
+[0m
+[0;32mI (8441) scan: SSID 		PIF_Client[0m
+[0;32mI (8445) scan: RSSI 		-51[0m
+[0;32mI (8448) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8453) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8459) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8465) scan: Channel 		10
+[0m
+[0;32mI (8468) scan: SSID 		HCMUT04[0m
+[0;32mI (8472) scan: RSSI 		-74[0m
+[0;32mI (8475) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8480) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8486) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8492) scan: Channel 		10
+[0m
+[0;32mI (8495) scan: SSID 		ThuongTienLe[0m
+[0;32mI (8499) scan: RSSI 		-76[0m
+[0;32mI (8503) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8508) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8514) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8519) scan: Channel 		6
+[0m
+[0;32mI (8523) scan: SSID 		HCMUT01[0m
+[0;32mI (8526) scan: RSSI 		-82[0m
+[0;32mI (8530) scan: Authmode 	WIFI_AUTH_ENTERPRISE[0m
+[0;32mI (8535) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8540) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8546) scan: Channel 		6
+[0m
+[0;32mI (8549) scan: SSID 		HCMUT02[0m
+[0;32mI (8553) scan: RSSI 		-84[0m
+[0;32mI (8556) scan: Authmode 	WIFI_AUTH_OPEN[0m
+[0;32mI (8561) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8567) scan: Group Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8572) scan: Channel 		6
+[0m
+[0;32mI (8576) scan: SSID 		Four-Faith[0m
+[0;32mI (8579) scan: RSSI 		-84[0m
+[0;32mI (8583) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8588) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8593) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8599) scan: Channel 		13
+[0m
+[0;32mI (8602) scan: SSID 		Cam21[0m
+[0;32mI (8606) scan: RSSI 		-89[0m
+[0;32mI (8609) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8614) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8620) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8625) scan: Channel 		2
+[0m
+[0;32mI (8629) scan: SSID 		cbv[0m
+[0;32mI (8632) scan: RSSI 		-91[0m
+[0;32mI (8635) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8641) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8646) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8652) scan: Channel 		8
+[0m
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4008bcda  PS      : 0x00050033  A0      : 0x4008bb97  A1      : 0x3ffd3970  
+A2      : 0xa5a5a540  A3      : 0x00000000  A4      : 0x00000322  A5      : 0x3ffb2250  
+A6      : 0x00000001  A7      : 0x00000002  A8      : 0x40082f46  A9      : 0x3ffd3a30  
+A10     : 0x3ffd3a10  A11     : 0x0000000c  A12     : 0x8008bd85  A13     : 0x3ffb2240  
+A14     : 0x3ffb41dc  A15     : 0x00000001  SAR     : 0x00000010  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0xa5a5a540  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffff3a  
+
+
+Backtrace: 0x4008bcd7:0x3ffd3970 0x4008bb94:0x3ffd3980 0x0005001e:0x3ffd39b0 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 7ad1cc46
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan  8 2025 15:17:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.0[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29b94h (170900) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00039bbc vaddr=3ffb0000 size=03cb8h ( 15544) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0003d87c vaddr=40080000 size=0279ch ( 10140) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b68f8h (747768) map[0m
+[0;32mI (452) esp_image: segment 4: paddr=000f6920 vaddr=4008279c size=15c70h ( 89200) load[0m
+[0;32mI (502) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (502) boot: Disabling RNG early entropy source...[0m
+[0;32mI (513) cpu_start: Multicore app[0m
+[0;32mI (514) cpu_start: Pro cpu up.[0m
+[0;32mI (515) cpu_start: Starting app cpu, entry point is 0x40081524[0m
+[0;32mI (500) cpu_start: App cpu up.[0m
+[0;32mI (532) cpu_start: Pro cpu start user code[0m
+[0;32mI (532) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (532) cpu_start: Application information:[0m
+[0;32mI (537) cpu_start: Project name:     Measure_Power_AC[0m
+[0;32mI (542) cpu_start: App version:      4dfe763-dirty[0m
+[0;32mI (548) cpu_start: Compile time:     Jan  8 2025 15:17:32[0m
+[0;32mI (554) cpu_start: ELF file SHA256:  7ad1cc46...[0m
+[0;32mI (559) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (565) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (569) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (574) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (579) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (586) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFB96C0 len 00026940 (154 KiB): DRAM[0m
+[0;32mI (598) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (611) heap_init: At 4009840C len 00007BF4 (30 KiB): IRAM[0m
+[0;32mI (619) spi_flash: detected chip: generic[0m
+[0;32mI (622) spi_flash: flash io: dio[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (631) app_start: Starting scheduler on CPU1[0m
+[0;32mI (631) main_task: Started on CPU0[0m
+[0;32mI (641) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (730) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (731) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (744) main_task: Returned from app_main()[0m
+[0;32mI (745) wifi:wifi driver task: 3ffda9bc, prio:23, stack:6656, core=1[0m
+[0;32mI (753) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (755) wifi:wifi certification version: v7.0[0m
+[0;32mI (759) wifi:config NVS flash: disabled[0m
+[0;32mI (762) wifi:config nano formating: disabled[0m
+[0;32mI (766) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (771) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (775) wifi:Init management short buffer num: 32[0m
+[0;32mI (780) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (784) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (788) wifi:Init static rx buffer num: 15[0m
+[0;32mI (791) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (796) wifi_init: rx ba win: 6[0m
+[0;32mI (799) wifi_init: tcpip mbox: 32[0m
+[0;32mI (803) wifi_init: udp mbox: 6[0m
+[0;32mI (807) wifi_init: tcp mbox: 6[0m
+[0;32mI (811) wifi_init: tcp tx win: 5760[0m
+[0;32mI (815) wifi_init: tcp rx win: 5760[0m
+[0;32mI (819) wifi_init: tcp mss: 1440[0m
+[0;32mI (823) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (827) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (833) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (907) wifi:mode : sta (b8:d6:1a:68:bb:b8)[0m
+[0;32mI (908) wifi:enable tsf[0m
+[1;31mE (911) wifi:NAN WiFi stop[0m
+[0;32mI (912) wifi:flush txq[0m
+[0;32mI (912) wifi:stop sw txq[0m
+[0;32mI (913) wifi:lmac stop hw txq[0m
+[0;32mI (915) wifi:mode : sta (b8:d6:1a:68:bb:b8)[0m
+[0;32mI (917) wifi:enable tsf[0m
+Starting WiFi Scan Round 1
+Starting WiFi Scan Round 2
+Starting WiFi Scan Round 3
+[0;32mI (8427) scan: SSID 		PIF_CLUB[0m
+[0;32mI (8427) scan: RSSI 		-52[0m
+[0;32mI (8427) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8429) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8435) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8440) scan: Channel 		10
+[0m
+[0;32mI (8444) scan: SSID 		PIF_Client[0m
+[0;32mI (8448) scan: RSSI 		-52[0m
+[0;32mI (8451) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8456) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8462) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8468) scan: Channel 		10
+[0m
+[0;32mI (8471) scan: SSID 		HCMUT04[0m
+[0;32mI (8475) scan: RSSI 		-73[0m
+[0;32mI (8478) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8483) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8489) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8495) scan: Channel 		10
+[0m
+[0;32mI (8498) scan: SSID 		ThuongTienLe[0m
+[0;32mI (8502) scan: RSSI 		-76[0m
+[0;32mI (8506) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8511) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8517) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8522) scan: Channel 		6
+[0m
+[0;32mI (8526) scan: SSID 		Four-Faith[0m
+[0;32mI (8529) scan: RSSI 		-77[0m
+[0;32mI (8533) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8538) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8543) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8549) scan: Channel 		13
+[0m
+[0;32mI (8553) scan: SSID 		HCMUT01[0m
+[0;32mI (8556) scan: RSSI 		-86[0m
+[0;32mI (8559) scan: Authmode 	WIFI_AUTH_ENTERPRISE[0m
+[0;32mI (8564) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8570) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8576) scan: Channel 		6
+[0m
+[0;32mI (8579) scan: SSID 		HCMUT02[0m
+[0;32mI (8583) scan: RSSI 		-86[0m
+[0;32mI (8586) scan: Authmode 	WIFI_AUTH_OPEN[0m
+[0;32mI (8591) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8596) scan: Group Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8602) scan: Channel 		6
+[0m
+[0;32mI (8605) scan: SSID 		cbv[0m
+[0;32mI (8609) scan: RSSI 		-89[0m
+[0;32mI (8612) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8617) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8623) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8628) scan: Channel 		8
+[0m
+[0;32mI (8632) scan: SSID 		FREDDY FAZBEAR[0m
+[0;32mI (8636) scan: RSSI 		-92[0m
+[0;32mI (8640) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8644) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8650) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8656) scan: Channel 		11
+[0m
+Check matching Ssid
+1
+opening NVS Read handle Done 
+opening NVS Read handle Done 
+2
+return 1
+Found Matching SSID and Password
+[1;31mE (8673) wifi:NAN WiFi stop[0m
+[0;32mI (8674) wifi:flush txq[0m
+[0;32mI (8676) wifi:stop sw txq[0m
+[0;32mI (8678) wifi:lmac stop hw txq[0m
+[0;32mI (8685) wifi:mode : sta (b8:d6:1a:68:bb:b8)[0m
+[0;32mI (8686) wifi:enable tsf[0m
+[0;32mI (8688) scan: Wifi_init_station finished.[0m
+[0;32mI (9948) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (9950) wifi:state: init -> auth (b0)[0m
+[0;32mI (9957) wifi:state: auth -> assoc (0)[0m
+[0;32mI (9963) wifi:state: assoc -> run (10)[0m
+[0;32mI (10064) wifi:connected with PIF_CLUB, aid = 3, channel 10, BW20, bssid = 74:26:ff:ff:a8:4e[0m
+[0;32mI (10065) wifi:security: WPA2-PSK, phy: bgn, rssi: -55[0m
+[0;32mI (10067) wifi:pm start, type: 1[0m
+
+[0;32mI (10070) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (10153) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (12515) wifi:<ba-add>idx:0 (ifx:0, 74:26:ff:ff:a8:4e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (13081) esp_netif_handlers: sta ip: 192.168.10.27, mask: 255.255.255.0, gw: 192.168.10.1[0m
+[0;32mI (13082) scan: Connected to ap SSID:PIF_CLUB password:chinsochin[0m
+Connect Wifi
+[0;32mI (13106) wifi:<ba-add>idx:1 (ifx:0, 74:26:ff:ff:a8:4e), tid:6, ssn:3, winSize:64[0m
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 10 | DD | 
+22909.652344
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 10 | DD | 
+22909.652344
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 10 | DD | 
+22895.662109
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 10 | DD | 
+22895.662109
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 55 | C3 | DD | 41 | FC | 5E | 7E | DD | 0 | 0 | 0 | 10 | DD | 
+22881.677734
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | AA | AA | AA | AA | AA | AA | AA | 44 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | 
+22923.644531
+AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD | 41 | FC | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 10 | DD | AA | 44 | B5 | AA | AA | DD 

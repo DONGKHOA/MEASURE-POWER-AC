@@ -153,16 +153,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_EFUSE_SUPPORTED",
-        "name": "SOC_EFUSE_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_EMAC_SUPPORTED",
         "name": "SOC_EMAC_SUPPORTED",
         "range": null,
@@ -373,46 +363,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_CLK_TREE_SUPPORTED",
-        "name": "SOC_CLK_TREE_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPU_SUPPORTED",
-        "name": "SOC_MPU_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_WDT_SUPPORTED",
-        "name": "SOC_WDT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_FLASH_SUPPORTED",
-        "name": "SOC_SPI_FLASH_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_DPORT_WORKAROUND_DIS_INTERRUPT_LVL",
         "name": "SOC_DPORT_WORKAROUND_DIS_INTERRUPT_LVL",
         "range": null,
@@ -573,16 +523,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ADC_DIGI_MONITOR_NUM",
-        "name": "SOC_ADC_DIGI_MONITOR_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_ADC_SAMPLE_FREQ_THRES_HIGH",
         "name": "SOC_ADC_SAMPLE_FREQ_THRES_HIGH",
         "range": null,
@@ -618,16 +558,6 @@
         "range": null,
         "title": null,
         "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_SHARED_POWER",
-        "name": "SOC_ADC_SHARED_POWER",
-        "range": null,
-        "title": null,
-        "type": "bool"
     },
     {
         "children": [],
@@ -675,16 +605,6 @@
         "help": null,
         "id": "SOC_CPU_HAS_FPU",
         "name": "SOC_CPU_HAS_FPU",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_HP_CPU_HAS_MULTIPLE_CORES",
-        "name": "SOC_HP_CPU_HAS_MULTIPLE_CORES",
         "range": null,
         "title": null,
         "type": "bool"
@@ -783,41 +703,11 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_GPIO_IN_RANGE_MAX",
-        "name": "SOC_GPIO_IN_RANGE_MAX",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_GPIO_OUT_RANGE_MAX",
-        "name": "SOC_GPIO_OUT_RANGE_MAX",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_GPIO_VALID_DIGITAL_IO_PAD_MASK",
         "name": "SOC_GPIO_VALID_DIGITAL_IO_PAD_MASK",
         "range": null,
         "title": null,
         "type": "hex"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_GPIO_CLOCKOUT_BY_IO_MUX",
-        "name": "SOC_GPIO_CLOCKOUT_BY_IO_MUX",
-        "range": null,
-        "title": null,
-        "type": "bool"
     },
     {
         "children": [],
@@ -865,16 +755,6 @@
         "help": null,
         "id": "SOC_I2C_SUPPORT_APB",
         "name": "SOC_I2C_SUPPORT_APB",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2C_STOP_INDEPENDENT",
-        "name": "SOC_I2C_STOP_INDEPENDENT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1743,16 +1623,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_UART_HP_NUM",
-        "name": "SOC_UART_HP_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_UART_SUPPORT_APB_CLK",
         "name": "SOC_UART_SUPPORT_APB_CLK",
         "range": null,
@@ -1823,16 +1693,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SHA_ENDIANNESS_BE",
-        "name": "SOC_SHA_ENDIANNESS_BE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_SHA_SUPPORT_SHA1",
         "name": "SOC_SHA_SUPPORT_SHA1",
         "range": null,
@@ -1865,26 +1725,6 @@
         "help": null,
         "id": "SOC_SHA_SUPPORT_SHA512",
         "name": "SOC_SHA_SUPPORT_SHA512",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPI_MEM_BLOCKS_NUM",
-        "name": "SOC_MPI_MEM_BLOCKS_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPI_OPERATIONS_NUM",
-        "name": "SOC_MPI_OPERATIONS_NUM",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2093,6 +1933,46 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_APLL_MULTIPLIER_OUT_MIN_HZ",
+        "name": "SOC_APLL_MULTIPLIER_OUT_MIN_HZ",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_APLL_MULTIPLIER_OUT_MAX_HZ",
+        "name": "SOC_APLL_MULTIPLIER_OUT_MAX_HZ",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_APLL_MIN_HZ",
+        "name": "SOC_APLL_MIN_HZ",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_APLL_MAX_HZ",
+        "name": "SOC_APLL_MAX_HZ",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_CLK_RC_FAST_D256_SUPPORTED",
         "name": "SOC_CLK_RC_FAST_D256_SUPPORTED",
         "range": null,
@@ -2282,19 +2162,9 @@
     {
         "children": [],
         "depends_on": null,
-        "help": "- This option is for internal use only.\n- Enabling this option will help enable all FPGA support so as to\n  run ESP-IDF on an FPGA. This can help reproduce some issues that\n  only happens on FPGA condition, or when you have to burn some\n  efuses multiple times.",
+        "help": null,
         "id": "IDF_ENV_FPGA",
         "name": "IDF_ENV_FPGA",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": "- This option is ONLY used when doing new chip bringup.\n- This option will only enable necessary hw / sw settings for running\n  a hello_world application.",
-        "id": "IDF_ENV_BRINGUP",
-        "name": "IDF_ENV_BRINGUP",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2305,36 +2175,6 @@
         "help": null,
         "id": "IDF_CI_BUILD",
         "name": "IDF_CI_BUILD",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "IDF_DOC_BUILD",
-        "name": "IDF_DOC_BUILD",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "IDF_TOOLCHAIN",
-        "name": "IDF_TOOLCHAIN",
-        "range": null,
-        "title": null,
-        "type": "string"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "IDF_TOOLCHAIN_CLANG",
-        "name": "IDF_TOOLCHAIN_CLANG",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2375,16 +2215,6 @@
         "help": null,
         "id": "IDF_TARGET",
         "name": "IDF_TARGET",
-        "range": null,
-        "title": null,
-        "type": "string"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "IDF_INIT_VERSION",
-        "name": "IDF_INIT_VERSION",
         "range": null,
         "title": null,
         "type": "string"
@@ -2455,16 +2285,6 @@
         "help": null,
         "id": "IDF_TARGET_ESP32C6",
         "name": "IDF_TARGET_ESP32C6",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "IDF_TARGET_ESP32P4",
-        "name": "IDF_TARGET_ESP32P4",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2630,37 +2450,6 @@
     {
         "children": [
             {
-                "children": [
-                    {
-                        "children": [],
-                        "depends_on": "!APP_REPRODUCIBLE_BUILD",
-                        "help": "If set, then the bootloader will be built with the current time/date stamp.\nIt is stored in the bootloader description\nstructure. If not set, time/date stamp will be excluded from bootloader image.\nThis can be useful for getting the\nsame binary image files made from the same source, but at different times.",
-                        "id": "BOOTLOADER_COMPILE_TIME_DATE",
-                        "name": "BOOTLOADER_COMPILE_TIME_DATE",
-                        "range": null,
-                        "title": "Use time/date stamp for bootloader",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Project version. It is placed in \"version\" field of the esp_bootloader_desc structure.\nThe type of this field is \"uint32_t\".",
-                        "id": "BOOTLOADER_PROJECT_VER",
-                        "name": "BOOTLOADER_PROJECT_VER",
-                        "range": [
-                            0,
-                            4294967295
-                        ],
-                        "title": "Project version",
-                        "type": "int"
-                    }
-                ],
-                "depends_on": null,
-                "id": "bootloader-config-bootloader-manager",
-                "title": "Bootloader manager",
-                "type": "menu"
-            },
-            {
                 "children": [],
                 "depends_on": null,
                 "help": "Offset address that 2nd bootloader will be flashed to.\nThe value is determined by the ROM bootloader.\nIt's not configurable in ESP-IDF.",
@@ -2704,17 +2493,17 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "(IDF_TARGET_ARCH_XTENSA || IDF_TARGET_ESP32C3 || IDF_TARGET_ESP32C2) && <choice BOOTLOADER_COMPILER_OPTIMIZATION>",
+                        "depends_on": "<choice BOOTLOADER_COMPILER_OPTIMIZATION>",
                         "help": null,
                         "id": "BOOTLOADER_COMPILER_OPTIMIZATION_NONE",
                         "name": "BOOTLOADER_COMPILER_OPTIMIZATION_NONE",
                         "range": null,
-                        "title": "Debug without optimization (-O0) (Deprecated, will be removed in IDF v6.0)",
+                        "title": "Debug without optimization (-O0)",
                         "type": "bool"
                     }
                 ],
                 "depends_on": null,
-                "help": "This option sets compiler optimization level (gcc -O argument)\nfor the bootloader.\n\n- The default \"Size\" setting will add the -0s flag to CFLAGS.\n- The \"Debug\" setting will add the -Og flag to CFLAGS.\n- The \"Performance\" setting will add the -O2 flag to CFLAGS.\n\nNote that custom optimization levels may be unsupported.",
+                "help": "This option sets compiler optimization level (gcc -O argument)\nfor the bootloader.\n\n- The default \"Size\" setting will add the -0s flag to CFLAGS.\n- The \"Debug\" setting will add the -Og flag to CFLAGS.\n- The \"Performance\" setting will add the -O2 flag to CFLAGS.\n- The \"None\" setting will add the -O0 flag to CFLAGS.\n\nNote that custom optimization levels may be unsupported.",
                 "id": "bootloader-config-bootloader-optimization-level",
                 "name": "BOOTLOADER_COMPILER_OPTIMIZATION",
                 "title": "Bootloader optimization Level",
@@ -2834,7 +2623,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "!IDF_ENV_BRINGUP",
+                        "depends_on": null,
                         "help": "Perform the startup flow recommended by XMC. Please consult XMC for the details of this flow.\nXMC chips will be forbidden to be used, when this option is disabled.\n\nDON'T DISABLE THIS UNLESS YOU KNOW WHAT YOU ARE DOING.\n\ncomment \"Features below require specific hardware (READ DOCS FIRST!)\"",
                         "id": "BOOTLOADER_FLASH_XMC_SUPPORT",
                         "name": "BOOTLOADER_FLASH_XMC_SUPPORT",
@@ -2850,26 +2639,6 @@
                         "name": "BOOTLOADER_FLASH_32BIT_ADDR",
                         "range": null,
                         "title": null,
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "This is a helper config for 32bits address flash. Invisible for users.",
-                        "id": "BOOTLOADER_FLASH_NEEDS_32BIT_FEAT",
-                        "name": "BOOTLOADER_FLASH_NEEDS_32BIT_FEAT",
-                        "range": null,
-                        "title": null,
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "BOOTLOADER_FLASH_NEEDS_32BIT_FEAT && IDF_TARGET_ESP32S3 && IDF_EXPERIMENTAL_FEATURES",
-                        "help": "Enabling this option allows the CPU to access 32-bit-address flash beyond 16M range.\n1. This option only valid for 4-line flash. Octal flash doesn't need this.\n2. This option is experimental, which means it can\u2019t use on all flash chips stable, for more\ninformation, please contact Espressif Business support.",
-                        "id": "BOOTLOADER_CACHE_32BIT_ADDR_QUAD_FLASH",
-                        "name": "BOOTLOADER_CACHE_32BIT_ADDR_QUAD_FLASH",
-                        "range": null,
-                        "title": "Enable cache access to 32-bit-address (over 16MB) range of SPI Flash (READ DOCS FIRST)",
                         "type": "bool"
                     },
                     {
@@ -3548,16 +3317,6 @@
                 "type": "bool"
             },
             {
-                "children": [],
-                "depends_on": "SECURE_BOOT_V2_ENABLED && SECURE_BOOT_BUILD_SIGNED_BINARIES",
-                "help": "When Secure Boot V2 is enabled, by default the bootloader is not flashed along with other artifacts\nlike the application and the partition table images, i.e. bootloader has to be seperately flashed\nusing the command `idf.py bootloader flash`, whereas, the application and partition table can be flashed\nusing the command `idf.py flash` itself.\nEnabling this option allows flashing the bootloader along with the other artifacts\nby invocation of the command `idf.py flash`.\n\nIf this option is enabled make sure that even the bootloader is signed using the correct secure boot key,\notherwise the bootloader signature verification would fail, as hash of the public key which is present in\nthe bootloader signature would not match with the digest stored into the efuses\nand thus the device will not be able to boot up.",
-                "id": "SECURE_BOOT_FLASH_BOOTLOADER_DEFAULT",
-                "name": "SECURE_BOOT_FLASH_BOOTLOADER_DEFAULT",
-                "range": null,
-                "title": "Flash bootloader along with other artifacts when using the default flash command",
-                "type": "bool"
-            },
-            {
                 "children": [
                     {
                         "children": [],
@@ -3633,10 +3392,10 @@
                             }
                         ],
                         "depends_on": "SOC_FLASH_ENCRYPTION_XTS_AES_OPTIONS && SECURE_FLASH_ENC_ENABLED",
-                        "help": "Size of generated XTS-AES key.\n\n- AES-128 uses a 256-bit key (32 bytes) derived from 128 bits (16 bytes) burned in half Efuse key block.\n  Internally, it calculates SHA256(128 bits)\n- AES-128 uses a 256-bit key (32 bytes) which occupies one Efuse key block.\n- AES-256 uses a 512-bit key (64 bytes) which occupies two Efuse key blocks.\n\nThis setting is ignored if either type of key is already burned to Efuse before the first boot.\nIn this case, the pre-burned key is used and no new key is generated.",
-                        "id": "security-features-enable-flash-encryption-on-boot-read-docs-first--size-of-generated-xts-aes-key",
+                        "help": "Size of generated AES-XTS key.\n\n- AES-128 uses a 256-bit key (32 bytes) derived from 128 bits (16 bytes) burned in half Efuse key block.\n  Internally, it calculates SHA256(128 bits)\n- AES-128 uses a 256-bit key (32 bytes) which occupies one Efuse key block.\n- AES-256 uses a 512-bit key (64 bytes) which occupies two Efuse key blocks.\n\nThis setting is ignored if either type of key is already burned to Efuse before the first boot.\nIn this case, the pre-burned key is used and no new key is generated.",
+                        "id": "security-features-enable-flash-encryption-on-boot-read-docs-first--size-of-generated-aes-xts-key",
                         "name": "SECURE_FLASH_ENCRYPTION_KEYSIZE",
-                        "title": "Size of generated XTS-AES key",
+                        "title": "Size of generated AES-XTS key",
                         "type": "choice"
                     },
                     {
@@ -3876,7 +3635,7 @@
         "children": [
             {
                 "children": [],
-                "depends_on": "!APP_REPRODUCIBLE_BUILD",
+                "depends_on": null,
                 "help": "If set, then the app will be built with the current time/date stamp. It is stored in the app description\nstructure. If not set, time/date stamp will be excluded from app image. This can be useful for getting the\nsame binary image files made from the same source, but at different times.",
                 "id": "APP_COMPILE_TIME_DATE",
                 "name": "APP_COMPILE_TIME_DATE",
@@ -3928,7 +3687,7 @@
             {
                 "children": [],
                 "depends_on": null,
-                "help": "At startup, the app will read the embedded APP ELF SHA-256 hash value from flash\nand convert it into a string and store it in a RAM buffer.\nThis ensures the panic handler and core dump will be able to print this string\neven when cache is disabled.\nThe size of the buffer is APP_RETRIEVE_LEN_ELF_SHA plus the null terminator.\nChanging this value will change the size of this buffer, in bytes.",
+                "help": "At startup, the app will read this many hex characters from the embedded APP ELF SHA-256 hash value\nand store it in static RAM. This ensures the app ELF SHA-256 value is always available\nif it needs to be printed by the panic handler code.\nChanging this value will change the size of a static buffer, in bytes.",
                 "id": "APP_RETRIEVE_LEN_ELF_SHA",
                 "name": "APP_RETRIEVE_LEN_ELF_SHA",
                 "range": [
@@ -4013,26 +3772,6 @@
         "range": null,
         "title": null,
         "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_HAS_SW_FLOAT",
-        "name": "ESP_ROM_HAS_SW_FLOAT",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "ESP_ROM_USB_SERIAL_DEVICE_NUM",
-        "name": "ESP_ROM_USB_SERIAL_DEVICE_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
     },
     {
         "children": [
@@ -4636,7 +4375,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "!ESP32_COREDUMP_ENABLE_TO_FLASH && NVS_SEC_KEY_PROTECT_USING_FLASH_ENC && <choice PARTITION_TABLE_TYPE>",
+                        "depends_on": "!ESP32_COREDUMP_ENABLE_TO_FLASH && NVS_ENCRYPTION && <choice PARTITION_TABLE_TYPE>",
                         "help": "This is a variation of the default \"Single factory app, no OTA\" partition table\nthat supports encrypted NVS when using flash encryption. See the Flash Encryption section\nin the ESP-IDF Programmers Guide for more information.\n\nThe corresponding CSV file in the IDF directory is\ncomponents/partition_table/partitions_singleapp_encr_nvs.csv",
                         "id": "PARTITION_TABLE_SINGLE_APP_ENCRYPTED_NVS",
                         "name": "PARTITION_TABLE_SINGLE_APP_ENCRYPTED_NVS",
@@ -4646,7 +4385,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "!ESP32_COREDUMP_ENABLE_TO_FLASH && NVS_SEC_KEY_PROTECT_USING_FLASH_ENC && <choice PARTITION_TABLE_TYPE>",
+                        "depends_on": "!ESP32_COREDUMP_ENABLE_TO_FLASH && NVS_ENCRYPTION && <choice PARTITION_TABLE_TYPE>",
                         "help": "This is a variation of the \"Single factory app (large), no OTA\" partition table\nthat supports encrypted NVS when using flash encryption. See the Flash Encryption section\nin the ESP-IDF Programmers Guide for more information.\n\nThe corresponding CSV file in the IDF directory is\ncomponents/partition_table/partitions_singleapp_large_encr_nvs.csv",
                         "id": "PARTITION_TABLE_SINGLE_APP_LARGE_ENC_NVS",
                         "name": "PARTITION_TABLE_SINGLE_APP_LARGE_ENC_NVS",
@@ -4656,7 +4395,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "!ESP_COREDUMP_ENABLE_TO_FLASH && NVS_SEC_KEY_PROTECT_USING_FLASH_ENC && <choice PARTITION_TABLE_TYPE>",
+                        "depends_on": "!ESP_COREDUMP_ENABLE_TO_FLASH && NVS_ENCRYPTION && <choice PARTITION_TABLE_TYPE>",
                         "help": "This is a variation of the \"Factory app, two OTA definitions\" partition table\nthat supports encrypted NVS when using flash encryption. See the Flash Encryption section\nin the ESP-IDF Programmers Guide for more information.\n\nThe corresponding CSV file in the IDF directory is\ncomponents/partition_table/partitions_two_ota_encr_nvs.csv",
                         "id": "PARTITION_TABLE_TWO_OTA_ENCRYPTED_NVS",
                         "name": "PARTITION_TABLE_TWO_OTA_ENCRYPTED_NVS",
@@ -4726,8 +4465,8 @@
                         "children": [],
                         "depends_on": "<choice COMPILER_OPTIMIZATION>",
                         "help": null,
-                        "id": "COMPILER_OPTIMIZATION_DEBUG",
-                        "name": "COMPILER_OPTIMIZATION_DEBUG",
+                        "id": "COMPILER_OPTIMIZATION_DEFAULT",
+                        "name": "COMPILER_OPTIMIZATION_DEFAULT",
                         "range": null,
                         "title": "Debug (-Og)",
                         "type": "bool"
@@ -4764,7 +4503,7 @@
                     }
                 ],
                 "depends_on": null,
-                "help": "This option sets compiler optimization level (gcc -O argument) for the app.\n\n- The \"Debug\" setting will add the -0g flag to CFLAGS.\n- The \"Size\" setting will add the -0s flag to CFLAGS.\n- The \"Performance\" setting will add the -O2 flag to CFLAGS.\n- The \"None\" setting will add the -O0 flag to CFLAGS.\n\nThe \"Size\" setting cause the compiled code to be smaller and faster, but\nmay lead to difficulties of correlating code addresses to source file\nlines when debugging.\n\nThe \"Performance\" setting causes the compiled code to be larger and faster,\nbut will be easier to correlated code addresses to source file lines.\n\n\"None\" with -O0 produces compiled code without optimization.\n\nNote that custom optimization levels may be unsupported.\n\nCompiler optimization for the IDF bootloader is set separately,\nsee the BOOTLOADER_COMPILER_OPTIMIZATION setting.",
+                "help": "This option sets compiler optimization level (gcc -O argument) for the app.\n\n- The \"Default\" setting will add the -0g flag to CFLAGS.\n- The \"Size\" setting will add the -0s flag to CFLAGS.\n- The \"Performance\" setting will add the -O2 flag to CFLAGS.\n- The \"None\" setting will add the -O0 flag to CFLAGS.\n\nThe \"Size\" setting cause the compiled code to be smaller and faster, but\nmay lead to difficulties of correlating code addresses to source file\nlines when debugging.\n\nThe \"Performance\" setting causes the compiled code to be larger and faster,\nbut will be easier to correlated code addresses to source file lines.\n\n\"None\" with -O0 produces compiled code without optimization.\n\nNote that custom optimization levels may be unsupported.\n\nCompiler optimization for the IDF bootloader is set separately,\nsee the BOOTLOADER_COMPILER_OPTIMIZATION setting.",
                 "id": "compiler-options-optimization-level",
                 "name": "COMPILER_OPTIMIZATION",
                 "title": "Optimization Level",
@@ -4996,72 +4735,12 @@
             {
                 "children": [],
                 "depends_on": null,
-                "help": "Enable this option if use GCC 13 or newer, and want to disable warnings which don't appear with\nGCC 12.",
-                "id": "COMPILER_DISABLE_GCC13_WARNINGS",
-                "name": "COMPILER_DISABLE_GCC13_WARNINGS",
-                "range": null,
-                "title": "Disable new warnings introduced in GCC 13",
-                "type": "bool"
-            },
-            {
-                "children": [],
-                "depends_on": null,
                 "help": "If enabled, RTL files will be produced during compilation. These files\ncan be used by other tools, for example to calculate call graphs.",
                 "id": "COMPILER_DUMP_RTL_FILES",
                 "name": "COMPILER_DUMP_RTL_FILES",
                 "range": null,
                 "title": "Dump RTL files during compilation",
                 "type": "bool"
-            },
-            {
-                "children": [
-                    {
-                        "children": [],
-                        "depends_on": "!IDF_TARGET_LINUX && <choice COMPILER_RT_LIB>",
-                        "help": null,
-                        "id": "COMPILER_RT_LIB_GCCLIB",
-                        "name": "COMPILER_RT_LIB_GCCLIB",
-                        "range": null,
-                        "title": "libgcc",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "IDF_TOOLCHAIN_CLANG && !IDF_TARGET_LINUX && <choice COMPILER_RT_LIB>",
-                        "help": null,
-                        "id": "COMPILER_RT_LIB_CLANGRT",
-                        "name": "COMPILER_RT_LIB_CLANGRT",
-                        "range": null,
-                        "title": "libclang_rt",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "IDF_TARGET_LINUX && <choice COMPILER_RT_LIB>",
-                        "help": null,
-                        "id": "COMPILER_RT_LIB_HOST",
-                        "name": "COMPILER_RT_LIB_HOST",
-                        "range": null,
-                        "title": "Host",
-                        "type": "bool"
-                    }
-                ],
-                "depends_on": null,
-                "help": "Select runtime library to be used by compiler.\n- GCC toolchain supports libgcc only.\n- Clang allows to choose between libgcc or libclang_rt.\n- For host builds (\"linux\" target), uses the default library.",
-                "id": "compiler-options-compiler-runtime-library",
-                "name": "COMPILER_RT_LIB",
-                "title": "Compiler runtime library",
-                "type": "choice"
-            },
-            {
-                "children": [],
-                "depends_on": null,
-                "help": null,
-                "id": "COMPILER_RT_LIB_NAME",
-                "name": "COMPILER_RT_LIB_NAME",
-                "range": null,
-                "title": null,
-                "type": "string"
             }
         ],
         "depends_on": null,
@@ -5640,7 +5319,7 @@
                                 "children": [
                                     {
                                         "children": [],
-                                        "depends_on": "<choice BT_HOST>",
+                                        "depends_on": "BT_CONTROLLER_ENABLED && <choice BT_HOST>",
                                         "help": "This option is recommended for classic Bluetooth or for dual-mode\nusecases",
                                         "id": "BT_BLUEDROID_ENABLED",
                                         "name": "BT_BLUEDROID_ENABLED",
@@ -5788,16 +5467,6 @@
                                 "type": "bool"
                             },
                             {
-                                "children": [],
-                                "depends_on": "BT_BLUEDROID_ENABLED && BT_BLUEDROID_ENABLED",
-                                "help": "Enable Espressif Vendor-specific HCI commands for coexist status configuration",
-                                "id": "BT_BLUEDROID_ESP_COEX_VSC",
-                                "name": "BT_BLUEDROID_ESP_COEX_VSC",
-                                "range": null,
-                                "title": "Enable Espressif Vendor-specific HCI commands for coexist status configuration",
-                                "type": "bool"
-                            },
-                            {
                                 "children": [
                                     {
                                         "children": [],
@@ -5902,7 +5571,7 @@
                                         "type": "menu"
                                     }
                                 ],
-                                "depends_on": "BT_BLUEDROID_ENABLED && ((BT_CONTROLLER_ENABLED && SOC_BT_CLASSIC_SUPPORTED) || BT_CONTROLLER_DISABLED) && BT_BLUEDROID_ENABLED",
+                                "depends_on": "BT_BLUEDROID_ENABLED && IDF_TARGET_ESP32 && BT_BLUEDROID_ENABLED",
                                 "help": "For now this option needs \"SMP_ENABLE\" to be set to yes",
                                 "id": "BT_CLASSIC_ENABLED",
                                 "name": "BT_CLASSIC_ENABLED",
@@ -5951,6 +5620,16 @@
                                 "range": null,
                                 "title": "Classic BT HID",
                                 "type": "menu"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_CLASSIC_ENABLED && BT_BLUEDROID_ENABLED",
+                                "help": "This enables the Secure Simple Pairing. If disable this option,\nBluedroid will only support Legacy Pairing",
+                                "id": "BT_SSP_ENABLED",
+                                "name": "BT_SSP_ENABLED",
+                                "range": null,
+                                "title": "Secure Simple Pairing",
+                                "type": "bool"
                             },
                             {
                                 "children": [
@@ -6136,6 +5815,16 @@
                                                 "name": "BT_SMP_SLAVE_CON_PARAMS_UPD_ENABLE",
                                                 "range": null,
                                                 "title": "Slave enable connection parameters update during pairing",
+                                                "type": "bool"
+                                            },
+                                            {
+                                                "children": [],
+                                                "depends_on": "BT_BLE_SMP_ENABLE && BT_BLUEDROID_ENABLED",
+                                                "help": "There are tracking risks associated with using a fixed or static IRK.\nIf enabled this option, Bluedroid will assign a new randomly-generated IRK\nwhen all pairing and bonding records are deleted. This would decrease the ability\nof a previously paired peer to be used to determine whether a device\nwith which it previously shared an IRK is within range.",
+                                                "id": "BT_BLE_SMP_ID_RESET_ENABLE",
+                                                "name": "BT_BLE_SMP_ID_RESET_ENABLE",
+                                                "range": null,
+                                                "title": "Reset device identity when all bonding records are deleted",
                                                 "type": "bool"
                                             }
                                         ],
@@ -8166,7 +7855,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "BT_BLUEDROID_ENABLED && ((BT_CONTROLLER_ENABLED && !SOC_BLE_DEVICE_PRIVACY_SUPPORTED) || BT_CONTROLLER_DISABLED) && BT_BLUEDROID_ENABLED",
+                                "depends_on": "BT_BLUEDROID_ENABLED && !SOC_BLE_DEVICE_PRIVACY_SUPPORTED && BT_BLUEDROID_ENABLED",
                                 "help": "This enables controller RPA list function.\nFor ESP32, ESP32 only support network privacy mode. If this option is enabled, ESP32 will only accept\nadvertising packets from peer devices that contain private address, HW will not receive the advertising\npackets contain identity address after IRK changed. If this option is disabled, address resolution will\nbe performed in the host, so the functions that require controller to resolve address in the white list\ncannot be used. This option is disabled by default on ESP32, please enable or disable this option according\nto your own needs.\n\nFor other BLE chips, devices support network privacy mode and device privacy mode,\nusers can switch the two modes according to their own needs. So this option is enabled by default.",
                                 "id": "BT_BLE_RPA_SUPPORTED",
                                 "name": "BT_BLE_RPA_SUPPORTED",
@@ -8186,7 +7875,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "BT_BLE_ENABLED && ((BT_CONTROLLER_ENABLED && SOC_BLE_50_SUPPORTED) || BT_CONTROLLER_DISABLED) && BT_BLUEDROID_ENABLED",
+                                "depends_on": "BT_BLE_ENABLED && (IDF_TARGET_ESP32C3 || IDF_TARGET_ESP32S3 || SOC_ESP_NIMBLE_CONTROLLER) && BT_BLUEDROID_ENABLED",
                                 "help": "Enabling this option activates BLE 5.0 features.\nThis option is universally supported in chips that support BLE, except for ESP32.",
                                 "id": "BT_BLE_50_FEATURES_SUPPORTED",
                                 "name": "BT_BLE_50_FEATURES_SUPPORTED",
@@ -8196,7 +7885,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "BT_BLE_ENABLED && ((BT_CONTROLLER_ENABLED && SOC_BLE_SUPPORTED) || BT_CONTROLLER_DISABLED) && BT_BLUEDROID_ENABLED",
+                                "depends_on": "BT_BLE_ENABLED && (IDF_TARGET_ESP32C3 || IDF_TARGET_ESP32S3 || SOC_ESP_NIMBLE_CONTROLLER) && BT_BLUEDROID_ENABLED",
                                 "help": "This enables BLE 4.2 features.",
                                 "id": "BT_BLE_42_FEATURES_SUPPORTED",
                                 "name": "BT_BLE_42_FEATURES_SUPPORTED",
@@ -8206,7 +7895,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "BT_BLE_50_FEATURES_SUPPORTED && ((BT_CONTROLLER_ENABLED && SOC_ESP_NIMBLE_CONTROLLER) || BT_CONTROLLER_DISABLED) && BT_BLUEDROID_ENABLED",
+                                "depends_on": "BT_BLE_50_FEATURES_SUPPORTED && SOC_ESP_NIMBLE_CONTROLLER && BT_BLUEDROID_ENABLED",
                                 "help": "This enables BLE periodic advertising sync transfer feature",
                                 "id": "BT_BLE_FEAT_PERIODIC_ADV_SYNC_TRANSFER",
                                 "name": "BT_BLE_FEAT_PERIODIC_ADV_SYNC_TRANSFER",
@@ -8216,7 +7905,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "BT_BLE_50_FEATURES_SUPPORTED && ((BT_CONTROLLER_ENABLED && SOC_ESP_NIMBLE_CONTROLLER) || BT_CONTROLLER_DISABLED) && BT_BLUEDROID_ENABLED",
+                                "depends_on": "BT_BLE_50_FEATURES_SUPPORTED && SOC_ESP_NIMBLE_CONTROLLER && BT_BLUEDROID_ENABLED",
                                 "help": "Enable the periodic advertising enhancements",
                                 "id": "BT_BLE_FEAT_PERIODIC_ADV_ENH",
                                 "name": "BT_BLE_FEAT_PERIODIC_ADV_ENH",
@@ -8226,7 +7915,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "BT_BLE_50_FEATURES_SUPPORTED && ((BT_CONTROLLER_ENABLED && SOC_ESP_NIMBLE_CONTROLLER) || BT_CONTROLLER_DISABLED) && BT_BLUEDROID_ENABLED",
+                                "depends_on": "BT_BLE_50_FEATURES_SUPPORTED && SOC_ESP_NIMBLE_CONTROLLER && BT_BLUEDROID_ENABLED",
                                 "help": "Enable the create sync enhancements",
                                 "id": "BT_BLE_FEAT_CREATE_SYNC_ENH",
                                 "name": "BT_BLE_FEAT_CREATE_SYNC_ENH",
@@ -8242,6 +7931,16 @@
                                 "name": "BT_BLE_HIGH_DUTY_ADV_INTERVAL",
                                 "range": null,
                                 "title": "Enable BLE high duty advertising interval feature",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_BLUEDROID_ENABLED && BT_BLUEDROID_ENABLED",
+                                "help": "This enables abort when memory allocation fails",
+                                "id": "BT_ABORT_WHEN_ALLOCATION_FAILS",
+                                "name": "BT_ABORT_WHEN_ALLOCATION_FAILS",
+                                "range": null,
+                                "title": "Abort when memory allocation fails in BT/BLE stack",
                                 "type": "bool"
                             }
                         ],
@@ -8510,6 +8209,16 @@
                                 "name": "BT_NIMBLE_NVS_PERSIST",
                                 "range": null,
                                 "title": "Persist the BLE Bonding keys in NVS",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_NIMBLE_ENABLED",
+                                "help": "There are tracking risks associated with using a fixed or static IRK.\nIf enabled this option, Bluedroid will assign a new randomly-generated IRK\nwhen all pairing and bonding records are deleted. This would decrease the ability\nof a previously paired peer to be used to determine whether a device\nwith which it previously shared an IRK is within range.",
+                                "id": "BT_NIMBLE_SMP_ID_RESET",
+                                "name": "BT_NIMBLE_SMP_ID_RESET",
+                                "range": null,
+                                "title": "Reset device identity when all bonding records are deleted",
                                 "type": "bool"
                             },
                             {
@@ -9031,7 +8740,7 @@
                                                         "id": "BT_NIMBLE_PERIODIC_ADV_SYNC_TRANSFER",
                                                         "name": "BT_NIMBLE_PERIODIC_ADV_SYNC_TRANSFER",
                                                         "range": null,
-                                                        "title": "Enable Transer Sync Events",
+                                                        "title": "Enable Transfer Sync Events",
                                                         "type": "bool"
                                                     }
                                                 ],
@@ -9127,7 +8836,7 @@
                                             {
                                                 "children": [],
                                                 "depends_on": "BT_NIMBLE_GATT_CACHING && BT_NIMBLE_ENABLED",
-                                                "help": "Set this option to set the upper limit on number of discriptors per connection to be cached.",
+                                                "help": "Set this option to set the upper limit on number of descriptors per connection to be cached.",
                                                 "id": "BT_NIMBLE_GATT_CACHING_MAX_DSCS",
                                                 "name": "BT_NIMBLE_GATT_CACHING_MAX_DSCS",
                                                 "range": null,
@@ -9563,7 +9272,7 @@
                                         "type": "int"
                                     }
                                 ],
-                                "depends_on": "SOC_ESP_NIMBLE_CONTROLLER && BT_NIMBLE_ENABLED",
+                                "depends_on": "BT_NIMBLE_ENABLED",
                                 "help": "This option is used to enable encrypted advertising data.",
                                 "id": "BT_NIMBLE_ENC_ADV_DATA",
                                 "name": "BT_NIMBLE_ENC_ADV_DATA",
@@ -9579,6 +9288,16 @@
                                 "name": "BT_NIMBLE_HIGH_DUTY_ADV_ITVL",
                                 "range": null,
                                 "title": "Enable BLE high duty advertising interval feature",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_NIMBLE_ENABLED && (IDF_TARGET_ESP32C3 || IDF_TARGET_ESP32S3) && BT_NIMBLE_ENABLED",
+                                "help": "This enables support for user to initiate a new connection with scan in progress",
+                                "id": "BT_NIMBLE_HOST_ALLOW_CONNECT_WITH_SCAN",
+                                "name": "BT_NIMBLE_HOST_ALLOW_CONNECT_WITH_SCAN",
+                                "range": null,
+                                "title": "Allow Connections with scanning in progress",
                                 "type": "bool"
                             },
                             {
@@ -10614,16 +10333,6 @@
                         "type": "bool"
                     },
                     {
-                        "children": [],
-                        "depends_on": "BLE_MESH",
-                        "help": "Enable this option to allow using BLE Active Scan for BLE Mesh.",
-                        "id": "BLE_MESH_ACTIVE_SCAN",
-                        "name": "BLE_MESH_ACTIVE_SCAN",
-                        "range": null,
-                        "title": "Support Active Scan in BLE Mesh",
-                        "type": "bool"
-                    },
-                    {
                         "children": [
                             {
                                 "children": [],
@@ -10876,39 +10585,7 @@
                         "type": "bool"
                     },
                     {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH_PROV && BLE_MESH",
-                                "help": "Enable this option to support BLE Mesh enhanced provisioning authentication\nfunctionality. This option can increase the security level of provisioning.\nIt is recommended to enable this option.",
-                                "id": "BLE_MESH_PROV_EPA",
-                                "name": "BLE_MESH_PROV_EPA",
-                                "range": null,
-                                "title": "BLE Mesh enhanced provisioning authentication",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_CERT_BASED_PROV && BLE_MESH",
-                                        "help": "This option sets the maximum size of the provisioning record fragment that the\nProvisioner can receive. The range depends on provisioning bearer.",
-                                        "id": "BLE_MESH_RECORD_FRAG_MAX_SIZE",
-                                        "name": "BLE_MESH_RECORD_FRAG_MAX_SIZE",
-                                        "range": null,
-                                        "title": "Maximum size of the provisioning record fragment that Provisioner can receive",
-                                        "type": "int"
-                                    }
-                                ],
-                                "depends_on": "BLE_MESH_PROV && BLE_MESH",
-                                "help": "Enable this option to support BLE Mesh Certificate-Based Provisioning.",
-                                "id": "BLE_MESH_CERT_BASED_PROV",
-                                "name": "BLE_MESH_CERT_BASED_PROV",
-                                "range": null,
-                                "title": "Support Certificate-based provisioning",
-                                "type": "bool"
-                            }
-                        ],
+                        "children": [],
                         "depends_on": "BLE_MESH",
                         "help": "Enable this option to support BLE Mesh Provisioning functionality. For\nBLE Mesh, this option should be always enabled.",
                         "id": "BLE_MESH_PROV",
@@ -10979,37 +10656,6 @@
                                 "range": null,
                                 "title": "Maximum number of filter entries per Proxy Client",
                                 "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH_PRB_SRV && BLE_MESH_GATT_PROXY_SERVER && BLE_MESH",
-                                "help": "The Proxy Privacy parameter controls the privacy of the Proxy Server\nover the connection. The value of the Proxy Privacy parameter is\ncontrolled by the type of proxy connection, which is dependent on the\nbearer used by the proxy connection.",
-                                "id": "BLE_MESH_PROXY_PRIVACY",
-                                "name": "BLE_MESH_PROXY_PRIVACY",
-                                "range": null,
-                                "title": "Support Proxy Privacy",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_PROXY_SOLIC_PDU_RX && BLE_MESH",
-                                        "help": "This option specifies the maximum capacity of the solicitation replay\nprotection list. The solicitation replay protection list is used to\nreject Solicitation PDUs that were already processed by a node, which\nwill store the solicitation src and solicitation sequence number of\nthe received Solicitation PDU message.",
-                                        "id": "BLE_MESH_PROXY_SOLIC_RX_CRPL",
-                                        "name": "BLE_MESH_PROXY_SOLIC_RX_CRPL",
-                                        "range": null,
-                                        "title": "Maximum capacity of solicitation replay protection list",
-                                        "type": "int"
-                                    }
-                                ],
-                                "depends_on": "BLE_MESH_GATT_PROXY_SERVER && BLE_MESH",
-                                "help": "Enable this option to support receiving Proxy Solicitation PDU.",
-                                "id": "BLE_MESH_PROXY_SOLIC_PDU_RX",
-                                "name": "BLE_MESH_PROXY_SOLIC_PDU_RX",
-                                "range": null,
-                                "title": "Support receiving Proxy Solicitation PDU",
-                                "type": "bool"
                             }
                         ],
                         "depends_on": "BLE_MESH_NODE && BLE_MESH",
@@ -11021,29 +10667,7 @@
                         "type": "bool"
                     },
                     {
-                        "children": [
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_PROXY_SOLIC_PDU_TX && BLE_MESH",
-                                        "help": "This option specifies the maximum number of Solicitation Source (SSRC)\nthat can be used by Proxy Client for sending a Solicitation PDU.\nA Proxy Client may use the primary address or any of the secondary\naddresses as the SSRC for a Solicitation PDU.\nSo for a Proxy Client, it's better to choose the value based on its\nown element count.",
-                                        "id": "BLE_MESH_PROXY_SOLIC_TX_SRC_COUNT",
-                                        "name": "BLE_MESH_PROXY_SOLIC_TX_SRC_COUNT",
-                                        "range": null,
-                                        "title": "Maximum number of SSRC that can be used by Proxy Client",
-                                        "type": "int"
-                                    }
-                                ],
-                                "depends_on": "BLE_MESH_GATT_PROXY_CLIENT && BLE_MESH",
-                                "help": "Enable this option to support sending Proxy Solicitation PDU.",
-                                "id": "BLE_MESH_PROXY_SOLIC_PDU_TX",
-                                "name": "BLE_MESH_PROXY_SOLIC_PDU_TX",
-                                "range": null,
-                                "title": "Support sending Proxy Solicitation PDU",
-                                "type": "bool"
-                            }
-                        ],
+                        "children": [],
                         "depends_on": "BLE_MESH",
                         "help": "This option enables support for Mesh GATT Proxy Client. The Proxy Client\ncan use the GATT bearer to send mesh messages to a node that supports the\nadvertising bearer.",
                         "id": "BLE_MESH_GATT_PROXY_CLIENT",
@@ -11263,16 +10887,6 @@
                         "name": "BLE_MESH_IVU_RECOVERY_IVI",
                         "range": null,
                         "title": "Recovery the IV index when the latest whole IV update procedure is missed",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "BLE_MESH",
-                        "help": "Enable this option to use the enhanced segmentation and reassembly\nmechanism introduced in Bluetooth Mesh Protocol 1.1.",
-                        "id": "BLE_MESH_SAR_ENHANCEMENT",
-                        "name": "BLE_MESH_SAR_ENHANCEMENT",
-                        "range": null,
-                        "title": "Segmentation and reassembly enhancement",
                         "type": "bool"
                     },
                     {
@@ -11777,341 +11391,6 @@
                                 "range": null,
                                 "title": "Health Server model",
                                 "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Bridge Configuration Client model.",
-                                "id": "BLE_MESH_BRC_CLI",
-                                "name": "BLE_MESH_BRC_CLI",
-                                "range": null,
-                                "title": "Bridge Configuration Client model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_BRC_SRV && BLE_MESH",
-                                        "help": "Maximum number of Bridging Table entries that the Bridge Configuration Server can support.",
-                                        "id": "BLE_MESH_MAX_BRIDGING_TABLE_ENTRY_COUNT",
-                                        "name": "BLE_MESH_MAX_BRIDGING_TABLE_ENTRY_COUNT",
-                                        "range": null,
-                                        "title": "Maximum number of Bridging Table entries",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_BRC_SRV && BLE_MESH",
-                                        "help": "This option specifies the maximum capacity of the bridge replay\nprotection list. The bridge replay protection list is used to\nprevent a bridged subnet from replay attack, which will store the\nsource address and sequence number of the received bridge messages.",
-                                        "id": "BLE_MESH_BRIDGE_CRPL",
-                                        "name": "BLE_MESH_BRIDGE_CRPL",
-                                        "range": null,
-                                        "title": "Maximum capacity of bridge replay protection list",
-                                        "type": "int"
-                                    }
-                                ],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Bridge Configuration Server model.",
-                                "id": "BLE_MESH_BRC_SRV",
-                                "name": "BLE_MESH_BRC_SRV",
-                                "range": null,
-                                "title": "Bridge Configuration Server model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Mesh Private Beacon Client model.",
-                                "id": "BLE_MESH_PRB_CLI",
-                                "name": "BLE_MESH_PRB_CLI",
-                                "range": null,
-                                "title": "Mesh Private Beacon Client model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Mesh Private Beacon Server model.",
-                                "id": "BLE_MESH_PRB_SRV",
-                                "name": "BLE_MESH_PRB_SRV",
-                                "range": null,
-                                "title": "Mesh Private Beacon Server model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for On-Demand Private Proxy Client model.",
-                                "id": "BLE_MESH_ODP_CLI",
-                                "name": "BLE_MESH_ODP_CLI",
-                                "range": null,
-                                "title": "On-Demand Private Proxy Client model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH_PROXY_SOLIC_PDU_RX && BLE_MESH",
-                                "help": "Enable support for On-Demand Private Proxy Server model.",
-                                "id": "BLE_MESH_ODP_SRV",
-                                "name": "BLE_MESH_ODP_SRV",
-                                "range": null,
-                                "title": "On-Demand Private Proxy Server model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Solicitation PDU RPL Configuration Client model.",
-                                "id": "BLE_MESH_SRPL_CLI",
-                                "name": "BLE_MESH_SRPL_CLI",
-                                "range": null,
-                                "title": "Solicitation PDU RPL Configuration Client model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH_PROXY_SOLIC_PDU_RX && BLE_MESH",
-                                "help": "Enable support for Solicitation PDU RPL Configuration Server model.\nNote:\nThis option depends on the functionality of receiving Solicitation\nPDU. If the device doesn't support receiving Solicitation PDU, then\nthere is no need to enable this server model.",
-                                "id": "BLE_MESH_SRPL_SRV",
-                                "name": "BLE_MESH_SRPL_SRV",
-                                "range": null,
-                                "title": "Solicitation PDU RPL Configuration Server model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Opcodes Aggregator Client model.",
-                                "id": "BLE_MESH_AGG_CLI",
-                                "name": "BLE_MESH_AGG_CLI",
-                                "range": null,
-                                "title": "Opcodes Aggregator Client model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Opcodes Aggregator Server model.",
-                                "id": "BLE_MESH_AGG_SRV",
-                                "name": "BLE_MESH_AGG_SRV",
-                                "range": null,
-                                "title": "Opcodes Aggregator Server model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for SAR Configuration Client model.",
-                                "id": "BLE_MESH_SAR_CLI",
-                                "name": "BLE_MESH_SAR_CLI",
-                                "range": null,
-                                "title": "SAR Configuration Client model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for SAR Configuration Server model.",
-                                "id": "BLE_MESH_SAR_SRV",
-                                "name": "BLE_MESH_SAR_SRV",
-                                "range": null,
-                                "title": "SAR Configuration Server model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Composition Data Page 1 contains information about the relationships\namong models.\nEach model either can be a root model or can extend other models.",
-                                "id": "BLE_MESH_COMP_DATA_1",
-                                "name": "BLE_MESH_COMP_DATA_1",
-                                "range": null,
-                                "title": "Support Composition Data Page 1",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Composition Data Page 128 is used to indicate the structure of\nelements, features, and models of a node after the successful\nexecution of the Node Address Refresh procedure or the Node\nComposition Refresh procedure, or after the execution of the\nNode Removal procedure followed by the provisioning process.\nComposition Data Page 128 shall be present if the node supports\nthe Remote Provisioning Server model; otherwise it is optional.",
-                                "id": "BLE_MESH_COMP_DATA_128",
-                                "name": "BLE_MESH_COMP_DATA_128",
-                                "range": null,
-                                "title": "Support Composition Data Page 128",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_MODELS_METADATA_0 && BLE_MESH",
-                                        "help": "The Models Metadata state contains metadata of a node\u2019s models.\nThe Models Metadata state is composed of a number of pages of\ninformation.\nModels Metadata Page 128 contains metadata for the node\u2019s models\nafter the successful execution of the Node Address Refresh\nprocedure or the Node Composition Refresh procedure, or after\nthe execution of the Node Removal procedure followed by the\nprovisioning process.\nModels Metadata Page 128 shall be present if the node supports\nthe Remote Provisioning Server model and the node supports the\nLarge Composition Data Server model.",
-                                        "id": "BLE_MESH_MODELS_METADATA_128",
-                                        "name": "BLE_MESH_MODELS_METADATA_128",
-                                        "range": null,
-                                        "title": "Support Models Metadata Page 128",
-                                        "type": "bool"
-                                    }
-                                ],
-                                "depends_on": "BLE_MESH",
-                                "help": "The Models Metadata state contains metadata of a node\u2019s models.\nThe Models Metadata state is composed of a number of pages of\ninformation.\nModels Metadata Page 0 shall be present if the node supports\nthe Large Composition Data Server model.",
-                                "id": "BLE_MESH_MODELS_METADATA_0",
-                                "name": "BLE_MESH_MODELS_METADATA_0",
-                                "range": null,
-                                "title": "Support Models Metadata Page 0",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Large Composition Data Client model.",
-                                "id": "BLE_MESH_LCD_CLI",
-                                "name": "BLE_MESH_LCD_CLI",
-                                "range": null,
-                                "title": "Large Composition Data Client model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Large Composition Data Server model.",
-                                "id": "BLE_MESH_LCD_SRV",
-                                "name": "BLE_MESH_LCD_SRV",
-                                "range": null,
-                                "title": "Large Composition Data Server model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_RPR_CLI && BLE_MESH",
-                                        "help": "This option specifies how many devices can be provisioned at the same time\nusing PB-REMOTE. For example, if the value is 2, it means a Provisioner can\nprovision two unprovisioned devices with PB-REMOTE at the same time.",
-                                        "id": "BLE_MESH_RPR_CLI_PROV_SAME_TIME",
-                                        "name": "BLE_MESH_RPR_CLI_PROV_SAME_TIME",
-                                        "range": null,
-                                        "title": "Maximum number of PB-Remote running at the same time by Provisioner",
-                                        "type": "int"
-                                    }
-                                ],
-                                "depends_on": "BLE_MESH_PROVISIONER && BLE_MESH",
-                                "help": "Enable support for Remote Provisioning Client model",
-                                "id": "BLE_MESH_RPR_CLI",
-                                "name": "BLE_MESH_RPR_CLI",
-                                "range": null,
-                                "title": "Remote Provisioning Client model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_RPR_SRV && BLE_MESH",
-                                        "help": "This option specifies how many device information can a Remote\nProvisioning Server store each time while scanning.",
-                                        "id": "BLE_MESH_RPR_SRV_MAX_SCANNED_ITEMS",
-                                        "name": "BLE_MESH_RPR_SRV_MAX_SCANNED_ITEMS",
-                                        "range": null,
-                                        "title": "Maximum number of device information can be scanned",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_RPR_SRV && BLE_MESH",
-                                        "help": "Enable this option to support Active Scan for remote provisioning.",
-                                        "id": "BLE_MESH_RPR_SRV_ACTIVE_SCAN",
-                                        "name": "BLE_MESH_RPR_SRV_ACTIVE_SCAN",
-                                        "range": null,
-                                        "title": "Support Active Scan for remote provisioning",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_RPR_SRV && BLE_MESH",
-                                        "help": "This option specifies how many extended scan procedures can be\nstarted by the Remote Provisioning Server.",
-                                        "id": "BLE_MESH_RPR_SRV_MAX_EXT_SCAN",
-                                        "name": "BLE_MESH_RPR_SRV_MAX_EXT_SCAN",
-                                        "range": null,
-                                        "title": "Maximum number of extended scan procedures",
-                                        "type": "int"
-                                    }
-                                ],
-                                "depends_on": "BLE_MESH_NODE && BLE_MESH",
-                                "help": "Enable support for Remote Provisioning Server model",
-                                "id": "BLE_MESH_RPR_SRV",
-                                "name": "BLE_MESH_RPR_SRV",
-                                "range": null,
-                                "title": "Remote Provisioning Server model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Directed Forwarding Configuration Client model.",
-                                "id": "BLE_MESH_DF_CLI",
-                                "name": "BLE_MESH_DF_CLI",
-                                "range": null,
-                                "title": "Directed Forwarding Configuration Client model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_DF_SRV && BLE_MESH",
-                                        "help": "Maximum number of Discovery Table entries supported by the node in a given subnet.",
-                                        "id": "BLE_MESH_MAX_DISC_TABLE_ENTRY_COUNT",
-                                        "name": "BLE_MESH_MAX_DISC_TABLE_ENTRY_COUNT",
-                                        "range": null,
-                                        "title": "Maximum number of discovery table entries in a given subnet",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_DF_SRV && BLE_MESH",
-                                        "help": "Maximum number of Forward Table entries supported by the node in a given subnet.",
-                                        "id": "BLE_MESH_MAX_FORWARD_TABLE_ENTRY_COUNT",
-                                        "name": "BLE_MESH_MAX_FORWARD_TABLE_ENTRY_COUNT",
-                                        "range": null,
-                                        "title": "Maximum number of forward table entries in a given subnet",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_DF_SRV && BLE_MESH",
-                                        "help": "Maximum size of dependent nodes list supported by each forward table entry.",
-                                        "id": "BLE_MESH_MAX_DEPS_NODES_PER_PATH",
-                                        "name": "BLE_MESH_MAX_DEPS_NODES_PER_PATH",
-                                        "range": null,
-                                        "title": "Maximum number of dependent nodes per path",
-                                        "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_DF_SRV && BLE_MESH",
-                                        "help": "The option only removes the Path Use timer; all other behavior of the\ndevice is not changed.\nIf Path Monitoring test mode is going to be used, this option should\nbe enabled.",
-                                        "id": "BLE_MESH_PATH_MONITOR_TEST",
-                                        "name": "BLE_MESH_PATH_MONITOR_TEST",
-                                        "range": null,
-                                        "title": "Enable Path Monitoring test mode",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_GATT_PROXY_SERVER && BLE_MESH_DF_SRV && BLE_MESH",
-                                        "help": "Support Directed Proxy functionality.",
-                                        "id": "BLE_MESH_SUPPORT_DIRECTED_PROXY",
-                                        "name": "BLE_MESH_SUPPORT_DIRECTED_PROXY",
-                                        "range": null,
-                                        "title": "Enable Directed Proxy functionality",
-                                        "type": "bool"
-                                    }
-                                ],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for Directed Forwarding Configuration Server model.",
-                                "id": "BLE_MESH_DF_SRV",
-                                "name": "BLE_MESH_DF_SRV",
-                                "range": null,
-                                "title": "Directed Forwarding Configuration Server model",
-                                "type": "bool"
                             }
                         ],
                         "depends_on": "BLE_MESH",
@@ -12329,37 +11608,6 @@
                                 "name": "BLE_MESH_LIGHTING_SERVER",
                                 "range": null,
                                 "title": "Lighting server models",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "BLE_MESH_MBT_CLI && BLE_MESH",
-                                        "help": "Maximum number of BLOB Transfer Server models that can participating\nin the BLOB transfer with a BLOB Transfer Client model.",
-                                        "id": "BLE_MESH_MAX_BLOB_RECEIVERS",
-                                        "name": "BLE_MESH_MAX_BLOB_RECEIVERS",
-                                        "range": null,
-                                        "title": "Maximum number of simultaneous blob receivers",
-                                        "type": "int"
-                                    }
-                                ],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for BLOB Transfer Client model.",
-                                "id": "BLE_MESH_MBT_CLI",
-                                "name": "BLE_MESH_MBT_CLI",
-                                "range": null,
-                                "title": "BLOB Transfer Client model",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "BLE_MESH",
-                                "help": "Enable support for BLOB Transfer Server model.",
-                                "id": "BLE_MESH_MBT_SRV",
-                                "name": "BLE_MESH_MBT_SRV",
-                                "range": null,
-                                "title": "BLOB Transfer Server model",
                                 "type": "bool"
                             }
                         ],
@@ -12956,7 +12204,7 @@
                         "children": [
                             {
                                 "children": [],
-                                "depends_on": "SOC_GPTIMER_SUPPORTED",
+                                "depends_on": null,
                                 "help": "Place GPTimer ISR handler into IRAM for better performance and fewer cache misses.",
                                 "id": "GPTIMER_ISR_HANDLER_IN_IRAM",
                                 "name": "GPTIMER_ISR_HANDLER_IN_IRAM",
@@ -12966,7 +12214,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "SOC_GPTIMER_SUPPORTED",
+                                "depends_on": null,
                                 "help": "Place GPTimer control functions (like start/stop) into IRAM,\nso that these functions can be IRAM-safe and able to be called in the other IRAM interrupt context.\nEnabling this option can improve driver performance as well.",
                                 "id": "GPTIMER_CTRL_FUNC_IN_IRAM",
                                 "name": "GPTIMER_CTRL_FUNC_IN_IRAM",
@@ -12976,7 +12224,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "SOC_GPTIMER_SUPPORTED",
+                                "depends_on": null,
                                 "help": "Ensure the GPTimer interrupt is IRAM-Safe by allowing the interrupt handler to be\nexecutable when the cache is disabled (e.g. SPI Flash write).",
                                 "id": "GPTIMER_ISR_IRAM_SAFE",
                                 "name": "GPTIMER_ISR_IRAM_SAFE",
@@ -12986,7 +12234,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "SOC_GPTIMER_SUPPORTED",
+                                "depends_on": null,
                                 "help": "Wether to suppress the deprecation warnings when using legacy timer group driver (driver/timer.h).\nIf you want to continue using the legacy driver, and don't want to see related deprecation warnings,\nyou can enable this option.",
                                 "id": "GPTIMER_SUPPRESS_DEPRECATE_WARN",
                                 "name": "GPTIMER_SUPPRESS_DEPRECATE_WARN",
@@ -12996,7 +12244,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "SOC_GPTIMER_SUPPORTED",
+                                "depends_on": null,
                                 "help": "Wether to enable the debug log message for GPTimer driver.\nNote that, this option only controls the GPTimer driver log, won't affect other drivers.",
                                 "id": "GPTIMER_ENABLE_DEBUG_LOG",
                                 "name": "GPTIMER_ENABLE_DEBUG_LOG",
@@ -13005,7 +12253,7 @@
                                 "type": "bool"
                             }
                         ],
-                        "depends_on": "SOC_GPTIMER_SUPPORTED",
+                        "depends_on": null,
                         "id": "component-config-driver-configurations-gptimer-configuration",
                         "title": "GPTimer Configuration",
                         "type": "menu"
@@ -13294,52 +12542,6 @@
                         "depends_on": "SOC_PARLIO_SUPPORTED",
                         "id": "component-config-driver-configurations-parallel-io-configuration",
                         "title": "Parallel IO Configuration",
-                        "type": "menu"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Place LEDC control functions (ledc_update_duty and ledc_stop) into IRAM,\nso that these functions can be IRAM-safe and able to be called in an IRAM context.\nEnabling this option can improve driver performance as well.",
-                                "id": "LEDC_CTRL_FUNC_IN_IRAM",
-                                "name": "LEDC_CTRL_FUNC_IN_IRAM",
-                                "range": null,
-                                "title": "Place LEDC control functions into IRAM",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-driver-configurations-ledc-configuration",
-                        "title": "LEDC Configuration",
-                        "type": "menu"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Ensure the I2C interrupt is IRAM-Safe by allowing the interrupt handler to be\nexecutable when the cache is disabled (e.g. SPI Flash write).\nnote: This cannot be used in the I2C legacy driver.",
-                                "id": "I2C_ISR_IRAM_SAFE",
-                                "name": "I2C_ISR_IRAM_SAFE",
-                                "range": null,
-                                "title": "I2C ISR IRAM-Safe",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Wether to enable the debug log message for I2C driver.\nNote that this option only controls the I2C driver log, will not affect other drivers.\n\nnote: This cannot be used in the I2C legacy driver.",
-                                "id": "I2C_ENABLE_DEBUG_LOG",
-                                "name": "I2C_ENABLE_DEBUG_LOG",
-                                "range": null,
-                                "title": "Enable I2C debug log",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-driver-configurations-i2c-configuration",
-                        "title": "I2C Configuration",
                         "type": "menu"
                     }
                 ],
@@ -13746,6 +12948,16 @@
                         "range": null,
                         "title": "External Coexistence",
                         "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "ESP_COEX_SW_COEXIST_ENABLE",
+                        "help": "If enabled, coexist power management will be enabled.",
+                        "id": "ESP_COEX_POWER_MANAGEMENT",
+                        "name": "ESP_COEX_POWER_MANAGEMENT",
+                        "range": null,
+                        "title": "Support power management under coexistence",
+                        "type": "bool"
                     }
                 ],
                 "depends_on": null,
@@ -13861,7 +13073,7 @@
                             {
                                 "children": [],
                                 "depends_on": "ETH_RMII_CLK_OUTPUT && ETH_USE_ESP32_EMAC",
-                                "help": "GPIO0 can be set to output a pre-divided PLL clock (test only!).\nEnabling this option will configure GPIO0 to output a 50MHz clock.\nIn fact this clock doesn't have directly relationship with EMAC peripheral.\nSometimes this clock won't work well with your PHY chip. You might need to\nadd some extra devices after GPIO0 (e.g. inverter).\nNote that outputting RMII clock on GPIO0 is an experimental practice.\nIf you want the Ethernet to work with WiFi, don't select GPIO0 output mode for stability.",
+                                "help": "GPIO0 can be set to output a pre-divided PLL clock. Enabling this option will configure\nGPIO0 to output a 50MHz clock. In fact this clock doesn't have directly relationship with\nEMAC peripheral. Sometimes this clock may not work well with your PHY chip.\nWARNING: If you want the Ethernet to work with WiFi, don\u2019t select ESP32 as RMII CLK output\nas it would result in clock instability!",
                                 "id": "ETH_RMII_CLK_OUTPUT_GPIO0",
                                 "name": "ETH_RMII_CLK_OUTPUT_GPIO0",
                                 "range": null,
@@ -13871,7 +13083,7 @@
                             {
                                 "children": [],
                                 "depends_on": "!ETH_RMII_CLK_OUTPUT_GPIO0 && ETH_RMII_CLK_OUTPUT && ETH_USE_ESP32_EMAC",
-                                "help": "Set the GPIO number to output RMII Clock.",
+                                "help": "Set the GPIO number to output RMII Clock.\nWARNING: If you want the Ethernet to work with WiFi, don\u2019t select ESP32 as RMII CLK output\nas it would result in clock instability!",
                                 "id": "ETH_RMII_CLK_OUT_GPIO",
                                 "name": "ETH_RMII_CLK_OUT_GPIO",
                                 "range": null,
@@ -14086,16 +13298,6 @@
                         "name": "ESP_GDBSTUB_ENABLED",
                         "range": null,
                         "title": null,
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enable builtin GDBStub.\nThis allows to debug the target device using serial port:\n- Run 'idf.py monitor'.\n- Wait for the device to initialize.\n- Press Ctrl+C to interrupt the execution and enter GDB attached to your device for debugging.\nNOTE: all UART input will be handled by GDBStub.",
-                        "id": "ESP_SYSTEM_GDBSTUB_RUNTIME",
-                        "name": "ESP_SYSTEM_GDBSTUB_RUNTIME",
-                        "range": null,
-                        "title": "GDBStub at runtime",
                         "type": "bool"
                     },
                     {
@@ -14653,16 +13855,6 @@
                             {
                                 "children": [],
                                 "depends_on": null,
-                                "help": "Enabling it will check the cache safety of the code before the flash power is ready after\nlight sleep wakeup, and check PM_SLP_IRAM_OPT related code cache safety. This option is\nonly for code quality inspection. Enabling it will increase the time overhead of entering\nand exiting sleep. It is not recommended to enable it in the release version.",
-                                "id": "ESP_SLEEP_CACHE_SAFE_ASSERTION",
-                                "name": "ESP_SLEEP_CACHE_SAFE_ASSERTION",
-                                "range": null,
-                                "title": "Check the cache safety of the sleep wakeup code in sleep process",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
                                 "help": "Enable esp sleep debug.",
                                 "id": "ESP_SLEEP_DEBUG",
                                 "name": "ESP_SLEEP_DEBUG",
@@ -14689,29 +13881,21 @@
                                 "range": null,
                                 "title": "Enable registration of sleep event callbacks",
                                 "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Enabling it will check the cache safety of the code before the flash power is ready after\nlight sleep wakeup, and check PM_SLP_IRAM_OPT related code cache safety. This option is\nonly for code quality inspection. Enabling it will increase the time overhead of entering\nand exiting sleep. It is not recommended to enable it in the release version.",
+                                "id": "ESP_SLEEP_CACHE_SAFE_ASSERTION",
+                                "name": "ESP_SLEEP_CACHE_SAFE_ASSERTION",
+                                "range": null,
+                                "title": "Check the cache safety of the sleep wakeup code in sleep process",
+                                "type": "bool"
                             }
                         ],
                         "depends_on": null,
                         "id": "component-config-hardware-settings-sleep-config",
                         "title": "Sleep Config",
-                        "type": "menu"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "IDF_TARGET_ESP32C3",
-                                "help": "Its not able to stall ESP32C3 systimer in sleep.\nTo fix related RTOS TICK issue, select it to disable related systimer during sleep.\nTODO: IDF-7036",
-                                "id": "ESP_SLEEP_SYSTIMER_STALL_WORKAROUND",
-                                "name": "ESP_SLEEP_SYSTIMER_STALL_WORKAROUND",
-                                "range": null,
-                                "title": "ESP32C3 SYSTIMER Stall Issue Workaround",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-hardware-settings-esp_sleep_workaround",
-                        "title": "ESP_SLEEP_WORKAROUND",
                         "type": "menu"
                     },
                     {
@@ -14725,7 +13909,7 @@
                                         "id": "RTC_CLK_SRC_INT_RC",
                                         "name": "RTC_CLK_SRC_INT_RC",
                                         "range": null,
-                                        "title": "Internal 150 kHz RC oscillator",
+                                        "title": "Internal 150kHz RC oscillator",
                                         "type": "bool"
                                     },
                                     {
@@ -14892,16 +14076,6 @@
                                 "range": null,
                                 "title": "GDMA ISR IRAM-Safe",
                                 "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "SOC_GDMA_SUPPORTED",
-                                "help": "Wether to enable the debug log message for GDMA driver.\nNote that, this option only controls the GDMA driver log, won't affect other drivers.",
-                                "id": "GDMA_ENABLE_DEBUG_LOG",
-                                "name": "GDMA_ENABLE_DEBUG_LOG",
-                                "range": null,
-                                "title": "Enable debug log",
-                                "type": "bool"
                             }
                         ],
                         "depends_on": "SOC_GDMA_SUPPORTED",
@@ -15055,16 +14229,6 @@
                         "id": "component-config-hardware-settings-crypto-dpa-protection",
                         "title": "Crypto DPA Protection",
                         "type": "menu"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "This option is only used for new chip bringup, when\nclock support isn't done yet. So with this option,\nwe use xtal on FPGA as the clock source.",
-                        "id": "ESP_BRINGUP_BYPASS_CPU_CLK_SETTING",
-                        "name": "ESP_BRINGUP_BYPASS_CPU_CLK_SETTING",
-                        "range": null,
-                        "title": null,
-                        "type": "bool"
                     }
                 ],
                 "depends_on": null,
@@ -15147,7 +14311,7 @@
                         "children": [
                             {
                                 "children": [],
-                                "depends_on": "LWIP_ENABLE && <choice ESP_NETIF_USE_TCPIP_STACK_LIB>",
+                                "depends_on": "<choice ESP_NETIF_USE_TCPIP_STACK_LIB>",
                                 "help": "lwIP is a small independent implementation of the TCP/IP protocol suite.",
                                 "id": "ESP_NETIF_TCPIP_LWIP",
                                 "name": "ESP_NETIF_TCPIP_LWIP",
@@ -15378,7 +14542,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "IDF_TARGET_ESP32C3 || IDF_TARGET_ESP32S3",
+                        "depends_on": null,
                         "help": "If enabled, you can use RF certification test APIs.",
                         "id": "ESP_PHY_ENABLE_CERT_TEST",
                         "name": "ESP_PHY_ENABLE_CERT_TEST",
@@ -15497,7 +14661,7 @@
                                 "type": "bool"
                             }
                         ],
-                        "depends_on": "(!FREERTOS_SMP && !IDF_TARGET_ESP32P4) || __DOXYGEN__",
+                        "depends_on": "!FREERTOS_SMP",
                         "help": "If enabled, application is compiled with support for power management.\nThis option has run-time overhead (increased interrupt latency,\nlonger time to enter idle state), and it also reduces accuracy of\nRTOS ticks and timers used for timekeeping.\nEnable this option if application uses power management APIs.",
                         "id": "PM_ENABLE",
                         "name": "PM_ENABLE",
@@ -15508,7 +14672,7 @@
                     {
                         "children": [],
                         "depends_on": "FREERTOS_USE_TICKLESS_IDLE",
-                        "help": "If enabled, about 2.1KB of lightsleep related source code would be in IRAM and chip would sleep\nlonger for 310us at 160MHz CPU frequency most each time.\nThis feature is intended to be used when lower power consumption is needed\nwhile there is enough place in IRAM to place source code.",
+                        "help": "If enabled, about 1.8KB of lightsleep related source code would be in IRAM and chip would sleep\nlonger for 760us at most each time.\nThis feature is intended to be used when lower power consumption is needed\nwhile there is enough place in IRAM to place source code.",
                         "id": "PM_SLP_IRAM_OPT",
                         "name": "PM_SLP_IRAM_OPT",
                         "range": null,
@@ -15518,7 +14682,7 @@
                     {
                         "children": [],
                         "depends_on": "FREERTOS_USE_TICKLESS_IDLE",
-                        "help": "If enabled, about 180Bytes of RTOS_IDLE related source code would be in IRAM and chip would sleep\nlonger for 20us at 160MHz CPU frequency most each time.\nThis feature is intended to be used when lower power consumption is needed\nwhile there is enough place in IRAM to place source code.",
+                        "help": "If enabled, about 260B of RTOS_IDLE related source code would be in IRAM and chip would sleep\nlonger for 40us at most each time.\nThis feature is intended to be used when lower power consumption is needed\nwhile there is enough place in IRAM to place source code.",
                         "id": "PM_RTOS_IDLE_OPT",
                         "name": "PM_RTOS_IDLE_OPT",
                         "range": null,
@@ -15556,30 +14720,20 @@
                         "type": "bool"
                     },
                     {
-                        "children": [],
-                        "depends_on": "PM_ENABLE",
-                        "help": "The value of this option determines the calibration interval of the RTC_FAST/SLOW clock during sleep when\npower management is enabled. When it is configured as N, the RTC_FAST/SLOW clock will be calibrated\nevery N times of lightsleep.\nDecreasing this value will increase the time the chip is in the active state, thereby increasing the\naverage power consumption of the chip.\nIncreasing this value can reduce the average power consumption, but when the external environment changes\ndrastically and the chip RTC_FAST/SLOW oscillator frequency drifts, it may cause system instability.",
-                        "id": "PM_LIGHTSLEEP_RTC_OSC_CAL_INTERVAL",
-                        "name": "PM_LIGHTSLEEP_RTC_OSC_CAL_INTERVAL",
-                        "range": null,
-                        "title": "Calibrate the RTC_FAST/SLOW clock every N times of light sleep",
-                        "type": "int"
-                    },
-                    {
                         "children": [
                             {
                                 "children": [],
                                 "depends_on": "IDF_TARGET_ESP32S3 && PM_POWER_DOWN_CPU_IN_LIGHT_SLEEP",
-                                "help": "Cache tag memory and CPU both belong to the CPU power domain.\nESP chips supports saving and restoring Cache tag memory before and after sleep,\nthis feature supports accesses to the external memory that was cached before sleep still\nbe cached when the CPU wakes up from a powerdowned CPU lightsleep.\nThis option controls the restore method for Cache tag memory in lightsleep.\nIf this option is enabled, the I/D-cache tag memory will be backuped to the internal RAM\nbefore sleep and restored upon wakeup.\nDepending on the the cache configuration, if this option is enabled,\nit will consume up to 9 KB of internal RAM.\nIf this option is disabled, all cached data won't be kept after sleep,\nthe DCache will be writeback before sleep and invalid all cached data after sleep,\nall accesses to external memory(Flash/PSRAM) will be cache missed after waking up,\nresulting in performance degradation due to increased memory accesses latency.",
-                                "id": "PM_RESTORE_CACHE_TAGMEM_AFTER_LIGHT_SLEEP",
-                                "name": "PM_RESTORE_CACHE_TAGMEM_AFTER_LIGHT_SLEEP",
+                                "help": "Cache tag memory and CPU both belong to the CPU power domain. ESP chips supports saving and restoring\nCache tag memory before and after sleep, this feature supports accesses to the external memory that was\ncached before sleep still be cached when the CPU wakes up from a powerdowned CPU lightsleep. This option\ncontrols the restore method for Cache tag memory in lightsleep.\nIf this option is enabled, the I/D-cache tag memory will be backuped to the internal RAM before sleep and\nrestored upon wakeup. Depending on the the cache configuration, if this option is enabled, it will consume\nup to 9 KB of internal RAM.\nIf this option is disabled, all cached data won't be kept after sleep, the DCache will be writeback before\nsleep and invalid all cached data after sleep, all accesses to external memory(Flash/PSRAM) will be cache\nmissed after waking up, resulting in performance degradation due to increased memory accesses latency.",
+                                "id": "PM_POWER_DOWN_TAGMEM_IN_LIGHT_SLEEP",
+                                "name": "PM_POWER_DOWN_TAGMEM_IN_LIGHT_SLEEP",
                                 "range": null,
                                 "title": "Restore I/D-cache tag memory after power down CPU light sleep",
                                 "type": "bool"
                             }
                         ],
                         "depends_on": "SOC_PM_SUPPORT_CPU_PD",
-                        "help": "If enabled, the CPU will be powered down in light sleep,\nESP chips supports saving and restoring CPU's running context before and after light sleep,\nthe feature provides applications with seamless CPU powerdowned lightsleep without user awareness.\nBut this will takes up some internal memory.\nOn esp32c3 soc, enabling this option will consume 1.68 KB of internal RAM\nand will reduce sleep current consumption by about 100 uA.\nOn esp32s3 soc, enabling this option will consume 8.58 KB of internal RAM\nand will reduce sleep current consumption by about 650 uA.",
+                        "help": "If enabled, the CPU will be powered down in light sleep, ESP chips supports saving and restoring\nCPU's running context before and after light sleep, the feature provides applications with seamless\nCPU powerdowned lightsleep without user awareness.\nBut this will takes up some internal memory. On esp32c3 soc, enabling this option will consume 1.68 KB\nof internal RAM and will reduce sleep current consumption by about 100 uA. On esp32s3 soc, enabling this\noption will consume 8.58 KB of internal RAM and will reduce sleep current consumption by about 650 uA.",
                         "id": "PM_POWER_DOWN_CPU_IN_LIGHT_SLEEP",
                         "name": "PM_POWER_DOWN_CPU_IN_LIGHT_SLEEP",
                         "range": null,
@@ -15733,7 +14887,7 @@
                                             {
                                                 "children": [],
                                                 "depends_on": "SPIRAM_BOOT_INIT && !SPIRAM_ALLOW_BSS_SEG_EXTERNAL_MEMORY && !SPIRAM_ALLOW_NOINIT_SEG_EXTERNAL_MEMORY && SPIRAM && !APP_BUILD_TYPE_PURE_RAM_APP",
-                                                "help": "Normally, if psram initialization is enabled during compile time but not found at runtime, it\nis seen as an error making the CPU panic. If this is enabled, booting will complete\nbut no PSRAM will be available. If PSRAM failed to initialize, the following configs may be affected\nand may need to be corrected manually. SPIRAM_TRY_ALLOCATE_WIFI_LWIP will affect some LWIP and WiFi buffer\ndefault values and range values. Enable SPIRAM_TRY_ALLOCATE_WIFI_LWIP, ESP_WIFI_AMSDU_TX_ENABLED,\nESP_WIFI_CACHE_TX_BUFFER_NUM and use static WiFi Tx buffer may cause potential memory exhaustion issues.\nSuggest disable SPIRAM_TRY_ALLOCATE_WIFI_LWIP.\nSuggest disable ESP_WIFI_AMSDU_TX_ENABLED.\nSuggest disable ESP_WIFI_CACHE_TX_BUFFER_NUM, need clear CONFIG_FEATURE_CACHE_TX_BUF_BIT of config->feature_caps.\nSuggest change ESP_WIFI_TX_BUFFER from static to dynamic. Also suggest to adjust some buffer numbers to the\nvalues used without PSRAM case. Such as, ESP_WIFI_STATIC_TX_BUFFER_NUM, ESP_WIFI_DYNAMIC_TX_BUFFER_NUM.",
+                                                "help": "Normally, if psram initialization is enabled during compile time but not found at runtime, it\nis seen as an error making the CPU panic. If this is enabled, booting will complete\nbut no PSRAM will be available. If PSRAM failed to initialize, the following configs may be affected\nand may need to be corrected manually. SPIRAM_TRY_ALLOCATE_WIFI_LWIP will affect some LWIP and WiFi buffer\ndefault values and range values. Enable SPIRAM_TRY_ALLOCATE_WIFI_LWIP, ESP_WIFI_AMSDU_TX_ENABLED,\nESP_WIFI_CACHE_TX_BUFFER_NUM and use static WiFi Tx buffer may cause potential memory exhaustion issues.\nSuggest disable SPIRAM_TRY_ALLOCATE_WIFI_LWIP.\nSuggest disable ESP_WIFI_AMSDU_TX_ENABLED.\nSuggest disable ESP_WIFI_CACHE_TX_BUFFER_NUM, need clear CONFIG_FEATURE_CACHE_TX_BUF_BIT of\nconfig->feature_caps.\nSuggest change ESP_WIFI_TX_BUFFER from static to dynamic. Also suggest to adjust some buffer numbers to the\nvalues used without PSRAM case. Such as, ESP_WIFI_STATIC_TX_BUFFER_NUM, ESP_WIFI_DYNAMIC_TX_BUFFER_NUM.",
                                                 "id": "SPIRAM_IGNORE_NOTFOUND",
                                                 "name": "SPIRAM_IGNORE_NOTFOUND",
                                                 "range": null,
@@ -15841,12 +14995,22 @@
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "SPIRAM && IDF_TARGET_ESP32 && SPIRAM && !APP_BUILD_TYPE_PURE_RAM_APP",
+                                        "depends_on": "SPIRAM && SPIRAM && !APP_BUILD_TYPE_PURE_RAM_APP",
                                         "help": "If enabled, noinit variables can be placed in PSRAM using EXT_RAM_NOINIT_ATTR.\n\nNote the values placed into this section will not be initialized at startup and should keep its value\nafter software restart.",
                                         "id": "SPIRAM_ALLOW_NOINIT_SEG_EXTERNAL_MEMORY",
                                         "name": "SPIRAM_ALLOW_NOINIT_SEG_EXTERNAL_MEMORY",
                                         "range": null,
                                         "title": "Allow .noinit segment placed in external memory",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIRAM_MODE_OCT && IDF_TARGET_ESP32S3 && SPIRAM && !APP_BUILD_TYPE_PURE_RAM_APP",
+                                        "help": "Enable MSPI Error-Correcting Code function when accessing SPIRAM.\n\nIf enabled, 1/16 of the SPI RAM total size will be reserved for error-correcting code.",
+                                        "id": "SPIRAM_ECC_ENABLE",
+                                        "name": "SPIRAM_ECC_ENABLE",
+                                        "range": null,
+                                        "title": "Enable SPI RAM ECC",
                                         "type": "bool"
                                     },
                                     {
@@ -16462,7 +15626,7 @@
                         "children": [
                             {
                                 "children": [],
-                                "depends_on": "!ESP_SYSTEM_GDBSTUB_RUNTIME && <choice ESP_SYSTEM_PANIC>",
+                                "depends_on": "<choice ESP_SYSTEM_PANIC>",
                                 "help": "Outputs the relevant registers over the serial port and halt the\nprocessor. Needs a manual reset to restart.",
                                 "id": "ESP_SYSTEM_PANIC_PRINT_HALT",
                                 "name": "ESP_SYSTEM_PANIC_PRINT_HALT",
@@ -16472,7 +15636,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "!ESP_SYSTEM_GDBSTUB_RUNTIME && <choice ESP_SYSTEM_PANIC>",
+                                "depends_on": "<choice ESP_SYSTEM_PANIC>",
                                 "help": "Outputs the relevant registers over the serial port and immediately\nreset the processor.",
                                 "id": "ESP_SYSTEM_PANIC_PRINT_REBOOT",
                                 "name": "ESP_SYSTEM_PANIC_PRINT_REBOOT",
@@ -16482,7 +15646,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "!ESP_SYSTEM_GDBSTUB_RUNTIME && <choice ESP_SYSTEM_PANIC>",
+                                "depends_on": "<choice ESP_SYSTEM_PANIC>",
                                 "help": "Just resets the processor without outputting anything",
                                 "id": "ESP_SYSTEM_PANIC_SILENT_REBOOT",
                                 "name": "ESP_SYSTEM_PANIC_SILENT_REBOOT",
@@ -16492,12 +15656,22 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "ESP_GDBSTUB_ENABLED && <choice ESP_SYSTEM_PANIC>",
+                                "depends_on": "<choice ESP_SYSTEM_PANIC>",
                                 "help": "Invoke gdbstub on the serial port, allowing for gdb to attach to it to do a postmortem\nof the crash.",
                                 "id": "ESP_SYSTEM_PANIC_GDBSTUB",
                                 "name": "ESP_SYSTEM_PANIC_GDBSTUB",
                                 "range": null,
                                 "title": "GDBStub on panic",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "!IDF_TARGET_ESP32C2 && <choice ESP_SYSTEM_PANIC>",
+                                "help": "Invoke gdbstub on the serial port, allowing for gdb to attach to it and to do a debug on runtime.",
+                                "id": "ESP_SYSTEM_GDBSTUB_RUNTIME",
+                                "name": "ESP_SYSTEM_GDBSTUB_RUNTIME",
+                                "range": null,
+                                "title": "GDBStub at runtime",
                                 "type": "bool"
                             }
                         ],
@@ -16831,6 +16005,16 @@
                         "type": "bool"
                     },
                     {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "ESP_CONSOLE_MULTIPLE_UART",
+                        "name": "ESP_CONSOLE_MULTIPLE_UART",
+                        "range": null,
+                        "title": null,
+                        "type": "bool"
+                    },
+                    {
                         "children": [
                             {
                                 "children": [],
@@ -16853,7 +16037,7 @@
                                 "type": "bool"
                             }
                         ],
-                        "depends_on": "ESP_CONSOLE_UART_CUSTOM",
+                        "depends_on": "ESP_CONSOLE_UART_CUSTOM && ESP_CONSOLE_MULTIPLE_UART",
                         "help": "This UART peripheral is used for console output from the ESP-IDF Bootloader and the app.\n\nIf the configuration is different in the Bootloader binary compared to the app binary, UART\nis reconfigured after the bootloader exits and the app starts.\n\nDue to an ESP32 ROM bug, UART2 is not supported for console output\nvia esp_rom_printf.",
                         "id": "component-config-esp-system-settings-uart-peripheral-to-use-for-console-output-0-1-",
                         "name": "ESP_CONSOLE_UART_NUM",
@@ -17098,7 +16282,7 @@
                             {
                                 "children": [],
                                 "depends_on": "IDF_TARGET_ESP32 && <choice ESP_SYSTEM_CHECK_INT_LEVEL>",
-                                "help": "Using level 5 interrupt for Interrupt Watchdog, IPC_ISR and other system checks.",
+                                "help": "Using level 5 interrupt for Interrupt Watchdog and other system checks.",
                                 "id": "ESP_SYSTEM_CHECK_INT_LEVEL_5",
                                 "name": "ESP_SYSTEM_CHECK_INT_LEVEL_5",
                                 "range": null,
@@ -17108,7 +16292,7 @@
                             {
                                 "children": [],
                                 "depends_on": "!BTDM_CTRL_HLI && <choice ESP_SYSTEM_CHECK_INT_LEVEL>",
-                                "help": "Using level 4 interrupt for Interrupt Watchdog, IPC_ISR and other system checks.",
+                                "help": "Using level 4 interrupt for Interrupt Watchdog and other system checks.",
                                 "id": "ESP_SYSTEM_CHECK_INT_LEVEL_4",
                                 "name": "ESP_SYSTEM_CHECK_INT_LEVEL_4",
                                 "range": null,
@@ -17117,7 +16301,7 @@
                             }
                         ],
                         "depends_on": null,
-                        "help": "Interrupt level to use for Interrupt Watchdog, IPC_ISR and other system checks.",
+                        "help": "Interrupt level to use for Interrupt Watchdog and other system checks.",
                         "id": "component-config-esp-system-settings-interrupt-level-to-use-for-interrupt-watchdog-and-other-system-checks",
                         "name": "ESP_SYSTEM_CHECK_INT_LEVEL",
                         "title": "Interrupt level to use for Interrupt Watchdog and other system checks",
@@ -17274,16 +16458,6 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "SOC_ASSIST_DEBUG_SUPPORTED",
-                        "help": "This config allows to trigger a panic interrupt when Stack Pointer register goes out of allocated stack\nmemory bounds.",
-                        "id": "ESP_SYSTEM_HW_STACK_GUARD",
-                        "name": "ESP_SYSTEM_HW_STACK_GUARD",
-                        "range": null,
-                        "title": "Hardware stack guard",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
                         "depends_on": "IDF_TARGET_ESP32C2 || IDF_TARGET_ESP32S3 || IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2",
                         "help": "This configuration helps to address an BBPLL inaccurate issue when boot from certain bootloader version,\nwhich may increase about the boot-up time by about 200 us. Disable this when your bootloader is built with\nESP-IDF version v5.2 and above.",
                         "id": "ESP_SYSTEM_BBPLL_RECALIB",
@@ -17326,7 +16500,7 @@
                     {
                         "children": [],
                         "depends_on": null,
-                        "help": "The IPC ISR feature is similar to the IPC feature except that the callback function is executed in the\ncontext of a High Priority Interrupt. The IPC ISR feature is intended for low latency execution of simple\ncallbacks written in assembly on another CPU. Due to being run in a High Priority Interrupt, the assembly\ncallbacks must be written with particular restrictions (see \"IPC\" and \"High-Level Interrupt\" docs for more\ndetails).",
+                        "help": "The IPC ISR feature is similar to the IPC feature except that the callback function is executed in the\ncontext of a High Priority Interrupt. The IPC ISR feature is itended for low latency execution of simple\ncallbacks written in assembly on another CPU. Due to being run in a High Priority Interrupt, the assembly\ncallbacks must be written with particular restrictions (see \"IPC\" and \"High-Level Interrupt\" docs for more\ndetails).",
                         "id": "ESP_IPC_ISR_ENABLE",
                         "name": "ESP_IPC_ISR_ENABLE",
                         "range": null,
@@ -17841,7 +17015,7 @@
                     {
                         "children": [],
                         "depends_on": null,
-                        "help": "Set the number of WiFi management short buffer.",
+                        "help": "Set the maximum number of Wi-Fi management short buffers. These buffers are dynamically allocated,\nwith their size determined by the length of the management packet to be sent. When a management\npacket is less than 64 bytes, the Wi-Fi driver classifies it as a short management packet and\nassigns it to one of these buffers.",
                         "id": "ESP_WIFI_MGMT_SBUF_NUM",
                         "name": "ESP_WIFI_MGMT_SBUF_NUM",
                         "range": [
@@ -17923,28 +17097,7 @@
                         "type": "bool"
                     },
                     {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "ESP_WIFI_SLP_IRAM_OPT",
-                                "help": "The minimum timeout for waiting to receive data, unit: milliseconds.",
-                                "id": "ESP_WIFI_SLP_DEFAULT_MIN_ACTIVE_TIME",
-                                "name": "ESP_WIFI_SLP_DEFAULT_MIN_ACTIVE_TIME",
-                                "range": null,
-                                "title": "Minimum active time",
-                                "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "ESP_WIFI_SLP_IRAM_OPT",
-                                "help": "The maximum time that wifi keep alive, unit: seconds.",
-                                "id": "ESP_WIFI_SLP_DEFAULT_MAX_ACTIVE_TIME",
-                                "name": "ESP_WIFI_SLP_DEFAULT_MAX_ACTIVE_TIME",
-                                "range": null,
-                                "title": "Maximum keep alive time",
-                                "type": "int"
-                            }
-                        ],
+                        "children": [],
                         "depends_on": null,
                         "help": "Select this option to place called Wi-Fi library TBTT process and receive beacon functions in IRAM.\nSome functions can be put in IRAM either by ESP_WIFI_IRAM_OPT and ESP_WIFI_RX_IRAM_OPT, or this one.\nIf already enabled ESP_WIFI_IRAM_OPT, the other 7.3KB IRAM memory would be taken by this option.\nIf already enabled ESP_WIFI_RX_IRAM_OPT, the other 1.3KB IRAM memory would be taken by this option.\nIf neither of them are enabled, the other 7.4KB IRAM memory would be taken by this option.\nWi-Fi power-save mode average current would be reduced if this option is enabled.",
                         "id": "ESP_WIFI_SLP_IRAM_OPT",
@@ -17952,6 +17105,45 @@
                         "range": null,
                         "title": "WiFi SLP IRAM speed optimization",
                         "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Only for station in WIFI_PS_MIN_MODEM or WIFI_PS_MAX_MODEM. When the station enters the active state,\nit will work for at least ESP_WIFI_SLP_DEFAULT_MIN_ACTIVE_TIME. If a data packet is received or sent\nduring this period, the time will be refreshed. If the time is up, but the station still has packets\nto receive or send, the time will also be refreshed. unit: milliseconds.",
+                        "id": "ESP_WIFI_SLP_DEFAULT_MIN_ACTIVE_TIME",
+                        "name": "ESP_WIFI_SLP_DEFAULT_MIN_ACTIVE_TIME",
+                        "range": [
+                            8,
+                            60
+                        ],
+                        "title": "Minimum active time",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Only for station in WIFI_PS_MIN_MODEM or WIFI_PS_MAX_MODEM. If no packet has been\nsent within ESP_WIFI_SLP_DEFAULT_MAX_ACTIVE_TIME, a null data packet will be sent\nto maintain the connection with the AP. unit: seconds.",
+                        "id": "ESP_WIFI_SLP_DEFAULT_MAX_ACTIVE_TIME",
+                        "name": "ESP_WIFI_SLP_DEFAULT_MAX_ACTIVE_TIME",
+                        "range": [
+                            10,
+                            60
+                        ],
+                        "title": "Maximum keep alive time",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Only for station in WIFI_PS_MIN_MODEM or WIFI_PS_MAX_MODEM. When the station knows through the beacon\nthat AP will send broadcast packet, it will wait for ESP_WIFI_SLP_DEFAULT_WAIT_BROADCAST_DATA_TIME\nbefore entering the sleep process. If a broadcast packet is received with more data bits, the time\nwill refreshed. unit: milliseconds.",
+                        "id": "ESP_WIFI_SLP_DEFAULT_WAIT_BROADCAST_DATA_TIME",
+                        "name": "ESP_WIFI_SLP_DEFAULT_WAIT_BROADCAST_DATA_TIME",
+                        "range": [
+                            10,
+                            30
+                        ],
+                        "title": "Minimum wait broadcast data time",
+                        "type": "int"
                     },
                     {
                         "children": [
@@ -18982,16 +18174,6 @@
                         "range": null,
                         "title": "Default block size",
                         "type": "int"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enables automatic calling of f_sync() to flush recent file changes after each call of vfs_fat_write(),\nvfs_fat_pwrite(), vfs_fat_link(), vfs_fat_truncate() and vfs_fat_ftruncate() functions.\nThis feature improves file-consistency and size reporting accuracy for the FatFS,\nat a price on decreased performance due to frequent disk operations",
-                        "id": "FATFS_IMMEDIATE_FSYNC",
-                        "name": "FATFS_IMMEDIATE_FSYNC",
-                        "range": null,
-                        "title": "Enable automatic f_sync",
-                        "type": "bool"
                     }
                 ],
                 "depends_on": null,
@@ -19005,7 +18187,7 @@
                         "children": [
                             {
                                 "children": [],
-                                "depends_on": "!IDF_TARGET_ESP32P4",
+                                "depends_on": null,
                                 "help": "Amazon has released an SMP version of the FreeRTOS Kernel which can be found via the following link:\nhttps://github.com/FreeRTOS/FreeRTOS-Kernel/tree/smp\n\nIDF has added an experimental port of this SMP kernel located in\ncomponents/freertos/FreeRTOS-Kernel-SMP. Enabling this option will cause IDF to use the Amazon SMP\nkernel. Note that THIS FEATURE IS UNDER ACTIVE DEVELOPMENT, users use this at their own risk.\n\nLeaving this option disabled will mean the IDF FreeRTOS kernel is used instead, which is located in:\ncomponents/freertos/FreeRTOS-Kernel. Both kernel versions are SMP capable, but differ in\ntheir implementation and features.",
                                 "id": "FREERTOS_SMP",
                                 "name": "FREERTOS_SMP",
@@ -19157,23 +18339,13 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "!IDF_TARGET_LINUX",
+                                "depends_on": null,
                                 "help": "Enable backward compatibility with APIs prior to FreeRTOS v8.0.0. (see\nconfigENABLE_BACKWARD_COMPATIBILITY documentation for more details).",
                                 "id": "FREERTOS_ENABLE_BACKWARD_COMPATIBILITY",
                                 "name": "FREERTOS_ENABLE_BACKWARD_COMPATIBILITY",
                                 "range": null,
                                 "title": "configENABLE_BACKWARD_COMPATIBILITY",
                                 "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Sets the timer task's name (see configTIMER_SERVICE_TASK_NAME documentation for more details).",
-                                "id": "FREERTOS_TIMER_SERVICE_TASK_NAME",
-                                "name": "FREERTOS_TIMER_SERVICE_TASK_NAME",
-                                "range": null,
-                                "title": "configTIMER_SERVICE_TASK_NAME",
-                                "type": "string"
                             },
                             {
                                 "children": [],
@@ -19273,38 +18445,7 @@
                                 "type": "bool"
                             },
                             {
-                                "children": [
-                                    {
-                                        "children": [
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice FREERTOS_RUN_TIME_COUNTER_TYPE>",
-                                                "help": "configRUN_TIME_COUNTER_TYPE is set to uint32_t",
-                                                "id": "FREERTOS_RUN_TIME_COUNTER_TYPE_U32",
-                                                "name": "FREERTOS_RUN_TIME_COUNTER_TYPE_U32",
-                                                "range": null,
-                                                "title": "uint32_t",
-                                                "type": "bool"
-                                            },
-                                            {
-                                                "children": [],
-                                                "depends_on": "<choice FREERTOS_RUN_TIME_COUNTER_TYPE>",
-                                                "help": "configRUN_TIME_COUNTER_TYPE is set to uint64_t",
-                                                "id": "FREERTOS_RUN_TIME_COUNTER_TYPE_U64",
-                                                "name": "FREERTOS_RUN_TIME_COUNTER_TYPE_U64",
-                                                "range": null,
-                                                "title": "uint64_t",
-                                                "type": "bool"
-                                            }
-                                        ],
-                                        "depends_on": "FREERTOS_GENERATE_RUN_TIME_STATS && !FREERTOS_SMP",
-                                        "help": "Sets the data type used for the FreeRTOS run time stats. A larger data type can be used to reduce the\nfrequency of the counter overflowing.",
-                                        "id": "component-config-freertos-kernel-configgenerate_run_time_stats-configrun_time_counter_type",
-                                        "name": "FREERTOS_RUN_TIME_COUNTER_TYPE",
-                                        "title": "configRUN_TIME_COUNTER_TYPE",
-                                        "type": "choice"
-                                    }
-                                ],
+                                "children": [],
                                 "depends_on": null,
                                 "help": "Enables collection of run time statistics for each task (see configGENERATE_RUN_TIME_STATS\ndocumentation for more details).\n\nNote: The clock used for run time statistics can be configured in FREERTOS_RUN_TIME_STATS_CLK.",
                                 "id": "FREERTOS_GENERATE_RUN_TIME_STATS",
@@ -19333,16 +18474,6 @@
                                 "range": null,
                                 "title": "configUSE_TICKLESS_IDLE",
                                 "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": "Enables task tagging functionality and its associated API (see configUSE_APPLICATION_TASK_TAG\ndocumentation for more details).",
-                                "id": "FREERTOS_USE_APPLICATION_TASK_TAG",
-                                "name": "FREERTOS_USE_APPLICATION_TASK_TAG",
-                                "range": null,
-                                "title": "configUSE_APPLICATION_TASK_TAG",
-                                "type": "bool"
                             }
                         ],
                         "depends_on": null,
@@ -19354,7 +18485,7 @@
                         "children": [
                             {
                                 "children": [],
-                                "depends_on": "COMPILER_OPTIMIZATION_DEBUG || ESP_COREDUMP_ENABLE || ESP_SYSTEM_PANIC_GDBSTUB || ESP_SYSTEM_GDBSTUB_RUNTIME",
+                                "depends_on": "COMPILER_OPTIMIZATION_DEFAULT || ESP_COREDUMP_ENABLE || ESP_GDBSTUB_ENABLED",
                                 "help": "If enabled, all FreeRTOS task functions will be enclosed in a wrapper function. If a task function\nmistakenly returns (i.e. does not delete), the call flow will return to the wrapper function. The\nwrapper function will then log an error and abort the application. This option is also required for GDB\nbacktraces and C++ exceptions to work correctly inside top-level task functions.",
                                 "id": "FREERTOS_TASK_FUNCTION_WRAPPER",
                                 "name": "FREERTOS_TASK_FUNCTION_WRAPPER",
@@ -19384,22 +18515,12 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "!FREERTOS_ENABLE_STATIC_TASK_CLEAN_UP",
-                                "help": "Enable this option to make FreeRTOS call a user provided hook function right before it deletes a task\n(i.e., frees/releases a dynamically/statically allocated task's memory). This is useful if users want\nto know when a task is actually deleted (in case the task's deletion is delegated to the IDLE task).\n\nIf this config option is enabled, users must define a ``void vTaskPreDeletionHook( void * pxTCB )``\nhook function in their application.",
-                                "id": "FREERTOS_TASK_PRE_DELETION_HOOK",
-                                "name": "FREERTOS_TASK_PRE_DELETION_HOOK",
-                                "range": null,
-                                "title": "Enable task pre-deletion hook",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
                                 "depends_on": null,
-                                "help": "THIS OPTION IS DEPRECATED. Use FREERTOS_TASK_PRE_DELETION_HOOK instead.\n\nEnable this option to make FreeRTOS call the static task clean up hook when a task is deleted.\n\nNote: Users will need to provide a ``void vPortCleanUpTCB ( void *pxTCB )`` callback",
+                                "help": "Enable this option to make FreeRTOS call the static task clean up hook when a task is deleted.\n\nNote: Users will need to provide a ``void vPortCleanUpTCB ( void *pxTCB )`` callback",
                                 "id": "FREERTOS_ENABLE_STATIC_TASK_CLEAN_UP",
                                 "name": "FREERTOS_ENABLE_STATIC_TASK_CLEAN_UP",
                                 "range": null,
-                                "title": "Enable static task clean up hook (DEPRECATED)",
+                                "title": "Enable static task clean up hook",
                                 "type": "bool"
                             },
                             {
@@ -19577,6 +18698,16 @@
                             },
                             {
                                 "children": [],
+                                "depends_on": "FREERTOS_ENABLE_TASK_SNAPSHOT && !ESP_PANIC_HANDLER_IRAM",
+                                "help": "When enabled, the functions related to snapshots, such as vTaskGetSnapshot or uxTaskGetSnapshotAll,\nwill be placed in flash. Note that if enabled, these functions cannot be called when cache is disabled.",
+                                "id": "FREERTOS_PLACE_SNAPSHOT_FUNS_INTO_FLASH",
+                                "name": "FREERTOS_PLACE_SNAPSHOT_FUNS_INTO_FLASH",
+                                "range": null,
+                                "title": "Place task snapshot functions into flash",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
                                 "depends_on": null,
                                 "help": "If enabled, context of port*_CRITICAL calls (ISR or Non-ISR) would be checked to be in compliance with\nVanilla FreeRTOS. e.g Calling port*_CRITICAL from ISR context would cause assert failure",
                                 "id": "FREERTOS_CHECK_PORT_CRITICAL_COMPLIANCE",
@@ -19584,22 +18715,22 @@
                                 "range": null,
                                 "title": "Tests compliance with Vanilla FreeRTOS port*_CRITICAL calls",
                                 "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "When enabled, the functions related to snapshots, such as vTaskGetSnapshot or uxTaskGetSnapshotAll, are\ncompiled and linked. Task snapshots are used by Task Watchdog (TWDT), GDB Stub and Core dump.",
+                                "id": "FREERTOS_ENABLE_TASK_SNAPSHOT",
+                                "name": "FREERTOS_ENABLE_TASK_SNAPSHOT",
+                                "range": null,
+                                "title": "Enable task snapshot functions",
+                                "type": "bool"
                             }
                         ],
                         "depends_on": null,
                         "id": "component-config-freertos-port",
                         "title": "Port",
                         "type": "menu"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": null,
-                        "id": "FREERTOS_PORT",
-                        "name": "FREERTOS_PORT",
-                        "range": null,
-                        "title": null,
-                        "type": "bool"
                     },
                     {
                         "children": [],
@@ -19627,26 +18758,6 @@
                         "help": "Hidden option, gets selected by CONFIG_ESP_DEBUG_OCDAWARE",
                         "id": "FREERTOS_DEBUG_OCDAWARE",
                         "name": "FREERTOS_DEBUG_OCDAWARE",
-                        "range": null,
-                        "title": null,
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": null,
-                        "id": "FREERTOS_ENABLE_TASK_SNAPSHOT",
-                        "name": "FREERTOS_ENABLE_TASK_SNAPSHOT",
-                        "range": null,
-                        "title": null,
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "!ESP_PANIC_HANDLER_IRAM",
-                        "help": null,
-                        "id": "FREERTOS_PLACE_SNAPSHOT_FUNS_INTO_FLASH",
-                        "name": "FREERTOS_PLACE_SNAPSHOT_FUNS_INTO_FLASH",
                         "range": null,
                         "title": null,
                         "type": "bool"
@@ -19838,6 +18949,16 @@
                         "range": null,
                         "title": null,
                         "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable this option to apply the countermeasure for ECDSA signature operation\nThis countermeasure masks the real ECDSA sign operation\nunder dummy sign operations to add randomness in the generated power signature.",
+                        "id": "HAL_ECDSA_GEN_SIG_CM",
+                        "name": "HAL_ECDSA_GEN_SIG_CM",
+                        "range": null,
+                        "title": "Enable countermeasure for ECDSA signature generation",
+                        "type": "bool"
                     }
                 ],
                 "depends_on": null,
@@ -19959,7 +19080,7 @@
                     },
                     {
                         "children": [],
-                        "depends_on": null,
+                        "depends_on": "!HEAP_POISONING_DISABLED",
                         "help": "Enables tracking the task responsible for each heap allocation.\n\nThis function depends on heap poisoning being enabled and adds four more bytes of overhead for each block\nallocated.",
                         "id": "HEAP_TASK_TRACKING",
                         "name": "HEAP_TASK_TRACKING",
@@ -19972,17 +19093,7 @@
                             {
                                 "children": [],
                                 "depends_on": "HEAP_TRACE_HASH_MAP",
-                                "help": "When enabled this configuration forces the hash map to be placed in external RAM.",
-                                "id": "HEAP_TRACE_HASH_MAP_IN_EXT_RAM",
-                                "name": "HEAP_TRACE_HASH_MAP_IN_EXT_RAM",
-                                "range": null,
-                                "title": "Place hash map in external RAM",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "HEAP_TRACE_HASH_MAP",
-                                "help": "Defines the number of entries in the heap trace hashmap. Each entry takes 8 bytes.\nThe bigger this number is, the better the performance. Recommended range: 200 - 2000.",
+                                "help": "Defines the number of entries in the heap trace hashmap. The bigger this number is,\nthe bigger the hash map will be in the memory. In case the tracing mode is set to\nHEAP_TRACE_ALL, the bigger the hashmap is, the better the performances are.",
                                 "id": "HEAP_TRACE_HASH_MAP_SIZE",
                                 "name": "HEAP_TRACE_HASH_MAP_SIZE",
                                 "range": null,
@@ -19991,7 +19102,7 @@
                             }
                         ],
                         "depends_on": "HEAP_TRACING_STANDALONE",
-                        "help": "Enable this flag to use a hash map to increase performance in handling\nheap trace records.\n\nHeap trace standalone supports storing records as a list, or a list + hash map.\n\nUsing only a list takes less memory, but calls to 'free' will get slower as the\nlist grows. This is particularly affected when using HEAP_TRACE_ALL mode.\n\nBy using a list + hash map, calls to 'free' remain fast, at the cost of\nadditional memory to store the hash map.",
+                        "help": "Enable this flag to use a hash map to increase performance in handling\nheap trace records.\n\nKeeping this as \"n\" in your project will save RAM and heap memory but will lower\nthe performance of the heap trace in adding, retrieving and removing trace records.\nMaking this as \"y\" in your project, you will decrease free RAM and heap memory but,\nthe heap trace performances in adding retrieving and removing trace records will be\nenhanced.",
                         "id": "HEAP_TRACE_HASH_MAP",
                         "name": "HEAP_TRACE_HASH_MAP",
                         "range": null,
@@ -20026,6 +19137,16 @@
                         "name": "HEAP_PLACE_FUNCTION_INTO_FLASH",
                         "range": null,
                         "title": "Force the entire heap component to be placed in flash memory",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "IDF_TARGET_ESP32C2",
+                        "help": "ROM does not contain the patch of tlsf_check_pool() allowing perform\nthe integrity checking on used blocks. The patch to allow  such check\nneeds to be applied.",
+                        "id": "HEAP_TLSF_CHECK_PATCH",
+                        "name": "HEAP_TLSF_CHECK_PATCH",
+                        "range": null,
+                        "title": "Patch the tlsf_check_pool() for ROM HEAP TLSF implementation",
                         "type": "bool"
                     }
                 ],
@@ -20454,16 +19575,6 @@
                     {
                         "children": [],
                         "depends_on": null,
-                        "help": "Enables an additional global \"master\" log level check that occurs\nbefore a log tag cache lookup. This is useful if you want to\ncompile in a lot of logs that are selectable at runtime, but avoid the\nperformance hit during periods where you don't want log output. Examples\ninclude remote log forwarding, or disabling logs during a time-critical\nor CPU-intensive section and re-enabling them later. Results in\nlarger program size depending on number of logs compiled in.\n\nIf enabled, defaults to LOG_DEFAULT_LEVEL and can be set using\nesp_log_set_level_master().\nThis check takes precedence over ESP_LOG_LEVEL_LOCAL.",
-                        "id": "LOG_MASTER_LEVEL",
-                        "name": "LOG_MASTER_LEVEL",
-                        "range": null,
-                        "title": "Enable global master log level",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
                         "help": "Enable ANSI terminal color codes in bootloader output.\n\nIn order to view these, your terminal program must support ANSI color codes.",
                         "id": "LOG_COLORS",
                         "name": "LOG_COLORS",
@@ -20509,16 +19620,6 @@
             },
             {
                 "children": [
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Builds normally if selected. Excludes LwIP from build if unselected, even if it is a\ndependency of a component or application.\nSome applications can switch their IP stacks, e.g., when switching between chip\nand Linux targets (LwIP stack vs. Linux IP stack). Since the LwIP dependency cannot\neasily be excluded based on a Kconfig option, it has to be a dependency in all cases.\nThis switch allows the LwIP stack to be built selectively, even if it is a dependency.",
-                        "id": "LWIP_ENABLE",
-                        "name": "LWIP_ENABLE",
-                        "range": null,
-                        "title": "Enable LwIP stack",
-                        "type": "bool"
-                    },
                     {
                         "children": [],
                         "depends_on": null,
@@ -20797,18 +19898,7 @@
                     {
                         "children": [
                             {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "LWIP_IPV4_NAPT",
-                                        "help": "Enabling this option allows Port Forwarding or Port mapping.",
-                                        "id": "LWIP_IPV4_NAPT_PORTMAP",
-                                        "name": "LWIP_IPV4_NAPT_PORTMAP",
-                                        "range": null,
-                                        "title": "Enable NAT Port Mapping (new/experimental)",
-                                        "type": "bool"
-                                    }
-                                ],
+                                "children": [],
                                 "depends_on": "LWIP_IP_FORWARD",
                                 "help": "Enabling this option allows Network Address and Port Translation.",
                                 "id": "LWIP_IPV4_NAPT",
@@ -20999,16 +20089,6 @@
                                         ],
                                         "title": "Maximum number of stations",
                                         "type": "int"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "LWIP_DHCPS",
-                                        "help": "Enabling this option allows DHCP server to support temporary static ARP entries\nfor DHCP Client. This will help the DHCP server to send the DHCP OFFER and DHCP ACK using IP unicast.",
-                                        "id": "LWIP_DHCPS_STATIC_ENTRIES",
-                                        "name": "LWIP_DHCPS_STATIC_ENTRIES",
-                                        "range": null,
-                                        "title": "Enable ARP static entries",
-                                        "type": "bool"
                                     }
                                 ],
                                 "depends_on": "LWIP_IPV4",
@@ -21337,7 +20417,7 @@
                                     {
                                         "children": [],
                                         "depends_on": "LWIP_TCP_QUEUE_OOSEQ",
-                                        "help": "If LWIP_TCP_OOSEQ_MAX_PBUFS = 0, TCP will not control the number of OOSEQ pbufs.\n\nIn a poor network environment, many out-of-order tcp pbufs will be received.\nThese out-of-order pbufs will be cached in the TCP out-of-order queue which will\ncause Wi-Fi/Ethernet fail to release RX buffer in time.\nIt is possible that all RX buffers for MAC layer are used by OOSEQ.\n\nControl the number of out-of-order pbufs to ensure\nthat the MAC layer has enough RX buffer to receive packets.\n\nIn the Wi-Fi scenario, recommended OOSEQ PBUFS Range:\n0 <= TCP_OOSEQ_MAX_PBUFS <= CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM/(MAX_TCP_NUMBER + 1)\n\nIn the Ethernet scenario,recommended Ethernet OOSEQ PBUFS Range:\n0 <= TCP_OOSEQ_MAX_PBUFS <= CONFIG_ETH_DMA_RX_BUFFER_NUM/(MAX_TCP_NUMBER + 1)\n\nWithin the recommended value range, the larger the value, the better the performance.\n\nMAX_TCP_NUMBER represent Maximum number of TCP connections in Wi-Fi(STA+SoftAP) and Ethernet scenario.",
+                                        "help": "If LWIP_TCP_OOSEQ_MAX_PBUFS = 0, TCP will not control the number of OOSEQ pbufs.\n\nIn a poor network environment, many out-of-order tcp pbufs will be received.\nThese out-of-order pbufs will be cached in the TCP out-of-order queue which will\ncause Wi-Fi/Ethernet fail to release RX buffer in time.\nIt is possible that all RX buffers for MAC layer are used by OOSEQ.\n\nControl the number of out-of-order pbufs to ensure that the MAC layer\nhas enough RX buffer to receive packets.\n\nIn the Wi-Fi scenario, recommended OOSEQ PBUFS Range:\n0 <= TCP_OOSEQ_MAX_PBUFS <= CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM/(MAX_TCP_NUMBER + 1)\n\nIn the Ethernet scenario,recommended Ethernet OOSEQ PBUFS Range:\n0 <= TCP_OOSEQ_MAX_PBUFS <= CONFIG_ETH_DMA_RX_BUFFER_NUM/(MAX_TCP_NUMBER + 1)\n\nWithin the recommended value range, the larger the value, the better the performance.\n\nMAX_TCP_NUMBER represent Maximum number of TCP connections in Wi-Fi(STA+SoftAP) and Ethernet scenario.",
                                         "id": "LWIP_TCP_OOSEQ_MAX_PBUFS",
                                         "name": "LWIP_TCP_OOSEQ_MAX_PBUFS",
                                         "range": [
@@ -21577,6 +20657,36 @@
                         "range": null,
                         "title": null,
                         "type": "hex"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "LWIP_IPV6",
+                        "help": "Maximum number of entries in IPv6 on-link prefixes cache",
+                        "id": "LWIP_IPV6_ND6_NUM_PREFIXES",
+                        "name": "LWIP_IPV6_ND6_NUM_PREFIXES",
+                        "range": null,
+                        "title": "Max number of entries in IPv6 on-link prefixes cache",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "LWIP_IPV6",
+                        "help": "Maximum number of entries in IPv6 default routers cache",
+                        "id": "LWIP_IPV6_ND6_NUM_ROUTERS",
+                        "name": "LWIP_IPV6_ND6_NUM_ROUTERS",
+                        "range": null,
+                        "title": "Max number of entries in IPv6 default routers cache",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "LWIP_IPV6",
+                        "help": "Maximum number of entries in IPv6 destinations cache",
+                        "id": "LWIP_IPV6_ND6_NUM_DESTINATIONS",
+                        "name": "LWIP_IPV6_ND6_NUM_DESTINATIONS",
+                        "range": null,
+                        "title": "Max number of entries in IPv6 destinations cache",
+                        "type": "int"
                     },
                     {
                         "children": [
@@ -22895,18 +22005,7 @@
                     {
                         "children": [
                             {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "MBEDTLS_AES_USE_INTERRUPT",
-                                        "help": "This config helps to set the interrupt priority level for the AES peripheral.\nValue 0 (default) means that there is no preference regarding the interrupt\npriority level and any level from 1 to 3 can be selected (based on the availability).\nNote: Higher value indicates high interrupt priority.",
-                                        "id": "MBEDTLS_AES_INTERRUPT_LEVEL",
-                                        "name": "MBEDTLS_AES_INTERRUPT_LEVEL",
-                                        "range": null,
-                                        "title": "AES hardware interrupt level",
-                                        "type": "int"
-                                    }
-                                ],
+                                "children": [],
                                 "depends_on": "!IDF_TARGET_ESP32 && MBEDTLS_HARDWARE_AES",
                                 "help": "Use an interrupt to coordinate long AES operations.\n\nThis allows other code to run on the CPU while an AES operation is pending.\nOtherwise the CPU busy-waits.",
                                 "id": "MBEDTLS_AES_USE_INTERRUPT",
@@ -22957,18 +22056,7 @@
                                 "type": "bool"
                             },
                             {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "MBEDTLS_MPI_USE_INTERRUPT",
-                                        "help": "This config helps to set the interrupt priority level for the MPI peripheral.\nValue 0 (default) means that there is no preference regarding the interrupt\npriority level and any level from 1 to 3 can be selected (based on the availability).\nNote: Higher value indicates high interrupt priority.",
-                                        "id": "MBEDTLS_MPI_INTERRUPT_LEVEL",
-                                        "name": "MBEDTLS_MPI_INTERRUPT_LEVEL",
-                                        "range": null,
-                                        "title": "MPI hardware interrupt level",
-                                        "type": "int"
-                                    }
-                                ],
+                                "children": [],
                                 "depends_on": "!IDF_TARGET_ESP32 && MBEDTLS_HARDWARE_MPI",
                                 "help": "Use an interrupt to coordinate long MPI operations.\n\nThis allows other code to run on the CPU while an MPI operation is pending.\nOtherwise the CPU busy-waits.",
                                 "id": "MBEDTLS_MPI_USE_INTERRUPT",
@@ -23028,7 +22116,36 @@
                         "type": "bool"
                     },
                     {
-                        "children": [],
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "MBEDTLS_HARDWARE_ECDSA_SIGN && IDF_TARGET_ESP32H2",
+                                        "help": "The ECDSA peripheral before ECO5 does not offer constant time ECDSA sign operation.\nThis time can be observed through power profiling of the device,\nmaking the ECDSA private key vulnerable to side-channel timing attacks.\nThis countermeasure masks the real ECDSA sign operation\nunder dummy sign operations to add randomness in the generated power signature.\nIt is highly recommended to also enable Secure Boot for the device in addition to this countermeasure\nso that only trusted software can execute on the device.",
+                                        "id": "MBEDTLS_HARDWARE_ECDSA_SIGN_MASKING_CM",
+                                        "name": "MBEDTLS_HARDWARE_ECDSA_SIGN_MASKING_CM",
+                                        "range": null,
+                                        "title": "Mask original ECDSA sign operation under dummy sign operations",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "MBEDTLS_HARDWARE_ECDSA_SIGN && IDF_TARGET_ESP32H2",
+                                        "help": "This option adds a delay after the actual ECDSA signature operation\nso that the entire operation appears to be constant time for the software.\nThis fix helps in protecting the device only in case of remote timing attack on the ECDSA private key.\nFor e.g., When an interface is exposed by the device to perform ECDSA signature\nof an arbitrary message.\nThe signature time would appear to be constant to the external entity after enabling\nthis option.",
+                                        "id": "MBEDTLS_HARDWARE_ECDSA_SIGN_CONSTANT_TIME_CM",
+                                        "name": "MBEDTLS_HARDWARE_ECDSA_SIGN_CONSTANT_TIME_CM",
+                                        "range": null,
+                                        "title": "Make ECDSA signature operation pseudo constant time for software",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "MBEDTLS_HARDWARE_ECDSA_SIGN && IDF_TARGET_ESP32H2",
+                                "id": "component-config-mbedtls-enable-ecdsa-signing-using-on-chip-ecdsa-peripheral-enable-software-countermeasure-for-ecdsa-signing-using-on-chip-ecdsa-peripheral",
+                                "title": "Enable Software Countermeasure for ECDSA signing using on-chip ECDSA peripheral",
+                                "type": "menu"
+                            }
+                        ],
                         "depends_on": "SOC_ECDSA_SUPPORTED",
                         "help": "Enable hardware accelerated ECDSA peripheral to sign data\non curve SECP192R1 and SECP256R1 in mbedTLS.\n\nNote that for signing, the private key has to be burnt in an efuse key block\nwith key purpose set to ECDSA_KEY.\nIf no key is burnt, it will report an error\n\nThe key should be burnt in little endian format. espefuse.py utility handles it internally\nbut care needs to be taken while burning using esp_efuse APIs",
                         "id": "MBEDTLS_HARDWARE_ECDSA_SIGN",
@@ -23830,8 +22947,8 @@
                     },
                     {
                         "children": [],
-                        "depends_on": "ESP_ROM_HAS_MBEDTLS_CRYPTO_LIB && IDF_EXPERIMENTAL_FEATURES",
-                        "help": "Enable this flag to use mbedtls crypto algorithm from ROM instead of ESP-IDF.\n\nThis configuration option saves flash footprint in the application binary.\nNote that the version of mbedtls crypto algorithm library in ROM is v2.16.12.\nWe have done the security analysis of the mbedtls revision in ROM (v2.16.12)\nand ensured that affected symbols have been patched (removed). If in the future\nmbedtls revisions there are security issues that also affects the version in\nROM (v2.16.12) then we shall patch the relevant symbols. This would increase\nthe flash footprint and hence care must be taken to keep some reserved space\nfor the application binary in flash layout.",
+                        "depends_on": "ESP_ROM_HAS_MBEDTLS_CRYPTO_LIB",
+                        "help": "Enable this flag to use mbedtls crypto algorithm from ROM instead of ESP-IDF.\n\nThis configuration option saves flash footprint in the application binary.\nNote that the version of mbedtls crypto algorithm library in ROM(ECO1~ECO3) is v2.16.12,\nand the version of mbedtls crypto algorithm library in ROM(ECO4) is v3.6.0.\nWe have done the security analysis of the mbedtls revision in ROM (ECO1~ECO4)\nand ensured that affected symbols have been patched (removed). If in the future\nmbedtls revisions there are security issues that also affects the version in\nROM (ECO1~ECO4) then we shall patch the relevant symbols. This would increase\nthe flash footprint and hence care must be taken to keep some reserved space\nfor the application binary in flash layout.",
                         "id": "MBEDTLS_USE_CRYPTO_ROM_IMPL",
                         "name": "MBEDTLS_USE_CRYPTO_ROM_IMPL",
                         "range": null,
@@ -24267,8 +23384,8 @@
                 "children": [
                     {
                         "children": [],
-                        "depends_on": "SECURE_FLASH_ENC_ENABLED || SOC_HMAC_SUPPORTED",
-                        "help": "This option enables encryption for NVS. When enabled, XTS-AES is used to encrypt\nthe complete NVS data, except the page headers. It requires XTS encryption keys\nto be stored in an encrypted partition (enabling flash encryption is mandatory here)\nor to be derived from an HMAC key burnt in eFuse.",
+                        "depends_on": "SECURE_FLASH_ENC_ENABLED",
+                        "help": "This option enables encryption for NVS. When enabled, AES-XTS is used to encrypt\nthe complete NVS data, except the page headers. It requires XTS encryption keys\nto be stored in an encrypted partition. This means enabling flash encryption is\na pre-requisite for this feature.",
                         "id": "NVS_ENCRYPTION",
                         "name": "NVS_ENCRYPTION",
                         "range": null,
@@ -24294,69 +23411,11 @@
                         "range": null,
                         "title": "Use assertions for error checking",
                         "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "Enabling this option will switch the nvs_set() family of functions to the legacy mode:\nwhen called repeatedly with the same key but different data type, the existing value\nin the NVS remains active and the new value is just stored, actually not accessible through\ncorresponding nvs_get() call for the key given. Use this option only when your application\nrelies on such NVS API behaviour.",
-                        "id": "NVS_LEGACY_DUP_KEYS_COMPATIBILITY",
-                        "name": "NVS_LEGACY_DUP_KEYS_COMPATIBILITY",
-                        "range": null,
-                        "title": "Enable legacy nvs_set function behavior when same key is reused with different data types",
-                        "type": "bool"
                     }
                 ],
                 "depends_on": null,
                 "id": "component-config-nvs",
                 "title": "NVS",
-                "type": "menu"
-            },
-            {
-                "children": [
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "SECURE_FLASH_ENC_ENABLED && <choice NVS_SEC_KEY_PROTECTION_SCHEME>",
-                                "help": "Protect the NVS Encryption Keys using Flash Encryption\nRequires a separate 'nvs_keys' partition (which will be encrypted by flash encryption)\nfor storing the NVS encryption keys",
-                                "id": "NVS_SEC_KEY_PROTECT_USING_FLASH_ENC",
-                                "name": "NVS_SEC_KEY_PROTECT_USING_FLASH_ENC",
-                                "range": null,
-                                "title": "Using Flash Encryption",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "SOC_HMAC_SUPPORTED && <choice NVS_SEC_KEY_PROTECTION_SCHEME>",
-                                "help": "Derive and protect the NVS Encryption Keys using the HMAC peripheral\nRequires the specified eFuse block (NVS_SEC_HMAC_EFUSE_KEY_ID or the v2 API argument)\nto be empty or pre-written with a key with the purpose ESP_EFUSE_KEY_PURPOSE_HMAC_UP",
-                                "id": "NVS_SEC_KEY_PROTECT_USING_HMAC",
-                                "name": "NVS_SEC_KEY_PROTECT_USING_HMAC",
-                                "range": null,
-                                "title": "Using HMAC peripheral",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": "NVS_ENCRYPTION",
-                        "help": "This choice defines the default NVS encryption keys protection scheme;\nwhich will be used for the default NVS partition.\nUsers can use the corresponding scheme registration APIs to register other\nschemes for the default as well as other NVS partitions.",
-                        "id": "component-config-nvs-security-provider-nvs-encryption-key-protection-scheme",
-                        "name": "NVS_SEC_KEY_PROTECTION_SCHEME",
-                        "title": "NVS Encryption: Key Protection Scheme",
-                        "type": "choice"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "NVS_SEC_KEY_PROTECT_USING_HMAC",
-                        "help": "eFuse block key ID storing the HMAC key for deriving the NVS encryption keys\n\nNote: The eFuse block key ID required by the HMAC scheme\n(CONFIG_NVS_SEC_KEY_PROTECT_USING_HMAC) is set using this config when the default\nNVS partition is initialized with nvs_flash_init(). The eFuse block key ID can\nalso be set at runtime by passing the appropriate value to the NVS security scheme\nregistration APIs.",
-                        "id": "NVS_SEC_HMAC_EFUSE_KEY_ID",
-                        "name": "NVS_SEC_HMAC_EFUSE_KEY_ID",
-                        "range": null,
-                        "title": "eFuse key ID storing the HMAC key",
-                        "type": "int"
-                    }
-                ],
-                "depends_on": null,
-                "id": "component-config-nvs-security-provider",
-                "title": "NVS Security Provider",
                 "type": "menu"
             },
             {
@@ -24685,6 +23744,34 @@
                         "name": "OPENTHREAD_RCP_TRANSPORT",
                         "title": "The RCP transport type",
                         "type": "choice"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "OPENTHREAD_ENABLED",
+                                "help": "The OpenThread package name.",
+                                "id": "OPENTHREAD_PACKAGE_NAME",
+                                "name": "OPENTHREAD_PACKAGE_NAME",
+                                "range": null,
+                                "title": "OpenThread package name",
+                                "type": "string"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "OPENTHREAD_ENABLED",
+                                "help": "The OpenThread platform information.",
+                                "id": "OPENTHREAD_PLATFORM_INFO",
+                                "name": "OPENTHREAD_PLATFORM_INFO",
+                                "range": null,
+                                "title": "platform information",
+                                "type": "string"
+                            }
+                        ],
+                        "depends_on": "OPENTHREAD_ENABLED",
+                        "id": "component-config-openthread-openthread-version-message",
+                        "title": "OpenThread version message",
+                        "type": "menu"
                     },
                     {
                         "children": [],
@@ -25402,17 +24489,7 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
-                                "help": "This is a helper config. Invisible for users.",
-                                "id": "SPI_FLASH_SUSPEND_QVL_SUPPORTED",
-                                "name": "SPI_FLASH_SUSPEND_QVL_SUPPORTED",
-                                "range": null,
-                                "title": null,
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "SPI_FLASH_SUSPEND_QVL_SUPPORTED && !SPI_FLASH_ROM_IMPL && !APP_BUILD_TYPE_PURE_RAM_APP",
+                                "depends_on": "IDF_TARGET_ESP32C3 && !SPI_FLASH_ROM_IMPL && !APP_BUILD_TYPE_PURE_RAM_APP",
                                 "help": "This option is disabled by default because it is supported only\nfor specific flash chips and for specific Espressif chips.\nTo evaluate if you can use this feature refer to\n`Optional Features for Flash` > `Auto Suspend & Resume` of the `ESP-IDF Programming Guide`.\n\nCAUTION: If you want to OTA to an app with this feature turned on, please make\nsure the bootloader has the support for it. (later than IDF v4.3)\n\nIf you are using an official Espressif module, please contact Espressif Business support\nto check if the module has the flash that support this feature installed.\nAlso refer to `Concurrency Constraints for Flash on SPI1` > `Flash Auto Suspend Feature`\nbefore enabling this option.",
                                 "id": "SPI_FLASH_AUTO_SUSPEND",
                                 "name": "SPI_FLASH_AUTO_SUSPEND",
@@ -26372,6 +25449,16 @@
                         "range": null,
                         "title": "Enable enumeration filter callback",
                         "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "IDF_EXPERIMENTAL_FEATURES && SOC_USB_OTG_SUPPORTED",
+                        "help": "Feature is under development.",
+                        "id": "USB_HOST_EXT_HUB_SUPPORT",
+                        "name": "USB_HOST_EXT_HUB_SUPPORT",
+                        "range": null,
+                        "title": "Support USB HUB (Experimental)",
+                        "type": "bool"
                     }
                 ],
                 "depends_on": "SOC_USB_OTG_SUPPORTED",
@@ -26692,7 +25779,7 @@
     {
         "children": [],
         "depends_on": null,
-        "help": "By enabling this option, ESP-IDF experimental feature options will be visible.\n\nNote you should still enable a certain experimental feature option to use it, and you\nshould read the corresponding risk warning and known issue list carefully.\n\nCurrent experimental feature list:\n\n- CONFIG_ESPTOOLPY_FLASHFREQ_120M && CONFIG_ESPTOOLPY_FLASH_SAMPLE_MODE_DTR\n- CONFIG_SPIRAM_SPEED_120M && CONFIG_SPIRAM_MODE_OCT\n- CONFIG_BOOTLOADER_CACHE_32BIT_ADDR_QUAD_FLASH\n- CONFIG_MBEDTLS_USE_CRYPTO_ROM_IMPL",
+        "help": "By enabling this option, ESP-IDF experimental feature options will be visible.\n\nNote you should still enable a certain experimental feature option to use it, and you\nshould read the corresponding risk warning and known issue list carefully.",
         "id": "IDF_EXPERIMENTAL_FEATURES",
         "name": "IDF_EXPERIMENTAL_FEATURES",
         "range": null,

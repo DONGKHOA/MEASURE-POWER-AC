@@ -21,7 +21,7 @@
 #define PORT_LED_STATUS GPIOB
 #define PIN_LED_STATUS  LL_GPIO_PIN_4
 
-#define THRESHOLD_CURRENT 0.1 // A
+#define THRESHOLD_CURRENT 5.0 // A
 
 /******************************************************************************
  *    PRIVATE TYPEDEFS
@@ -93,7 +93,7 @@ void
 APP_STATUS_LED_Init (void)
 {
   // Reset GPIO
-  LL_GPIO_ResetOutputPin(PORT_LED_STATUS, PIN_LED_STATUS);
+  LL_GPIO_SetOutputPin(PORT_LED_STATUS, PIN_LED_STATUS);
 
   // Reset field of s_status_led
   s_status_led.u8_flag_enable_timer_100ms = 0;
@@ -121,6 +121,7 @@ APP_STATUS_LED_CreateTask (void)
 {
   SCH_TASK_CreateTask(&s_StatusLedTaskContext.taskHandle,
                       &s_StatusLedTaskContext.taskProperty);
+//  SCH_TIM_RestartTimer(s_StatusLedTimerContext[0].timerHandle);
 }
 
 /******************************************************************************

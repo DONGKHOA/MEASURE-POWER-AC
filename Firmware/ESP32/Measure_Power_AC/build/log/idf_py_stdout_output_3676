@@ -1,0 +1,792 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0x�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan  8 2025 01:05:09[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29c3ch (171068) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00039c64 vaddr=3ffb0000 size=03cb8h ( 15544) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0003d924 vaddr=40080000 size=026f4h (  9972) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b6b5ch (748380) map[0m
+[0;32mI (453) esp_image: segment 4: paddr=000f6b84 vaddr=400826f4 size=15d38h ( 89400) load[0m
+[0;32mI (502) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (502) boot: Disabling RNG early entropy source...[0m
+[0;32mI (514) cpu_start: Multicore app[0m
+[0;32mI (515) cpu_start: Pro cpu up.[0m
+[0;32mI (515) cpu_start: Starting app cpu, entry point is 0x40081528[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (532) cpu_start: Pro cpu start user code[0m
+[0;32mI (532) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (532) cpu_start: Application information:[0m
+[0;32mI (537) cpu_start: Project name:     Measure_Power_AC[0m
+[0;32mI (543) cpu_start: App version:      4dfe763-dirty[0m
+[0;32mI (548) cpu_start: Compile time:     Jan  8 2025 01:04:57[0m
+[0;32mI (554) cpu_start: ELF file SHA256:  84057f88...[0m
+[0;32mI (560) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (565) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (570) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (574) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (579) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (587) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFB96C0 len 00026940 (154 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (611) heap_init: At 4009842C len 00007BD4 (30 KiB): IRAM[0m
+[0;32mI (619) spi_flash: detected chip: generic[0m
+[0;32mI (622) spi_flash: flash io: dio[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (631) app_start: Starting scheduler on CPU1[0m
+[0;32mI (631) main_task: Started on CPU0[0m
+[0;32mI (641) main_task: Calling app_main()[0m
+Oscillator stopped. Initializing RTC...
+[0;32mI (657) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (660) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (671) main_task: Returned from app_main()[0m
+[0;32mI (675) wifi:wifi driver task: 3ffda2ac, prio:23, stack:6656, core=1[0m
+[0;32mI (681) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (683) wifi:wifi certification version: v7.0[0m
+[0;32mI (687) wifi:config NVS flash: disabled[0m
+[0;32mI (691) wifi:config nano formating: disabled[0m
+[0;32mI (695) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (700) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (704) wifi:Init management short buffer num: 32[0m
+[0;32mI (708) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (712) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (717) wifi:Init static rx buffer num: 15[0m
+[0;32mI (720) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (725) wifi_init: rx ba win: 6[0m
+[0;32mI (728) wifi_init: tcpip mbox: 32[0m
+[0;32mI (732) wifi_init: udp mbox: 6[0m
+[0;32mI (736) wifi_init: tcp mbox: 6[0m
+[0;32mI (739) wifi_init: tcp tx win: 5760[0m
+[0;32mI (744) wifi_init: tcp rx win: 5760[0m
+[0;32mI (748) wifi_init: tcp mss: 1440[0m
+[0;32mI (752) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (756) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (762) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (768) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (851) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (864) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (865) wifi:enable tsf[0m
+[1;31mE (869) wifi:NAN WiFi stop[0m
+[0;32mI (870) wifi:flush txq[0m
+[0;32mI (870) wifi:stop sw txq[0m
+[0;32mI (870) wifi:lmac stop hw txq[0m
+[0;32mI (873) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (874) wifi:enable tsf[0m
+Starting WiFi Scan Round 1
+Starting WiFi Scan Round 2
+617.844849
+613.655457
+613.655457
+616.447327
+615.050842
+612.261108
+615.050842
+613.655457
+613.655457
+620.643127
+622.043884
+617.844849
+616.447327
+620.643127
+623.445679
+617.844849
+616.447327
+616.447327
+Starting WiFi Scan Round 3
+[0;32mI (8385) scan: SSID 		PIF_CLUB[0m
+[0;32mI (8385) scan: RSSI 		-32[0m
+[0;32mI (8385) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8387) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8393) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8398) scan: Channel 		10
+[0m
+[0;32mI (8402) scan: SSID 		PIF_Client[0m
+[0;32mI (8406) scan: RSSI 		-33[0m
+[0;32mI (8409) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8414) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8420) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8426) scan: Channel 		10
+[0m
+[0;32mI (8429) scan: SSID 		ThuongTienLe[0m
+[0;32mI (8433) scan: RSSI 		-69[0m
+[0;32mI (8437) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8442) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8448) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8453) scan: Channel 		6
+[0m
+[0;32mI (8457) scan: SSID 		HCMUT04[0m
+[0;32mI (8460) scan: RSSI 		-69[0m
+[0;32mI (8464) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8469) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8474) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8480) scan: Channel 		10
+[0m
+[0;32mI (8484) scan: SSID 		Four-Faith[0m
+[0;32mI (8488) scan: RSSI 		-69[0m
+[0;32mI (8491) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8496) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8501) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8507) scan: Channel 		13
+[0m
+[0;32mI (8511) scan: SSID 		HCMUT02[0m
+[0;32mI (8514) scan: RSSI 		-71[0m
+[0;32mI (8517) scan: Authmode 	WIFI_AUTH_OPEN[0m
+[0;32mI (8522) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8528) scan: Group Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8533) scan: Channel 		6
+[0m
+[0;32mI (8537) scan: SSID 		HCMUT01[0m
+[0;32mI (8540) scan: RSSI 		-73[0m
+[0;32mI (8544) scan: Authmode 	WIFI_AUTH_ENTERPRISE[0m
+[0;32mI (8549) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8554) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8560) scan: Channel 		6
+[0m
+[0;32mI (8563) scan: SSID 		BMDT_Teacher[0m
+[0;32mI (8568) scan: RSSI 		-79[0m
+[0;32mI (8571) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8576) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8581) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8587) scan: Channel 		1
+[0m
+[0;32mI (8590) scan: SSID 		Tenda_503060[0m
+[0;32mI (8595) scan: RSSI 		-79[0m
+[0;32mI (8598) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8603) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8609) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8614) scan: Channel 		3
+[0m
+[0;32mI (8618) scan: SSID 		cbv[0m
+[0;32mI (8621) scan: RSSI 		-76[0m
+[0;32mI (8624) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8630) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8635) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8641) scan: Channel 		8
+[0m
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+Check matching Ssid
+0
+return -1
+[0;32mI (8723) smartconfig: SC version: V3.0.1[0m
+[0;32mI (13562) wifi:ic_enable_sniffer[0m
+[0;32mI (13564) smartconfig: Start to find channel...[0m
+[0;32mI (13565) smartconfig: Scan done[0m
+[0;32mI (14645) smartconfig: TYPE: ESPTOUCH[0m
+[0;32mI (14646) smartconfig: T|AP MAC: 76:26:ff:df:a8:4e[0m
+[0;32mI (14646) smartconfig: Found channel on 10-0. Start to get ssid and password...[0m
+[0;32mI (14649) smartconfig: Found channel[0m
+[0;32mI (17598) smartconfig: T|pswd: chinsochin[0m
+[0;32mI (17598) smartconfig: T|ssid: PIF_CLUB[0m
+[0;32mI (17598) wifi:ic_disable_sniffer[0m
+[0;32mI (17599) smartconfig: Got SSID and password[0m
+[0;32mI (17602) smartconfig: SSID:PIF_CLUB[0m
+[0;32mI (17606) smartconfig: PASSWORD:chinsochin[0m
+[0;33mW (17613) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+opening NVS Write handle Done 
+opening NVS Write handle Done 
+Store SSID and password to NVS
+[0;32mI (18974) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (18975) wifi:state: init -> auth (b0)[0m
+[0;32mI (18980) wifi:state: auth -> assoc (0)[0m
+[0;32mI (18988) wifi:state: assoc -> run (10)[0m
+[0;32mI (19091) wifi:connected with PIF_CLUB, aid = 6, channel 10, BW20, bssid = 74:26:ff:ff:a8:4e[0m
+[0;32mI (19092) wifi:security: WPA2-PSK, phy: bgn, rssi: -35[0m
+[0;32mI (19094) wifi:pm start, type: 1[0m
+
+[0;32mI (19097) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (19118) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+0.000007
+0.000000
+0.000000
+0.000000
+-0.000000
+0.000003
+0.000000
+-0.000000
+-0.000000
+0.000000
+-0.000000
+-0.000020
+0.000006
+-0.000000
+0.000004
+0.000021
+-0.000000
+-0.000000
+-0.000000
+-0.000000
+-0.000000
+0.000000
+0.000000
+-0.000000
+0.000000
+-0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+-0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+-0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+[0;32mI (21321) wifi:<ba-add>idx:0 (ifx:0, 74:26:ff:ff:a8:4e), tid:0, ssn:0, winSize:64[0m
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+-0.000000
+0.000000
+0.000000
+0.000000
+-0.000000
+0.000000
+0.000000
+-0.000000
+-0.000000
+0.000000
+-0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+-0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+-0.000000
+-0.000000
+0.000000
+364800.000000
+-0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+295865704884749011928481792.000000
+0.000000
+0.000000
+295865704884749011928481792.000000
+-0.000000
+295865704884749011928481792.000000
+[0;32mI (22607) esp_netif_handlers: sta ip: 192.168.10.14, mask: 255.255.255.0, gw: 192.168.10.1[0m
+[0;32mI (22609) smartconfig: WiFi Connected to ap[0m
+-0.000000
+295865704884749011928481792.000000
+295865704884749011928481792.000000
+295865704884749011928481792.000000
+0.000000
+295865704884749011928481792.000000
+-56949760.000000
+-56949760.000000
+-0.000000
+0.000000
+-56949760.000000
+[0;32mI (22845) wifi:<ba-add>idx:1 (ifx:0, 74:26:ff:ff:a8:4e), tid:6, ssn:2, winSize:64[0m
+295865704884749011928481792.000000
+0.000000
+-0.000000
+-56949760.000000
+-0.000000
+0.000000
+-0.000000
+-0.000000
+-0.000000
+0.000000
+-0.000000
+295865704884749011928481792.000000
+-56949760.000000
+0.000000
+0.000000
+295865704884749011928481792.000000
+0.000000
+295865704884749011928481792.000000
+295865704884749011928481792.000000
+295865704884749011928481792.000000
+0.000000
+0.000000
+-0.000000
+0.000000
+0.000000
+0.000000
+364800.000000
+-1850577365474542218117120.000000
+-0.000000
+-1850577365474542218117120.000000
+364800.000000
+-0.000000
+-2194.500000
+-0.000000
+-0.000000
+0.000000
+-0.000000
+-0.000000
+-0.000000
+-0.000000
+-0.000000
+-0.000000
+-0.000000
+-1850577365474542218117120.000000
+0.000000
+0.000000
+-0.000000
+-0.000000
+0.000000
+-0.000000
+-0.000000
+-2194.500000
+0.000000
+-0.000000
+-0.000000
+-1850577365474542218117120.000000
+-0.000000
+-2194.500000
+-0.000000
+-1850577365474542218117120.000000
+364800.000000
+-0.000000
+364800.000000
+-0.000000
+-0.000000
+0.000000
+0.000000
+0.000000
+-56949760.000000
+-56949760.000000
+-0.000000
+-0.000000
+0.000000
+-56949760.000000
+-0.000000
+295865704884749011928481792.000000
+0.000000
+295865704884749011928481792.000000
+295865704884749011928481792.000000
+0.000000
+0.000000
+0.000000
+0.000000
+-56949760.000000
+-56949760.000000
+-56949760.000000
+295865704884749011928481792.000000
+-0.000000
+-0.000000
+364800.000000
+-0.000000
+295865704884749011928481792.000000
+0.000000
+0.000000
+-0.000000
+-56949760.000000
+-1850577365474542218117120.000000
+-2194.500000
+-2194.500000
+11434675482690708307968.000000
+-2194.500000
+0.000000
+11434675482690708307968.000000
+-1850577365474542218117120.000000
+-0.000000
+-0.000000
+0.000000
+-1850577365474542218117120.000000
+-0.000000
+-0.000000
+-0.000000
+-1850577365474542218117120.000000
+0.000000
+364800.000000
+0.000000
+0.000000
+11434675482690708307968.000000
+-0.000000
+-0.000000
+0.000000
+-nan
+11434675482690708307968.000000
+-nan
+-0.000000
+-0.000000
+-nan
+11434675482690708307968.000000
+-0.000000
+-0.000000
+-0.000000
+295865704884749011928481792.000000
+0.000000
+-0.000000
+[0;32mI (25647) smartconfig: smartconfig over[0m
+-0.000000
+-0.000000
+0.000000
+0.000000
+364800.000000
+-0.000000
+-0.000000
+0.000000
+0.000000
+-2194.500000
+0.000000
+0.000000
+-2194.500000
+-nan
+11434675482690708307968.000000
+-66520418296075911168.000000
+-0.000000
+-66520418296075911168.000000
+-nan
+-nan
+11434675482690708307968.000000
+-nan
+-nan
+-nan
+13.194336
+inf
+-66520418296075911168.000000
+13.194336
+-66520418296075911168.000000
+-nan
+-66520418296075911168.000000
+inf
+inf
+inf
+0.000000
+inf
+inf
+0.000000
+inf
+inf
+0.000000
+inf
+inf
+inf
+0.000000
+0.000000
+inf
+inf
+-0.082989
+-0.082989
+0.000000
+-0.082989
+inf
+0.000000
+-2145838371247139427512771291557920768.000000
+-0.082989
+-0.082989
+425018418740068352.000000
+-2607904142131200.000000
+13557523169440913449007240781496320.000000
+0.000000
+0.000000
+13557523169440913449007240781496320.000000
+13557523169440913449007240781496320.000000
+-2607904142131200.000000
+0.000000
+0.000000
+0.000000
+0.000000
+-0.000003
+0.000000
+-0.000003
+-0.000003
+0.000000
+0.000000
+0.000000
+-0.000003
+0.000000
+-0.000003
+-79723338529978489703503600025600.000000
+15249818255360.000000
+-0.000000
+15249818255360.000000
+15249818255360.000000
+-79723338529978489703503600025600.000000
+-79723338529978489703503600025600.000000
+-0.000003
+15249818255360.000000
+15249818255360.000000
+15249818255360.000000
+-79723338529978489703503600025600.000000
+-79723338529978489703503600025600.000000
+13557523169440913449007240781496320.000000
+-0.000003
+13557523169440913449007240781496320.000000
+-2607904142131200.000000
+13557523169440913449007240781496320.000000
+-0.000003
+-0.000003
+-0.000003
+-0.000003
+-0.000003
+0.000000
+-0.000003
+-80336350963182118948380210102272.000000
+-80336350963182118948380210102272.000000
+-80336350963182118948380210102272.000000
+0.000000
+15321426558976.000000
+-0.000000
+-80336350963182118948380210102272.000000
+-80336350963182118948380210102272.000000
+-0.000003
+-0.000003
+15321426558976.000000
+-0.000003
+-0.000003
+-80336350963182118948380210102272.000000
+-0.000003
+-0.000003
+-0.000003
+15321426558976.000000
+-80336350963182118948380210102272.000000
+-80336350963182118948380210102272.000000
+0.000000
+-0.000000
+-0.000000
+-0.000000
+0.000000
+0.000000
+496448372360364644208866230272.000000
+496448372360364644208866230272.000000
+-97857306624.000000
+496448372360364644208866230272.000000
+496448372360364644208866230272.000000
+0.000000
+-97857306624.000000
+0.000000
+0.000000
+-97857306624.000000
+-97857306624.000000
+-0.000000
+-97857306624.000000
+0.000000
+-97857306624.000000
+-97857306624.000000
+-97857306624.000000
+-97857306624.000000
+496448372360364644208866230272.000000
+0.000000
+496448372360364644208866230272.000000
+496448372360364644208866230272.000000
+0.000000
+496448372360364644208866230272.000000
+0.000000
+496448372360364644208866230272.000000
+0.000000
+0.000000
+-97857306624.000000
+0.000000
+496448372360364644208866230272.000000
+0.000000
+0.000000
+496448372360364644208866230272.000000
+0.000000
+496448372360364644208866230272.000000
+0.000000
+-0.000000
+0.000000
+496448372360364644208866230272.000000
+0.000000
+0.000000
+0.000000
+0.000000
+-0.000000
+593190976.000000
+0.000000
+-0.000000
+-3088720761666591067113259008.000000
+-3088720761666591067113259008.000000
+593190976.000000
+0.000000
+593190976.000000
+-0.000000
+593190976.000000
+-3088720761666591067113259008.000000
+0.000000
+-0.000000
+-0.000000
+-0.000000
+0.000000
+0.000000
+593190976.000000
+0.000000
+0.000000
+593190976.000000
+-0.000000
+-0.000000
+593206848.000000
+-3088816979883679536134488064.000000
+-3088816979883679536134488064.000000
+-3545055.750000
+-0.000000
+-0.000000
+-0.000000
+-3088816979883679536134488064.000000
+-0.000000
+-0.000000
+-0.000000
+-3088816979883679536134488064.000000
+-3088816979883679536134488064.000000
+-3088816979883679536134488064.000000
+-0.000000
+-0.000000
+-3545055.750000
+-0.000000
+0.000000
+-3545055.750000
+0.000000
+0.000000
+0.000000
+18075071003661919322112000.000000
+18075071003661919322112000.000000
+0.000000
+-3545055.750000
+0.000000
+18748790538240.000000
+18748790538240.000000
+18748790538240.000000
+0.000000
+18075071003661919322112000.000000
+0.000000
+0.000000
+18075071003661919322112000.000000
+18075071003661919322112000.000000
+18075071003661919322112000.000000
+18075071003661919322112000.000000
+0.000000
+0.000000
+0.000000
+18075071003661919322112000.000000
+0.000000
+-98077143937895663746525389914112.000000
+-3545055.750000
+18748790538240.000000
+0.000000
+-0.000000
+-0.000000
+-98077143937895663746525389914112.000000
+18748790538240.000000
+-0.000000
+18748790538240.000000

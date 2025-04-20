@@ -25,6 +25,7 @@
 typedef struct things_board_data
 {
   EventGroupHandle_t *p_flag_mqtt_event;
+  EventGroupHandle_t *p_flag_wifi_event;
   float              *p_energy;
   float              *p_energy_min;
   float              *p_energy_hour;
@@ -32,6 +33,7 @@ typedef struct things_board_data
   float              *p_energy_week;
   float              *p_energy_month;
   float              *p_energy_year;
+  STATE_t            *p_state;
 } things_board_data_t;
 
 /******************************************************************************
@@ -61,11 +63,17 @@ static void           tb_telemetry_send_energy_year(tbcmh_handle_t client);
 static void tb_on_connected(tbcmh_handle_t client, void *context);
 static void tb_on_disconnected(tbcmh_handle_t client, void *context);
 
+static void startWifiScan(void);
+
 /******************************************************************************
  *    PRIVATE DATA
  *****************************************************************************/
 
 static things_board_data_t s_things_board_data;
+
+static char    buffer_ssid_scan[200 + 1];
+static uint8_t ssid[32];
+static uint8_t pass[32];
 
 /******************************************************************************
  *   PUBLIC FUNCTION
@@ -74,7 +82,7 @@ static things_board_data_t s_things_board_data;
 void
 APP_Things_board_CreateTask (void)
 {
-  xTaskCreate(APP_Things_board_task, "things_board", 1024 * 10, NULL, 10, NULL);
+  xTaskCreate(APP_Things_board_task, "things_board", 1024 * 20, NULL, 10, NULL);
 }
 
 void
@@ -82,6 +90,7 @@ APP_Things_board_Init (void)
 {
   // Link pointer to variable
   s_things_board_data.p_flag_mqtt_event = &s_data_system.s_flag_mqtt_event;
+  s_things_board_data.p_flag_wifi_event = &s_data_system.s_flag_wifi_event;
 
   s_things_board_data.p_energy       = &s_data_system.f_energy;
   s_things_board_data.p_energy_min   = &s_data_system.f_energy_min;
@@ -90,6 +99,7 @@ APP_Things_board_Init (void)
   s_things_board_data.p_energy_week  = &s_data_system.f_energy_week;
   s_things_board_data.p_energy_month = &s_data_system.f_energy_month;
   s_things_board_data.p_energy_year  = &s_data_system.f_energy_year;
+  s_things_board_data.p_state        = &s_data_system.s_state;
 }
 
 /******************************************************************************
@@ -99,7 +109,13 @@ APP_Things_board_Init (void)
 static void
 APP_Things_board_task (void *arg)
 {
-  initialise_wifi();
+  WIFI_StaInit();
+
+  // s_things_board_data.p_state = STATE_SCAN_WIFI;
+  // printf("%d\n", *s_things_board_data.p_state);
+
+  startWifiScan();
+
   const char *access_token = "CRP3LkcD9jjhyFbSvAl1";
   const char *uri          = "mqtt://demo.thingsboard.io";
 
@@ -115,6 +131,7 @@ APP_Things_board_task (void *arg)
       client, &config, NULL, tb_on_connected, tb_on_disconnected);
 
   EventBits_t uxBits;
+  // EventBits_t bits;
 
   while (1)
   {
@@ -126,6 +143,12 @@ APP_Things_board_task (void *arg)
         pdTRUE,
         pdFALSE,
         portMAX_DELAY);
+
+    // bits = xEventGroupWaitBits(*s_things_board_data.p_flag_wifi_event,
+    //                            WIFI_FAIL_BIT,
+    //                            pdFALSE,
+    //                            pdFALSE,
+    //                            portMAX_DELAY);
 
     if (uxBits != 0)
     {
@@ -140,6 +163,9 @@ APP_Things_board_task (void *arg)
       if (tbcmh_is_connected(client))
       {
         tb_telemetry_send_energy(client);
+
+        // Set bit flag to know send energy successfully
+        *s_things_board_data.p_state = STATE_THINGSBOARD_SUCCESS;
       }
     }
 
@@ -159,14 +185,6 @@ APP_Things_board_task (void *arg)
       }
     }
 
-    if ((uxBits & BIT_SEND_ENERGY_WEEK))
-    {
-      if (tbcmh_is_connected(client))
-      {
-        tb_telemetry_send_energy_week(client);
-      }
-    }
-
     if ((uxBits & BIT_SEND_ENERGY_MONTH))
     {
       if (tbcmh_is_connected(client))
@@ -182,6 +200,12 @@ APP_Things_board_task (void *arg)
         tb_telemetry_send_energy_year(client);
       }
     }
+
+    // if (bits & WIFI_FAIL_BIT)
+    // {
+    //   WIFI_SmartConfig();
+    // }
+    vTaskDelay(10000 / portTICK_PERIOD_MS);
   }
 }
 
@@ -262,8 +286,7 @@ tb_telemetry_send_energy_week (tbcmh_handle_t client)
 static tbcmh_value_t *
 te_get_energy_month (void)
 {
-  cJSON *p_energy_month
-      = cJSON_CreateNumber(*s_things_board_data.p_energy_day);
+  cJSON *p_energy_month = cJSON_CreateNumber(*s_things_board_data.p_energy_day);
   return p_energy_month;
 }
 
@@ -282,7 +305,8 @@ tb_telemetry_send_energy_month (tbcmh_handle_t client)
 static tbcmh_value_t *
 te_get_energy_year (void)
 {
-  cJSON *p_energy_year = cJSON_CreateNumber(*s_things_board_data.p_energy_month);
+  cJSON *p_energy_year
+      = cJSON_CreateNumber(*s_things_board_data.p_energy_month);
   return p_energy_year;
 }
 
@@ -304,4 +328,64 @@ tb_on_connected (tbcmh_handle_t client, void *context)
 static void
 tb_on_disconnected (tbcmh_handle_t client, void *context)
 {
+}
+
+/************INIT WIFI*****************************************/
+
+static void
+startWifiScan (void)
+{
+  *s_things_board_data.p_state = STATE_SCAN_WIFI;
+
+  uint8_t num_wifi_scan = 0;
+
+  /*
+      - Store all ssid and pass scan to array buffer.
+      - Check ssid & pass
+          - Matching ssid & pass in nvs ->
+          set bit CONNECT_WIFI_SCAN_BIT.
+          - Don't matching ssid & pass in nvs ->
+          store ssid & pass in nvs.
+  */
+  num_wifi_scan = WIFI_Scan(buffer_ssid_scan);
+  while (num_wifi_scan == 0)
+  {
+    vTaskDelay(500 / portTICK_PERIOD_MS);
+    num_wifi_scan = WIFI_Scan(buffer_ssid_scan);
+  }
+  // Check matching ssid and pass in nvs
+  if (matchingWIFIScan(buffer_ssid_scan, (uint8_t *)ssid, (uint8_t *)pass)
+      != -1)
+  {
+    printf("Found Matching SSID and Password\r\n");
+    if (WIFI_Connect((uint8_t *)ssid, (uint8_t *)pass) == CONNECT_OK)
+    {
+      printf("Connect Wifi\r\n");
+
+      *s_things_board_data.p_state = STATE_WIFI_CONNECTED;
+    }
+    else
+    {
+      WIFI_ClearNVS((uint8_t *)ssid);
+
+      *s_things_board_data.p_state = STATE_SMART_CONFIG;
+
+      WIFI_SmartConfig();
+
+      *s_things_board_data.p_state = STATE_WIFI_CONNECTED;
+
+      printf("Connect Wifi through smart config\r\n");
+    }
+  }
+  else
+  {
+    *s_things_board_data.p_state = STATE_SMART_CONFIG;
+
+    // Execute smart config and store ssid and pass to nvs
+    WIFI_SmartConfig();
+
+    *s_things_board_data.p_state = STATE_WIFI_CONNECTED;
+
+    printf("Connect Wifi through smart config\r\n");
+  }
 }

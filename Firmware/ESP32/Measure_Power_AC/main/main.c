@@ -5,9 +5,12 @@
 #include <string.h>
 
 #include "nvs_rw.h"
+#include "uart.h"
+#include "wifi.h"
 
 #include "esp_system.h"
 #include "esp_event.h"
+#include "esp_log.h"
 
 #include "app_things_board.h"
 #include "app_data_ESP32.h"
@@ -15,11 +18,12 @@
 #include "app_data_trans.h"
 #include "app_process_data.h"
 #include "app_rtc.h"
+#include "app_button.h"
+#include "app_status_led.h"
 
 /******************************************************************************
  *    PRIVATE DEFINES
  *****************************************************************************/
-
 #define TXD_PIN (GPIO_NUM_17)
 #define RXD_PIN (GPIO_NUM_15)
 
@@ -30,7 +34,6 @@
 /******************************************************************************
  *    PRIVATE PROTOTYPE FUNCTION
  *****************************************************************************/
-
 static inline void
 APP_MAIN_ResetDataSystem (void)
 {
@@ -65,23 +68,39 @@ app_main (void)
   APP_MAIN_ResetDataSystem();
 
   // Create Service
-  s_data_system.s_flag_mqtt_event  = xEventGroupCreate();
-  s_data_system.s_flag_time_event  = xEventGroupCreate();
-  s_data_system.s_data_rec_queue   = xQueueCreate(32, sizeof(float));
-  s_data_system.s_data_trans_queue = xQueueCreate(32, sizeof(float));
+  s_data_system.s_flag_wifi_event   = xEventGroupCreate();
+  s_data_system.s_flag_mqtt_event   = xEventGroupCreate();
+  s_data_system.s_flag_time_event   = xEventGroupCreate();
+  s_data_system.s_flag_button_event = xEventGroupCreate();
+  s_data_system.s_data_rec_queue    = xQueueCreate(32, sizeof(float));
+  s_data_system.s_data_trans_queue  = xQueueCreate(32, sizeof(float));
 
   NVS_Init();
 
   // Init Application
-  // APP_Rtc_Init();
+  APP_Rtc_Init();
+  APP_Things_board_Init();
   APP_Data_rec_Init();
   APP_Process_data_Init();
-  APP_Things_board_Init();
+  APP_Data_Trans_Init();
+  APP_Button_Init();
+  APP_Status_led_Init();
+  uartDriverInit(UART_NUM_2,
+                 TXD_PIN,
+                 RXD_PIN,
+                 115200,
+                 UART_DATA_8_BITS,
+                 UART_PARITY_DISABLE,
+                 UART_HW_FLOWCTRL_DISABLE,
+                 UART_STOP_BITS_1);
 
   // Create Task
-  // APP_Rtc_CreateTask();
-  APP_Process_data_CreateTask();
+  APP_Status_led_CreateTask();
+  APP_Rtc_CreateTask();
   APP_Data_rec_CreateTask();
+  APP_Process_data_CreateTask();
+  APP_Button_CreateTask();
+  APP_Data_Trans_CreateTask();
   APP_Things_board_CreateTask();
 }
 

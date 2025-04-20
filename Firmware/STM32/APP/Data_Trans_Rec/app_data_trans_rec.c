@@ -10,11 +10,13 @@
  *****************************************************************************/
 
 #include "app_data_trans_rec.h"
+#include "stm32f1xx_ll_utils.h"
 #include "app_data.h"
 #include "scheduler.h"
 #include "ring_buffer.h"
 #include "uart.h"
 #include <string.h>
+#include "main.h"
 
 /******************************************************************************
  *    PRIVATE DEFINES
@@ -54,13 +56,15 @@ static void APP_DATA_TRANS_REC_TaskUpdate(void);
 /******************************************************************************
  *    PRIVATE DATA
  *****************************************************************************/
+extern UART_HandleTypeDef huart1;
 
+uint8_t abc = 0xaa;
 static DATA_TRANS_REC_T           s_data_trans_rec;
 static Control_TaskContextTypedef s_ControlTaskContext
     = { SCH_INVALID_TASK_HANDLE, // Will be updated by Scheduler
         {
             SCH_TASK_SYNC,                // taskType;
-            5,                            // taskPeriodInMS;
+            20,                            // taskPeriodInMS;
             APP_DATA_TRANS_REC_TaskUpdate // taskFunction;
         } };
 
@@ -138,7 +142,7 @@ APP_DATA_TRANS_REC_TaskUpdate (void)
         (ring_buffer_t *)s_data_trans_rec.p_vol_cur_buffer);
     s_data_trans_rec.u8_data_transmission[3] = RING_BUFFER_Pull_Data(
         (ring_buffer_t *)s_data_trans_rec.p_vol_cur_buffer);
-    s_data_trans_rec.u8_data_transmission[4] = '\r';
+    s_data_trans_rec.u8_data_transmission[4] = 0xdd;
 
     // Read current
     s_data_trans_rec.u8_data_transmission[5] = RING_BUFFER_Pull_Data(
@@ -149,7 +153,7 @@ APP_DATA_TRANS_REC_TaskUpdate (void)
         (ring_buffer_t *)s_data_trans_rec.p_vol_cur_buffer);
     s_data_trans_rec.u8_data_transmission[8] = RING_BUFFER_Pull_Data(
         (ring_buffer_t *)s_data_trans_rec.p_vol_cur_buffer);
-    s_data_trans_rec.u8_data_transmission[9] = '\r';
+    s_data_trans_rec.u8_data_transmission[9] = 0xdd;
     s_data_trans_rec.flag_update_vol_cur     = FLAG_UPDATED;
   }
 
@@ -161,15 +165,14 @@ APP_DATA_TRANS_REC_TaskUpdate (void)
   if (!RING_BUFFER_Is_Empty((ring_buffer_t *)s_data_trans_rec.p_PF_buffer))
   {
     // Read PF
-    s_data_trans_rec.u8_data_transmission[10] = RING_BUFFER_Pull_Data(
-        (ring_buffer_t *)s_data_trans_rec.p_vol_cur_buffer);
-    s_data_trans_rec.u8_data_transmission[11] = RING_BUFFER_Pull_Data(
-        (ring_buffer_t *)s_data_trans_rec.p_vol_cur_buffer);
+    s_data_trans_rec.u8_data_transmission[10] = 0;
+    s_data_trans_rec.u8_data_transmission[11] = 0;
     s_data_trans_rec.u8_data_transmission[12] = RING_BUFFER_Pull_Data(
-        (ring_buffer_t *)s_data_trans_rec.p_vol_cur_buffer);
+        (ring_buffer_t *)s_data_trans_rec.p_PF_buffer);
     s_data_trans_rec.u8_data_transmission[13] = RING_BUFFER_Pull_Data(
-        (ring_buffer_t *)s_data_trans_rec.p_vol_cur_buffer);
-    s_data_trans_rec.u8_data_transmission[14] = '\r';
+        (ring_buffer_t *)s_data_trans_rec.p_PF_buffer);
+//    s_data_trans_rec.u8_data_transmission[13] = 0x10;
+    s_data_trans_rec.u8_data_transmission[14] = 0xdd;
     s_data_trans_rec.flag_update_PF           = FLAG_UPDATED;
   }
 
@@ -182,8 +185,21 @@ APP_DATA_TRANS_REC_TaskUpdate (void)
   if ((s_data_trans_rec.flag_update_PF == FLAG_UPDATED)
       && (s_data_trans_rec.flag_update_vol_cur == FLAG_UPDATED))
   {
-    BSP_UART_SendString((uart_cfg_t *)s_data_trans_rec.p_uart_data_trans_rec,
-                        (char *)s_data_trans_rec.u8_data_transmission);
+
+	HAL_UART_Transmit(&huart1, &abc, 1, 1);
+	HAL_UART_Transmit(&huart1, &abc, 1, 1);
+	HAL_UART_Transmit(&huart1, &abc, 1, 1);
+	HAL_UART_Transmit(&huart1, &abc, 1, 1);
+	HAL_UART_Transmit(&huart1, &abc, 1, 1);
+
+	LL_mDelay(1);
+
+	for(uint8_t i = 0; i < 15; i++)
+    {
+//    	BSP_UART_SendChar((uart_cfg_t *)s_data_trans_rec.p_uart_data_trans_rec, s_data_trans_rec.u8_data_transmission[i]);
+		HAL_UART_Transmit(&huart1, (uint8_t *)&s_data_trans_rec.u8_data_transmission[i], 1, 1);
+    }
+
     s_data_trans_rec.flag_update_PF      = FLAG_NOT_UPDATED;
     s_data_trans_rec.flag_update_vol_cur = FLAG_NOT_UPDATED;
   }

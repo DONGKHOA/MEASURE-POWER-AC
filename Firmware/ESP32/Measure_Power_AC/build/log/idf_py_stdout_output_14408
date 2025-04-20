@@ -1,0 +1,835 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0x�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan  8 2025 15:17:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29c74h (171124) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00039c9c vaddr=3ffb0000 size=03cb8h ( 15544) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0003d95c vaddr=40080000 size=026bch (  9916) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b6d80h (748928) map[0m
+[0;32mI (453) esp_image: segment 4: paddr=000f6da8 vaddr=400826bc size=15d70h ( 89456) load[0m
+[0;32mI (503) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (503) boot: Disabling RNG early entropy source...[0m
+[0;32mI (514) cpu_start: Multicore app[0m
+[0;32mI (515) cpu_start: Pro cpu up.[0m
+[0;32mI (515) cpu_start: Starting app cpu, entry point is 0x40081528[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (532) cpu_start: Pro cpu start user code[0m
+[0;32mI (532) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (532) cpu_start: Application information:[0m
+[0;32mI (537) cpu_start: Project name:     Measure_Power_AC[0m
+[0;32mI (543) cpu_start: App version:      4dfe763-dirty[0m
+[0;32mI (548) cpu_start: Compile time:     Jan  8 2025 15:17:32[0m
+[0;32mI (554) cpu_start: ELF file SHA256:  9917e006...[0m
+[0;32mI (560) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (565) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (570) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (575) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (580) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (587) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFB96C0 len 00026940 (154 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (612) heap_init: At 4009842C len 00007BD4 (30 KiB): IRAM[0m
+[0;32mI (619) spi_flash: detected chip: generic[0m
+[0;32mI (623) spi_flash: flash io: dio[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (632) app_start: Starting scheduler on CPU1[0m
+[0;32mI (632) main_task: Started on CPU0[0m
+[0;32mI (642) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (656) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (658) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+State: 0
+LED Status: ON
+[0;32mI (673) main_task: Returned from app_main()[0m
+[0;32mI (674) wifi:wifi driver task: 3ffdad90, prio:23, stack:6656, core=1[0m
+[0;32mI (683) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (684) wifi:wifi certification version: v7.0[0m
+[0;32mI (688) wifi:config NVS flash: disabled[0m
+[0;32mI (692) wifi:config nano formating: disabled[0m
+[0;32mI (696) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (701) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (705) wifi:Init management short buffer num: 32[0m
+[0;32mI (709) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (714) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (718) wifi:Init static rx buffer num: 15[0m
+[0;32mI (721) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (726) wifi_init: rx ba win: 6[0m
+[0;32mI (729) wifi_init: tcpip mbox: 32[0m
+[0;32mI (733) wifi_init: udp mbox: 6[0m
+[0;32mI (737) wifi_init: tcp mbox: 6[0m
+[0;32mI (740) wifi_init: tcp tx win: 5760[0m
+[0;32mI (745) wifi_init: tcp rx win: 5760[0m
+[0;32mI (749) wifi_init: tcp mss: 1440[0m
+[0;32mI (753) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (757) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (763) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+State: 0
+[0;32mI (845) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (846) wifi:enable tsf[0m
+[1;31mE (849) wifi:NAN WiFi stop[0m
+[0;32mI (850) wifi:flush txq[0m
+[0;32mI (850) wifi:stop sw txq[0m
+[0;32mI (850) wifi:lmac stop hw txq[0m
+[0;32mI (853) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (854) wifi:enable tsf[0m
+170.886154
+State: 0
+State: 0
+State: 0
+169.884216
+State: 0
+LED Status: OFF
+State: 0
+163.891479
+State: 0
+160.907257
+State: 0
+State: 0
+149.960129
+State: 0
+LED Status: ON
+State: 0
+145.128067
+State: 0
+State: 0
+148.069138
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+146.035126
+State: 0
+State: 0
+140.244324
+State: 0
+State: 0
+LED Status: ON
+137.324844
+State: 0
+State: 0
+134.346451
+State: 0
+State: 0
+127.651726
+State: 0
+LED Status: OFF
+State: 0
+127.651726
+Starting WiFi Scan Round 1
+State: 0
+State: 0
+126.625954
+State: 0
+State: 0
+LED Status: ON
+119.977997
+State: 0
+State: 0
+State: 0
+119.022835
+State: 0
+State: 0
+LED Status: OFF
+106.687485
+State: 0
+State: 0
+114.202927
+State: 0
+State: 0
+110.411026
+State: 0
+LED Status: ON
+State: 0
+106.687485
+State: 0
+State: 0
+102.870407
+State: 0
+State: 0
+LED Status: OFF
+92.643272
+State: 0
+State: 0
+91.714188
+State: 0
+State: 0
+114.202927
+State: 0
+LED Status: ON
+State: 0
+182.890518
+Starting WiFi Scan Round 2
+State: 0
+State: 0
+181.966843
+State: 0
+State: 0
+LED Status: OFF
+170.802521
+State: 0
+State: 0
+165.885468
+State: 0
+State: 0
+172.892731
+State: 0
+LED Status: ON
+State: 0
+164.888031
+State: 0
+State: 0
+162.815796
+State: 0
+State: 0
+LED Status: OFF
+155.951538
+State: 0
+State: 0
+148.069138
+State: 0
+State: 0
+152.988876
+State: 0
+LED Status: ON
+State: 0
+147.087891
+State: 0
+State: 0
+142.124512
+State: 0
+State: 0
+LED Status: OFF
+134.413467
+State: 0
+Starting WiFi Scan Round 3
+[0;32mI (8364) scan: SSID 		PIF_CLUB[0m
+[0;32mI (8365) scan: RSSI 		-32[0m
+[0;32mI (8365) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8366) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8372) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8378) scan: Channel 		10
+[0m
+[0;32mI (8382) scan: SSID 		PIF_Client[0m
+[0;32mI (8386) scan: RSSI 		-32[0m
+[0;32mI (8389) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8394) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8400) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8405) scan: Channel 		10
+[0m
+[0;32mI (8409) scan: SSID 		HCMUT04[0m
+[0;32mI (8413) scan: RSSI 		-60[0m
+[0;32mI (8416) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8421) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8427) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8432) scan: Channel 		10
+[0m
+[0;32mI (8436) scan: SSID 		Four-Faith[0m
+[0;32mI (8440) scan: RSSI 		-76[0m
+[0;32mI (8443) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+138.228287
+[0;32mI (8449) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8455) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8461) scan: Channel 		13
+[0m
+[0;32mI (8464) scan: SSID 		cbv[0m
+[0;32mI (8467) scan: RSSI 		-77[0m
+[0;32mI (8471) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+State: 0
+[0;32mI (8476) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8483) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8488) scan: Channel 		8
+[0m
+[0;32mI (8492) scan: SSID 		HCMUT02[0m
+[0;32mI (8495) scan: RSSI 		-78[0m
+[0;32mI (8499) scan: Authmode 	WIFI_AUTH_OPEN[0m
+[0;32mI (8503) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8509) scan: Group Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8514) scan: Channel 		6
+[0m
+[0;32mI (8518) scan: SSID 		Tenda_503060[0m
+[0;32mI (8522) scan: RSSI 		-79[0m
+[0;32mI (8525) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8530) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8536) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8542) scan: Channel 		3
+[0m
+[0;32mI (8545) scan: SSID 		Bach Khoa[0m
+[0;32mI (8549) scan: RSSI 		-83[0m
+[0;32mI (8552) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8557) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8563) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8569) scan: Channel 		7
+[0m
+[0;32mI (8572) scan: SSID 		HCMUT01[0m
+[0;32mI (8576) scan: RSSI 		-85[0m
+State: 0
+[0;32mI (8579) scan: Authmode 	WIFI_AUTH_ENTERPRISE[0m
+[0;32mI (8585) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8591) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8596) scan: Channel 		1
+[0m
+[0;32mI (8600) scan: SSID 		Hidden[0m
+[0;32mI (8603) scan: RSSI 		-86[0m
+[0;32mI (8607) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8612) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8618) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8623) scan: Channel 		8
+[0m
+Check matching Ssid
+1
+opening NVS Read handle Done 
+opening NVS Read handle Done 
+2
+return 1
+Found Matching SSID and Password
+[1;31mE (8640) wifi:NAN WiFi stop[0m
+[0;32mI (8642) wifi:flush txq[0m
+[0;32mI (8643) wifi:stop sw txq[0m
+[0;32mI (8646) wifi:lmac stop hw txq[0m
+131.510178
+[0;32mI (8653) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (8654) wifi:enable tsf[0m
+[0;32mI (8657) scan: Wifi_init_station finished.[0m
+State: 0
+LED Status: ON
+State: 0
+125.664948
+State: 0
+State: 0
+116.162727
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+119.977997
+State: 0
+State: 0
+110.466789
+State: 0
+104.803230
+State: 0
+LED Status: ON
+State: 0
+100.108337
+State: 0
+[0;32mI (9918) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (9919) wifi:state: init -> auth (b0)[0m
+[0;32mI (9922) wifi:state: auth -> assoc (0)[0m
+[0;32mI (9927) wifi:state: assoc -> run (10)[0m
+[0;33mW (9929) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;33mW (9929) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;33mW (9934) wifi:[ADDBA]rx delba, code:39, delete tid:6[0m
+State: 0
+[0;32mI (10028) wifi:connected with PIF_CLUB, aid = 2, channel 10, BW20, bssid = 74:26:ff:ff:a8:4e[0m
+[0;32mI (10029) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
+[0;32mI (10031) wifi:pm start, type: 1[0m
+
+[0;32mI (10034) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (10068) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+76.018211
+State: 0
+State: 0
+LED Status: OFF
+86.158562
+State: 0
+State: 0
+73.321335
+State: 0
+State: 0
+83.392891
+State: 0
+LED Status: ON
+State: 0
+79.676994
+State: 0
+State: 0
+152.988876
+State: 0
+State: 0
+LED Status: OFF
+161.821503
+State: 0
+State: 0
+161.821503
+State: 0
+State: 0
+160.907257
+State: 0
+LED Status: ON
+State: 0
+152.988876
+State: 0
+State: 0
+151.018295
+State: 0
+State: 0
+LED Status: OFF
+[0;32mI (12229) wifi:<ba-add>idx:0 (ifx:0, 74:26:ff:ff:a8:4e), tid:0, ssn:0, winSize:64[0m
+147.087891
+State: 0
+State: 0
+146.107529
+State: 0
+State: 0
+[0;32mI (12652) wifi:<ba-add>idx:1 (ifx:0, 74:26:ff:ff:a8:4e), tid:6, ssn:2, winSize:64[0m
+146.035126
+State: 0
+LED Status: ON
+State: 0
+State: 0
+138.228287
+State: 0
+[0;32mI (13046) esp_netif_handlers: sta ip: 192.168.10.24, mask: 255.255.255.0, gw: 192.168.10.1[0m
+[0;32mI (13047) scan: Connected to ap SSID:PIF_CLUB password:chinsochin[0m
+Connect Wifi
+State: 1
+136.353485
+State: 1
+State: 1
+134.413467
+State: 1
+State: 1
+128.614990
+State: 1
+State: 1
+LED Status: OFF
+126.625954
+State: 1
+State: 1
+119.977997
+State: 1
+State: 1
+115.211166
+State: 1
+State: 1
+112.361832
+State: 1
+State: 1
+State: 1
+109.520615
+State: 1
+LED Status: ON
+State: 1
+99.172058
+State: 1
+State: 1
+100.108337
+State: 1
+State: 1
+94.504135
+State: 1
+State: 1
+94.456017
+State: 1
+State: 1
+90.785995
+State: 1
+LED Status: OFF
+State: 1
+87.082245
+State: 1
+State: 1
+128.614990
+State: 1
+State: 1
+172.892731
+State: 1
+State: 1
+169.884216
+State: 1
+State: 1
+163.891479
+State: 1
+LED Status: ON
+State: 1
+159.914307
+State: 1
+State: 1
+154.886642
+State: 1
+State: 1
+155.951538
+State: 1
+State: 1
+144.149536
+State: 1
+State: 1
+-131.663101
+State: 1
+LED Status: OFF
+State: 1
+635.177795
+State: 1
+State: 1
+631.566223
+State: 1
+State: 1
+638.797424
+State: 1
+State: 1
+636.058777
+State: 1
+State: 1
+617.200867
+State: 1
+LED Status: ON
+State: 1
+627.962769
+State: 1
+State: 1
+611.253540
+State: 1
+State: 1
+623.170715
+State: 1
+State: 1
+623.170715
+State: 1
+State: 1
+606.198486
+State: 1
+LED Status: OFF
+State: 1
+593.546509
+State: 1
+State: 1
+604.146423
+State: 1
+State: 1
+584.185486
+State: 1
+State: 1
+587.689148
+State: 1
+State: 1
+593.546509
+State: 1
+LED Status: ON
+State: 1
+525.574890
+State: 1
+State: 1
+179.944077
+State: 1
+State: 1
+166.801956
+State: 1
+State: 1
+161.821503
+State: 1
+State: 1
+160.907257
+State: 1
+LED Status: OFF
+State: 1
+159.914307
+State: 1
+State: 1
+149.960129
+State: 1
+State: 1
+146.107529
+State: 1
+State: 1
+146.035126
+State: 1
+State: 1
+142.124512
+State: 1
+LED Status: ON
+State: 1
+142.124512
+State: 1
+State: 1
+134.346451
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+125.664948
+State: 3
+State: 3
+119.977997
+State: 3
+State: 3
+State: 3
+110.411026
+State: 3
+State: 3
+94.456017
+State: 3
+State: 3
+79.676994
+State: 3
+State: 3
+86.158562
+State: 3
+State: 3
+LED Status: OFF
+90.739677
+State: 3
+State: 3
+94.456017
+State: 3
+State: 3
+92.643272
+State: 3
+State: 3
+94.456017
+State: 3
+State: 3
+92.643272
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+181.966843
+State: 3
+State: 3
+174.817459
+State: 3
+State: 3
+166.883804
+State: 3
+State: 3
+166.883804
+State: 3
+State: 3
+157.853333
+State: 3
+State: 3
+154.886642
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+147.087891
+State: 3
+State: 3
+142.124512
+State: 3
+State: 3
+LED Status: ON
+139.270264
+State: 3
+State: 3
+137.324844
+State: 3
+State: 3
+134.413467
+State: 3
+State: 3
+125.664948
+State: 3
+State: 3
+121.891037
+State: 3
+State: 3
+State: 3
+121.891037
+State: 3
+State: 3
+113.310715
+State: 3
+State: 3
+111.413872
+State: 3
+State: 3
+110.411026
+State: 3
+State: 3
+105.691399
+State: 3
+State: 3
+101.045517
+State: 3
+State: 3
+95.435928
+State: 3
+State: 3
+94.504135
+State: 3
+State: 3
+141.219269
+State: 3
+State: 3
+180.955002
+State: 3
+LED Status: OFF
+State: 3
+174.902908
+State: 3
+State: 3
+172.892731
+State: 3
+State: 3
+166.801956
+State: 3
+State: 3
+166.801956
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+154.886642
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+145.128067
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+134.346451
+State: 3
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+119.977997
+State: 3
+127.651726
+State: 3
+State: 3
+126.625954
+State: 3
+LED Status: ON
+State: 3
+State: 3
+114.202927
+State: 3
+State: 3
+102.922577
+State: 3
+State: 3
+95.435928
+State: 3
+State: 3
+101.931885
+State: 3
+State: 3
+97.302193
+State: 3
+State: 3
+97.302193
+State: 3
+State: 3
+122.848907
+State: 3
+State: 3
+177.924911
+State: 3
+State: 3
+181.966843
+State: 3
+State: 3
+174.902908
+State: 3
+State: 3
+168.883179
+State: 3
+State: 3
+166.883804
+State: 3
+State: 3
+162.815796
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+LED Status: OFF
+-131.663101
+State: 3
+State: 3
+122.848907
+State: 3
+State: 3
+128.614990
+State: 3
+State: 3
+126.625954
+State: 3
+State: 3
+122.848907
+State: 3
+State: 3
+118.009201
+State: 3
+State: 3
+112.361832
+State: 3
+State: 3
+102.922577
+State: 3
+State: 3
+State: 3
+107.630966
+State: 3
+State: 3
+102.870407
+State: 3
+State: 3
+98.186752
+State: 3
+State: 3
+92.643272
+State: 3
+State: 3
+90.785995
+State: 3
+State: 3
+88.006836
+State: 3
+State: 3
+80.635307
+State: 3
+LED Status: ON
+State: 3
+168.883179
+State: 3
+State: 3
+167.883041
+State: 3
+State: 3
+165.885468
+State: 3
+State: 3
+157.853333

@@ -6,6 +6,7 @@
  *****************************************************************************/
 
 #include <stdint.h>
+#include <string.h>
 #include "esp_err.h"
 
 /**********************
@@ -13,10 +14,14 @@
  **********************/
 
 esp_err_t NVS_Init(void);
-esp_err_t NVS_WriteString(const char* name, const char* key, 
-                            const char* stringVal);
+esp_err_t NVS_Erase_Flash(char *namespace);
+esp_err_t NVS_WriteString(const char *name,
+                          const char *key,
+                          const char *stringVal);
 
-esp_err_t NVS_ReadString(const char* name, const char* key, 
-                            char* savedData, uint8_t len);
+esp_err_t NVS_ReadString(const char *name,
+                         const char *key,
+                         char       *savedData,
+                         uint8_t     len);
 
 #endif /* NVS_H_ */

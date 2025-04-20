@@ -42,6 +42,7 @@ typedef struct _CALCULATOR_PF_t
   volatile ring_buffer_t *p_PF_buffer;
   volatile uint8_t        value_temp_irq[2];
   volatile float         *p_delta_T;
+  volatile int32_t			i32_data;
 } CALCULATOR_PF_t;
 
 /******************************************************************************
@@ -107,9 +108,22 @@ APP_CALCULATOR_PF_EXTI_IRQHandler (void)
     if (LL_TIM_IsEnabledCounter(TIM2))
     {
       LL_TIM_DisableCounter(TIM2);
-      s_calculator_pf.value_temp_irq[0]
-          = (uint8_t)(LL_TIM_GetCounter(TIM2 - 18) >> 8);
-      s_calculator_pf.value_temp_irq[1] = (uint8_t)(LL_TIM_GetCounter(TIM2) - 18);
+      s_calculator_pf.i32_data = LL_TIM_GetCounter(TIM2) - 18;
+
+      if(s_calculator_pf.i32_data > 0)
+      {
+          	  s_calculator_pf.value_temp_irq[0]
+          	            = (uint8_t)((s_calculator_pf.i32_data - 18) >> 8);
+          	  s_calculator_pf.value_temp_irq[1] = (uint8_t)(s_calculator_pf.i32_data - 18);
+      }
+      else
+      {
+    	  s_calculator_pf.value_temp_irq[0] = 0;
+    	  s_calculator_pf.value_temp_irq[1] = 0;
+      }
+//      s_calculator_pf.value_temp_irq[0]
+//          = (uint8_t)(LL_TIM_GetCounter(TIM2 - 18) >> 8);
+//      s_calculator_pf.value_temp_irq[1] = (uint8_t)(LL_TIM_GetCounter(TIM2) - 18);
 
       RING_BUFFER_Push_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer_irq,
                             s_calculator_pf.value_temp_irq[0]);
@@ -127,9 +141,20 @@ APP_CALCULATOR_PF_EXTI_IRQHandler (void)
     if (LL_TIM_IsEnabledCounter(TIM2))
     {
       LL_TIM_DisableCounter(TIM2);
-      s_calculator_pf.value_temp_irq[0]
-          = (uint8_t)((LL_TIM_GetCounter(TIM2) - 18) >> 8);
-      s_calculator_pf.value_temp_irq[1] = (uint8_t)(LL_TIM_GetCounter(TIM2) - 18);
+
+      s_calculator_pf.i32_data = LL_TIM_GetCounter(TIM2) - 18;
+
+            if(s_calculator_pf.i32_data > 0)
+            {
+                	  s_calculator_pf.value_temp_irq[0]
+                	            = (uint8_t)((s_calculator_pf.i32_data - 18) >> 8);
+                	  s_calculator_pf.value_temp_irq[1] = (uint8_t)(s_calculator_pf.i32_data - 18);
+            }
+            else
+            {
+          	  s_calculator_pf.value_temp_irq[0] = 0;
+          	  s_calculator_pf.value_temp_irq[1] = 0;
+            }
 
       RING_BUFFER_Push_Data((ring_buffer_t *)s_calculator_pf.p_PF_buffer_irq,
                             s_calculator_pf.value_temp_irq[0]);

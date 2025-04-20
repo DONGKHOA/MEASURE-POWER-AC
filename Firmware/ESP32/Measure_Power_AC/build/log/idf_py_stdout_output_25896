@@ -1,0 +1,1930 @@
+9 2019 12:21:46
+
+rst:2) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan  8 2025 15:17:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29b94h (170900) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00039bbc vaddr=3ffb0000 size=03cb8h ( 15544) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0003d87c vaddr=40080000 size=0279ch ( 10140) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b68f8h (747768) map[0m
+[0;32mI (453) esp_image: segment 4: paddr=000f6920 vaddr=4008279c size=15c70h ( 89200) load[0m
+[0;32mI (502) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (502) boot: Disabling RNG early entropy source...[0m
+[0;32mI (514) cpu_start: Multicore app[0m
+[0;32mI (515) cpu_start: Pro cpu up.[0m
+[0;32mI (515) cpu_start: Starting app cpu, entry point is 0x40081524[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (532) cpu_start: Pro cpu start user code[0m
+[0;32mI (532) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (532) cpu_start: Application information:[0m
+[0;32mI (537) cpu_start: Project name:     Measure_Power_AC[0m
+[0;32mI (542) cpu_start: App version:      4dfe763-dirty[0m
+[0;32mI (548) cpu_start: Compile time:     Jan  8 2025 15:17:32[0m
+[0;32mI (554) cpu_start: ELF file SHA256:  ece8dcec...[0m
+[0;32mI (559) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (565) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (569) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (574) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (579) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (586) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFB96C0 len 00026940 (154 KiB): DRAM[0m
+[0;32mI (598) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (611) heap_init: At 4009840C len 00007BF4 (30 KiB): IRAM[0m
+[0;32mI (619) spi_flash: detected chip: generic[0m
+[0;32mI (622) spi_flash: flash io: dio[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (631) app_start: Starting scheduler on CPU1[0m
+[0;32mI (631) main_task: Started on CPU0[0m
+[0;32mI (641) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (730) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (731) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (744) main_task: Returned from app_main()[0m
+[0;32mI (745) wifi:wifi driver task: 3ffda9bc, prio:23, stack:6656, core=1[0m
+[0;32mI (753) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (755) wifi:wifi certification version: v7.0[0m
+[0;32mI (759) wifi:config NVS flash: disabled[0m
+[0;32mI (762) wifi:config nano formating: disabled[0m
+[0;32mI (766) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (771) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (775) wifi:Init management short buffer num: 32[0m
+[0;32mI (780) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (784) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (788) wifi:Init static rx buffer num: 15[0m
+[0;32mI (791) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (796) wifi_init: rx ba win: 6[0m
+[0;32mI (799) wifi_init: tcpip mbox: 32[0m
+[0;32mI (803) wifi_init: udp mbox: 6[0m
+[0;32mI (807) wifi_init: tcp mbox: 6[0m
+[0;32mI (811) wifi_init: tcp tx win: 5760[0m
+[0;32mI (815) wifi_init: tcp rx win: 5760[0m
+[0;32mI (819) wifi_init: tcp mss: 1440[0m
+[0;32mI (823) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (827) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (833) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (907) wifi:mode : sta (b8:d6:1a:68:bb:b8)[0m
+[0;32mI (908) wifi:enable tsf[0m
+[1;31mE (911) wifi:NAN WiFi stop[0m
+[0;32mI (912) wifi:flush txq[0m
+[0;32mI (912) wifi:stop sw txq[0m
+[0;32mI (912) wifi:lmac stop hw txq[0m
+[0;32mI (915) wifi:mode : sta (b8:d6:1a:68:bb:b8)[0m
+[0;32mI (916) wifi:enable tsf[0m
+Starting WiFi Scan Round 1
+Starting WiFi Scan Round 2
+Starting WiFi Scan Round 3
+[0;32mI (8426) scan: SSID 		PIF_CLUB[0m
+[0;32mI (8426) scan: RSSI 		-54[0m
+[0;32mI (8426) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8428) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8434) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8439) scan: Channel 		10
+[0m
+[0;32mI (8443) scan: SSID 		PIF_Client[0m
+[0;32mI (8447) scan: RSSI 		-54[0m
+[0;32mI (8450) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8455) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8461) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8467) scan: Channel 		10
+[0m
+[0;32mI (8470) scan: SSID 		HCMUT04[0m
+[0;32mI (8474) scan: RSSI 		-72[0m
+[0;32mI (8477) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8482) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8488) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8494) scan: Channel 		10
+[0m
+[0;32mI (8497) scan: SSID 		HCMUT01[0m
+[0;32mI (8501) scan: RSSI 		-86[0m
+[0;32mI (8504) scan: Authmode 	WIFI_AUTH_ENTERPRISE[0m
+[0;32mI (8509) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8515) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8520) scan: Channel 		6
+[0m
+[0;32mI (8524) scan: SSID 		HCMUT02[0m
+[0;32mI (8528) scan: RSSI 		-86[0m
+[0;32mI (8531) scan: Authmode 	WIFI_AUTH_OPEN[0m
+[0;32mI (8535) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8541) scan: Group Cipher 	WIFI_CIPHER_TYPE_NONE[0m
+[0;32mI (8547) scan: Channel 		6
+[0m
+[0;32mI (8550) scan: SSID 		cbv[0m
+[0;32mI (8553) scan: RSSI 		-88[0m
+[0;32mI (8557) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8562) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8568) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8573) scan: Channel 		8
+[0m
+Check matching Ssid
+1
+opening NVS Read handle Done 
+opening NVS Read handle Done 
+2
+return 1
+Found Matching SSID and Password
+[1;31mE (8590) wifi:NAN WiFi stop[0m
+[0;32mI (8592) wifi:flush txq[0m
+[0;32mI (8594) wifi:stop sw txq[0m
+[0;32mI (8596) wifi:lmac stop hw txq[0m
+[0;32mI (8602) wifi:mode : sta (b8:d6:1a:68:bb:b8)[0m
+[0;32mI (8603) wifi:enable tsf[0m
+[0;32mI (8606) scan: Wifi_init_station finished.[0m
+[0;32mI (9866) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (9867) wifi:state: init -> auth (b0)[0m
+[0;32mI (9873) wifi:state: auth -> assoc (0)[0m
+[0;32mI (9878) wifi:state: assoc -> run (10)[0m
+[0;32mI (9981) wifi:connected with PIF_CLUB, aid = 3, channel 10, BW20, bssid = 74:26:ff:ff:a8:4e[0m
+[0;32mI (9982) wifi:security: WPA2-PSK, phy: bgn, rssi: -60[0m
+[0;32mI (9984) wifi:pm start, type: 1[0m
+
+[0;32mI (9986) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (10055) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (12215) wifi:<ba-add>idx:0 (ifx:0, 74:26:ff:ff:a8:4e), tid:0, ssn:0, winSize:64[0m
+[0;32mI (12997) esp_netif_handlers: sta ip: 192.168.10.27, mask: 255.255.255.0, gw: 192.168.10.1[0m
+[0;32mI (12999) scan: Connected to ap SSID:PIF_CLUB password:chinsochin[0m
+Connect Wifi
+[0;32mI (13013) wifi:<ba-add>idx:1 (ifx:0, 74:26:ff:ff:a8:4e), tid:6, ssn:3, winSize:64[0m
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 1 | 48 | DD | 41 | FB | E7 | 2F | DD | 0 | 0 | 0 | 0 | DD | 
+5699.464355
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 55 | C3 | DD | 41 | FC | 5E | 7E | DD | 0 | 0 | 0 | 0 | DD | 
+5720.419434
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5727.413086
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5727.413086
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5727.413086
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5727.413086
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5723.915527
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5727.413086
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 5730.911133
+80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5727.413086
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5723.915527
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | 81 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 49 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | 3E | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+5730.911133
+5730.911133
+5730.911133
+5730.911133
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 89 | 49 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 8C | 80 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5727.413086
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | 62 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 5B | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 8B | 37 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | EE | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 88 | A5 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | C0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | A4 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B6 | DB | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | 5730.911133
+B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 83 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DB | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 24 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 84 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | C0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 43 | 3C | DD | 
+AA | AA | AA | 5727.413086
+AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | A4 | 92 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 6A | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | EE | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 89 | EE | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | BA | 49 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | F2 | DD | 
+5730.911133
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | CD | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 60 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | FB | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2D | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DB | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | C9 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 3B | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | A4 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 42 | E3 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | D9 | 25 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 92 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 96 | DB | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 6D | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | AC | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 54 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | C | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 2C | 0 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 19 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 48 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 89 | 49 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 6D | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | AD | B7 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 92 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 5730.911133
+0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 12 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 9 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2F | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | E8 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 40 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 6C | 12 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | F8 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | BE | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 6D | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 6D | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | AC | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 5730.911133
+0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 36 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | CA | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | EE | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | F6 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 8 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 3E | A4 | DD | 
+AA | AA | AA | AA | 5730.911133
+AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | 4D | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | E8 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 92 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 36 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 1B | 6E | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 49 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 6D | B7 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 49 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | A9 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | D6 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | AD | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | C9 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 46 | 10 | DD | 
+AA | 5727.413086
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 19 | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 46 | 17 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 60 | C9 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 85 | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 30 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2B | 6E | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B7 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | E | A5 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 92 | 49 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | 5730.911133
+FC | 9A | 26 | DD | 0 | 0 | 49 | 25 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 80 | 0 | DD | 
+5730.911133
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 8F | B7 | DD | 
+AA | AA | AA | 5727.413086
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 92 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 7B | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DB | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | D2 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 49 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 92 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 49 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 3F | 24 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | 67 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | F9 | 25 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | E6 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 36 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | D8 | C9 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 93 | 92 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 87 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 6C | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 47 | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 7A | DB | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 79 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 3D | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | A3 | 49 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 91 | 6E | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | CD | 5B | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 55 | C3 | DD | 41 | FC | 5E | 7E | DD | 0 | 0 | 0 | 0 | DD | 
+5720.419434
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 5730.911133
+0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | A2 | DB | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+5730.911133
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | BE | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | 8D | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 43 | CC | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 4 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 26 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 4 | B7 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 93 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 20 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 81 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 89 | 49 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 3A | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 8 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | 12 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2C | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 1B | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 97 | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | C9 | 25 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B8 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 12 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | A | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | C | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 7D | 49 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 7 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | BC | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 9A | DB | DD | 
+5730.911133
+5730.911133
+5730.911133
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 6E | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 51 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | EE | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | D6 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 93 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 1F | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 11 | C9 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5723.915527
+5723.915527
+5730.911133
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 11 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 93 | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | FC | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 83 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | C9 | 25 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | CC | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 93 | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 64 | 6E | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 5730.911133
+32 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | BD | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 77 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 12 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | EB | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 75 | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 82 | 49 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | D4 | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 73 | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 5B | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 5 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 8 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 1D | 49 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 8 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 4F | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 85 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | EE | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 2E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | C9 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 22 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 19 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DB | 6E | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 1D | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | EC | B7 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | D7 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | A4 | 6E | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 82 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | 48 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 9F | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DA | A5 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | E9 | B7 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 19 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 40 | EE | DD | 
+5730.911133
+5730.911133
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 72 | 49 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 45 | F2 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 40 | 85 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B6 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 5B | A5 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | 75 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 92 | 49 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 45 | 7C | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 7 | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DD | 
+5730.911133
+B7 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | 88 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 1A | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | D2 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | D | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | FF | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 7 | 49 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 9C | 92 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | C0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 54 | 92 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | B8 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 3 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | 5730.911133
+DD | 0 | 0 | 49 | 25 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | C0 | 92 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 1 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 11 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 1B | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | DB | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 9E | 49 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 13 | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DB | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | AD | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 5B | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B6 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 46 | 24 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | 8F | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 55 | C3 | DD | 41 | FC | 5E | 7E | DD | 0 | 0 | 0 | 0 | DD | 
+5720.419434
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | B3 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 6D | B7 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 4A | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | F2 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 43 | 73 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 30 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 49 | 25 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 3B | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 6D | B7 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 1D | B7 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 92 | 49 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | DB | DD | 
+AA | 5730.911133
+5730.911133
+5730.911133
+5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 6F | DB | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 9C | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 5730.911133
+0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 1 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 6D | B7 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+5730.911133
+5730.911133
+5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 24 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | AE | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 12 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 8F | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 55 | C3 | DD | 41 | FC | 5E | 7E | DD | 0 | 0 | C | 92 | DD | 
+5720.419434
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | A5 | 80 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | DF | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | 89 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | 22 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 12 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | D6 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 6A | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 96 | 80 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 69 | 25 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 26 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 58 | EE | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 14 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | F2 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DE | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | A3 | 12 | DD | 
+AA | AA | AA | 5727.413086
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | FB | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 28 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 18 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 75 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | DE | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | D4 | 49 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 69 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | ED | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | BC | DD | 
+AA | 5730.911133
+5730.911133
+5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | ED | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | 5727.413086
+AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 6D | B7 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 49 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | AA | AA | AA | AA | 5730.911133
+43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | D8 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B6 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 46 | 18 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | 46 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B6 | DB | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | DB | 6E | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | 5E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 36 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | A4 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 49 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | C9 | 25 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | D0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 43 | 2B | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | ED | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 24 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 49 | 25 | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | E1 | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DB | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | AD | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B6 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 80 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B5 | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | EA | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 40 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 42 | BC | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | CB | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | D4 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 84 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 69 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 36 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | C6 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 24 | 92 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 1B | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 4D | B7 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | E2 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B8 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | 84 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 6E | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | CF | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 3F | B9 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 24 | 92 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | CF | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | 9D | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 80 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 46 | D | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 24 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DB | 6E | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 1E | 5B | DD | 
+5727.413086
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 2 | 12 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2 | B7 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2 | 12 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 2 | B7 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2 | 12 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | A8 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 56 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 44 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 5730.911133
+41 | FC | 9A | 26 | DD | 0 | 0 | A4 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | 9C | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DB | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 24 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+AA | AA | AA | 5730.911133
+AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | DB | 6E | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 24 | 92 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B6 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5723.915527
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 8C | 80 | DD | 5730.911133
+
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | C9 | 25 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+5723.915527
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+5723.915527
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 43 | 97 | DD | AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 42 | EE | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 91 | A5 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 8 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | A5 | 12 | DD | 
+AA | 5730.911133
+43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 25 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 25 | DD | 
+5727.413086
+AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 25 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 55 | C3 | DD | 41 | FC | 5E | 7E | DD | 0 | 0 | 0 | 25 | DD | 
+5720.419434
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 25 | DD | 
+5730.911133
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 25 | DD | 
+5723.915527
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2 | 12 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 3 | 5B | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 4 | 0 | DD | 
+AA | 5730.911133
+43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 3 | 5B | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 4 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 3 | 5B | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 4 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2 | B7 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2 | B7 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 2 | B7 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 16 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | 49 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 89 | EE | DD | 
+AA | AA | 5730.911133
+AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 8C | 80 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 24 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | DB | 6E | DD | 
+5727.413086
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | B6 | DB | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 45 | DB | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 99 | DB | DD | 
+AA | 5730.911133
+43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 4 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | F0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 40 | BE | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | ED | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+AA | 5730.911133
+5730.911133
+5730.911133
+5730.911133
+AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 8C | 80 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 46 | 24 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 45 | D2 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 24 | 92 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 42 | 2D | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | 4B | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 41 | 50 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 40 | B9 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 40 | C8 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 24 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 8C | 80 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | 
+5727.413086
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | 0 | DD | 
+5723.915527
+AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | C3 | B7 | DD | 
+5730.911133
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 71 | EC | DD | 41 | FC | 86 | 44 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 0 | DD | 
+5730.911133
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 43 | A5 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 9D | B7 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 1 | 6E | DD | 
+5723.915527
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | C9 | DD | 
+5730.911133
+AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | 43 | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 1 | 6E | DD | AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | C9 | DD | AA | 43 | B5 | 80 | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | C9 | DD | 
+5730.911133
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 1 | 6E | DD | AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | C9 | DD | 
+5730.911133
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | 25 | DD | 
+5730.911133
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 63 | D7 | DD | 41 | FC | 72 | 61 | DD | 0 | 0 | 0 | C9 | DD | 
+5723.915527
+AA | 43 | B5 | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 46 | 18 | DD | AA | AA | AA | AA | AA | 43 | B5 | 80 | 0 | DD | 41 | FC | 9A | 26 | DD | 0 | 0 | 0 | C9 | DD | 
+5730.911133
+$�(j%(B �)(��!�� DB�	��	B(!�� $B$B �B�����2!�H�� $*������C�J���"@ �"** �IM��H� �
+HRT""&�!�R�P$���*E�"D�(*I" $�*"
+���!& DD��i��B�J�I@"#!�B�J"T(H�("!H�RHP�	��"R(�!�R(�$P�SD$	�)
+!�P�%K$D�P� 	R�R�H�@F��R	"D�J��B�)�H��
+�B�@D�RD!@D�R$�$�B�I
+$��RB ���)�DDD$B	�	TEE�$A	��D BD$�!A�"(I$j%B��j)�P�j��IHQ JJ!�B���@Q�$B��C%�%�$!B"�%���� ��*
+��BE)B�$!B*Q"!@*Q�I%�*
+ ��H�""�$B""��j����A�HB M��j��DA (D�j���$B��BR�RjR��@�BH%B@�B��B�	�6���I Q�BH���6J ��*J	���)J�II�
+
+�����$�B�I
+"���%JI%"RRR	D��R	D�Q�%�%CEE)B ��2J�D�!BDD!��P��*
+	��:J��$�BPI
+$��2J��A(R�Q��$Bj�H��$�RRR	D�����	B�A
+H�B

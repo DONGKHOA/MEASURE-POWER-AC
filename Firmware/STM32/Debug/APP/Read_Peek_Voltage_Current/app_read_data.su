@@ -1,7 +1,8 @@
 ../Device/ACS712/acs712.h:35:23:ACS712_VoltageConverterCurrent	16	static
-../APP/Read_Peek_Voltage_Current/app_read_data.c:76:1:APP_READ_DATA_CreateTask	8	static
-../APP/Read_Peek_Voltage_Current/app_read_data.c:86:1:APP_READ_DATA_Init	8	static
-../APP/Read_Peek_Voltage_Current/app_read_data.c:100:1:APP_READ_DATA_HandleDMA_IRQ	16	static
-../APP/Read_Peek_Voltage_Current/app_read_data.c:136:1:APP_READ_DATA_TaskUpdate	24	static
-../APP/Read_Peek_Voltage_Current/app_read_data.c:212:1:APP_READ_DATA_ConvertVoltage	32	static
-../APP/Read_Peek_Voltage_Current/app_read_data.c:222:1:APP_READ_DATA_ConvertCurrent	32	static
+../APP/Read_Peek_Voltage_Current/app_read_data.c:83:1:APP_READ_DATA_CreateTask	8	static
+../APP/Read_Peek_Voltage_Current/app_read_data.c:93:1:APP_READ_DATA_Init	8	static
+../APP/Read_Peek_Voltage_Current/app_read_data.c:107:1:APP_READ_DATA_HandleDMA_IRQ	16	static
+../APP/Read_Peek_Voltage_Current/app_read_data.c:119:7:Kalman_GetValue	24	static
+../APP/Read_Peek_Voltage_Current/app_read_data.c:137:1:APP_READ_DATA_TaskUpdate	24	static
+../APP/Read_Peek_Voltage_Current/app_read_data.c:198:1:APP_READ_DATA_ConvertVoltage	32	static
+../APP/Read_Peek_Voltage_Current/app_read_data.c:208:1:APP_READ_DATA_ConvertCurrent	32	static

@@ -1,0 +1,5304 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0x�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jan  8 2025 15:17:36[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29bc4h (170948) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00039bec vaddr=3ffb0000 size=03cb8h ( 15544) load[0m
+[0;32mI (175) esp_image: segment 2: paddr=0003d8ac vaddr=40080000 size=0276ch ( 10092) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=b6ae4h (748260) map[0m
+[0;32mI (453) esp_image: segment 4: paddr=000f6b0c vaddr=4008276c size=15ca0h ( 89248) load[0m
+[0;32mI (502) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (502) boot: Disabling RNG early entropy source...[0m
+[0;32mI (514) cpu_start: Multicore app[0m
+[0;32mI (515) cpu_start: Pro cpu up.[0m
+[0;32mI (515) cpu_start: Starting app cpu, entry point is 0x40081524[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (532) cpu_start: Pro cpu start user code[0m
+[0;32mI (532) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (532) cpu_start: Application information:[0m
+[0;32mI (537) cpu_start: Project name:     Measure_Power_AC[0m
+[0;32mI (543) cpu_start: App version:      4dfe763-dirty[0m
+[0;32mI (548) cpu_start: Compile time:     Jan  8 2025 15:17:32[0m
+[0;32mI (554) cpu_start: ELF file SHA256:  8f910b39...[0m
+[0;32mI (559) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (565) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (569) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (574) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (579) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (586) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFB96C0 len 00026940 (154 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (611) heap_init: At 4009840C len 00007BF4 (30 KiB): IRAM[0m
+[0;32mI (619) spi_flash: detected chip: generic[0m
+[0;32mI (622) spi_flash: flash io: dio[0m
+[0;32mI (627) app_start: Starting scheduler on CPU0[0m
+[0;32mI (631) app_start: Starting scheduler on CPU1[0m
+[0;32mI (631) main_task: Started on CPU0[0m
+[0;32mI (641) main_task: Calling app_main()[0m
+RTC is running. Reading current data...
+[0;32mI (655) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (657) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+State: 0
+LED Status: ON
+[0;32mI (672) main_task: Returned from app_main()[0m
+[0;32mI (673) wifi:wifi driver task: 3ffdad90, prio:23, stack:6656, core=1[0m
+[0;32mI (682) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (683) wifi:wifi certification version: v7.0[0m
+[0;32mI (687) wifi:config NVS flash: disabled[0m
+[0;32mI (691) wifi:config nano formating: disabled[0m
+[0;32mI (695) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (700) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (704) wifi:Init management short buffer num: 32[0m
+[0;32mI (708) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (713) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (717) wifi:Init static rx buffer num: 15[0m
+[0;32mI (720) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (725) wifi_init: rx ba win: 6[0m
+[0;32mI (728) wifi_init: tcpip mbox: 32[0m
+[0;32mI (732) wifi_init: udp mbox: 6[0m
+[0;32mI (736) wifi_init: tcp mbox: 6[0m
+[0;32mI (739) wifi_init: tcp tx win: 5760[0m
+[0;32mI (744) wifi_init: tcp rx win: 5760[0m
+[0;32mI (748) wifi_init: tcp mss: 1440[0m
+[0;32mI (752) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (756) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (762) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+State: 0
+[0;32mI (844) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (845) wifi:enable tsf[0m
+[1;31mE (847) wifi:NAN WiFi stop[0m
+[0;32mI (848) wifi:flush txq[0m
+[0;32mI (848) wifi:stop sw txq[0m
+[0;32mI (849) wifi:lmac stop hw txq[0m
+[0;32mI (851) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (853) wifi:enable tsf[0m
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: OFF
+State: 0
+Starting WiFi Scan Round 1
+State: 0
+State: 0
+State: 0
+State: 0
+LED Status: ON
+State: 0
+State: 0
+State: 0
+State: 0
+29.192005
+State: 0
+LED Status: OFF
+State: 0
+25.376728
+State: 0
+State: 0
+20.627867
+State: 0
+State: 0
+LED Status: ON
+16.844967
+State: 0
+State: 0
+13.076458
+State: 0
+State: 0
+10.259520
+State: 0
+LED Status: OFF
+State: 0
+8.386058
+State: 0
+State: 0
+0.000000
+State: 0
+State: 0
+LED Status: ON
+188.056717
+State: 0
+Starting WiFi Scan Round 2
+State: 0
+183.903702
+State: 0
+State: 0
+176.916687
+State: 0
+LED Status: OFF
+State: 0
+174.817459
+State: 0
+State: 0
+173.897369
+State: 0
+State: 0
+LED Status: ON
+167.883041
+State: 0
+State: 0
+163.891479
+State: 0
+State: 0
+158.922272
+State: 0
+LED Status: OFF
+State: 0
+149.960129
+State: 0
+State: 0
+146.107529
+State: 0
+State: 0
+LED Status: ON
+149.960129
+State: 0
+State: 0
+148.069138
+State: 0
+State: 0
+140.244324
+State: 0
+LED Status: OFF
+State: 0
+175.909332
+Starting WiFi Scan Round 3
+[0;32mI (8363) scan: SSID 		PIF_Client[0m
+[0;32mI (8363) scan: RSSI 		-33[0m
+[0;32mI (8363) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8365) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+State: 0
+[0;32mI (8371) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8377) scan: Channel 		10
+[0m
+[0;32mI (8381) scan: SSID 		PIF_CLUB[0m
+[0;32mI (8385) scan: RSSI 		-34[0m
+[0;32mI (8388) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8393) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8399) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8404) scan: Channel 		10
+[0m
+[0;32mI (8408) scan: SSID 		HCMUT04[0m
+[0;32mI (8412) scan: RSSI 		-62[0m
+[0;32mI (8415) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8420) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8426) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8431) scan: Channel 		10
+[0m
+[0;32mI (8435) scan: SSID 		Four-Faith[0m
+[0;32mI (8439) scan: RSSI 		-74[0m
+[0;32mI (8442) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8447) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8453) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8458) scan: Channel 		13
+[0m
+[0;32mI (8462) scan: SSID 		cbv[0m
+[0;32mI (8465) scan: RSSI 		-77[0m
+[0;32mI (8469) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+State: 0
+[0;32mI (8474) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8480) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8486) scan: Channel 		8
+[0m
+[0;32mI (8489) scan: SSID 		Tenda_503060[0m
+[0;32mI (8494) scan: RSSI 		-80[0m
+[0;32mI (8497) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8502) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8508) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8513) scan: Channel 		3
+[0m
+[0;32mI (8517) scan: SSID 		Cam21[0m
+[0;32mI (8520) scan: RSSI 		-84[0m
+[0;32mI (8524) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8528) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8534) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8540) scan: Channel 		8
+[0m
+[0;32mI (8543) scan: SSID 		Bach Khoa[0m
+[0;32mI (8547) scan: RSSI 		-85[0m
+[0;32mI (8550) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8556) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8561) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8567) scan: Channel 		7
+[0m
+[0;32mI (8570) scan: SSID 		BK[0m
+[0;32mI (8573) scan: RSSI 		-86[0m
+State: 0
+25.714725
+[0;32mI (8577) scan: Authmode 	WIFI_AUTH_WPA_WPA2_PSK[0m
+[0;32mI (8584) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8590) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8595) scan: Channel 		8
+[0m
+[0;32mI (8599) scan: SSID 		Bo mon CCD 107B1[0m
+[0;32mI (8603) scan: RSSI 		-87[0m
+[0;32mI (8606) scan: Authmode 	WIFI_AUTH_WPA2_PSK[0m
+[0;32mI (8611) scan: Pairwise Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8617) scan: Group Cipher 	WIFI_CIPHER_TYPE_CCMP[0m
+[0;32mI (8622) scan: Channel 		10
+[0m
+Check matching Ssid
+1
+opening NVS Read handle Done 
+Check matching Ssid
+1
+opening NVS Read handle Done 
+opening NVS Read handle Done 
+2
+return 1
+Found Matching SSID and Password
+[1;31mE (8644) wifi:NAN WiFi stop[0m
+[0;32mI (8646) wifi:flush txq[0m
+[0;32mI (8648) wifi:stop sw txq[0m
+[0;32mI (8650) wifi:lmac stop hw txq[0m
+[0;32mI (8657) wifi:mode : sta (08:a6:f7:1d:a1:60)[0m
+[0;32mI (8658) wifi:enable tsf[0m
+[0;32mI (8660) scan: Wifi_init_station finished.[0m
+State: 0
+LED Status: ON
+33.981342
+State: 0
+State: 0
+33.021675
+State: 0
+State: 0
+27.282568
+State: 0
+LED Status: OFF
+State: 0
+14.958914
+State: 0
+State: 0
+12.136580
+State: 0
+State: 0
+LED Status: ON
+14.958914
+State: 0
+State: 0
+[0;32mI (9921) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1[0m
+[0;32mI (9923) wifi:state: init -> auth (b0)[0m
+[0;32mI (9927) wifi:state: auth -> assoc (0)[0m
+[0;32mI (9933) wifi:state: assoc -> run (10)[0m
+[0;33mW (9936) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;33mW (9940) wifi:[ADDBA]rx delba, code:39, delete tid:0[0m
+[0;33mW (9941) wifi:[ADDBA]rx delba, code:39, delete tid:6[0m
+7.450675
+State: 0
+[0;32mI (10030) wifi:connected with PIF_CLUB, aid = 2, channel 10, BW20, bssid = 74:26:ff:ff:a8:4e[0m
+[0;32mI (10031) wifi:security: WPA2-PSK, phy: bgn, rssi: -36[0m
+[0;32mI (10033) wifi:pm start, type: 1[0m
+
+[0;32mI (10036) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+State: 0
+[0;32mI (10088) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+State: 0
+LED Status: OFF
+5.582611
+State: 0
+State: 0
+186.948639
+State: 0
+State: 0
+187.965424
+State: 0
+LED Status: ON
+State: 0
+176.916687
+State: 0
+State: 0
+170.802521
+State: 0
+State: 0
+LED Status: OFF
+174.817459
+State: 0
+State: 0
+169.884216
+State: 0
+State: 0
+166.883804
+State: 0
+LED Status: ON
+State: 0
+159.914307
+State: 0
+State: 0
+159.914307
+State: 0
+State: 0
+LED Status: OFF
+152.988876
+[0;32mI (12245) wifi:<ba-add>idx:0 (ifx:0, 74:26:ff:ff:a8:4e), tid:0, ssn:0, winSize:64[0m
+State: 0
+State: 0
+151.018295
+State: 0
+[0;32mI (12563) wifi:<ba-add>idx:1 (ifx:0, 74:26:ff:ff:a8:4e), tid:6, ssn:3, winSize:64[0m
+State: 0
+149.960129
+State: 0
+LED Status: ON
+State: 0
+141.219269
+State: 0
+State: 0
+185.007736
+[0;32mI (13048) esp_netif_handlers: sta ip: 192.168.10.24, mask: 255.255.255.0, gw: 192.168.10.1[0m
+[0;32mI (13049) scan: Connected to ap SSID:PIF_CLUB password:chinsochin[0m
+Connect Wifi
+State: 1
+State: 1
+42.658806
+State: 1
+State: 1
+38.793159
+State: 1
+State: 1
+25.714725
+State: 1
+LED Status: OFF
+State: 1
+31.105042
+State: 1
+State: 1
+22.524715
+State: 1
+State: 1
+21.575840
+State: 1
+State: 1
+14.958914
+State: 1
+State: 1
+8.386058
+State: 1
+LED Status: ON
+State: 1
+0.000000
+State: 1
+State: 1
+185.007736
+State: 1
+State: 1
+183.993195
+State: 1
+State: 1
+State: 1
+186.023163
+State: 1
+State: 1
+LED Status: OFF
+179.944077
+State: 1
+State: 1
+172.892731
+State: 1
+166.801956
+State: 1
+State: 1
+162.815796
+State: 1
+State: 1
+State: 1
+164.888031
+State: 1
+State: 1
+160.907257
+LED Status: ON
+State: 1
+158.844025
+State: 1
+State: 1
+153.899536
+State: 1
+State: 1
+149.960129
+State: 1
+State: 1
+148.069138
+State: 1
+State: 1
+State: 1
+146.107529
+LED Status: OFF
+State: 1
+14.958914
+State: 1
+State: 1
+44.597027
+State: 1
+State: 1
+36.865738
+State: 1
+State: 1
+35.903374
+State: 1
+State: 1
+35.903374
+State: 1
+LED Status: ON
+State: 1
+26.329199
+State: 1
+State: 1
+24.425158
+State: 1
+State: 1
+17.789343
+State: 1
+State: 1
+State: 1
+12.136580
+State: 1
+State: 1
+LED Status: OFF
+11.197600
+State: 1
+State: 1
+4.649927
+State: 1
+State: 1
+1.857273
+State: 1
+State: 1
+0.000000
+State: 1
+State: 1
+186.948639
+State: 1
+State: 1
+LED Status: ON
+183.903702
+State: 1
+State: 1
+177.924911
+State: 1
+State: 1
+173.897369
+State: 1
+State: 1
+169.884216
+State: 1
+State: 1
+159.914307
+State: 1
+State: 1
+LED Status: OFF
+155.951538
+State: 1
+State: 1
+156.940872
+State: 1
+State: 1
+156.940872
+State: 1
+State: 1
+153.899536
+State: 1
+State: 1
+145.128067
+State: 1
+State: 1
+LED Status: ON
+146.107529
+State: 1
+State: 1
+43.627468
+State: 1
+State: 3
+42.658806
+State: 3
+State: 3
+39.758221
+State: 3
+State: 3
+33.021675
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+25.376728
+State: 3
+State: 3
+19.680792
+State: 3
+State: 3
+17.789343
+State: 3
+State: 3
+12.136580
+State: 3
+State: 3
+LED Status: OFF
+11.197600
+State: 3
+State: 3
+State: 3
+4.649927
+State: 3
+0.928187
+State: 3
+State: 3
+188.056717
+State: 3
+State: 3
+State: 3
+177.924911
+State: 3
+172.892731
+State: 3
+State: 3
+State: 3
+174.902908
+State: 3
+172.892731
+State: 3
+State: 3
+166.883804
+State: 3
+State: 3
+165.885468
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+157.853333
+State: 3
+State: 3
+155.951538
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+149.051285
+State: 3
+State: 3
+LED Status: ON
+145.128067
+State: 3
+State: 3
+21.575840
+State: 3
+State: 3
+47.511097
+State: 3
+State: 3
+42.658806
+State: 3
+State: 3
+36.865738
+State: 3
+State: 3
+25.714725
+State: 3
+State: 3
+State: 3
+28.236837
+State: 3
+State: 3
+27.282568
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+14.958914
+State: 3
+State: 3
+14.017236
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+1.857273
+State: 3
+State: 3
+0.000000
+State: 3
+LED Status: OFF
+State: 3
+187.965424
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+170.886154
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+170.802521
+State: 3
+State: 3
+167.883041
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+157.853333
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+149.051285
+State: 3
+State: 3
+147.087891
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+44.597027
+State: 3
+State: 3
+42.658806
+State: 3
+LED Status: ON
+State: 3
+25.714725
+State: 3
+State: 3
+25.714725
+State: 3
+State: 3
+25.376728
+State: 3
+State: 3
+25.376728
+State: 3
+State: 3
+18.734617
+State: 3
+State: 3
+14.017236
+State: 3
+State: 3
+State: 3
+14.017236
+State: 3
+State: 3
+6.516193
+State: 3
+State: 3
+186.023163
+State: 3
+State: 3
+179.944077
+State: 3
+State: 3
+180.955002
+State: 3
+State: 3
+181.966843
+State: 3
+State: 3
+174.817459
+State: 3
+State: 3
+171.888992
+State: 3
+State: 3
+LED Status: OFF
+170.802521
+State: 3
+State: 3
+161.821503
+State: 3
+State: 3
+162.815796
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+153.899536
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+146.035126
+State: 3
+State: 3
+138.228287
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+43.627468
+State: 3
+State: 3
+38.793159
+State: 3
+State: 3
+25.714725
+State: 3
+State: 3
+20.627867
+State: 3
+State: 3
+26.329199
+State: 3
+State: 3
+State: 3
+12.136580
+State: 3
+LED Status: ON
+State: 3
+14.017236
+State: 3
+State: 3
+13.076458
+State: 3
+State: 3
+9.322338
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+188.056717
+State: 3
+State: 3
+186.948639
+State: 3
+State: 3
+183.993195
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+174.902908
+State: 3
+State: 3
+170.886154
+State: 3
+State: 3
+165.885468
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+151.018295
+State: 3
+State: 3
+148.069138
+State: 3
+State: 3
+152.988876
+State: 3
+LED Status: OFF
+State: 3
+146.035126
+State: 3
+State: 3
+142.195114
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+32.062908
+State: 3
+State: 3
+36.865738
+State: 3
+State: 3
+29.192005
+State: 3
+State: 3
+25.376728
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+13.076458
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+0.928187
+State: 3
+State: 3
+1.857273
+State: 3
+State: 3
+State: 3
+182.890518
+State: 3
+State: 3
+LED Status: ON
+179.944077
+State: 3
+178.846786
+State: 3
+State: 3
+171.888992
+State: 3
+State: 3
+170.802521
+State: 3
+State: 3
+166.801956
+State: 3
+State: 3
+161.821503
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+State: 3
+151.018295
+State: 3
+142.195114
+State: 3
+State: 3
+138.228287
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+39.758221
+State: 3
+State: 3
+38.793159
+State: 3
+State: 3
+30.148075
+State: 3
+State: 3
+26.329199
+State: 3
+State: 3
+27.282568
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+24.425158
+State: 3
+State: 3
+18.734617
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+12.136580
+State: 3
+State: 3
+6.516193
+State: 3
+State: 3
+1.857273
+State: 3
+State: 3
+189.074844
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+174.817459
+State: 3
+State: 3
+166.883804
+State: 3
+State: 3
+172.892731
+State: 3
+State: 3
+168.883179
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+LED Status: ON
+154.963089
+State: 3
+State: 3
+153.899536
+State: 3
+State: 3
+148.069138
+State: 3
+State: 3
+141.219269
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+43.627468
+State: 3
+State: 3
+40.724186
+State: 3
+State: 3
+37.828999
+State: 3
+State: 3
+33.021675
+State: 3
+State: 3
+27.282568
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+14.958914
+State: 3
+State: 3
+14.017236
+State: 3
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+2.787258
+State: 3
+LED Status: OFF
+State: 3
+190.093872
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+State: 3
+179.944077
+State: 3
+State: 3
+174.902908
+State: 3
+State: 3
+170.802521
+State: 3
+166.801956
+State: 3
+State: 3
+162.815796
+State: 3
+State: 3
+158.844025
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+144.149536
+State: 3
+State: 3
+134.346451
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+40.724186
+State: 3
+State: 3
+36.865738
+State: 3
+LED Status: ON
+State: 3
+33.981342
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+18.734617
+State: 3
+State: 3
+State: 3
+19.680792
+State: 3
+State: 3
+14.958914
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+State: 3
+186.948639
+State: 3
+State: 3
+186.948639
+State: 3
+State: 3
+182.890518
+State: 3
+State: 3
+177.924911
+State: 3
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+147.087891
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+158.844025
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+127.651726
+State: 3
+State: 3
+LED Status: OFF
+121.891037
+State: 3
+State: 3
+125.664948
+State: 3
+State: 3
+118.009201
+State: 3
+State: 3
+114.260490
+State: 3
+State: 3
+112.361832
+State: 3
+State: 3
+109.520615
+State: 3
+State: 3
+100.108337
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+180.955002
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+172.892731
+State: 3
+State: 3
+170.802521
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+LED Status: ON
+State: 3
+152.988876
+State: 3
+State: 3
+148.069138
+State: 3
+State: 3
+146.107529
+State: 3
+State: 3
+138.228287
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+134.413467
+State: 3
+State: 3
+130.479004
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+120.934082
+State: 3
+State: 3
+117.115189
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+97.302193
+State: 3
+State: 3
+100.108337
+State: 3
+State: 3
+90.739677
+State: 3
+State: 3
+160.907257
+State: 3
+LED Status: OFF
+State: 3
+188.056717
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+189.074844
+State: 3
+State: 3
+182.890518
+State: 3
+State: 3
+172.892731
+State: 3
+State: 3
+170.886154
+State: 3
+State: 3
+166.883804
+State: 3
+State: 3
+State: 3
+154.963089
+State: 3
+State: 3
+153.899536
+State: 3
+State: 3
+151.018295
+State: 3
+State: 3
+143.171875
+State: 3
+State: 3
+141.219269
+State: 3
+State: 3
+136.353485
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+LED Status: ON
+135.383026
+State: 3
+State: 3
+128.614990
+State: 3
+State: 3
+122.848907
+State: 3
+State: 3
+121.829880
+State: 3
+State: 3
+114.202927
+State: 3
+State: 3
+114.202927
+State: 3
+State: 3
+109.520615
+State: 3
+State: 3
+158.922272
+State: 3
+State: 3
+6.516193
+State: 3
+State: 3
+2.787258
+State: 3
+State: 3
+190.093872
+State: 3
+State: 3
+State: 3
+185.007736
+State: 3
+State: 3
+181.966843
+State: 3
+State: 3
+177.924911
+State: 3
+State: 3
+174.817459
+State: 3
+LED Status: OFF
+State: 3
+169.884216
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+155.951538
+State: 3
+State: 3
+154.886642
+State: 3
+State: 3
+State: 3
+146.035126
+State: 3
+State: 3
+143.171875
+State: 3
+140.244324
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+127.651726
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+118.009201
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+109.520615
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+-131.663101
+State: 3
+LED Status: ON
+State: 3
+4.649927
+State: 3
+State: 3
+186.948639
+State: 3
+State: 3
+188.056717
+State: 3
+State: 3
+186.948639
+State: 3
+State: 3
+183.993195
+State: 3
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+179.856384
+State: 3
+State: 3
+170.802521
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+155.951538
+State: 3
+State: 3
+154.886642
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+136.353485
+State: 3
+State: 3
+LED Status: OFF
+135.383026
+State: 3
+State: 3
+121.891037
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+120.934082
+State: 3
+State: 3
+121.891037
+State: 3
+State: 3
+116.162727
+State: 3
+State: 3
+113.310715
+State: 3
+State: 3
+170.886154
+State: 3
+State: 3
+9.322338
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+187.965424
+State: 3
+State: 3
+181.966843
+State: 3
+State: 3
+LED Status: ON
+State: 3
+168.883179
+State: 3
+State: 3
+168.883179
+State: 3
+State: 3
+162.815796
+State: 3
+State: 3
+164.888031
+State: 3
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+154.963089
+State: 3
+State: 3
+146.107529
+State: 3
+State: 3
+135.383026
+State: 3
+State: 3
+-131.663101
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+127.651726
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+119.977997
+State: 3
+State: 3
+LED Status: OFF
+115.211166
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+13.076458
+State: 3
+State: 3
+9.322338
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+0.928187
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+182.890518
+State: 3
+State: 3
+178.846786
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+170.886154
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+165.885468
+State: 3
+State: 3
+158.922272
+State: 3
+State: 3
+151.018295
+State: 3
+State: 3
+LED Status: ON
+142.195114
+State: 3
+State: 3
+145.128067
+State: 3
+State: 3
+141.219269
+State: 3
+State: 3
+137.324844
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+128.614990
+State: 3
+State: 3
+122.848907
+State: 3
+State: 3
+121.829880
+State: 3
+State: 3
+118.068565
+State: 3
+State: 3
+113.310715
+State: 3
+State: 3
+170.886154
+State: 3
+State: 3
+12.136580
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+190.093872
+State: 3
+State: 3
+LED Status: OFF
+183.993195
+State: 3
+State: 3
+181.966843
+State: 3
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+161.821503
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+157.853333
+State: 3
+State: 3
+158.844025
+State: 3
+State: 3
+158.844025
+State: 3
+State: 3
+145.128067
+State: 3
+State: 3
+150.943634
+State: 3
+State: 3
+144.149536
+State: 3
+State: 3
+138.228287
+State: 3
+State: 3
+137.324844
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+121.891037
+State: 3
+LED Status: ON
+State: 3
+119.022835
+State: 3
+State: 3
+121.829880
+State: 3
+State: 3
+119.022835
+State: 3
+State: 3
+111.413872
+State: 3
+State: 3
+109.520615
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+8.386058
+State: 3
+State: 3
+6.516193
+State: 3
+State: 3
+0.928187
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+0.928187
+State: 3
+State: 3
+188.056717
+State: 3
+State: 3
+169.884216
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+165.885468
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+154.963089
+State: 3
+State: 3
+150.943634
+State: 3
+State: 3
+153.899536
+State: 3
+State: 3
+146.107529
+State: 3
+State: 3
+144.149536
+State: 3
+State: 3
+138.228287
+State: 3
+State: 3
+134.413467
+State: 3
+State: 3
+131.510178
+State: 3
+State: 3
+116.162727
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+112.361832
+State: 3
+State: 3
+LED Status: ON
+146.035126
+State: 3
+State: 3
+12.136580
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+190.093872
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+189.074844
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+164.888031
+State: 3
+State: 3
+171.888992
+State: 3
+State: 3
+170.886154
+State: 3
+State: 3
+166.883804
+State: 3
+State: 3
+162.815796
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+LED Status: OFF
+157.853333
+State: 3
+State: 3
+151.018295
+State: 3
+State: 3
+148.069138
+State: 3
+State: 3
+147.087891
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+123.807671
+State: 3
+State: 3
+130.479004
+State: 3
+State: 3
+123.807671
+State: 3
+State: 3
+118.009201
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+12.136580
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+LED Status: ON
+185.007736
+State: 3
+State: 3
+182.890518
+State: 3
+State: 3
+179.944077
+State: 3
+State: 3
+179.856384
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+State: 3
+167.883041
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+157.853333
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+146.107529
+State: 3
+State: 3
+146.035126
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+128.614990
+State: 3
+State: 3
+128.614990
+State: 3
+LED Status: OFF
+State: 3
+124.767349
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+125.664948
+State: 3
+State: 3
+119.022835
+State: 3
+State: 3
+20.627867
+State: 3
+State: 3
+24.425158
+State: 3
+State: 3
+16.844967
+State: 3
+State: 3
+14.017236
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+1.857273
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+179.856384
+State: 3
+State: 3
+179.944077
+State: 3
+State: 3
+170.802521
+State: 3
+LED Status: ON
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+162.815796
+State: 3
+State: 3
+151.018295
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+154.963089
+State: 3
+State: 3
+151.018295
+State: 3
+State: 3
+142.195114
+State: 3
+State: 3
+141.219269
+State: 3
+State: 3
+135.383026
+State: 3
+State: 3
+130.479004
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+123.807671
+State: 3
+State: 3
+123.807671
+State: 3
+State: 3
+169.884216
+State: 3
+State: 3
+LED Status: OFF
+22.524715
+State: 3
+State: 3
+20.627867
+State: 3
+State: 3
+14.017236
+State: 3
+State: 3
+9.322338
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+187.965424
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+178.846786
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+State: 3
+169.884216
+State: 3
+State: 3
+169.884216
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+State: 3
+LED Status: ON
+157.853333
+State: 3
+State: 3
+149.051285
+State: 3
+State: 3
+144.149536
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+127.651726
+State: 3
+State: 3
+131.510178
+State: 3
+State: 3
+127.651726
+State: 3
+State: 3
+125.664948
+State: 3
+State: 3
+119.022835
+State: 3
+State: 3
+147.087891
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+21.575840
+State: 3
+State: 3
+14.958914
+State: 3
+State: 3
+9.322338
+State: 3
+State: 3
+0.928187
+State: 3
+State: 3
+LED Status: OFF
+3.718143
+State: 3
+State: 3
+183.993195
+State: 3
+State: 3
+174.902908
+State: 3
+State: 3
+179.856384
+State: 3
+State: 3
+174.817459
+State: 3
+State: 3
+168.883179
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+154.886642
+State: 3
+State: 3
+146.107529
+State: 3
+State: 3
+144.149536
+State: 3
+State: 3
+148.069138
+State: 3
+State: 3
+146.035126
+State: 3
+State: 3
+141.219269
+State: 3
+State: 3
+137.324844
+State: 3
+State: 3
+138.297104
+State: 3
+State: 3
+LED Status: ON
+134.346451
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+128.614990
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+183.993195
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+19.680792
+State: 3
+State: 3
+14.958914
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+0.928187
+State: 3
+State: 3
+181.966843
+State: 3
+State: 3
+181.966843
+State: 3
+State: 3
+179.856384
+State: 3
+State: 3
+174.902908
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+165.885468
+State: 3
+State: 3
+164.888031
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+155.951538
+State: 3
+State: 3
+151.018295
+State: 3
+State: 3
+142.124512
+State: 3
+State: 3
+139.270264
+State: 3
+State: 3
+138.297104
+State: 3
+State: 3
+130.479004
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+123.807671
+State: 3
+State: 3
+123.807671
+State: 3
+State: 3
+118.009201
+State: 3
+State: 3
+185.007736
+State: 3
+LED Status: ON
+State: 3
+19.680792
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+8.386058
+State: 3
+State: 3
+9.322338
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+0.928187
+State: 3
+State: 3
+181.966843
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+179.944077
+State: 3
+State: 3
+174.902908
+State: 3
+State: 3
+170.802521
+State: 3
+State: 3
+State: 3
+167.883041
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+LED Status: OFF
+156.940872
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+146.107529
+State: 3
+State: 3
+144.149536
+State: 3
+State: 3
+138.228287
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+128.614990
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+128.614990
+State: 3
+State: 3
+-131.663101
+State: 3
+State: 3
+15.901491
+State: 3
+State: 3
+17.789343
+State: 3
+State: 3
+19.680792
+State: 3
+State: 3
+14.958914
+State: 3
+State: 3
+LED Status: ON
+11.197600
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+186.948639
+State: 3
+State: 3
+186.948639
+State: 3
+State: 3
+180.955002
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+State: 3
+174.817459
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+145.128067
+State: 3
+State: 3
+140.244324
+State: 3
+LED Status: OFF
+State: 3
+147.087891
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+137.324844
+State: 3
+State: 3
+135.383026
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+127.651726
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+26.329199
+State: 3
+State: 3
+19.680792
+State: 3
+State: 3
+16.844967
+State: 3
+State: 3
+15.901491
+State: 3
+State: 3
+9.322338
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+0.000000
+State: 3
+LED Status: ON
+State: 3
+185.007736
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+178.846786
+State: 3
+State: 3
+182.890518
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+168.883179
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+154.886642
+State: 3
+State: 3
+152.003143
+State: 3
+State: 3
+151.018295
+State: 3
+State: 3
+145.128067
+State: 3
+State: 3
+135.383026
+State: 3
+LED Status: OFF
+State: 3
+132.477051
+State: 3
+State: 3
+128.614990
+State: 3
+State: 3
+131.510178
+State: 3
+State: 3
+126.625954
+State: 3
+State: 3
+170.886154
+State: 3
+State: 3
+18.734617
+State: 3
+State: 3
+23.474485
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+14.017236
+State: 3
+State: 3
+12.136580
+State: 3
+State: 3
+State: 3
+2.787258
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+5.582611
+State: 3
+State: 3
+186.948639
+State: 3
+State: 3
+LED Status: ON
+185.007736
+State: 3
+State: 3
+180.955002
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+170.802521
+State: 3
+State: 3
+165.885468
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+State: 3
+152.003143
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+153.899536
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+147.087891
+State: 3
+State: 3
+142.124512
+State: 3
+State: 3
+142.124512
+State: 3
+State: 3
+138.297104
+State: 3
+LED Status: OFF
+State: 3
+134.346451
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+19.680792
+State: 3
+State: 3
+26.329199
+State: 3
+State: 3
+25.376728
+State: 3
+State: 3
+21.575840
+State: 3
+State: 3
+14.017236
+State: 3
+State: 3
+8.386058
+State: 3
+State: 3
+13.076458
+State: 3
+State: 3
+5.582611
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+189.074844
+State: 3
+State: 3
+188.056717
+State: 3
+LED Status: ON
+State: 3
+181.966843
+State: 3
+State: 3
+180.955002
+State: 3
+State: 3
+179.944077
+State: 3
+State: 3
+169.884216
+State: 3
+State: 3
+166.801956
+State: 3
+State: 3
+172.892731
+State: 3
+State: 3
+164.888031
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+158.922272
+State: 3
+State: 3
+158.844025
+State: 3
+State: 3
+152.003143
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+135.383026
+State: 3
+State: 3
+135.383026
+State: 3
+State: 3
+138.297104
+State: 3
+LED Status: OFF
+State: 3
+135.383026
+State: 3
+State: 3
+-131.663101
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+137.324844
+State: 3
+State: 3
+27.282568
+State: 3
+State: 3
+27.282568
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+16.844967
+State: 3
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+12.136580
+State: 3
+State: 3
+9.322338
+State: 3
+State: 3
+6.516193
+State: 3
+State: 3
+182.890518
+State: 3
+State: 3
+190.093872
+State: 3
+State: 3
+LED Status: ON
+183.993195
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+171.888992
+State: 3
+State: 3
+State: 3
+167.883041
+State: 3
+State: 3
+161.821503
+State: 3
+State: 3
+155.951538
+State: 3
+State: 3
+155.951538
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+137.324844
+State: 3
+State: 3
+137.324844
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+-131.663101
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+125.664948
+State: 3
+LED Status: OFF
+State: 3
+121.891037
+State: 3
+State: 3
+165.885468
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+19.680792
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+177.924911
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+174.902908
+State: 3
+State: 3
+178.846786
+State: 3
+State: 3
+170.886154
+State: 3
+State: 3
+State: 3
+170.802521
+State: 3
+State: 3
+LED Status: ON
+163.891479
+State: 3
+State: 3
+164.888031
+State: 3
+State: 3
+153.899536
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+145.128067
+State: 3
+State: 3
+135.383026
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+134.413467
+State: 3
+State: 3
+131.510178
+State: 3
+State: 3
+129.514404
+State: 3
+State: 3
+122.848907
+State: 3
+State: 3
+120.934082
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+23.474485
+State: 3
+State: 3
+15.901491
+State: 3
+State: 3
+LED Status: OFF
+11.197600
+State: 3
+State: 3
+1.857273
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+2.787258
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+172.892731
+State: 3
+State: 3
+169.884216
+State: 3
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+162.815796
+State: 3
+State: 3
+155.951538
+State: 3
+State: 3
+142.124512
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+142.195114
+State: 3
+LED Status: ON
+State: 3
+136.353485
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+128.614990
+State: 3
+State: 3
+126.625954
+State: 3
+State: 3
+121.891037
+State: 3
+State: 3
+119.977997
+State: 3
+State: 3
+116.162727
+State: 3
+State: 3
+172.892731
+State: 3
+State: 3
+15.901491
+State: 3
+State: 3
+12.136580
+State: 3
+State: 3
+7.450675
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+190.093872
+State: 3
+State: 3
+190.093872
+State: 3
+State: 3
+186.023163
+State: 3
+LED Status: OFF
+State: 3
+179.944077
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+167.883041
+State: 3
+State: 3
+157.853333
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+153.899536
+State: 3
+State: 3
+149.051285
+State: 3
+State: 3
+148.069138
+State: 3
+State: 3
+144.149536
+State: 3
+State: 3
+141.219269
+State: 3
+State: 3
+134.413467
+State: 3
+State: 3
+126.625954
+State: 3
+State: 3
+LED Status: ON
+125.664948
+State: 3
+State: 3
+119.022835
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+119.022835
+State: 3
+State: 3
+114.202927
+State: 3
+State: 3
+174.902908
+State: 3
+State: 3
+18.734617
+State: 3
+State: 3
+14.958914
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+6.516193
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+0.928187
+State: 3
+State: 3
+186.948639
+State: 3
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+179.944077
+State: 3
+LED Status: OFF
+State: 3
+169.884216
+State: 3
+State: 3
+171.888992
+State: 3
+State: 3
+170.802521
+State: 3
+State: 3
+166.883804
+State: 3
+State: 3
+154.886642
+State: 3
+State: 3
+158.844025
+State: 3
+State: 3
+154.886642
+State: 3
+State: 3
+149.051285
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+138.228287
+State: 3
+State: 3
+142.124512
+State: 3
+State: 3
+142.124512
+State: 3
+State: 3
+134.413467
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+128.614990
+State: 3
+LED Status: ON
+State: 3
+122.848907
+State: 3
+State: 3
+121.829880
+State: 3
+State: 3
+119.022835
+State: 3
+State: 3
+112.361832
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+14.958914
+State: 3
+State: 3
+10.259520
+State: 3
+State: 3
+8.386058
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+188.056717
+State: 3
+State: 3
+188.056717
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+State: 3
+172.892731
+State: 3
+State: 3
+LED Status: OFF
+170.802521
+State: 3
+State: 3
+166.801956
+State: 3
+State: 3
+159.914307
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+149.051285
+State: 3
+State: 3
+152.003143
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+144.149536
+State: 3
+State: 3
+135.383026
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+-131.663101
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+121.829880
+State: 3
+State: 3
+121.829880
+State: 3
+State: 3
+LED Status: ON
+116.162727
+State: 3
+State: 3
+114.260490
+State: 3
+State: 3
+111.413872
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+10.259520
+State: 3
+State: 3
+5.582611
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+189.074844
+State: 3
+State: 3
+185.007736
+State: 3
+State: 3
+179.944077
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+169.884216
+State: 3
+State: 3
+165.885468
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+LED Status: OFF
+149.960129
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+147.087891
+State: 3
+State: 3
+143.171875
+State: 3
+State: 3
+134.346451
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+130.479004
+State: 3
+State: 3
+125.664948
+State: 3
+State: 3
+121.891037
+State: 3
+State: 3
+119.977997
+State: 3
+State: 3
+112.361832
+State: 3
+State: 3
+106.633522
+State: 3
+State: 3
+104.803230
+State: 3
+State: 3
+135.383026
+State: 3
+State: 3
+LED Status: ON
+11.197600
+State: 3
+State: 3
+4.649927
+State: 3
+State: 3
+183.993195
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+State: 3
+183.993195
+State: 3
+State: 3
+179.856384
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+172.892731
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+150.943634
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+152.003143
+State: 3
+State: 3
+146.107529
+State: 3
+State: 3
+134.346451
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+138.228287
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+127.651726
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+114.260490
+State: 3
+State: 3
+113.310715
+State: 3
+State: 3
+114.202927
+State: 3
+State: 3
+115.211166
+State: 3
+State: 3
+108.575340
+State: 3
+State: 3
+102.922577
+State: 3
+State: 3
+134.413467
+State: 3
+State: 3
+5.582611
+State: 3
+State: 3
+5.582611
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+LED Status: ON
+183.903702
+State: 3
+State: 3
+182.890518
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+169.884216
+State: 3
+State: 3
+170.886154
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+160.907257
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+154.886642
+State: 3
+State: 3
+150.943634
+State: 3
+State: 3
+142.195114
+State: 3
+State: 3
+141.219269
+State: 3
+State: 3
+138.297104
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+130.479004
+State: 3
+State: 3
+LED Status: OFF
+124.767349
+State: 3
+State: 3
+121.829880
+State: 3
+State: 3
+121.829880
+State: 3
+State: 3
+119.022835
+State: 3
+State: 3
+114.260490
+State: 3
+State: 3
+114.202927
+State: 3
+State: 3
+106.687485
+State: 3
+State: 3
+98.186752
+State: 3
+State: 3
+1.857273
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+2.787258
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+178.846786
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+LED Status: ON
+170.886154
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+155.951538
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+153.899536
+State: 3
+State: 3
+152.003143
+State: 3
+State: 3
+146.035126
+State: 3
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+132.477051
+State: 3
+State: 3
+131.510178
+State: 3
+State: 3
+125.664948
+State: 3
+State: 3
+126.625954
+State: 3
+State: 3
+120.934082
+State: 3
+State: 3
+117.115189
+State: 3
+LED Status: OFF
+State: 3
+112.361832
+State: 3
+State: 3
+104.803230
+State: 3
+State: 3
+98.186752
+State: 3
+State: 3
+139.270264
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+0.928187
+State: 3
+State: 3
+180.955002
+State: 3
+State: 3
+174.902908
+State: 3
+State: 3
+179.944077
+State: 3
+State: 3
+175.909332
+State: 3
+State: 3
+169.884216
+State: 3
+State: 3
+161.821503
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+158.922272
+State: 3
+State: 3
+152.003143
+State: 3
+LED Status: ON
+State: 3
+State: 3
+146.107529
+State: 3
+State: 3
+145.128067
+State: 3
+State: 3
+142.195114
+State: 3
+State: 3
+137.324844
+State: 3
+State: 3
+126.625954
+State: 3
+State: 3
+121.829880
+State: 3
+State: 3
+124.767349
+State: 3
+State: 3
+122.848907
+State: 3
+State: 3
+118.068565
+State: 3
+State: 3
+114.202927
+State: 3
+State: 3
+108.575340
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+110.411026
+State: 3
+State: 3
+174.902908
+State: 3
+State: 3
+LED Status: OFF
+4.649927
+State: 3
+State: 3
+1.857273
+State: 3
+State: 3
+189.074844
+State: 3
+State: 3
+182.890518
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+167.883041
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+152.003143
+State: 3
+State: 3
+153.899536
+State: 3
+State: 3
+151.018295
+State: 3
+State: 3
+146.035126
+State: 3
+State: 3
+140.244324
+State: 3
+State: 3
+138.297104
+State: 3
+State: 3
+-131.663101
+State: 3
+LED Status: ON
+State: 3
+130.544220
+State: 3
+State: 3
+126.625954
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+116.162727
+State: 3
+State: 3
+110.411026
+State: 3
+State: 3
+105.691399
+State: 3
+State: 3
+88.006836
+State: 3
+State: 3
+118.068565
+State: 3
+State: 3
+0.000000
+State: 3
+State: 3
+185.007736
+State: 3
+State: 3
+181.966843
+State: 3
+State: 3
+State: 3
+165.885468
+State: 3
+State: 3
+162.895844
+State: 3
+State: 3
+169.884216
+LED Status: OFF
+State: 3
+State: 3
+163.891479
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+145.128067
+State: 3
+State: 3
+149.051285
+State: 3
+State: 3
+142.195114
+State: 3
+State: 3
+130.544220
+State: 3
+State: 3
+127.651726
+State: 3
+State: 3
+114.202927
+State: 3
+State: 3
+119.977997
+State: 3
+State: 3
+117.115189
+State: 3
+State: 3
+113.310715
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+103.862457
+State: 3
+State: 3
+LED Status: ON
+101.045517
+State: 3
+State: 3
+101.045517
+State: 3
+State: 3
+95.435928
+State: 3
+State: 3
+89.858711
+State: 3
+State: 3
+87.082245
+State: 3
+State: 3
+167.883041
+State: 3
+State: 3
+178.846786
+State: 3
+State: 3
+172.892731
+State: 3
+State: 3
+168.883179
+State: 3
+State: 3
+157.853333
+State: 3
+State: 3
+152.988876
+State: 3
+State: 3
+149.960129
+State: 3
+State: 3
+144.149536
+State: 3
+State: 3
+141.219269
+State: 3
+State: 3
+137.324844
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+-131.663101
+State: 3
+State: 3
+130.479004
+State: 3
+State: 3
+110.466789
+State: 3
+State: 3
+98.186752
+State: 3
+State: 3
+87.082245
+State: 3
+State: 3
+73.321335
+State: 3
+State: 3
+70.593445
+State: 3
+State: 3
+61.558914
+State: 3
+State: 3
+57.045696
+State: 3
+State: 3
+63.358624
+State: 3
+State: 3
+53.476856
+State: 3
+State: 3
+49.948486
+State: 3
+State: 3
+39.366081
+State: 3
+State: 3
+101.931885
+State: 3
+State: 3
+88.932320
+State: 3
+LED Status: ON
+State: 3
+99.121689
+State: 3
+State: 3
+156.940872
+State: 3
+State: 3
+14.017236
+State: 3
+State: 3
+6.516193
+State: 3
+State: 3
+3.718143
+State: 3
+State: 3
+2.787258
+State: 3
+State: 3
+188.056717
+State: 3
+State: 3
+183.993195
+State: 3
+State: 3
+178.846786
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+165.885468
+State: 3
+State: 3
+164.888031
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+173.897369
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: ON
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+28.236837
+State: 3
+LED Status: OFF
+State: 3
+21.575840
+State: 3
+State: 3
+19.680792
+State: 3
+State: 3
+14.958914
+State: 3
+State: 3
+11.197600
+State: 3
+State: 3
+10.259520
+State: 3
+State: 3
+2.787258
+State: 3
+State: 3
+0.928187
+State: 3
+State: 3
+183.903702
+State: 3
+State: 3
+180.955002
+State: 3
+State: 3
+176.916687
+State: 3
+State: 3
+State: 3
+173.897369
+State: 3
+162.815796
+State: 3
+State: 3
+State: 3
+166.883804
+State: 3
+State: 3
+158.844025
+State: 3
+State: 3
+LED Status: ON
+156.940872
+State: 3
+State: 3
+152.003143
+State: 3
+State: 3
+147.087891
+State: 3
+State: 3
+145.128067
+State: 3
+State: 3
+142.124512
+State: 3
+State: 3
+138.228287
+State: 3
+State: 3
+126.625954
+State: 3
+State: 3
+125.664948
+State: 3
+State: 3
+125.664948
+State: 3
+State: 3
+126.625954
+State: 3
+State: 3
+29.192005
+State: 3
+State: 3
+22.524715
+State: 3
+State: 3
+16.844967
+State: 3
+State: 3
+14.958914
+State: 3
+State: 3
+State: 3
+State: 3
+LED Status: OFF

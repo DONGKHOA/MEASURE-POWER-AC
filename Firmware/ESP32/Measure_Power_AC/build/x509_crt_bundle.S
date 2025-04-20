@@ -1,4 +1,4 @@
-/* * Data converted from D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

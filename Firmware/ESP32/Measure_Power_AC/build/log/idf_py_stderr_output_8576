@@ -1,0 +1,31 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM4 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081524: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e667f: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400e6a4c: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/task_wdt/task_wdt.c:565
+0x40082fa9: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d763d: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.1.5/components/vfs/vfs_uart.c:167
+0x400d7e23: uart_write at C:/Espressif/frameworks/esp-idf-v5.1.5/components/vfs/vfs_uart.c:222
+0x400d6c5f: console_write at C:/Espressif/frameworks/esp-idf-v5.1.5/components/vfs/vfs_console.c:73
+0x400d63ba: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.1.5/components/vfs/vfs.c:445 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x401686eb: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x4017a4d3: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x4017305a: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1777 (discriminator 1)
+0x401731c5: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+0x401850b9: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.1.5/components/log/log.c:197
+0x40090a89: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.1.5/components/log/log.c:207
+0x400e4ed7: uart_read_bytes at C:/Espressif/frameworks/esp-idf-v5.1.5/components/driver/uart/uart.c:1288 (discriminator 5)
+0x400d7f5d: APP_Data_rec_task at D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/App/app_data_Rec/app_data_rec.c:84
+0x4008b729: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0m

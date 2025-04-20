@@ -3,20 +3,25 @@
 
 cmake_minimum_required(VERSION 3.5)
 
+# If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
+# existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
+# would cause a fatal error, even though it would be a no-op.
+if(NOT EXISTS "C:/Espressif/frameworks/esp-idf-v5.1.5/components/bootloader/subproject")
+  file(MAKE_DIRECTORY "C:/Espressif/frameworks/esp-idf-v5.1.5/components/bootloader/subproject")
+endif()
 file(MAKE_DIRECTORY
-  "C:/Espressif/frameworks/esp-idf-v5.2.2/components/bootloader/subproject"
-  "D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader"
-  "D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix"
-  "D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/tmp"
-  "D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/src"
-  "D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader"
+  "D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix"
+  "D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/tmp"
+  "D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/src"
+  "D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/OneDrive/Disk_2/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/Github/MEASURE-POWER-AC/Firmware/ESP32/Measure_Power_AC/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
