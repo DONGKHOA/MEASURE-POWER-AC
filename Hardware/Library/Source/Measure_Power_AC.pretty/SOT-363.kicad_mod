@@ -1,7 +1,7 @@
 (footprint "SOT-363"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 0 0)
@@ -23,18 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "2eea77ed-ca5e-41e3-b385-711ef057424d")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -91,7 +79,7 @@
 			(width 0.1524)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "b4c9055c-e6ba-4182-8c2c-c0fe48ff0106")
 	)
@@ -521,62 +509,41 @@
 	(pad "1" smd rect
 		(at -1.0414 -0.6604)
 		(size 0.7366 0.3556)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "297df620-1e33-4c92-b9ec-501ea8d88aa9")
 	)
 	(pad "2" smd rect
 		(at -1.0414 0)
 		(size 0.7366 0.3556)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "9eb644e9-ac39-430f-889d-bfbaec589589")
 	)
 	(pad "3" smd rect
 		(at -1.0414 0.6604)
 		(size 0.7366 0.3556)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "0db988b3-3018-4973-b67b-8ccf80a06bdf")
 	)
 	(pad "4" smd rect
 		(at 1.0414 0.6604)
 		(size 0.7366 0.3556)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "94f45828-8b9a-46dc-8ff7-3fdc5769e057")
 	)
 	(pad "5" smd rect
 		(at 1.0414 0)
 		(size 0.7366 0.3556)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "c3a7f047-a0f5-4ebc-8e5f-760ac504a1df")
 	)
 	(pad "6" smd rect
 		(at 1.0414 -0.6604)
 		(size 0.7366 0.3556)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "6ce434ef-e5c9-4bd3-bf2e-2cb93f645356")
 	)
-	(model "D:/OneDrive/Disk_2/CHARGE_BATTERY/Hardware/Library/3d_model/SOT-363.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
-	(model "${CHARGEBATTERY}/SOT-363.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
-	(model "D:/Github/MEASURE-POWER-AC/Hardware/Library/3D models/SOT-363.step"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../Library/3DModels/SOT-363.step"
 		(offset
 			(xyz 0 0 0)
 		)

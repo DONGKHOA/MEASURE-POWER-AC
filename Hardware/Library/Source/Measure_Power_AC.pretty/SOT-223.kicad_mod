@@ -1,7 +1,7 @@
 (footprint "SOT-223"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 0 0)
@@ -25,18 +25,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "682287e3-896c-4da5-be45-daf7a576cc3a")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -113,7 +101,7 @@
 			(width 0.25)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "bed629e2-34bc-4623-93d6-f054b1f58cfa")
 	)
@@ -712,63 +700,31 @@
 	(pad "1" smd rect
 		(at -2.851991 -2.280412 90)
 		(size 0.900001 1.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "19bfb95c-11ab-46dd-8ebe-92a73f96f4af")
 	)
 	(pad "2" smd rect
 		(at -2.851991 0.019588 90)
 		(size 0.900001 1.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "6e26be94-10a5-4577-a8d0-6e6b8d6d5a23")
 	)
 	(pad "3" smd rect
 		(at -2.851991 2.319588 90)
 		(size 0.900001 1.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "12adb6d1-185c-4e5a-9ab2-dac6f02f1870")
 	)
 	(pad "4" smd rect
 		(at 3.298009 0.019588 90)
 		(size 3.149999 1.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "2fdc55bf-44b0-4b71-8e60-4546ac31d5ea")
 	)
-	(model "D:/OneDrive/Disk_2/CHARGE_BATTERY/Hardware/Library/3d_model/SOT-223.step"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../Library/3DModels/SOT-223.step"
 		(offset
 			(xyz 0.5 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 90)
-		)
-	)
-	(model "${CHARGEBATTERY}/SOT-223.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
-	(model "D:/My Project/NCKH/CHARGE_BATTERY/Hardware/Library/3d_model/SOT-223.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 90)
-		)
-	)
-	(model "D:/Github/MEASURE-POWER-AC/Hardware/Library/3D models/SOT-223.step"
-		(offset
-			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)

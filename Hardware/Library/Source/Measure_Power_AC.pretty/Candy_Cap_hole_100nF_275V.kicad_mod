@@ -1,7 +1,7 @@
 (footprint "Candy_Cap_hole_100nF_275V"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 7.62 -8.7122 0)
@@ -20,19 +20,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "1a700d51-c519-4fcb-8311-eaf7c4cc019c")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 6.7938 -9.4962 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "2dfa8254-cb5d-4680-bf92-97967f905a7e")
 		(effects
 			(font
 				(size 1 1)
@@ -74,7 +61,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "d818289a-a2e7-4d0d-8e51-11171143356c")
 	)
@@ -85,7 +72,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "752b7bd3-8aab-485e-a6a0-f7ec98effd4f")
 	)
@@ -117,17 +104,7 @@
 		(remove_unused_layers no)
 		(uuid "0dd10281-ac4f-4ac1-9e9b-6ddc18fcb7ca")
 	)
-	(model "C:/Users/ACER/OneDrive/Máy tính/NCKH/CHARGE_BATTERY/Hardware/Library/3d_model/ECW-FG70105K.STEP"
-		(offset
-			(xyz 8.5 -6.5 1)
-		)
-		(scale
-			(xyz 0.55 0.7 1.3)
-		)
-		(rotate
-			(xyz -90 0 0)
-		)
-	)
+	(embedded_fonts no)
 	(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L18.0mm_W8.0mm_P15.00mm_FKS3_FKP3.step"
 		(offset
 			(xyz 1.5 5 0)

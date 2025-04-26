@@ -1,7 +1,7 @@
 (footprint "FUSE_254_PC_LTF"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "02540101Z ")
 	(property "Reference" "REF**"
@@ -24,18 +24,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "9c97f834-798e-4465-ac9a-994e7a354c9d")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -273,7 +261,8 @@
 		(remove_unused_layers no)
 		(uuid "93acf1bd-f449-449e-942c-d21ed2c7783e")
 	)
-	(model "D:/Github/MEASURE-POWER-AC/Hardware/Library/3D models/FUSE_254_PC_LTF.step"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../Library/3DModels/FUSE_254_PC_LTF.step"
 		(offset
 			(xyz 0 0 0)
 		)

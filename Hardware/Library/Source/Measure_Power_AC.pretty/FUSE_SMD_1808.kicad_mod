@@ -1,7 +1,7 @@
 (footprint "FUSE_SMD_1808"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "02540101Z ")
 	(property "Reference" "REF**"
@@ -24,18 +24,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "9c97f834-798e-4465-ac9a-994e7a354c9d")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -220,13 +208,25 @@
 	(pad "1" smd rect
 		(at 0 0)
 		(size 4.5 4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "b808a025-0f7e-4c6f-8e44-b119a2ef14e0")
 	)
 	(pad "2" smd rect
 		(at 6.7 0)
 		(size 4.5 4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "93acf1bd-f449-449e-942c-d21ed2c7783e")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../Library/3DModels/SMD fuse holder1808.step"
+		(offset
+			(xyz 3.5 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
 	)
 )

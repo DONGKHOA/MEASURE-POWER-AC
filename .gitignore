@@ -1,0 +1,11 @@
+**/build/
+**/Debug/
+**/.idea/
+**/.venv/
+**/.vscode/
+**/History/
+**/managed_components/
+**/backup/
+HW/MEASURE_POWER_AC/MEASURE_POWER_AC-backups/
+*.rar
+*.zip

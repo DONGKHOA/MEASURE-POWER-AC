@@ -1,7 +1,7 @@
 (footprint "Transformer_Zeming_ZMPT101K"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Qingxian Zeming Langxi Electronic ZMPT101K voltage transformer 1000:1000 2mA:2mA, https://5krorwxhmqqirik.leadongcdn.com/ZMPT101K+specification-aidikBqoKomRilSkopqmikp.pdf")
 	(tags "voltage transformer ZMPT")
@@ -23,19 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "02102fbe-0553-4e66-8f27-0ae9b66a6bb1")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -94,7 +81,7 @@
 			(width 0.12)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "84d8d86a-56e3-460c-a4d7-7b2f3862118f")
 	)
@@ -105,7 +92,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "8ec86ebc-6226-4188-b751-879846603496")
 	)
@@ -202,18 +189,8 @@
 		(remove_unused_layers no)
 		(uuid "2de6256f-85ec-4af5-9598-713f2027f0d8")
 	)
-	(model "${KICAD8_3DMODEL_DIR}/Transformer_THT.3dshapes/Transformer_Zeming_ZMPT101K.wrl"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
-	(model "D:/Github/MEASURE-POWER-AC/Hardware/Library/3D models/ZMPT101K.STEP"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../Library/3DModels/ZMPT101K.STEP"
 		(offset
 			(xyz 5 -6.5 0)
 		)
